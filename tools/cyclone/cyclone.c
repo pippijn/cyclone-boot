@@ -1,6 +1,6 @@
 #include <cyc_include.h>
  extern char Cyc_Core_Invalid_argument[17U];struct Cyc_Core_Invalid_argument_exn_struct{char*tag;struct _fat_ptr f1;};extern char Cyc_Core_Failure[8U];struct Cyc_Core_Failure_exn_struct{char*tag;struct _fat_ptr f1;};
-# 321 "../../include/core.h"
+# 321 "../../library/stdlib/core.h"
 void Cyc_Core_rethrow(void*);
 # 325
 const char*Cyc_Core_get_exn_name(void*);
@@ -8,7 +8,7 @@ const char*Cyc_Core_get_exn_name(void*);
 const char*Cyc_Core_get_exn_filename (void);
 # 334
 int Cyc_Core_get_exn_lineno (void);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 54 "../../include/list.h"
+# 54 "../../library/stdlib/list.h"
 extern struct Cyc_List_List*Cyc_List_list(struct _fat_ptr);
 # 76
 extern struct Cyc_List_List*Cyc_List_map(void*(*)(void*),struct Cyc_List_List*);
@@ -20,13 +20,13 @@ extern struct Cyc_List_List*Cyc_List_imp_rev(struct Cyc_List_List*);
 extern struct Cyc_List_List*Cyc_List_append(struct Cyc_List_List*,struct Cyc_List_List*);
 # 391
 extern struct Cyc_List_List*Cyc_List_filter(int(*)(void*),struct Cyc_List_List*);struct Cyc_Arg_Unit_spec_Arg_Spec_struct{int tag;void(*f1)(void);};struct Cyc_Arg_Flag_spec_Arg_Spec_struct{int tag;void(*f1)(struct _fat_ptr);};struct Cyc_Arg_Set_spec_Arg_Spec_struct{int tag;int*f1;};struct Cyc_Arg_Clear_spec_Arg_Spec_struct{int tag;int*f1;};struct Cyc_Arg_String_spec_Arg_Spec_struct{int tag;void(*f1)(struct _fat_ptr);};struct Cyc_Arg_Int_spec_Arg_Spec_struct{int tag;void(*f1)(int);};
-# 66 "../../include/arg.h"
+# 66 "../../library/stdlib/arg.h"
 extern void Cyc_Arg_usage(struct Cyc_List_List*,struct _fat_ptr);
 # 69
 extern int Cyc_Arg_current;
 # 71
 extern void Cyc_Arg_parse(struct Cyc_List_List*,void(*)(struct _fat_ptr),int(*)(struct _fat_ptr),struct _fat_ptr,struct _fat_ptr);struct Cyc___cycFILE;
-# 51 "../../include/cycboot.h"
+# 51 "../../library/stdlib/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stdout;
 # 53
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
@@ -40,11 +40,11 @@ extern int Cyc_fflush(struct Cyc___cycFILE*);
 extern struct Cyc___cycFILE*Cyc_fopen(const char*,const char*);
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 157 "../../include/cycboot.h"
+# 157 "../../library/stdlib/cycboot.h"
 extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);
 # 167
 extern int remove(const char*);
-# 271 "../../include/cycboot.h"
+# 271 "../../library/stdlib/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_file_open(struct _fat_ptr,struct _fat_ptr);
 extern void Cyc_file_close(struct Cyc___cycFILE*);
 # 313
@@ -54,9 +54,9 @@ extern int system(const char*);
 extern void exit(int);struct Cyc_timeval{long tv_sec;long tv_usec;};
 # 328
 extern int gettimeofday(struct Cyc_timeval*,void*);
-# 38 "../../include/string.h"
+# 38 "../../library/stdlib/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
-# 49 "../../include/string.h"
+# 49 "../../library/stdlib/string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 # 51
 extern int Cyc_strncmp(struct _fat_ptr,struct _fat_ptr,unsigned long);
@@ -66,13 +66,13 @@ extern struct _fat_ptr Cyc_strconcat(struct _fat_ptr,struct _fat_ptr);
 extern struct _fat_ptr Cyc_strconcat_l(struct Cyc_List_List*);
 # 66
 extern struct _fat_ptr Cyc_str_sepstr(struct Cyc_List_List*,struct _fat_ptr);
-# 105 "../../include/string.h"
+# 105 "../../library/stdlib/string.h"
 extern struct _fat_ptr Cyc_strdup(struct _fat_ptr);
 # 110
 extern struct _fat_ptr Cyc_substring(struct _fat_ptr,int,unsigned long);
 # 121
 extern struct _fat_ptr Cyc_strchr(struct _fat_ptr,char);
-# 30 "../../include/filename.h"
+# 30 "../../library/stdlib/filename.h"
 extern struct _fat_ptr Cyc_Filename_concat(struct _fat_ptr,struct _fat_ptr);
 # 34
 extern struct _fat_ptr Cyc_Filename_chop_extension(struct _fat_ptr);
@@ -82,7 +82,7 @@ extern struct _fat_ptr Cyc_Filename_dirname(struct _fat_ptr);
 extern struct _fat_ptr Cyc_Filename_basename(struct _fat_ptr);
 # 46
 extern int Cyc_Filename_check_suffix(struct _fat_ptr,struct _fat_ptr);
-# 48 "../../include/position.h"
+# 48 "../../library/stdlib/position.h"
 extern int Cyc_Position_use_gcc_style_location;
 # 13 "../../library/compiler/bansheeif.h"
 int Cyc_BansheeIf_banshee_init (void);

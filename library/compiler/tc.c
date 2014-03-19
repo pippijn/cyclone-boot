@@ -1,10 +1,10 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};struct _tuple0{void*f0;void*f1;};
-# 113 "../../include/core.h"
+# 113 "../../library/stdlib/core.h"
 void*Cyc_Core_fst(struct _tuple0*);
 # 173
 extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 61 "../../include/list.h"
+# 61 "../../library/stdlib/list.h"
 extern int Cyc_List_length(struct Cyc_List_List*);
 # 76
 extern struct Cyc_List_List*Cyc_List_map(void*(*)(void*),struct Cyc_List_List*);
@@ -16,9 +16,9 @@ extern struct Cyc_List_List*Cyc_List_append(struct Cyc_List_List*,struct Cyc_Lis
 extern int Cyc_List_mem(int(*)(void*,void*),struct Cyc_List_List*,void*);
 # 394
 extern struct Cyc_List_List*Cyc_List_filter_c(int(*)(void*,void*),void*,struct Cyc_List_List*);struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};
-# 38 "../../include/string.h"
+# 38 "../../library/stdlib/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
-# 49 "../../include/string.h"
+# 49 "../../library/stdlib/string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_strptrcmp(struct _fat_ptr*,struct _fat_ptr*);struct Cyc_AssnDef_ExistAssnFn;struct _union_Nmspace_Abs_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_Rel_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_C_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_Loc_n{int tag;int val;};union Cyc_Absyn_Nmspace{struct _union_Nmspace_Abs_n Abs_n;struct _union_Nmspace_Rel_n Rel_n;struct _union_Nmspace_C_n C_n;struct _union_Nmspace_Loc_n Loc_n;};struct _tuple1{union Cyc_Absyn_Nmspace f0;struct _fat_ptr*f1;};
 # 140 "absyn.h"
@@ -131,11 +131,11 @@ void Cyc_Atts_check_field_atts(unsigned,struct _fat_ptr*,struct Cyc_List_List*);
 void Cyc_Atts_fnTypeAttsOK(unsigned,void*);
 # 79
 int Cyc_Atts_attribute_cmp(void*,void*);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};extern char Cyc_Dict_Absent[7U];struct Cyc_Dict_Absent_exn_struct{char*tag;};
-# 87 "../../include/dict.h"
+# 87 "../../library/stdlib/dict.h"
 extern struct Cyc_Dict_Dict Cyc_Dict_insert(struct Cyc_Dict_Dict,void*,void*);
 # 110
 extern void*Cyc_Dict_lookup(struct Cyc_Dict_Dict,void*);
-# 122 "../../include/dict.h"
+# 122 "../../library/stdlib/dict.h"
 extern void**Cyc_Dict_lookup_opt(struct Cyc_Dict_Dict,void*);
 # 270
 extern struct Cyc_Dict_Dict Cyc_Dict_delete(struct Cyc_Dict_Dict,void*);extern char Cyc_Tcenv_Env_error[10U];struct Cyc_Tcenv_Env_error_exn_struct{char*tag;};struct Cyc_Tcenv_Genv{struct Cyc_Dict_Dict aggrdecls;struct Cyc_Dict_Dict datatypedecls;struct Cyc_Dict_Dict enumdecls;struct Cyc_Dict_Dict typedefs;struct Cyc_Dict_Dict ordinaries;};struct Cyc_Tcenv_Fenv;struct Cyc_Tcenv_Tenv{struct Cyc_List_List*ns;struct Cyc_Tcenv_Genv*ae;struct Cyc_Tcenv_Fenv*le;int allow_valueof: 1;int in_extern_c_include: 1;int in_tempest: 1;int tempest_generalize: 1;int in_extern_c_inc_repeat: 1;};

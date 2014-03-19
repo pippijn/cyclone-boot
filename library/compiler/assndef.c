@@ -1,8 +1,8 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};
-# 128 "../../include/core.h"
+# 128 "../../library/stdlib/core.h"
 int Cyc_Core_ptrcmp(void*,void*);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 54 "../../include/list.h"
+# 54 "../../library/stdlib/list.h"
 extern struct Cyc_List_List*Cyc_List_list(struct _fat_ptr);
 # 61
 extern int Cyc_List_length(struct Cyc_List_List*);
@@ -52,7 +52,7 @@ void*Cyc_Absyn_at_type(void*,void*,void*,struct Cyc_Absyn_Tqual,void*,void*);
 # 1244
 void Cyc_Absyn_visit_stmt(int(*)(void*,struct Cyc_Absyn_Exp*),int(*)(void*,struct Cyc_Absyn_Stmt*),void*,struct Cyc_Absyn_Stmt*);
 void Cyc_Absyn_visit_exp(int(*)(void*,struct Cyc_Absyn_Exp*),int(*)(void*,struct Cyc_Absyn_Stmt*),void*,struct Cyc_Absyn_Exp*);struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
-# 73 "../../include/cycboot.h"
+# 73 "../../library/stdlib/cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 63 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_typ2string(void*);
@@ -80,13 +80,13 @@ int Cyc_Tcutil_typecmp(void*,void*);
 void*Cyc_Tcutil_substitute(struct Cyc_List_List*,void*);
 # 48 "warn.h"
 void*Cyc_Warn_impos(struct _fat_ptr,struct _fat_ptr);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};
-# 62 "../../include/dict.h"
+# 62 "../../library/stdlib/dict.h"
 extern struct Cyc_Dict_Dict Cyc_Dict_empty(int(*)(void*,void*));
 # 77
 extern int Cyc_Dict_is_empty(struct Cyc_Dict_Dict);
 # 87
 extern struct Cyc_Dict_Dict Cyc_Dict_insert(struct Cyc_Dict_Dict,void*,void*);
-# 122 "../../include/dict.h"
+# 122 "../../library/stdlib/dict.h"
 extern void**Cyc_Dict_lookup_opt(struct Cyc_Dict_Dict,void*);
 # 131
 extern void*Cyc_Dict_fold(void*(*)(void*,void*,void*),struct Cyc_Dict_Dict,void*);
@@ -96,9 +96,9 @@ extern void*Cyc_Dict_fold_c(void*(*)(void*,void*,void*,void*),void*,struct Cyc_D
 extern struct Cyc_Dict_Dict Cyc_Dict_map_c(void*(*)(void*,void*),void*,struct Cyc_Dict_Dict);
 # 257
 extern struct Cyc_Dict_Dict Cyc_Dict_difference(struct Cyc_Dict_Dict,struct Cyc_Dict_Dict);
-# 64 "../../include/string.h"
+# 64 "../../library/stdlib/string.h"
 extern struct _fat_ptr Cyc_strconcat_l(struct Cyc_List_List*);struct Cyc_Set_Set;
-# 51 "../../include/set.h"
+# 51 "../../library/stdlib/set.h"
 extern struct Cyc_Set_Set*Cyc_Set_empty(int(*)(void*,void*));
 # 57
 extern struct Cyc_Set_Set*Cyc_Set_singleton(int(*)(void*,void*),void*);
@@ -120,7 +120,7 @@ extern int Cyc_Set_is_empty(struct Cyc_Set_Set*);
 extern int Cyc_Set_member(struct Cyc_Set_Set*,void*);
 # 116
 extern void*Cyc_Set_fold(void*(*)(void*,void*),struct Cyc_Set_Set*,void*);struct Cyc_Hashtable_Table;
-# 39 "../../include/hashtable.h"
+# 39 "../../library/stdlib/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));
 # 50
 extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);

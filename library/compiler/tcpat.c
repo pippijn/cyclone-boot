@@ -1,16 +1,16 @@
 #include <cyc_include.h>
  struct Cyc___cycFILE;
-# 53 "../../include/cycboot.h"
+# 53 "../../library/stdlib/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 73
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);struct Cyc_Core_Opt{void*v;};struct _tuple0{void*f0;void*f1;};
-# 115 "../../include/core.h"
+# 115 "../../library/stdlib/core.h"
 void*Cyc_Core_snd(struct _tuple0*);
 # 173
 extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 54 "../../include/list.h"
+# 54 "../../library/stdlib/list.h"
 extern struct Cyc_List_List*Cyc_List_list(struct _fat_ptr);
 # 61
 extern int Cyc_List_length(struct Cyc_List_List*);
@@ -36,7 +36,7 @@ extern struct Cyc_List_List*Cyc_List_rzip(struct _RegionHandle*,struct _RegionHa
 extern struct _tuple1 Cyc_List_split(struct Cyc_List_List*);
 # 379
 extern struct Cyc_List_List*Cyc_List_tabulate_c(int,void*(*)(void*,int),void*);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};struct Cyc_Set_Set;
-# 54 "../../include/set.h"
+# 54 "../../library/stdlib/set.h"
 extern struct Cyc_Set_Set*Cyc_Set_rempty(struct _RegionHandle*,int(*)(void*,void*));
 # 65
 extern struct Cyc_Set_Set*Cyc_Set_insert(struct Cyc_Set_Set*,void*);
@@ -48,7 +48,7 @@ extern int Cyc_Set_is_empty(struct Cyc_Set_Set*);
 extern int Cyc_Set_member(struct Cyc_Set_Set*,void*);
 # 139
 extern void*Cyc_Set_choose(struct Cyc_Set_Set*);
-# 49 "../../include/string.h"
+# 49 "../../library/stdlib/string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_strptrcmp(struct _fat_ptr*,struct _fat_ptr*);
 # 64

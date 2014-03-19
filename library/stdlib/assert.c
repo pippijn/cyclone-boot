@@ -1,12 +1,12 @@
 #include <cyc_include.h>
  struct Cyc___cycFILE;
-# 53 "../../include/cycboot.h"
+# 53 "../../library/stdlib/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 88
 extern int Cyc_fflush(struct Cyc___cycFILE*);
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 319 "../../include/cycboot.h"
+# 319 "../../library/stdlib/cycboot.h"
 extern void exit(int);
 # 26 "assert.cyc"
 void*Cyc___assert_fail(struct _fat_ptr assertion,struct _fat_ptr file,unsigned line){struct Cyc_String_pa_PrintArg_struct _T0;struct Cyc_Int_pa_PrintArg_struct _T1;struct Cyc_String_pa_PrintArg_struct _T2;struct Cyc___cycFILE*_T3;struct _fat_ptr _T4;struct _fat_ptr _T5;int _T6;{struct Cyc_String_pa_PrintArg_struct _T7;_T7.tag=0;

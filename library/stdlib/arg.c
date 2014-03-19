@@ -1,32 +1,32 @@
 #include <cyc_include.h>
  struct Cyc___cycFILE;
-# 53 "../../include/cycboot.h"
+# 53 "../../library/stdlib/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);struct Cyc_IntPtr_sa_ScanfArg_struct{int tag;int*f1;};
-# 197 "../../include/cycboot.h"
+# 197 "../../library/stdlib/cycboot.h"
 extern int Cyc_sscanf(struct _fat_ptr,struct _fat_ptr,struct _fat_ptr);
-# 300 "../../include/cycboot.h"
+# 300 "../../library/stdlib/cycboot.h"
 extern int isspace(int);extern char Cyc_Core_Not_found[10U];struct Cyc_Core_Not_found_exn_struct{char*tag;};struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 38 "../../include/string.h"
+# 38 "../../library/stdlib/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
-# 49 "../../include/string.h"
+# 49 "../../library/stdlib/string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 # 51
 extern int Cyc_strncmp(struct _fat_ptr,struct _fat_ptr,unsigned long);
 # 62
 extern struct _fat_ptr Cyc_strconcat(struct _fat_ptr,struct _fat_ptr);extern char Cyc_Arg_Bad[4U];struct Cyc_Arg_Bad_exn_struct{char*tag;struct _fat_ptr f1;};struct Cyc_Arg_Unit_spec_Arg_Spec_struct{int tag;void(*f1)(void);};struct Cyc_Arg_Flag_spec_Arg_Spec_struct{int tag;void(*f1)(struct _fat_ptr);};struct Cyc_Arg_FlagString_spec_Arg_Spec_struct{int tag;void(*f1)(struct _fat_ptr,struct _fat_ptr);};struct Cyc_Arg_Set_spec_Arg_Spec_struct{int tag;int*f1;};struct Cyc_Arg_Clear_spec_Arg_Spec_struct{int tag;int*f1;};struct Cyc_Arg_String_spec_Arg_Spec_struct{int tag;void(*f1)(struct _fat_ptr);};struct Cyc_Arg_Int_spec_Arg_Spec_struct{int tag;void(*f1)(int);};struct Cyc_Arg_Rest_spec_Arg_Spec_struct{int tag;void(*f1)(struct _fat_ptr);};
-# 69 "../../include/arg.h"
+# 69 "../../library/stdlib/arg.h"
 extern int Cyc_Arg_current;struct Cyc_Buffer_t;
-# 50 "../../include/buffer.h"
+# 50 "../../library/stdlib/buffer.h"
 extern struct Cyc_Buffer_t*Cyc_Buffer_create(unsigned);
 # 58
 extern struct _fat_ptr Cyc_Buffer_contents(struct Cyc_Buffer_t*);
 # 83
 extern void Cyc_Buffer_add_substring(struct Cyc_Buffer_t*,struct _fat_ptr,int,int);
-# 92 "../../include/buffer.h"
+# 92 "../../library/stdlib/buffer.h"
 extern void Cyc_Buffer_add_string(struct Cyc_Buffer_t*,struct _fat_ptr);
-# 29 "../../include/assert.h"
+# 29 "../../library/stdlib/assert.h"
 extern void*Cyc___assert_fail(struct _fat_ptr,struct _fat_ptr,unsigned);char Cyc_Arg_Bad[4U]="Bad";char Cyc_Arg_Error[6U]="Error";struct Cyc_Arg_Unknown_Arg_error_struct{int tag;struct _fat_ptr f1;};struct Cyc_Arg_Missing_Arg_error_struct{int tag;struct _fat_ptr f1;};struct Cyc_Arg_Message_Arg_error_struct{int tag;struct _fat_ptr f1;};struct Cyc_Arg_Wrong_Arg_error_struct{int tag;struct _fat_ptr f1;struct _fat_ptr f2;struct _fat_ptr f3;};struct _tuple0{struct _fat_ptr f0;int f1;struct _fat_ptr f2;void*f3;struct _fat_ptr f4;};
 # 68 "arg.cyc"
 static void*Cyc_Arg_lookup(struct Cyc_List_List*l,struct _fat_ptr x){struct Cyc_List_List*_T0;void*_T1;struct _tuple0*_T2;struct _tuple0 _T3;struct Cyc_List_List*_T4;void*_T5;struct _tuple0*_T6;struct _tuple0 _T7;int _T8;struct _fat_ptr _T9;struct Cyc_List_List*_TA;void*_TB;struct _tuple0*_TC;struct _tuple0 _TD;struct _fat_ptr _TE;unsigned long _TF;int _T10;struct Cyc_List_List*_T11;void*_T12;struct _tuple0*_T13;struct _tuple0 _T14;void*_T15;struct _fat_ptr _T16;struct Cyc_List_List*_T17;void*_T18;struct _tuple0*_T19;struct _tuple0 _T1A;struct _fat_ptr _T1B;int _T1C;struct Cyc_List_List*_T1D;void*_T1E;struct _tuple0*_T1F;struct _tuple0 _T20;void*_T21;struct Cyc_List_List*_T22;struct Cyc_Core_Not_found_exn_struct*_T23;void*_T24;

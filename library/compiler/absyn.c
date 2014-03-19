@@ -1,12 +1,12 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 54 "../../include/list.h"
+# 54 "../../library/stdlib/list.h"
 extern struct Cyc_List_List*Cyc_List_list(struct _fat_ptr);
 # 178
 extern struct Cyc_List_List*Cyc_List_imp_rev(struct Cyc_List_List*);
 # 371
 extern struct Cyc_List_List*Cyc_List_from_array(struct _fat_ptr);
-# 34 "../../include/position.h"
+# 34 "../../library/stdlib/position.h"
 extern unsigned Cyc_Position_segment_join(unsigned,unsigned);struct Cyc_AssnDef_ExistAssnFn;struct _union_Nmspace_Abs_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_Rel_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_C_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_Loc_n{int tag;int val;};union Cyc_Absyn_Nmspace{struct _union_Nmspace_Abs_n Abs_n;struct _union_Nmspace_Rel_n Rel_n;struct _union_Nmspace_C_n C_n;struct _union_Nmspace_Loc_n Loc_n;};struct _tuple0{union Cyc_Absyn_Nmspace f0;struct _fat_ptr*f1;};
 # 140 "absyn.h"
 enum Cyc_Absyn_Scope{Cyc_Absyn_Static =0U,Cyc_Absyn_Abstract =1U,Cyc_Absyn_Public =2U,Cyc_Absyn_Extern =3U,Cyc_Absyn_ExternC =4U,Cyc_Absyn_Register =5U};struct Cyc_Absyn_Tqual{int print_const: 1;int q_volatile: 1;int q_restrict: 1;int real_const: 1;unsigned loc;};
@@ -66,7 +66,7 @@ struct Cyc_Absyn_Vardecl*Cyc_Absyn_new_vardecl(unsigned,struct _tuple0*,void*,st
 void*Cyc_Absyn_pointer_expand(void*,int);
 # 1244
 void Cyc_Absyn_visit_stmt(int(*)(void*,struct Cyc_Absyn_Exp*),int(*)(void*,struct Cyc_Absyn_Stmt*),void*,struct Cyc_Absyn_Stmt*);struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
-# 73 "../../include/cycboot.h"
+# 73 "../../library/stdlib/cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);struct Cyc_Warn_String_Warn_Warg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Warn_Typ_Warn_Warg_struct{int tag;void*f1;};struct Cyc_Warn_Int_Warn_Warg_struct{int tag;int f1;};
 # 79 "warn.h"
 void*Cyc_Warn_impos2(struct _fat_ptr);
@@ -80,9 +80,9 @@ extern struct Cyc_Core_Opt Cyc_Kinds_ptrbko;
 void Cyc_BansheeIf_add_constant(struct _fat_ptr,void*);
 # 30
 int Cyc_BansheeIf_resolve(void*);
-# 50 "../../include/string.h"
+# 50 "../../library/stdlib/string.h"
 extern int Cyc_strptrcmp(struct _fat_ptr*,struct _fat_ptr*);struct Cyc_Hashtable_Table;
-# 47 "../../include/hashtable.h"
+# 47 "../../library/stdlib/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_rcreate(struct _RegionHandle*,int,int(*)(void*,void*),int(*)(void*));
 # 50
 extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);
@@ -92,7 +92,7 @@ extern void**Cyc_Hashtable_lookup_opt(struct Cyc_Hashtable_Table*,void*);
 extern int Cyc_Hashtable_hash_string(struct _fat_ptr);struct _tuple11{unsigned f0;int f1;};
 # 28 "evexp.h"
 extern struct _tuple11 Cyc_Evexp_eval_const_uint_exp(struct Cyc_Absyn_Exp*);struct Cyc_Xarray_Xarray{struct _fat_ptr elmts;int num_elmts;};
-# 40 "../../include/xarray.h"
+# 40 "../../library/stdlib/xarray.h"
 extern int Cyc_Xarray_length(struct Cyc_Xarray_Xarray*);
 # 42
 extern void*Cyc_Xarray_get(struct Cyc_Xarray_Xarray*,int);

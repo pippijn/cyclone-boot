@@ -1,10 +1,10 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};struct _tuple0{void*f0;void*f1;};
-# 115 "../../include/core.h"
+# 115 "../../library/stdlib/core.h"
 void*Cyc_Core_snd(struct _tuple0*);extern char Cyc_Core_Failure[8U];struct Cyc_Core_Failure_exn_struct{char*tag;struct _fat_ptr f1;};extern char Cyc_Core_Not_found[10U];struct Cyc_Core_Not_found_exn_struct{char*tag;};
 # 173
 extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 54 "../../include/list.h"
+# 54 "../../library/stdlib/list.h"
 extern struct Cyc_List_List*Cyc_List_list(struct _fat_ptr);
 # 61
 extern int Cyc_List_length(struct Cyc_List_List*);
@@ -26,13 +26,13 @@ extern void*Cyc_List_find_c(void*(*)(void*,void*),void*,struct Cyc_List_List*);
 extern struct Cyc_List_List*Cyc_List_zip(struct Cyc_List_List*,struct Cyc_List_List*);
 # 322
 extern int Cyc_List_mem(int(*)(void*,void*),struct Cyc_List_List*,void*);struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
-# 73 "../../include/cycboot.h"
+# 73 "../../library/stdlib/cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
-# 38 "../../include/string.h"
+# 38 "../../library/stdlib/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
-# 49 "../../include/string.h"
+# 49 "../../library/stdlib/string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);struct Cyc_Hashtable_Table;
-# 39 "../../include/hashtable.h"
+# 39 "../../library/stdlib/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));
 # 50
 extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);

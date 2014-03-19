@@ -2,7 +2,7 @@
  struct Cyc___cycFILE;struct __abstractFILE;
 # 109 "../../library/stdlib/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_fromCfile(struct __abstractFILE*);struct Cyc___cycFILE;
-# 71 "../../include/string.h"
+# 71 "../../library/stdlib/string.h"
 extern struct _fat_ptr Cyc_strcpy(struct _fat_ptr,struct _fat_ptr);
 # 9 "tmp.cyc"
 extern struct __abstractFILE*tmpfile (void);

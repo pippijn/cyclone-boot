@@ -1,6 +1,6 @@
 #include <cyc_include.h>
  extern char Cyc_Core_Failure[8U];struct Cyc_Core_Failure_exn_struct{char*tag;struct _fat_ptr f1;};
-# 351 "../../../include/core.h"
+# 351 "../../../library/stdlib/core.h"
 struct _fat_ptr Cyc_Core_mkfat(void*,unsigned,unsigned);struct Cyc_in_addr{unsigned s_addr;};
 # 8 "cycstubs.cyc"
 extern unsigned __stub_htonl(unsigned);

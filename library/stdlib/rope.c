@@ -1,12 +1,12 @@
 #include <cyc_include.h>
 
-# 95 "../../include/core.h"
+# 95 "../../library/stdlib/core.h"
  struct _fat_ptr Cyc_Core_new_string(unsigned);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 61 "../../include/list.h"
+# 61 "../../library/stdlib/list.h"
 extern int Cyc_List_length(struct Cyc_List_List*);struct Cyc_Rope_Rope_node;
-# 38 "../../include/string.h"
+# 38 "../../library/stdlib/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
-# 49 "../../include/string.h"
+# 49 "../../library/stdlib/string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 # 72
 extern struct _fat_ptr Cyc_strncpy(struct _fat_ptr,struct _fat_ptr,unsigned long);struct Cyc_Rope_String_rope_Rope_R_struct{int tag;struct _fat_ptr f1;};struct Cyc_Rope_Array_rope_Rope_R_struct{int tag;struct _fat_ptr f1;};struct Cyc_Rope_Rope_node{void*v;};

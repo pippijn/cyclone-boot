@@ -1,8 +1,8 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};extern char Cyc_Core_Not_found[10U];struct Cyc_Core_Not_found_exn_struct{char*tag;};
-# 173 "../../include/core.h"
+# 173 "../../library/stdlib/core.h"
 extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 61 "../../include/list.h"
+# 61 "../../library/stdlib/list.h"
 extern int Cyc_List_length(struct Cyc_List_List*);
 # 86
 extern struct Cyc_List_List*Cyc_List_rmap_c(struct _RegionHandle*,void*(*)(void*,void*),void*,struct Cyc_List_List*);

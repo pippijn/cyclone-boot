@@ -1,6 +1,6 @@
 #include <cyc_include.h>
 
-# 95 "../../include/core.h"
+# 95 "../../library/stdlib/core.h"
  struct _fat_ptr Cyc_Core_new_string(unsigned);
 # 100
 struct _fat_ptr Cyc_Core_rnew_string(struct _RegionHandle*,unsigned);
@@ -10,15 +10,15 @@ struct _fat_ptr Cyc_Core_rqnew_string(struct _RegionHandle*,unsigned,unsigned);e
 extern struct _RegionHandle*Cyc_Core_heap_region;
 # 179
 extern unsigned Cyc_Core_aliasable_qual;
-# 351 "../../include/core.h"
+# 351 "../../library/stdlib/core.h"
 struct _fat_ptr Cyc_Core_mkfat(void*,unsigned,unsigned);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 61 "../../include/list.h"
+# 61 "../../library/stdlib/list.h"
 extern int Cyc_List_length(struct Cyc_List_List*);
-# 310 "../../include/cycboot.h"
+# 310 "../../library/stdlib/cycboot.h"
 extern int toupper(int);
-# 72 "../../include/string.h"
+# 72 "../../library/stdlib/string.h"
 struct _fat_ptr Cyc_strncpy(struct _fat_ptr,struct _fat_ptr,unsigned long);
-# 106 "../../include/string.h"
+# 106 "../../library/stdlib/string.h"
 struct _fat_ptr Cyc_rstrdup(struct _RegionHandle*,struct _fat_ptr);
 # 37 "string.cyc"
 unsigned long Cyc_strlen(struct _fat_ptr s){struct _fat_ptr _T0;struct _fat_ptr _T1;unsigned char*_T2;const char*_T3;const char*_T4;unsigned long _T5;int _T6;char _T7;int _T8;unsigned long _T9;unsigned long _TA;

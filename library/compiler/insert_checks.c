@@ -1,10 +1,10 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};
-# 128 "../../include/core.h"
+# 128 "../../library/stdlib/core.h"
 int Cyc_Core_ptrcmp(void*,void*);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 172 "../../include/list.h"
+# 172 "../../library/stdlib/list.h"
 extern struct Cyc_List_List*Cyc_List_rev(struct Cyc_List_List*);struct Cyc_Set_Set;struct Cyc___cycFILE;
-# 53 "../../include/cycboot.h"
+# 53 "../../library/stdlib/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};struct Cyc_Double_pa_PrintArg_struct{int tag;double f1;};
 # 73
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
@@ -64,7 +64,7 @@ extern int Cyc_Flags_verbose;
 extern int Cyc_Flags_warn_bounds_checks;
 # 74
 extern int Cyc_Flags_warn_all_null_deref;struct Cyc_Hashtable_Table;
-# 39 "../../include/hashtable.h"
+# 39 "../../library/stdlib/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));
 # 50
 extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);
@@ -91,7 +91,7 @@ struct Cyc_Vcgen_ExpChecks*Cyc_Vcgen_exp2ctxt_checks(struct Cyc_Hashtable_Table*
 int Cyc_PrattProver_constraint_prove(void*,void*);
 # 69 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);
-# 85 "../../include/graph.h"
+# 85 "../../library/stdlib/graph.h"
 extern struct Cyc_List_List*Cyc_Graph_tsort(struct Cyc_Dict_Dict);
 # 30 "callgraph.h"
 struct Cyc_Dict_Dict Cyc_Callgraph_compute_callgraph(struct Cyc_List_List*);char Cyc_InsertChecks_FatBound[9U]="FatBound";char Cyc_InsertChecks_NoCheck[8U]="NoCheck";char Cyc_InsertChecks_NullAndFatBound[16U]="NullAndFatBound";char Cyc_InsertChecks_NullAndThinBound[17U]="NullAndThinBound";char Cyc_InsertChecks_NullOnly[9U]="NullOnly";char Cyc_InsertChecks_ThinBound[10U]="ThinBound";

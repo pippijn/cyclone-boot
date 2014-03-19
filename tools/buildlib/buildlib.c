@@ -1,10 +1,10 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};extern char Cyc_Core_Invalid_argument[17U];struct Cyc_Core_Invalid_argument_exn_struct{char*tag;struct _fat_ptr f1;};extern char Cyc_Core_Failure[8U];struct Cyc_Core_Failure_exn_struct{char*tag;struct _fat_ptr f1;};extern char Cyc_Core_Impossible[11U];struct Cyc_Core_Impossible_exn_struct{char*tag;struct _fat_ptr f1;};extern char Cyc_Core_Not_found[10U];struct Cyc_Core_Not_found_exn_struct{char*tag;};
-# 173 "../../include/core.h"
+# 173 "../../library/stdlib/core.h"
 extern struct _RegionHandle*Cyc_Core_heap_region;
-# 321 "../../include/core.h"
+# 321 "../../library/stdlib/core.h"
 void Cyc_Core_rethrow(void*);
-# 38 "../../include/cycboot.h"
+# 38 "../../library/stdlib/cycboot.h"
 extern int Cyc_open(const char*,int,struct _fat_ptr);struct Cyc___cycFILE;
 # 51
 extern struct Cyc___cycFILE*Cyc_stdout;
@@ -24,9 +24,9 @@ extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_fputc(int,struct Cyc___cycFILE*);
 # 106
 extern int Cyc_fputs(const char*,struct Cyc___cycFILE*);
-# 224 "../../include/cycboot.h"
+# 224 "../../library/stdlib/cycboot.h"
 extern int Cyc_vfprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 300 "../../include/cycboot.h"
+# 300 "../../library/stdlib/cycboot.h"
 extern int isspace(int);
 # 310
 extern int toupper(int);
@@ -39,14 +39,14 @@ extern int mkdir(const char*,unsigned short);
 extern int close(int);
 extern int chdir(const char*);
 extern struct _fat_ptr Cyc_getcwd(struct _fat_ptr,unsigned long);extern char Cyc_Lexing_Error[6U];struct Cyc_Lexing_Error_exn_struct{char*tag;struct _fat_ptr f1;};struct Cyc_Lexing_lexbuf{void(*refill_buff)(struct Cyc_Lexing_lexbuf*);void*refill_state;struct _fat_ptr lex_buffer;int lex_buffer_len;int lex_abs_pos;int lex_start_pos;int lex_curr_pos;int lex_last_pos;int lex_last_action;int lex_eof_reached;};
-# 78 "../../include/lexing.h"
+# 78 "../../library/stdlib/lexing.h"
 extern struct Cyc_Lexing_lexbuf*Cyc_Lexing_from_file(struct Cyc___cycFILE*);
 # 82
 extern struct _fat_ptr Cyc_Lexing_lexeme(struct Cyc_Lexing_lexbuf*);
 extern char Cyc_Lexing_lexeme_char(struct Cyc_Lexing_lexbuf*,int);
 extern int Cyc_Lexing_lexeme_start(struct Cyc_Lexing_lexbuf*);
 extern int Cyc_Lexing_lexeme_end(struct Cyc_Lexing_lexbuf*);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 54 "../../include/list.h"
+# 54 "../../library/stdlib/list.h"
 extern struct Cyc_List_List*Cyc_List_list(struct _fat_ptr);
 # 76
 extern struct Cyc_List_List*Cyc_List_map(void*(*)(void*),struct Cyc_List_List*);
@@ -60,9 +60,9 @@ extern struct Cyc_List_List*Cyc_List_append(struct Cyc_List_List*,struct Cyc_Lis
 extern struct _tuple0 Cyc_List_split(struct Cyc_List_List*);
 # 322
 extern int Cyc_List_mem(int(*)(void*,void*),struct Cyc_List_List*,void*);struct Cyc_Iter_Iter{void*env;int(*next)(void*,void*);};
-# 37 "../../include/iter.h"
+# 37 "../../library/stdlib/iter.h"
 int Cyc_Iter_next(struct Cyc_Iter_Iter,void*);struct Cyc_Set_Set;
-# 51 "../../include/set.h"
+# 51 "../../library/stdlib/set.h"
 extern struct Cyc_Set_Set*Cyc_Set_empty(int(*)(void*,void*));
 # 65
 extern struct Cyc_Set_Set*Cyc_Set_insert(struct Cyc_Set_Set*,void*);
@@ -82,9 +82,9 @@ extern int Cyc_Set_member(struct Cyc_Set_Set*,void*);
 extern void*Cyc_Set_choose(struct Cyc_Set_Set*);
 # 143
 extern struct Cyc_Iter_Iter Cyc_Set_make_iter(struct _RegionHandle*,struct Cyc_Set_Set*);
-# 38 "../../include/string.h"
+# 38 "../../library/stdlib/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
-# 49 "../../include/string.h"
+# 49 "../../library/stdlib/string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_strptrcmp(struct _fat_ptr*,struct _fat_ptr*);
 extern int Cyc_strncmp(struct _fat_ptr,struct _fat_ptr,unsigned long);
@@ -94,11 +94,11 @@ extern struct _fat_ptr Cyc_strconcat(struct _fat_ptr,struct _fat_ptr);
 extern struct _fat_ptr Cyc_strconcat_l(struct Cyc_List_List*);
 # 66
 extern struct _fat_ptr Cyc_str_sepstr(struct Cyc_List_List*,struct _fat_ptr);
-# 105 "../../include/string.h"
+# 105 "../../library/stdlib/string.h"
 extern struct _fat_ptr Cyc_strdup(struct _fat_ptr);
 # 110
 extern struct _fat_ptr Cyc_substring(struct _fat_ptr,int,unsigned long);struct Cyc_Hashtable_Table;
-# 39 "../../include/hashtable.h"
+# 39 "../../library/stdlib/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));
 # 50
 extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);
@@ -106,7 +106,7 @@ extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);
 extern void*Cyc_Hashtable_lookup(struct Cyc_Hashtable_Table*,void*);
 # 86
 extern int Cyc_Hashtable_hash_stringptr(struct _fat_ptr*);
-# 30 "../../include/filename.h"
+# 30 "../../library/stdlib/filename.h"
 extern struct _fat_ptr Cyc_Filename_concat(struct _fat_ptr,struct _fat_ptr);
 # 34
 extern struct _fat_ptr Cyc_Filename_chop_extension(struct _fat_ptr);
@@ -114,19 +114,19 @@ extern struct _fat_ptr Cyc_Filename_chop_extension(struct _fat_ptr);
 extern struct _fat_ptr Cyc_Filename_dirname(struct _fat_ptr);
 # 43
 extern struct _fat_ptr Cyc_Filename_basename(struct _fat_ptr);struct Cyc_Arg_Unit_spec_Arg_Spec_struct{int tag;void(*f1)(void);};struct Cyc_Arg_Flag_spec_Arg_Spec_struct{int tag;void(*f1)(struct _fat_ptr);};struct Cyc_Arg_Set_spec_Arg_Spec_struct{int tag;int*f1;};struct Cyc_Arg_String_spec_Arg_Spec_struct{int tag;void(*f1)(struct _fat_ptr);};
-# 66 "../../include/arg.h"
+# 66 "../../library/stdlib/arg.h"
 extern void Cyc_Arg_usage(struct Cyc_List_List*,struct _fat_ptr);
 # 69
 extern int Cyc_Arg_current;
 # 71
 extern void Cyc_Arg_parse(struct Cyc_List_List*,void(*)(struct _fat_ptr),int(*)(struct _fat_ptr),struct _fat_ptr,struct _fat_ptr);struct Cyc_Buffer_t;
-# 50 "../../include/buffer.h"
+# 50 "../../library/stdlib/buffer.h"
 extern struct Cyc_Buffer_t*Cyc_Buffer_create(unsigned);
 # 58
 extern struct _fat_ptr Cyc_Buffer_contents(struct Cyc_Buffer_t*);
 # 81
 extern void Cyc_Buffer_add_char(struct Cyc_Buffer_t*,char);
-# 92 "../../include/buffer.h"
+# 92 "../../library/stdlib/buffer.h"
 extern void Cyc_Buffer_add_string(struct Cyc_Buffer_t*,struct _fat_ptr);struct Cyc_AssnDef_ExistAssnFn;struct _union_Nmspace_Abs_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_Rel_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_C_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_Loc_n{int tag;int val;};union Cyc_Absyn_Nmspace{struct _union_Nmspace_Abs_n Abs_n;struct _union_Nmspace_Rel_n Rel_n;struct _union_Nmspace_C_n C_n;struct _union_Nmspace_Loc_n Loc_n;};struct _tuple1{union Cyc_Absyn_Nmspace f0;struct _fat_ptr*f1;};
 # 140 "../../library/compiler/absyn.h"
 enum Cyc_Absyn_Scope{Cyc_Absyn_Static =0U,Cyc_Absyn_Abstract =1U,Cyc_Absyn_Public =2U,Cyc_Absyn_Extern =3U,Cyc_Absyn_ExternC =4U,Cyc_Absyn_Register =5U};struct Cyc_Absyn_Tqual{int print_const: 1;int q_volatile: 1;int q_restrict: 1;int real_const: 1;unsigned loc;};

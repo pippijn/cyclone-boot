@@ -1,16 +1,16 @@
 #include <cyc_include.h>
 
-# 282 "../../include/cycboot.h"
+# 282 "../../library/stdlib/cycboot.h"
  extern int isalnum(int);
 # 300
 extern int isspace(int);
-# 82 "../../include/string.h"
+# 82 "../../library/stdlib/string.h"
 extern struct _fat_ptr Cyc__memcpy(struct _fat_ptr,struct _fat_ptr,unsigned long,unsigned);
 # 87
 extern struct _fat_ptr Cyc_memset(struct _fat_ptr,char,unsigned long);
-# 29 "../../include/assert.h"
+# 29 "../../library/stdlib/assert.h"
 extern void*Cyc___assert_fail(struct _fat_ptr,struct _fat_ptr,unsigned);
-# 15 "../../include/xp.h"
+# 15 "../../library/stdlib/xp.h"
 int Cyc_XP_quotient(int,struct _fat_ptr,struct _fat_ptr,int);static char _TmpG0[37U]="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 # 7 "xp.cyc"
 static struct _fat_ptr Cyc_digits={(unsigned char*)_TmpG0,(unsigned char*)_TmpG0,(unsigned char*)_TmpG0 + 37U};

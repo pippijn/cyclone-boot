@@ -1,10 +1,10 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};struct Cyc_Core_Not_found_exn_struct{char*tag;};
-# 154 "../../include/core.h"
+# 154 "../../library/stdlib/core.h"
 extern struct Cyc_Core_Not_found_exn_struct Cyc_Core_Not_found_val;
 # 173
 extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};extern char Cyc_List_List_mismatch[14U];struct Cyc_List_List_mismatch_exn_struct{char*tag;};extern char Cyc_List_Nth[4U];struct Cyc_List_Nth_exn_struct{char*tag;};
-# 246 "../../include/list.h"
+# 246 "../../library/stdlib/list.h"
 struct Cyc_List_List*Cyc_List_nth_tail(struct Cyc_List_List*,int);struct _tuple0{struct Cyc_List_List*f0;struct Cyc_List_List*f1;};struct _tuple1{struct Cyc_List_List*f0;struct Cyc_List_List*f1;struct Cyc_List_List*f2;};
 # 371
 struct Cyc_List_List*Cyc_List_from_array(struct _fat_ptr);

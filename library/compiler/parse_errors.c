@@ -1,8 +1,8 @@
 #include <cyc_include.h>
  struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
-# 157 "../../include/cycboot.h"
+# 157 "../../library/stdlib/cycboot.h"
 extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);
-# 319 "../../include/cycboot.h"
+# 319 "../../library/stdlib/cycboot.h"
 extern void exit(int);
 # 43 "warn.h"
 void Cyc_Warn_err(unsigned,struct _fat_ptr,struct _fat_ptr);

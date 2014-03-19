@@ -8,19 +8,19 @@ extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
 extern int remove(const char*);
 # 369 "../../library/stdlib/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_file_open(struct _fat_ptr,struct _fat_ptr);
-# 34 "../../include/filename.h"
+# 34 "../../library/stdlib/filename.h"
 extern struct _fat_ptr Cyc_Filename_chop_extension(struct _fat_ptr);
 # 46
 extern int Cyc_Filename_check_suffix(struct _fat_ptr,struct _fat_ptr);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc___cycFILE;
-# 53 "../../include/cycboot.h"
+# 53 "../../library/stdlib/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;
-# 100 "../../include/cycboot.h"
+# 100 "../../library/stdlib/cycboot.h"
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 167 "../../include/cycboot.h"
+# 167 "../../library/stdlib/cycboot.h"
 extern int remove(const char*);
-# 271 "../../include/cycboot.h"
+# 271 "../../library/stdlib/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_file_open(struct _fat_ptr,struct _fat_ptr);
-# 62 "../../include/string.h"
+# 62 "../../library/stdlib/string.h"
 extern struct _fat_ptr Cyc_strconcat(struct _fat_ptr,struct _fat_ptr);struct Cyc_Syntax_Location{int start_pos;int end_pos;int start_line;int start_col;};struct Cyc_Syntax_Lexer_definition{struct Cyc_Syntax_Location*header;struct Cyc_List_List*entrypoints;struct Cyc_Syntax_Location*trailer;};
 # 15 "parser.h"
 extern struct Cyc_Syntax_Lexer_definition*Cyc_Parser_parse_file(struct Cyc___cycFILE*);extern char Cyc_Parser_Parser_error[13U];struct Cyc_Parser_Parser_error_exn_struct{char*tag;struct _fat_ptr f1;};extern char Cyc_Lexer_Lexical_error[14U];struct Cyc_Lexer_Lexical_error_exn_struct{char*tag;struct _fat_ptr f1;int f2;int f3;};

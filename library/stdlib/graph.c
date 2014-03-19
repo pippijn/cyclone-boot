@@ -1,12 +1,12 @@
 #include <cyc_include.h>
 
-# 121 "../../include/core.h"
+# 121 "../../library/stdlib/core.h"
  int Cyc_Core_intcmp(int,int);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 61 "../../include/list.h"
+# 61 "../../library/stdlib/list.h"
 extern int Cyc_List_length(struct Cyc_List_List*);struct Cyc___cycFILE;
-# 100 "../../include/cycboot.h"
+# 100 "../../library/stdlib/cycboot.h"
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);struct Cyc_Set_Set;
-# 51 "../../include/set.h"
+# 51 "../../library/stdlib/set.h"
 extern struct Cyc_Set_Set*Cyc_Set_empty(int(*)(void*,void*));
 # 65
 extern struct Cyc_Set_Set*Cyc_Set_insert(struct Cyc_Set_Set*,void*);
@@ -22,7 +22,7 @@ extern int Cyc_Set_is_empty(struct Cyc_Set_Set*);
 extern int Cyc_Set_member(struct Cyc_Set_Set*,void*);
 # 139
 extern void*Cyc_Set_choose(struct Cyc_Set_Set*);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};
-# 62 "../../include/dict.h"
+# 62 "../../library/stdlib/dict.h"
 extern struct Cyc_Dict_Dict Cyc_Dict_empty(int(*)(void*,void*));
 # 83
 extern int Cyc_Dict_member(struct Cyc_Dict_Dict,void*);
@@ -30,7 +30,7 @@ extern int Cyc_Dict_member(struct Cyc_Dict_Dict,void*);
 extern struct Cyc_Dict_Dict Cyc_Dict_insert(struct Cyc_Dict_Dict,void*,void*);
 # 110
 extern void*Cyc_Dict_lookup(struct Cyc_Dict_Dict,void*);
-# 122 "../../include/dict.h"
+# 122 "../../library/stdlib/dict.h"
 extern void**Cyc_Dict_lookup_opt(struct Cyc_Dict_Dict,void*);
 # 233
 extern struct Cyc_List_List*Cyc_Dict_to_list(struct Cyc_Dict_Dict);

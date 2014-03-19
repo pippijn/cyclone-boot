@@ -1,10 +1,10 @@
 #include <cyc_include.h>
 
-# 95 "../../include/core.h"
+# 95 "../../library/stdlib/core.h"
  struct _fat_ptr Cyc_Core_new_string(unsigned);extern char Cyc_Core_Invalid_argument[17U];struct Cyc_Core_Invalid_argument_exn_struct{char*tag;struct _fat_ptr f1;};
-# 62 "../../include/string.h"
+# 62 "../../library/stdlib/string.h"
 extern struct _fat_ptr Cyc_strconcat(struct _fat_ptr,struct _fat_ptr);
-# 110 "../../include/string.h"
+# 110 "../../library/stdlib/string.h"
 extern struct _fat_ptr Cyc_substring(struct _fat_ptr,int,unsigned long);
 # 35 "filename.cyc"
 struct _fat_ptr Cyc_Filename_concat(struct _fat_ptr s1,struct _fat_ptr s2){struct _fat_ptr _T0;struct _fat_ptr _T1;struct _fat_ptr _T2;struct _fat_ptr _T3;struct _fat_ptr _T4;_T0=s1;_T1=

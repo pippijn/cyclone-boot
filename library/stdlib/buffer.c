@@ -1,17 +1,17 @@
 #include <cyc_include.h>
  extern char Cyc_Core_Invalid_argument[17U];struct Cyc_Core_Invalid_argument_exn_struct{char*tag;struct _fat_ptr f1;};
-# 173 "../../include/core.h"
+# 173 "../../library/stdlib/core.h"
 extern struct _RegionHandle*Cyc_Core_heap_region;
 # 180
 extern unsigned Cyc_Core_unique_qual;
-# 193 "../../include/core.h"
+# 193 "../../library/stdlib/core.h"
 void Cyc_Core_ufree(void*);struct Cyc_Buffer_t;
-# 38 "../../include/string.h"
+# 38 "../../library/stdlib/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
-# 72 "../../include/string.h"
+# 72 "../../library/stdlib/string.h"
 extern struct _fat_ptr Cyc_strncpy(struct _fat_ptr,struct _fat_ptr,unsigned long);
 extern struct _fat_ptr Cyc_zstrncpy(struct _fat_ptr,struct _fat_ptr,unsigned long);
-# 110 "../../include/string.h"
+# 110 "../../library/stdlib/string.h"
 extern struct _fat_ptr Cyc_substring(struct _fat_ptr,int,unsigned long);struct Cyc_Buffer_t{struct _fat_ptr buffer;unsigned position;unsigned length;struct _fat_ptr initial_buffer;};
 # 48 "buffer.cyc"
 struct Cyc_Buffer_t*Cyc_Buffer_create(unsigned n){struct _fat_ptr _T0;struct _RegionHandle*_T1;unsigned _T2;void*_T3;struct Cyc_Buffer_t*_T4;struct Cyc_Buffer_t*_T5;

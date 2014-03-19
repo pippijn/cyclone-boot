@@ -1,8 +1,8 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};struct _tuple0{void*f0;void*f1;};
-# 115 "../../include/core.h"
+# 115 "../../library/stdlib/core.h"
 void*Cyc_Core_snd(struct _tuple0*);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 61 "../../include/list.h"
+# 61 "../../library/stdlib/list.h"
 extern int Cyc_List_length(struct Cyc_List_List*);
 # 76
 extern struct Cyc_List_List*Cyc_List_map(void*(*)(void*),struct Cyc_List_List*);
@@ -12,7 +12,7 @@ extern struct Cyc_List_List*Cyc_List_imp_rev(struct Cyc_List_List*);
 extern struct Cyc_List_List*Cyc_List_append(struct Cyc_List_List*,struct Cyc_List_List*);
 # 195
 extern struct Cyc_List_List*Cyc_List_imp_append(struct Cyc_List_List*,struct Cyc_List_List*);struct Cyc___cycFILE;
-# 51 "../../include/cycboot.h"
+# 51 "../../library/stdlib/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stdout;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 73
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
@@ -20,13 +20,13 @@ extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
 # 104
 extern int Cyc_fputc(int,struct Cyc___cycFILE*);
-# 278 "../../include/cycboot.h"
+# 278 "../../library/stdlib/cycboot.h"
 extern int Cyc_file_string_write(struct Cyc___cycFILE*,struct _fat_ptr,int,int);
-# 38 "../../include/string.h"
+# 38 "../../library/stdlib/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
-# 50 "../../include/string.h"
+# 50 "../../library/stdlib/string.h"
 extern int Cyc_strptrcmp(struct _fat_ptr*,struct _fat_ptr*);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};
-# 62 "../../include/dict.h"
+# 62 "../../library/stdlib/dict.h"
 extern struct Cyc_Dict_Dict Cyc_Dict_empty(int(*)(void*,void*));
 # 83
 extern int Cyc_Dict_member(struct Cyc_Dict_Dict,void*);

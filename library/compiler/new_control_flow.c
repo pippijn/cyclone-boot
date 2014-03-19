@@ -1,12 +1,12 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};struct _tuple0{void*f0;void*f1;};
-# 115 "../../include/core.h"
+# 115 "../../library/stdlib/core.h"
 void*Cyc_Core_snd(struct _tuple0*);
 # 128
 int Cyc_Core_ptrcmp(void*,void*);
-# 321 "../../include/core.h"
+# 321 "../../library/stdlib/core.h"
 void Cyc_Core_rethrow(void*);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 54 "../../include/list.h"
+# 54 "../../library/stdlib/list.h"
 extern struct Cyc_List_List*Cyc_List_list(struct _fat_ptr);
 # 61
 extern int Cyc_List_length(struct Cyc_List_List*);
@@ -30,7 +30,7 @@ extern struct Cyc_List_List*Cyc_List_rzip(struct _RegionHandle*,struct _RegionHa
 extern struct _tuple1 Cyc_List_split(struct Cyc_List_List*);
 # 319
 extern int Cyc_List_memq(struct Cyc_List_List*,void*);
-# 37 "../../include/position.h"
+# 37 "../../library/stdlib/position.h"
 extern struct _fat_ptr Cyc_Position_string_of_segment(unsigned);struct Cyc_AssnDef_ExistAssnFn;struct _union_Nmspace_Abs_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_Rel_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_C_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_Loc_n{int tag;int val;};union Cyc_Absyn_Nmspace{struct _union_Nmspace_Abs_n Abs_n;struct _union_Nmspace_Rel_n Rel_n;struct _union_Nmspace_C_n C_n;struct _union_Nmspace_Loc_n Loc_n;};struct _tuple2{union Cyc_Absyn_Nmspace f0;struct _fat_ptr*f1;};
 # 140 "absyn.h"
 enum Cyc_Absyn_Scope{Cyc_Absyn_Static =0U,Cyc_Absyn_Abstract =1U,Cyc_Absyn_Public =2U,Cyc_Absyn_Extern =3U,Cyc_Absyn_ExternC =4U,Cyc_Absyn_Register =5U};struct Cyc_Absyn_Tqual{int print_const: 1;int q_volatile: 1;int q_restrict: 1;int real_const: 1;unsigned loc;};
@@ -85,19 +85,19 @@ struct Cyc_List_List*Cyc_Tcutil_filter_nulls(struct Cyc_List_List*);
 struct Cyc_List_List*Cyc_Tcutil_get_aquals_bounds(struct Cyc_Absyn_Fndecl*);
 # 52 "attributes.h"
 int Cyc_Atts_is_noreturn_fn_type(void*);struct Cyc___cycFILE;
-# 53 "../../include/cycboot.h"
+# 53 "../../library/stdlib/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};extern char Cyc_Dict_Absent[7U];struct Cyc_Dict_Absent_exn_struct{char*tag;};
-# 87 "../../include/dict.h"
+# 87 "../../library/stdlib/dict.h"
 extern struct Cyc_Dict_Dict Cyc_Dict_insert(struct Cyc_Dict_Dict,void*,void*);
 # 113
 extern void*Cyc_Dict_lookup_other(struct Cyc_Dict_Dict,int(*)(void*,void*),void*);
-# 126 "../../include/dict.h"
+# 126 "../../library/stdlib/dict.h"
 extern int Cyc_Dict_lookup_bool(struct Cyc_Dict_Dict,void*,void**);
 # 149
 extern void Cyc_Dict_iter_c(void(*)(void*,void*,void*),void*,struct Cyc_Dict_Dict);struct Cyc_Hashtable_Table;
-# 39 "../../include/hashtable.h"
+# 39 "../../library/stdlib/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));
 # 50
 extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);

@@ -1,16 +1,16 @@
 #include <cyc_include.h>
  extern char Cyc_Core_Invalid_argument[17U];struct Cyc_Core_Invalid_argument_exn_struct{char*tag;struct _fat_ptr f1;};extern char Cyc_Core_Impossible[11U];struct Cyc_Core_Impossible_exn_struct{char*tag;struct _fat_ptr f1;};
-# 173 "../../include/core.h"
+# 173 "../../library/stdlib/core.h"
 extern struct _RegionHandle*Cyc_Core_heap_region;
-# 41 "../../include/cycboot.h"
+# 41 "../../library/stdlib/cycboot.h"
 extern double modf(double,double*);struct Cyc___cycFILE;
 # 51
 extern struct Cyc___cycFILE*Cyc_stdout;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};struct Cyc_Double_pa_PrintArg_struct{int tag;double f1;};struct Cyc_LongDouble_pa_PrintArg_struct{int tag;long double f1;};struct Cyc_ShortPtr_pa_PrintArg_struct{int tag;short*f1;};struct Cyc_IntPtr_pa_PrintArg_struct{int tag;unsigned long*f1;};
 # 73
 struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
-# 161 "../../include/cycboot.h"
+# 161 "../../library/stdlib/cycboot.h"
 extern int Cyc_putc(int,struct Cyc___cycFILE*);
-# 105 "../../include/string.h"
+# 105 "../../library/stdlib/string.h"
 extern struct _fat_ptr Cyc_strdup(struct _fat_ptr);
 # 87 "printf.cyc"
 static struct _fat_ptr Cyc_parg2string(void*x){void*_T0;int*_T1;unsigned _T2;struct _fat_ptr _T3;struct _fat_ptr _T4;struct _fat_ptr _T5;struct _fat_ptr _T6;struct _fat_ptr _T7;struct _fat_ptr _T8;_T0=x;_T1=(int*)_T0;_T2=*_T1;switch(_T2){case 0: _T3=

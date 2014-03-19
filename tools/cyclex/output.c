@@ -1,6 +1,6 @@
 #include <cyc_include.h>
 
-# 95 "../../include/core.h"
+# 95 "../../library/stdlib/core.h"
  struct _fat_ptr Cyc_Core_new_string(unsigned);struct Cyc___cycFILE;
 # 102 "../../library/stdlib/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};

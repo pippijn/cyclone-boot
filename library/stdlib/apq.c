@@ -1,8 +1,8 @@
 #include <cyc_include.h>
  struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};
-# 73 "../../include/cycboot.h"
+# 73 "../../library/stdlib/cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
-# 7 "../../include/ap.h"
+# 7 "../../library/stdlib/ap.h"
 extern struct Cyc_AP_T*Cyc_AP_zero;
 extern struct Cyc_AP_T*Cyc_AP_one;
 # 10

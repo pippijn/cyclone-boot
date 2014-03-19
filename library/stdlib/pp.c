@@ -1,22 +1,22 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};
-# 95 "../../include/core.h"
+# 95 "../../library/stdlib/core.h"
 struct _fat_ptr Cyc_Core_new_string(unsigned);
 # 119
 void*Cyc_Core_identity(void*);
 # 121
 int Cyc_Core_intcmp(int,int);extern char Cyc_Core_Failure[8U];struct Cyc_Core_Failure_exn_struct{char*tag;struct _fat_ptr f1;};extern char Cyc_Core_Not_found[10U];struct Cyc_Core_Not_found_exn_struct{char*tag;};struct Cyc___cycFILE;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};
-# 100 "../../include/cycboot.h"
+# 100 "../../library/stdlib/cycboot.h"
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 61 "../../include/list.h"
+# 61 "../../library/stdlib/list.h"
 extern int Cyc_List_length(struct Cyc_List_List*);
-# 38 "../../include/string.h"
+# 38 "../../library/stdlib/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
-# 54 "../../include/string.h"
+# 54 "../../library/stdlib/string.h"
 extern int Cyc_zstrptrcmp(struct _fat_ptr*,struct _fat_ptr*);
 # 66
 extern struct _fat_ptr Cyc_str_sepstr(struct Cyc_List_List*,struct _fat_ptr);struct Cyc_Hashtable_Table;
-# 39 "../../include/hashtable.h"
+# 39 "../../library/stdlib/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));
 # 50
 extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);
@@ -24,15 +24,15 @@ extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);
 extern void*Cyc_Hashtable_lookup(struct Cyc_Hashtable_Table*,void*);
 # 86
 extern int Cyc_Hashtable_hash_stringptr(struct _fat_ptr*);struct Cyc_Fn_Function{void*(*f)(void*,void*);void*env;};
-# 46 "../../include/fn.h"
+# 46 "../../library/stdlib/fn.h"
 extern struct Cyc_Fn_Function*Cyc_Fn_make_fn(void*(*)(void*,void*),void*);
 # 49
 extern struct Cyc_Fn_Function*Cyc_Fn_fp2fn(void*(*)(void*));
 # 52
 extern void*Cyc_Fn_apply(struct Cyc_Fn_Function*,void*);
-# 39 "../../include/pp.h"
+# 39 "../../library/stdlib/pp.h"
 extern int Cyc_PP_tex_output;struct Cyc_PP_Ppstate;struct Cyc_PP_Out;struct Cyc_PP_Doc;struct Cyc_Xarray_Xarray{struct _fat_ptr elmts;int num_elmts;};
-# 40 "../../include/xarray.h"
+# 40 "../../library/stdlib/xarray.h"
 extern int Cyc_Xarray_length(struct Cyc_Xarray_Xarray*);
 # 42
 extern void*Cyc_Xarray_get(struct Cyc_Xarray_Xarray*,int);
