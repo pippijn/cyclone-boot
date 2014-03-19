@@ -1,4 +1,3 @@
-#include <cyc_setjmp.h>
 #include <cyc_include.h>
 
 # 38 "../../../include/string.h"

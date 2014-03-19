@@ -1,4 +1,3 @@
-#include <cyc_setjmp.h>
 #include <cyc_include.h>
  struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc___cycFILE;struct Cyc_BansheeIf_IgnoreConstraint_BansheeIf_Constraint_struct{int tag;};
 # 7 "bansheeif_stub.cyc"

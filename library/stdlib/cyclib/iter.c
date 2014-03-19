@@ -1,4 +1,3 @@
-#include <cyc_setjmp.h>
 #include <cyc_include.h>
  struct Cyc_Iter_Iter{void*env;int(*next)(void*,void*);};
 # 22 "iter.cyc"

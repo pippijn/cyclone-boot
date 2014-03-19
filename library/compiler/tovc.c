@@ -1,4 +1,3 @@
-#include <cyc_setjmp.h>
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};
 # 173 "../../include/core.h"
