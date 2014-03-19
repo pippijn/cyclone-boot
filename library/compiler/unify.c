@@ -102,9 +102,9 @@ extern void*Cyc_AssnDef_existassnfn2assn(struct Cyc_AssnDef_ExistAssnFn*,struct 
 extern int Cyc_AssnDef_simple_prove(void*,void*);
 # 8 "pratt_prover.h"
 int Cyc_PrattProver_constraint_prove(void*,void*);
-# 17 "bansheeif.h"
+# 20 "bansheeif.h"
 void*Cyc_BansheeIf_equality_constraint(void*,void*);
-# 28
+# 31
 int Cyc_BansheeIf_add_constraint(unsigned,void*);char Cyc_Unify_Unify[6U]="Unify";struct Cyc_Unify_Unify_exn_struct{char*tag;};
 # 38 "unify.cyc"
 struct Cyc_Unify_Unify_exn_struct Cyc_Unify_Unify_val={Cyc_Unify_Unify};struct _tuple11{void*f0;void*f1;};

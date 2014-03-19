@@ -315,7 +315,7 @@ struct _fat_ptr Cyc_Absynpp_cnst2string(union Cyc_Absyn_Cnst);
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);
 struct _fat_ptr Cyc_Absynpp_stmt2string(struct Cyc_Absyn_Stmt*);
 struct _fat_ptr Cyc_Absynpp_qvar2string(struct _tuple0*);
-# 17 "bansheeif.h"
+# 20 "bansheeif.h"
 void*Cyc_BansheeIf_equality_constraint(void*,void*);
 void*Cyc_BansheeIf_cond_equality_constraint(void*,void*);
 void*Cyc_BansheeIf_inclusion_constraint(void*,void*);
@@ -325,7 +325,7 @@ void*Cyc_BansheeIf_or_constraint(void*,void*);
 void*Cyc_BansheeIf_not_constraint(void*);
 void*Cyc_BansheeIf_cmpeq_constraint(void*,void*);
 void*Cyc_BansheeIf_check_constraint(void*);
-# 27
+# 30
 void*Cyc_BansheeIf_add_location(struct _fat_ptr,void*);extern char Cyc_Parse_Exit[5U];struct Cyc_Parse_Exit_exn_struct{char*tag;};struct Cyc_Parse_FlatList{struct Cyc_Parse_FlatList*tl;void*hd[0U] __attribute__((aligned )) ;};struct Cyc_Parse_Type_specifier{int Signed_spec: 1;int Unsigned_spec: 1;int Short_spec: 1;int Long_spec: 1;int Long_Long_spec: 1;int Complex_spec: 1;int Valid_type_spec: 1;void*Type_spec;unsigned loc;};struct Cyc_Parse_Declarator{struct _tuple0*id;unsigned varloc;struct Cyc_List_List*tms;};struct _tuple12{struct Cyc_Parse_Declarator f0;struct Cyc_Absyn_Exp*f1;struct Cyc_Absyn_Exp*f2;};struct _tuple11{struct _tuple11*tl;struct _tuple12 hd  __attribute__((aligned )) ;};struct _tuple13{struct _tuple13*tl;struct Cyc_Parse_Declarator hd  __attribute__((aligned )) ;};
 # 57 "parse.h"
 enum Cyc_Parse_Storage_class{Cyc_Parse_Typedef_sc =0U,Cyc_Parse_Extern_sc =1U,Cyc_Parse_ExternC_sc =2U,Cyc_Parse_Static_sc =3U,Cyc_Parse_Auto_sc =4U,Cyc_Parse_Register_sc =5U,Cyc_Parse_Abstract_sc =6U,Cyc_Parse_None_sc =7U};

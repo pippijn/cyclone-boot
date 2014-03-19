@@ -216,9 +216,9 @@ extern struct Cyc_AssnDef_ExistAssnFn*Cyc_AssnDef_assnmap2existassnfn(struct Cyc
 extern struct Cyc_AssnDef_AssnMap Cyc_AssnDef_true_assnmap (void);
 # 45 "vcgen.h"
 extern struct Cyc_AssnDef_AssnMap Cyc_Vcgen_clause2assn(struct Cyc_Absyn_Exp*);
-# 17 "bansheeif.h"
+# 20 "bansheeif.h"
 void*Cyc_BansheeIf_equality_constraint(void*,void*);
-# 28
+# 31
 int Cyc_BansheeIf_add_constraint(unsigned,void*);struct Cyc_Tctyp_CVTEnv{unsigned loc;struct Cyc_Tcenv_Tenv*te;struct Cyc_List_List*kind_env;int fn_result;int def_aliasable;int inst_type_evar;int generalize_evars;int allow_aqual_bounds;struct Cyc_List_List*free_vars;struct Cyc_List_List*free_evars;struct Cyc_List_List*free_qualvars;};
 # 91 "tctyp.cyc"
 static struct Cyc_Tctyp_CVTEnv Cyc_Tctyp_i_check_type(struct Cyc_Tctyp_CVTEnv,struct Cyc_Absyn_Kind*,void*,int,int);struct _tuple14{void*f0;int f1;};

@@ -76,9 +76,9 @@ extern struct Cyc_Absyn_Kind Cyc_Kinds_ek;
 extern struct Cyc_Core_Opt Cyc_Kinds_mko;
 # 59
 extern struct Cyc_Core_Opt Cyc_Kinds_ptrbko;
-# 14 "bansheeif.h"
+# 17 "bansheeif.h"
 void Cyc_BansheeIf_add_constant(struct _fat_ptr,void*);
-# 30
+# 33
 int Cyc_BansheeIf_resolve(void*);
 # 50 "../../library/stdlib/string.h"
 extern int Cyc_strptrcmp(struct _fat_ptr*,struct _fat_ptr*);struct Cyc_Hashtable_Table;

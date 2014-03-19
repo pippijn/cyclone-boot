@@ -47,13 +47,13 @@ void*Cyc_Absyn_bounds_one (void);
 # 1015
 void*Cyc_Absyn_fatconst (void);
 void*Cyc_Absyn_thinconst (void);
-# 17 "bansheeif.h"
+# 20 "bansheeif.h"
 void*Cyc_BansheeIf_equality_constraint(void*,void*);
-# 20
+# 23
 void*Cyc_BansheeIf_implication_constraint(void*,void*);
-# 24
+# 27
 void*Cyc_BansheeIf_cmpeq_constraint(void*,void*);
-# 28
+# 31
 int Cyc_BansheeIf_add_constraint(unsigned,void*);
 # 31 "tcutil.h"
 int Cyc_Tcutil_is_char_type(void*);

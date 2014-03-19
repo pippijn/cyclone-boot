@@ -67,7 +67,7 @@ void*Cyc_Warn_impos2(struct _fat_ptr);
 extern struct Cyc_Core_Opt Cyc_Kinds_ptrbko;
 # 63 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_typ2string(void*);
-# 30 "bansheeif.h"
+# 33 "bansheeif.h"
 int Cyc_BansheeIf_resolve(void*);
 # 277 "tcutil.h"
 int Cyc_Tcutil_is_cvar_type(void*);
@@ -896,43 +896,43 @@ if(_T1)goto _TL1AC;else{goto _TL1AE;}
 _TL1AE: return;_TL1AC: _T3=Cyc_Hashtable_iter;{
 void(*_T5)(void(*)(void*,struct _tuple14*),struct Cyc_Hashtable_Table*)=(void(*)(void(*)(void*,struct _tuple14*),struct Cyc_Hashtable_Table*))_T3;_T2=_T5;}_T4=Cyc_BansheeIf_cvarmap;_T2(Cyc_BansheeIf_flush_one_variable,_T4);
 Cyc_BansheeIf_discharge_implications();}
-# 1391
+# 1392
 void Cyc_cycinf_test (void){struct Cyc_Core_Opt*_T0;struct Cyc_Core_Opt*_T1;struct Cyc_Core_Opt*_T2;struct Cyc_Core_Opt*_T3;struct Cyc_Core_Opt*_T4;struct Cyc_Core_Opt*_T5;struct Cyc_String_pa_PrintArg_struct _T6;struct _fat_ptr _T7;struct _fat_ptr _T8;struct Cyc_String_pa_PrintArg_struct _T9;struct _fat_ptr _TA;struct _fat_ptr _TB;struct Cyc_String_pa_PrintArg_struct _TC;struct _fat_ptr _TD;struct _fat_ptr _TE;int _TF;struct _fat_ptr _T10;struct _fat_ptr _T11;struct _fat_ptr _T12;struct _fat_ptr _T13;struct Cyc_String_pa_PrintArg_struct _T14;struct _fat_ptr _T15;struct _fat_ptr _T16;struct Cyc_String_pa_PrintArg_struct _T17;struct _fat_ptr _T18;struct _fat_ptr _T19;struct Cyc_String_pa_PrintArg_struct _T1A;struct _fat_ptr _T1B;struct _fat_ptr _T1C;struct Cyc_String_pa_PrintArg_struct _T1D;struct _fat_ptr _T1E;struct _fat_ptr _T1F;
-# 1394
+# 1395
 Cyc_BansheeIf_banshee_init();_T0=& Cyc_Kinds_ptrbko;_T1=(struct Cyc_Core_Opt*)_T0;{
 void*t1=Cyc_Absyn_cvar_type(_T1);_T2=& Cyc_Kinds_ptrbko;_T3=(struct Cyc_Core_Opt*)_T2;{
 void*t2=Cyc_Absyn_cvar_type(_T3);_T4=& Cyc_Kinds_ptrbko;_T5=(struct Cyc_Core_Opt*)_T4;{
 void*t3=Cyc_Absyn_cvar_type(_T5);
-# 1399
+# 1400
 Cyc_BansheeIf_add_variable(t1);
 Cyc_BansheeIf_add_variable(t2);
 Cyc_BansheeIf_add_variable(t3);{
-# 1403
+# 1404
 void*fat=Cyc_Absyn_fatconst();
 void*thin=Cyc_Absyn_thinconst();
-# 1406
+# 1407
 void*c1=Cyc_BansheeIf_equality_constraint(fat,t1);
 void*c2=Cyc_BansheeIf_equality_constraint(thin,t1);
 Cyc_BansheeIf_add_constraint(0U,c1);
 Cyc_BansheeIf_add_constraint(0U,c2);
-# 1419 "bansheeif.cyc"
+# 1420 "bansheeif.cyc"
 cycinf_print_graph(Cyc_stdout);{struct Cyc_String_pa_PrintArg_struct _T20;_T20.tag=0;
 _T20.f1=Cyc_Absynpp_typ2string(t1);_T6=_T20;}{struct Cyc_String_pa_PrintArg_struct _T20=_T6;void*_T21[1];_T21[0]=& _T20;_T7=_tag_fat("Type t1 prior to resolution :: %s\n",sizeof(char),35U);_T8=_tag_fat(_T21,sizeof(void*),1);Cyc_printf(_T7,_T8);}{struct Cyc_String_pa_PrintArg_struct _T20;_T20.tag=0;
 _T20.f1=Cyc_Absynpp_typ2string(t2);_T9=_T20;}{struct Cyc_String_pa_PrintArg_struct _T20=_T9;void*_T21[1];_T21[0]=& _T20;_TA=_tag_fat("Type t2 prior to resolution :: %s\n",sizeof(char),35U);_TB=_tag_fat(_T21,sizeof(void*),1);Cyc_printf(_TA,_TB);}{struct Cyc_String_pa_PrintArg_struct _T20;_T20.tag=0;
 _T20.f1=Cyc_Absynpp_typ2string(t3);_TC=_T20;}{struct Cyc_String_pa_PrintArg_struct _T20=_TC;void*_T21[1];_T21[0]=& _T20;_TD=_tag_fat("Type t3 prior to resolution :: %s\n",sizeof(char),35U);_TE=_tag_fat(_T21,sizeof(void*),1);Cyc_printf(_TD,_TE);}
-# 1424
+# 1425
 Cyc_BansheeIf_resolve(t1);_TF=
 Cyc_BansheeIf_resolve(t2);if(!_TF)goto _TL1AF;_T10=
 _tag_fat("resolve of t2 returned true!\n",sizeof(char),30U);_T11=_tag_fat(0U,sizeof(void*),0);Cyc_printf(_T10,_T11);goto _TL1B0;
-# 1428
+# 1429
 _TL1AF: _T12=_tag_fat("resolve of t2 returned false!\n",sizeof(char),31U);_T13=_tag_fat(0U,sizeof(void*),0);Cyc_printf(_T12,_T13);_TL1B0:{struct Cyc_String_pa_PrintArg_struct _T20;_T20.tag=0;
-# 1430
+# 1431
 _T20.f1=Cyc_Absynpp_typ2string(t1);_T14=_T20;}{struct Cyc_String_pa_PrintArg_struct _T20=_T14;void*_T21[1];_T21[0]=& _T20;_T15=_tag_fat("Type t1 after resolution :: %s\n",sizeof(char),32U);_T16=_tag_fat(_T21,sizeof(void*),1);Cyc_printf(_T15,_T16);}{struct Cyc_String_pa_PrintArg_struct _T20;_T20.tag=0;
 _T20.f1=Cyc_Absynpp_typ2string(t2);_T17=_T20;}{struct Cyc_String_pa_PrintArg_struct _T20=_T17;void*_T21[1];_T21[0]=& _T20;_T18=_tag_fat("Type t2 after resolution :: %s\n",sizeof(char),32U);_T19=_tag_fat(_T21,sizeof(void*),1);Cyc_printf(_T18,_T19);}{struct Cyc_String_pa_PrintArg_struct _T20;_T20.tag=0;
 _T20.f1=Cyc_Absynpp_typ2string(t3);_T1A=_T20;}{struct Cyc_String_pa_PrintArg_struct _T20=_T1A;void*_T21[1];_T21[0]=& _T20;_T1B=_tag_fat("Type t3 after resolution :: %s\n",sizeof(char),32U);_T1C=_tag_fat(_T21,sizeof(void*),1);Cyc_printf(_T1B,_T1C);}
-# 1434
+# 1435
 Cyc_BansheeIf_discharge_implications();
-# 1436
+# 1437
 Cyc_BansheeIf_resolve(t3);{struct Cyc_String_pa_PrintArg_struct _T20;_T20.tag=0;
 _T20.f1=Cyc_Absynpp_typ2string(t3);_T1D=_T20;}{struct Cyc_String_pa_PrintArg_struct _T20=_T1D;void*_T21[1];_T21[0]=& _T20;_T1E=_tag_fat("Type t3 after discharge:: %s\n",sizeof(char),30U);_T1F=_tag_fat(_T21,sizeof(void*),1);Cyc_printf(_T1E,_T1F);}
 cycinf_print_graph(Cyc_stdout);

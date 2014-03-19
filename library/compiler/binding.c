@@ -95,7 +95,7 @@ extern int Cyc_Flags_resolve;
 extern int Cyc_Flags_warn_override;struct Cyc_Binding_Namespace_Binding_NSDirective_struct{int tag;struct Cyc_List_List*f1;};struct Cyc_Binding_Using_Binding_NSDirective_struct{int tag;struct Cyc_List_List*f1;};struct Cyc_Binding_NSCtxt{struct Cyc_List_List*curr_ns;struct Cyc_List_List*availables;struct Cyc_Dict_Dict ns_data;};
 # 39 "tcutil.h"
 int Cyc_Tcutil_is_function_type(void*);
-# 35 "bansheeif.h"
+# 38 "bansheeif.h"
 void Cyc_BansheeIf_register_toplevel_cvar(void*);char Cyc_Binding_BindingError[13U]="BindingError";struct Cyc_Binding_BindingError_exn_struct{char*tag;};
 # 60 "binding.cyc"
 struct Cyc_Binding_NSCtxt*Cyc_Binding_mt_nsctxt(void*env,void*(*mkdata)(void*)){struct Cyc_Binding_NSCtxt*_T0;struct Cyc_List_List*_T1;struct Cyc_Binding_Namespace_Binding_NSDirective_struct*_T2;struct Cyc_Dict_Dict(*_T3)(int(*)(struct Cyc_List_List*,struct Cyc_List_List*),struct Cyc_List_List*,void*);struct Cyc_Dict_Dict(*_T4)(int(*)(void*,void*),void*,void*);int(*_T5)(struct Cyc_List_List*,struct Cyc_List_List*);void*_T6;

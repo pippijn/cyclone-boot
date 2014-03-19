@@ -126,14 +126,14 @@ void Cyc_Tcutil_introduce_cvars(void*);
 void Cyc_Tcutil_replace_cvars(void*,void*);
 void Cyc_Tcutil_revert_cvars(void*);
 int Cyc_Tcutil_is_main(struct _tuple0*);
-# 33 "../../library/compiler/bansheeif.h"
+# 36 "../../library/compiler/bansheeif.h"
 void Cyc_BansheeIf_persist_cvarmap(struct Cyc___cycFILE*);
 void Cyc_BansheeIf_reset_local_cvar(void*);
 void Cyc_BansheeIf_register_toplevel_cvar(void*);
 void Cyc_BansheeIf_init_toplevel_cvars(struct Cyc_List_List*);
-# 38
+# 41
 void Cyc_BansheeIf_resolve_or_default(void*);
-# 40
+# 43
 int Cyc_BansheeIf_add_all_constraints(struct Cyc_List_List*);
 # 26 "../../library/compiler/parse.h"
 struct Cyc_List_List*Cyc_Parse_parse_constraint_file(struct Cyc___cycFILE*);

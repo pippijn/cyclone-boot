@@ -84,9 +84,9 @@ extern struct _fat_ptr Cyc_Filename_basename(struct _fat_ptr);
 extern int Cyc_Filename_check_suffix(struct _fat_ptr,struct _fat_ptr);
 # 48 "../../library/stdlib/position.h"
 extern int Cyc_Position_use_gcc_style_location;
-# 13 "../../library/compiler/bansheeif.h"
+# 16 "../../library/compiler/bansheeif.h"
 int Cyc_BansheeIf_banshee_init (void);
-# 29
+# 32
 int Cyc_BansheeIf_discharge_implications (void);
 # 25 "../../library/compiler/parse.h"
 struct Cyc_List_List*Cyc_Parse_parse_file(struct Cyc___cycFILE*);extern char Cyc_Parse_Exit[5U];struct Cyc_Parse_Exit_exn_struct{char*tag;};struct Cyc_Absynpp_Params{int expand_typedefs;int qvar_to_Cids;int add_cyc_prefix;int to_VC;int decls_first;int rewrite_temp_tvars;int print_all_tvars;int print_all_kinds;int print_all_effects;int print_using_stmts;int print_externC_stmts;int print_full_evars;int print_zeroterm;int generate_line_directives;int use_curr_namespace;struct Cyc_List_List*curr_namespace;int gen_clean_cyclone;};

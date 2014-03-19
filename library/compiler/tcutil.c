@@ -297,9 +297,9 @@ extern struct Cyc_AssnDef_ExistAssnFn*Cyc_AssnDef_assnmap2existassnfn(struct Cyc
 extern struct Cyc_AssnDef_AssnMap*Cyc_AssnDef_subst_vardecls(struct Cyc_List_List*,struct Cyc_List_List*,struct Cyc_AssnDef_AssnMap*);
 # 45 "vcgen.h"
 extern struct Cyc_AssnDef_AssnMap Cyc_Vcgen_clause2assn(struct Cyc_Absyn_Exp*);
-# 17 "bansheeif.h"
+# 20 "bansheeif.h"
 void*Cyc_BansheeIf_equality_constraint(void*,void*);
-# 28
+# 31
 int Cyc_BansheeIf_add_constraint(unsigned,void*);
 # 10 "subtype.h"
 enum Cyc_Absyn_Coercion Cyc_Subtype_coercible_warn(unsigned,void*,void*);
