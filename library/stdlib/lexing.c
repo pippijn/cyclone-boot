@@ -1,16 +1,16 @@
 #include <cyc_include.h>
 
-# 95 "../../library/stdlib/core.h"
+# 98 "./core.h"
  struct _fat_ptr Cyc_Core_new_string(unsigned);
-# 100
+# 103
 struct _fat_ptr Cyc_Core_rnew_string(struct _RegionHandle*,unsigned);
-# 173
+# 176
 extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc___cycFILE;
-# 276 "../../library/stdlib/cycboot.h"
+# 276 "./cycboot.h"
 extern int Cyc_file_string_read(struct Cyc___cycFILE*,struct _fat_ptr,int,int);struct Cyc_Lexing_lexbuf{void(*refill_buff)(struct Cyc_Lexing_lexbuf*);void*refill_state;struct _fat_ptr lex_buffer;int lex_buffer_len;int lex_abs_pos;int lex_start_pos;int lex_curr_pos;int lex_last_pos;int lex_last_action;int lex_eof_reached;};struct Cyc_Lexing_function_lexbuf_state{int(*read_fun)(struct _fat_ptr,int,void*);void*read_fun_state;};
-# 73 "../../library/stdlib/string.h"
+# 73 "./string.h"
 extern struct _fat_ptr Cyc_zstrncpy(struct _fat_ptr,struct _fat_ptr,unsigned long);
-# 105 "../../library/stdlib/string.h"
+# 105 "./string.h"
 extern struct _fat_ptr Cyc_strdup(struct _fat_ptr);char Cyc_Lexing_Error[6U]="Error";
 # 73 "lexing.cyc"
 static char Cyc_Lexing_aux_buffer_v[1U]={'\000'};

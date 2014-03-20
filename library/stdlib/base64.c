@@ -1,6 +1,6 @@
 #include <cyc_include.h>
 
-# 38 "../../library/stdlib/string.h"
+# 38 "./string.h"
  extern unsigned long Cyc_strlen(struct _fat_ptr);
 # 31 "base64.cyc"
 static char Cyc_Base64_encode_map[65U]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";

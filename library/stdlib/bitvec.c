@@ -1,12 +1,12 @@
 #include <cyc_include.h>
  struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
-# 157 "../../library/stdlib/cycboot.h"
+# 157 "./cycboot.h"
 extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};
-# 110 "../../library/stdlib/dict.h"
+# 110 "./dict.h"
 extern void*Cyc_Dict_lookup(struct Cyc_Dict_Dict,void*);
 # 245 "../../library/stdlib/libc/stdio.h"
 extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);
-# 29 "../../library/stdlib/assert.h"
+# 29 "./assert.h"
 extern void*Cyc___assert_fail(struct _fat_ptr,struct _fat_ptr,unsigned);
 # 41 "bitvec.cyc"
 int Cyc_Bitvec_get(struct _fat_ptr bvec,int pos){struct _fat_ptr _T0;int _T1;unsigned char*_T2;int*_T3;int _T4;int _T5;int _T6;int _T7;int _T8;

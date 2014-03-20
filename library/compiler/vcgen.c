@@ -1,8 +1,8 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};struct _tuple0{void*f0;void*f1;};
-# 115 "../../library/stdlib/core.h"
+# 118 "../../library/stdlib/core.h"
 void*Cyc_Core_snd(struct _tuple0*);
-# 128
+# 131
 int Cyc_Core_ptrcmp(void*,void*);struct Cyc_Hashtable_Table;
 # 39 "../../library/stdlib/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));

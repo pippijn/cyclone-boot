@@ -1,18 +1,18 @@
 #include <cyc_include.h>
  struct Cyc_Core_Opt{void*v;};
-# 95 "../../library/stdlib/core.h"
+# 98 "../../library/stdlib/core.h"
 struct _fat_ptr Cyc_Core_new_string(unsigned);extern char Cyc_Core_Invalid_argument[17U];struct Cyc_Core_Invalid_argument_exn_struct{char*tag;struct _fat_ptr f1;};
-# 173
+# 176
 extern struct _RegionHandle*Cyc_Core_heap_region;
-# 180
+# 183
 extern unsigned Cyc_Core_unique_qual;
-# 193 "../../library/stdlib/core.h"
+# 196 "../../library/stdlib/core.h"
 void Cyc_Core_ufree(void*);struct Cyc_Core_DynamicRegion;struct Cyc_Core_NewDynamicRegion{struct Cyc_Core_DynamicRegion*key;};
-# 269 "../../library/stdlib/core.h"
+# 273 "../../library/stdlib/core.h"
 struct Cyc_Core_NewDynamicRegion Cyc_Core__new_ukey(unsigned,const char*,const char*,int);
-# 299 "../../library/stdlib/core.h"
+# 303 "../../library/stdlib/core.h"
 void Cyc_Core_free_ukey(struct Cyc_Core_DynamicRegion*);
-# 309
+# 313
 void*Cyc_Core_open_region(struct Cyc_Core_DynamicRegion*,void*,void*(*)(struct _RegionHandle*,void*));struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};
 # 73 "../../library/stdlib/cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);struct Cyc_IntPtr_sa_ScanfArg_struct{int tag;int*f1;};struct Cyc_CharPtr_sa_ScanfArg_struct{int tag;struct _fat_ptr f1;};

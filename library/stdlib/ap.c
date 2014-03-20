@@ -1,14 +1,14 @@
 #include <cyc_include.h>
 
-# 300 "../../library/stdlib/cycboot.h"
+# 300 "./cycboot.h"
  extern int isspace(int);
 # 339
 extern const long Cyc_long_max;extern const long Cyc_long_min;
-# 82 "../../library/stdlib/string.h"
+# 82 "./string.h"
 extern struct _fat_ptr Cyc__memcpy(struct _fat_ptr,struct _fat_ptr,unsigned long,unsigned);
-# 29 "../../library/stdlib/assert.h"
+# 29 "./assert.h"
 extern void*Cyc___assert_fail(struct _fat_ptr,struct _fat_ptr,unsigned);
-# 7 "../../library/stdlib/ap.h"
+# 7 "./ap.h"
 extern struct Cyc_AP_T*Cyc_AP_zero;
 extern struct Cyc_AP_T*Cyc_AP_one;
 # 10
@@ -21,7 +21,7 @@ struct Cyc_AP_T*Cyc_AP_mod(struct Cyc_AP_T*,struct Cyc_AP_T*);
 struct Cyc_AP_T*Cyc_AP_addi(struct Cyc_AP_T*,long);
 # 28
 struct Cyc_AP_T*Cyc_AP_rshift(struct Cyc_AP_T*,int);
-# 8 "../../library/stdlib/xp.h"
+# 8 "./xp.h"
 extern int Cyc_XP_add(int,struct _fat_ptr,struct _fat_ptr,struct _fat_ptr,int);
 extern int Cyc_XP_sub(int,struct _fat_ptr,struct _fat_ptr,struct _fat_ptr,int);
 extern int Cyc_XP_mul(struct _fat_ptr,int,struct _fat_ptr,int,struct _fat_ptr);

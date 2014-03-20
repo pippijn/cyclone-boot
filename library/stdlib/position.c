@@ -1,12 +1,12 @@
 #include <cyc_include.h>
 
-# 95 "../../library/stdlib/core.h"
+# 98 "./core.h"
  struct _fat_ptr Cyc_Core_new_string(unsigned);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
-# 73 "../../library/stdlib/cycboot.h"
+# 73 "./cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);struct Cyc_Lineno_Pos{struct _fat_ptr logical_file;struct _fat_ptr line;int line_no;int col;};
-# 31 "../../library/stdlib/lineno.h"
+# 31 "./lineno.h"
 struct Cyc_Lineno_Pos*Cyc_Lineno_pos_of_abs(struct _fat_ptr,int);struct Cyc_Position_Error;
-# 48 "../../library/stdlib/position.h"
+# 48 "./position.h"
 extern int Cyc_Position_use_gcc_style_location;struct _tuple0{struct _fat_ptr f0;unsigned f1;};
 # 26 "position.cyc"
 static struct _tuple0 Cyc_Position_seg_to_loc(unsigned);

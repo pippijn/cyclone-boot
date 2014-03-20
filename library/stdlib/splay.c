@@ -1,6 +1,6 @@
 #include <cyc_include.h>
  extern char Cyc_Core_Invalid_argument[17U];struct Cyc_Core_Invalid_argument_exn_struct{char*tag;struct _fat_ptr f1;};
-# 173 "../../library/stdlib/core.h"
+# 176 "./core.h"
 extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_Splay_node;struct Cyc_Splay_noderef{struct Cyc_Splay_node*v;};struct Cyc_Splay_Node_Splay_tree_struct{int tag;struct Cyc_Splay_noderef*f1;};struct Cyc_Splay_node{void*key;void*data;void*left;void*right;};
 # 46 "splay.cyc"
 enum Cyc_Splay_direction{Cyc_Splay_LEFT =0U,Cyc_Splay_RIGHT =1U};

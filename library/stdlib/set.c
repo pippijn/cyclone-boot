@@ -1,8 +1,8 @@
 #include <cyc_include.h>
 
-# 173 "../../library/stdlib/core.h"
+# 176 "./core.h"
  extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 61 "../../library/stdlib/list.h"
+# 61 "./list.h"
 extern int Cyc_List_length(struct Cyc_List_List*);
 # 117
 extern void Cyc_List_app(void*(*)(void*),struct Cyc_List_List*);

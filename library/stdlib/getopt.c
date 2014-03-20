@@ -6,27 +6,27 @@ extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int 
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
 # 164 "../../library/stdlib/libc/stdlib.h"
 extern char*getenv(const char*);
-# 31 "../../library/stdlib/getopt.h"
+# 31 "./getopt.h"
 extern struct _fat_ptr Cyc_optarg;
-# 45 "../../library/stdlib/getopt.h"
+# 45 "./getopt.h"
 extern int Cyc_optind;
 # 50
 extern int Cyc_opterr;
 # 54
 extern int Cyc_optopt;struct Cyc_option{struct _fat_ptr name;int has_arg;int*flag;int val;};struct Cyc___cycFILE;
-# 53 "../../library/stdlib/cycboot.h"
+# 53 "./cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;
-# 100 "../../library/stdlib/cycboot.h"
+# 100 "./cycboot.h"
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 313 "../../library/stdlib/cycboot.h"
+# 313 "./cycboot.h"
 extern char*getenv(const char*);
-# 38 "../../library/stdlib/string.h"
+# 38 "./string.h"
 extern unsigned Cyc_strlen(struct _fat_ptr);
-# 49 "../../library/stdlib/string.h"
+# 49 "./string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 # 51
 extern int Cyc_strncmp(struct _fat_ptr,struct _fat_ptr,unsigned);
-# 121 "../../library/stdlib/string.h"
+# 121 "./string.h"
 extern struct _fat_ptr Cyc_strchr(struct _fat_ptr,char);
 # 67 "getopt.cyc"
 struct _fat_ptr Cyc_optarg;

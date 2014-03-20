@@ -1,14 +1,14 @@
 #include <cyc_include.h>
  extern char Cyc_Core_Invalid_argument[17U];struct Cyc_Core_Invalid_argument_exn_struct{char*tag;struct _fat_ptr f1;};extern char Cyc_Core_Impossible[11U];struct Cyc_Core_Impossible_exn_struct{char*tag;struct _fat_ptr f1;};struct Cyc___cycFILE;
-# 52 "../../library/stdlib/cycboot.h"
+# 52 "./cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stdin;
 # 90
 extern int Cyc_fgetc(struct Cyc___cycFILE*);struct Cyc_ShortPtr_sa_ScanfArg_struct{int tag;short*f1;};struct Cyc_UShortPtr_sa_ScanfArg_struct{int tag;unsigned short*f1;};struct Cyc_IntPtr_sa_ScanfArg_struct{int tag;int*f1;};struct Cyc_UIntPtr_sa_ScanfArg_struct{int tag;unsigned*f1;};struct Cyc_StringPtr_sa_ScanfArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_DoublePtr_sa_ScanfArg_struct{int tag;double*f1;};struct Cyc_FloatPtr_sa_ScanfArg_struct{int tag;float*f1;};struct Cyc_CharPtr_sa_ScanfArg_struct{int tag;struct _fat_ptr f1;};
-# 142 "../../library/stdlib/cycboot.h"
+# 142 "./cycboot.h"
 extern int Cyc_getc(struct Cyc___cycFILE*);
-# 222 "../../library/stdlib/cycboot.h"
+# 222 "./cycboot.h"
 extern int Cyc_ungetc(int,struct Cyc___cycFILE*);
-# 300 "../../library/stdlib/cycboot.h"
+# 300 "./cycboot.h"
 extern int isspace(int);
 # 302
 extern int isupper(int);
