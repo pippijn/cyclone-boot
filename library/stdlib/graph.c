@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 124 "./core.h"
- int Cyc_Core_intcmp(int,int);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
+int Cyc_Core_intcmp(int,int);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
 # 61 "./list.h"
 extern int Cyc_List_length(struct Cyc_List_List*);struct Cyc___cycFILE;
 # 100 "./cycboot.h"

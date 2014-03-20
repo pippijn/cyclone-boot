@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 98 "./core.h"
- struct _fat_ptr Cyc_Core_new_string(unsigned);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
+struct _fat_ptr Cyc_Core_new_string(unsigned);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 73 "./cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);struct Cyc_Lineno_Pos{struct _fat_ptr logical_file;struct _fat_ptr line;int line_no;int col;};
 # 31 "./lineno.h"

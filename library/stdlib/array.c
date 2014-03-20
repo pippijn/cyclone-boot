@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- extern char Cyc_Core_Invalid_argument[17U];struct Cyc_Core_Invalid_argument_exn_struct{char*tag;struct _fat_ptr f1;};struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
+extern char Cyc_Core_Invalid_argument[17U];struct Cyc_Core_Invalid_argument_exn_struct{char*tag;struct _fat_ptr f1;};struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
 # 364 "./list.h"
 extern struct _fat_ptr Cyc_List_to_array(struct Cyc_List_List*);
 # 371

@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 49 "flags.h"
- extern int Cyc_Flags_warn_override;
+extern int Cyc_Flags_warn_override;
 # 55
 extern int Cyc_Flags_tc_aggressive_warn;
 # 59

@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
+struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
 # 172 "../../library/stdlib/list.h"
 extern struct Cyc_List_List*Cyc_List_rev(struct Cyc_List_List*);
 # 178

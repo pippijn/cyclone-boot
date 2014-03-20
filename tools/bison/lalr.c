@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_shorts_tag{struct Cyc_shorts_tag*next;short value;};struct Cyc_core_tag{struct Cyc_core_tag*next;struct Cyc_core_tag*link;short number;short accessing_symbol;short nitems;struct _fat_ptr items;};struct Cyc_shifts_tag{struct Cyc_shifts_tag*next;short number;short nshifts;struct _fat_ptr shifts;};struct Cyc_reductions_tag{struct Cyc_reductions_tag*next;short number;short nreds;struct _fat_ptr rules;};
+struct Cyc_shorts_tag{struct Cyc_shorts_tag*next;short value;};struct Cyc_core_tag{struct Cyc_core_tag*next;struct Cyc_core_tag*link;short number;short accessing_symbol;short nitems;struct _fat_ptr items;};struct Cyc_shifts_tag{struct Cyc_shifts_tag*next;short number;short nshifts;struct _fat_ptr shifts;};struct Cyc_reductions_tag{struct Cyc_reductions_tag*next;short number;short nreds;struct _fat_ptr rules;};
 # 135 "state.h"
 extern int Cyc_nstates;
 extern struct Cyc_core_tag*Cyc_first_state;

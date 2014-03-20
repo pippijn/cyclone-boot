@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 98 "./core.h"
- struct _fat_ptr Cyc_Core_new_string(unsigned);extern char Cyc_Core_Invalid_argument[17U];struct Cyc_Core_Invalid_argument_exn_struct{char*tag;struct _fat_ptr f1;};
+struct _fat_ptr Cyc_Core_new_string(unsigned);extern char Cyc_Core_Invalid_argument[17U];struct Cyc_Core_Invalid_argument_exn_struct{char*tag;struct _fat_ptr f1;};
 # 62 "./string.h"
 extern struct _fat_ptr Cyc_strconcat(struct _fat_ptr,struct _fat_ptr);
 # 110 "./string.h"

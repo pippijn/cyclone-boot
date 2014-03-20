@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 22 "gram.cyc"
- int Cyc_nitems;
+int Cyc_nitems;
 int Cyc_nrules;
 int Cyc_nsyms;
 int Cyc_ntokens;

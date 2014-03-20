@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_Core_Opt{void*v;};struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
+struct Cyc_Core_Opt{void*v;};struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
 # 54 "../../library/stdlib/list.h"
 extern struct Cyc_List_List*Cyc_List_list(struct _fat_ptr);
 # 178

@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};
+struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};
 # 73 "./cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 7 "./ap.h"

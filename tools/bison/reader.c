@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc___cycFILE;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
+struct Cyc___cycFILE;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 129 "../../library/stdlib/libc/stdio.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 163
@@ -233,7 +233,7 @@ Cyc_readgram();_T1B=Cyc_fdefines;_T1C=(unsigned)_T1B;
 if(!_T1C)goto _TLD;_T1D=Cyc_yylsp_needed;
 # 253
 if(!_T1D)goto _TLF;_T1E=Cyc_fdefines;_T1F=
-_tag_fat("\n#ifndef YYLTYPE\nextern struct Yyltype {\n      int timestamp;\n      int first_line;\n      int first_column;\n      int last_line;\n      int last_column;\n};\ntypedef struct Yyltype yyltype;\n\n\n#define YYLTYPE yyltype\nextern YYLTYPE yynewloc();\nextern yyltype yylloc;\n#endif\n\n",sizeof(char),272U);_T20=_tag_fat(0U,sizeof(void*),0);Cyc_fprintf(_T1E,_T1F,_T20);goto _TL10;_TLF: _TL10: goto _TLE;_TLD: _TLE:
+_tag_fat("\n#ifndef YYLTYPE\nextern struct Yyltype {\n      int timestamp;\n      unsigned first_line;\n      unsigned first_column;\n      unsigned last_line;\n      unsigned last_column;\n};\ntypedef struct Yyltype yyltype;\n\n\n#define YYLTYPE yyltype\nextern YYLTYPE yynewloc();\nextern yyltype yylloc;\n#endif\n\n",sizeof(char),292U);_T20=_tag_fat(0U,sizeof(void*),0);Cyc_fprintf(_T1E,_T1F,_T20);goto _TL10;_TLF: _TL10: goto _TLE;_TLD: _TLE:
 # 256
  Cyc_output_trailers();_T21=Cyc_yylsp_needed;
 if(!_T21)goto _TL11;_T22=

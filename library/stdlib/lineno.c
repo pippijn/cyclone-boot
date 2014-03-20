@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 98 "./core.h"
- struct _fat_ptr Cyc_Core_new_string(unsigned);
+struct _fat_ptr Cyc_Core_new_string(unsigned);
 # 124
 int Cyc_Core_intcmp(int,int);struct Cyc___cycFILE;struct Cyc_IntPtr_sa_ScanfArg_struct{int tag;int*f1;};
 # 197 "./cycboot.h"

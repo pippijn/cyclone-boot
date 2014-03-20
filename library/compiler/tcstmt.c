@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_Core_Opt{void*v;};struct _tuple0{void*f0;void*f1;};
+struct Cyc_Core_Opt{void*v;};struct _tuple0{void*f0;void*f1;};
 # 116 "../../library/stdlib/core.h"
 void*Cyc_Core_fst(struct _tuple0*);
 # 118

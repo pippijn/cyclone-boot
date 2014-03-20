@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 122 "../../library/stdlib/core.h"
- void*Cyc_Core_identity(void*);
+void*Cyc_Core_identity(void*);
 # 124
 int Cyc_Core_intcmp(int,int);extern char Cyc_Core_Not_found[10U];struct Cyc_Core_Not_found_exn_struct{char*tag;};struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_Hashtable_Table;
 # 39 "../../library/stdlib/hashtable.h"

@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 49 "../../library/stdlib/string.h"
- extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
+extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 # 105 "../../library/stdlib/string.h"
 extern struct _fat_ptr Cyc_strdup(struct _fat_ptr);struct Cyc_bucket{struct Cyc_bucket*link;struct Cyc_bucket*next;struct _fat_ptr tag;struct _fat_ptr type_name;short value;short prec;short assoc;short user_token_number;struct Cyc_bucket*_alias;char class;};
 # 54 "symtab.h"

@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc___cycFILE;struct __abstractFILE;
+struct Cyc___cycFILE;struct __abstractFILE;
 # 109 "../../library/stdlib/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_fromCfile(struct __abstractFILE*);struct Cyc___cycFILE;
 # 71 "./string.h"

@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_Core_Opt{void*v;};
+struct Cyc_Core_Opt{void*v;};
 # 131 "../../library/stdlib/core.h"
 int Cyc_Core_ptrcmp(void*,void*);extern char Cyc_Core_Not_found[10U];struct Cyc_Core_Not_found_exn_struct{char*tag;};struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
 # 50 "../../library/stdlib/string.h"

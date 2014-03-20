@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
+struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 157 "./cycboot.h"
 extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};
 # 110 "./dict.h"

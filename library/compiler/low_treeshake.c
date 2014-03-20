@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_Core_Opt{void*v;};struct Cyc_Hashtable_Table;
+struct Cyc_Core_Opt{void*v;};struct Cyc_Hashtable_Table;
 # 39 "../../library/stdlib/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));
 # 50

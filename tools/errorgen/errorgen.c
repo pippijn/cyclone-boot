@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc___cycFILE;
+struct Cyc___cycFILE;
 # 100 "../../library/stdlib/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_stdout;
 extern struct Cyc___cycFILE*Cyc_stdin;

@@ -18,6 +18,8 @@
     return ntohs(x);
   }
 
+  void *cast_dlsym (void *sym) { return sym; }
+
   /* OS X needs sys/types.h before dirent.h */
   #include <sys/types.h>
   #include <dirent.h>

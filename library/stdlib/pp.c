@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_Core_Opt{void*v;};
+struct Cyc_Core_Opt{void*v;};
 # 98 "./core.h"
 struct _fat_ptr Cyc_Core_new_string(unsigned);
 # 122

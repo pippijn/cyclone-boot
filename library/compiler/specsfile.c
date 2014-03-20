@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc___cycFILE;
+struct Cyc___cycFILE;
 # 53 "../../library/stdlib/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 79
@@ -42,11 +42,11 @@ extern struct _fat_ptr Cyc_Filename_concat(struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_Arg_current;
 # 71
 extern void Cyc_Arg_parse(struct Cyc_List_List*,void(*)(struct _fat_ptr),int(*)(struct _fat_ptr),struct _fat_ptr,struct _fat_ptr);
-# 29 "specsfile.h"
+# 30 "specsfile.h"
 extern struct _fat_ptr Cyc_Specsfile_target_arch;
-# 31
+# 32
 extern struct Cyc_List_List*Cyc_Specsfile_cyclone_exec_path;
-# 37
+# 38
 extern struct Cyc_List_List*Cyc_Specsfile_cyclone_arch_path;
 extern struct _fat_ptr Cyc_Specsfile_def_lib_path;
 # 31 "specsfile.cyc"

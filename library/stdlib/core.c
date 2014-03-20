@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_Core_Opt{void*v;};
+struct Cyc_Core_Opt{void*v;};
 # 135 "./core.h"
 struct _RegionHandle*Cyc_Core_current_handle (void);extern char Cyc_Core_Not_found[10U];struct Cyc_Core_Not_found_exn_struct{char*tag;};
 # 183

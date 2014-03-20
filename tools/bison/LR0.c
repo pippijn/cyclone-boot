@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 76 "gram.h"
- extern int Cyc_nitems;
+extern int Cyc_nitems;
 extern int Cyc_nrules;
 extern int Cyc_nsyms;
 # 82

@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 300 "./cycboot.h"
- extern int isspace(int);
+extern int isspace(int);
 # 339
 extern const long Cyc_long_max;extern const long Cyc_long_min;
 # 82 "./string.h"

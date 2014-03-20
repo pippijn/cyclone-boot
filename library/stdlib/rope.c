@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 98 "./core.h"
- struct _fat_ptr Cyc_Core_new_string(unsigned);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
+struct _fat_ptr Cyc_Core_new_string(unsigned);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
 # 61 "./list.h"
 extern int Cyc_List_length(struct Cyc_List_List*);struct Cyc_Rope_Rope_node;
 # 38 "./string.h"

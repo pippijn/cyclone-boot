@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 98 "./core.h"
- struct _fat_ptr Cyc_Core_new_string(unsigned);
+struct _fat_ptr Cyc_Core_new_string(unsigned);
 # 103
 struct _fat_ptr Cyc_Core_rnew_string(struct _RegionHandle*,unsigned);
 # 108

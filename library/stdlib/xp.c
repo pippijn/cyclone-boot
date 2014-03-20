@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 282 "./cycboot.h"
- extern int isalnum(int);
+extern int isalnum(int);
 # 300
 extern int isspace(int);
 # 82 "./string.h"

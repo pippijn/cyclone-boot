@@ -1,7 +1,7 @@
 #include <cyc_include.h>
 
 # 176 "./core.h"
- extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_Queue_Queue;extern char Cyc_Queue_Empty[6U];struct Cyc_Queue_Empty_exn_struct{char*tag;};struct Cyc_Queue_Queue{struct Cyc_List_List*front;struct Cyc_List_List*rear;unsigned len;};
+extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_Queue_Queue;extern char Cyc_Queue_Empty[6U];struct Cyc_Queue_Empty_exn_struct{char*tag;};struct Cyc_Queue_Queue{struct Cyc_List_List*front;struct Cyc_List_List*rear;unsigned len;};
 # 38 "queue.cyc"
 int Cyc_Queue_is_empty(struct Cyc_Queue_Queue*q){struct Cyc_Queue_Queue*_T0;struct Cyc_List_List*_T1;int _T2;_T0=q;_T1=_T0->front;_T2=_T1==0;
 return _T2;}char Cyc_Queue_Empty[6U]="Empty";

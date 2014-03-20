@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_Core_Not_found_exn_struct{char*tag;};
+struct Cyc_Core_Not_found_exn_struct{char*tag;};
 # 157 "./core.h"
 extern struct Cyc_Core_Not_found_exn_struct Cyc_Core_Not_found_val;
 # 176

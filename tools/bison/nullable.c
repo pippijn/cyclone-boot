@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_shorts_tag{struct Cyc_shorts_tag*next;short value;};
+struct Cyc_shorts_tag{struct Cyc_shorts_tag*next;short value;};
 # 76 "gram.h"
 extern int Cyc_nitems;
 extern int Cyc_nrules;

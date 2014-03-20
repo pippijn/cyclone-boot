@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_Core_Opt{void*v;};
+struct Cyc_Core_Opt{void*v;};
 # 29 "../../library/stdlib/assert.h"
 extern void*Cyc___assert_fail(struct _fat_ptr,struct _fat_ptr,unsigned);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
 # 76 "../../library/stdlib/list.h"

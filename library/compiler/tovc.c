@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_Core_Opt{void*v;};
+struct Cyc_Core_Opt{void*v;};
 # 176 "../../library/stdlib/core.h"
 extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
 # 72 "../../library/stdlib/list.h"

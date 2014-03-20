@@ -1,5 +1,5 @@
 #include <cyc_include.h>
- struct Cyc_Core_Opt{void*v;};
+struct Cyc_Core_Opt{void*v;};
 # 38 "../../library/stdlib/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
 # 181 "absyn.h"
