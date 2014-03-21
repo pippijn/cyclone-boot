@@ -447,7 +447,7 @@ if(!_T17B)goto _TLDB;_T17C=seen_eof;if(!_T17C)goto _TLDB;_T17D=errp;
 *_T17D=*_T17D | 1;goto _TLDC;_TLDB: _TLDC: _T17E=nassigned;
 return _T17E;}}
 # 802
-static struct _fat_ptr Cyc___sccl(char*tab,struct _fat_ptr fmt){struct _fat_ptr*_T0;struct _fat_ptr _T1;unsigned char*_T2;const char*_T3;char _T4;struct _fat_ptr*_T5;struct _fat_ptr _T6;unsigned char*_T7;const char*_T8;char _T9;char*_TA;int _TB;char*_TC;char*_TD;int _TE;struct _fat_ptr _TF;int _T10;struct _fat_ptr _T11;char*_T12;int _T13;char*_T14;char*_T15;int _T16;struct _fat_ptr*_T17;struct _fat_ptr _T18;unsigned char*_T19;const char*_T1A;char _T1B;int _T1C;int _T1D;struct _fat_ptr _T1E;int _T1F;struct _fat_ptr _T20;struct _fat_ptr _T21;unsigned char*_T22;const char*_T23;char _T24;struct _fat_ptr*_T25;char*_T26;int _T27;char*_T28;char*_T29;int _T2A;struct _fat_ptr _T2B;
+static struct _fat_ptr Cyc___sccl(char*tab,struct _fat_ptr fmt){struct _fat_ptr*_T0;struct _fat_ptr _T1;unsigned char*_T2;const char*_T3;char _T4;struct _fat_ptr*_T5;struct _fat_ptr _T6;unsigned char*_T7;const char*_T8;char _T9;char*_TA;int _TB;int _TC;struct _fat_ptr _TD;int _TE;struct _fat_ptr _TF;char*_T10;int _T11;char*_T12;char*_T13;int _T14;struct _fat_ptr*_T15;struct _fat_ptr _T16;unsigned char*_T17;const char*_T18;char _T19;int _T1A;int _T1B;struct _fat_ptr _T1C;int _T1D;struct _fat_ptr _T1E;struct _fat_ptr _T1F;unsigned char*_T20;const char*_T21;char _T22;struct _fat_ptr*_T23;char*_T24;int _T25;char*_T26;char*_T27;int _T28;struct _fat_ptr _T29;
 # 807
 int c;int n;int v;_T0=& fmt;_T1=
 # 810
@@ -459,32 +459,32 @@ _fat_ptr_inplace_plus_post(_T5,sizeof(char),1);_T7=_check_fat_subscript(_T6,size
 _TLDD: v=0;_TLDE:
 # 817
  n=0;_TLE2: if(n < 256)goto _TLE0;else{goto _TLE1;}
-_TLE0: _TA=tab;_TB=n;_TC=_check_known_subscript_notnull(_TA,256U,sizeof(char),_TB);_TD=(char*)_TC;_TE=v;*_TD=(char)_TE;
+_TLE0: _TA=tab;_TB=n;_TC=v;_TA[_TB]=(char)_TC;
 # 817
 n=n + 1;goto _TLE2;_TLE1:
 # 819
- if(c!=0)goto _TLE3;_TF=fmt;_T10=- 1;_T11=
-_fat_ptr_plus(_TF,sizeof(char),_T10);return _T11;_TLE3:
+ if(c!=0)goto _TLE3;_TD=fmt;_TE=- 1;_TF=
+_fat_ptr_plus(_TD,sizeof(char),_TE);return _TF;_TLE3:
 # 829 "scanf.cyc"
  v=1 - v;_TLE8:
  if(1)goto _TLE6;else{goto _TLE7;}
-_TLE6: _T12=tab;_T13=c;_T14=_check_known_subscript_notnull(_T12,256U,sizeof(char),_T13);_T15=(char*)_T14;_T16=v;*_T15=(char)_T16;
-doswitch: _T17=& fmt;_T18=
-_fat_ptr_inplace_plus_post(_T17,sizeof(char),1);_T19=_check_fat_subscript(_T18,sizeof(char),0U);_T1A=(const char*)_T19;_T1B=*_T1A;n=(int)_T1B;_T1C=n;_T1D=(int)_T1C;switch(_T1D){case 0: _T1E=fmt;_T1F=- 1;_T20=
+_TLE6: _T10=tab;_T11=c;_T12=_check_known_subscript_notnull(_T10,256U,sizeof(char),_T11);_T13=(char*)_T12;_T14=v;*_T13=(char)_T14;
+doswitch: _T15=& fmt;_T16=
+_fat_ptr_inplace_plus_post(_T15,sizeof(char),1);_T17=_check_fat_subscript(_T16,sizeof(char),0U);_T18=(const char*)_T17;_T19=*_T18;n=(int)_T19;_T1A=n;_T1B=(int)_T1A;switch(_T1B){case 0: _T1C=fmt;_T1D=- 1;_T1E=
 # 837
-_fat_ptr_plus(_T1E,sizeof(char),_T1F);return _T20;case 45: _T21=fmt;_T22=_check_fat_subscript(_T21,sizeof(char),0U);_T23=(const char*)_T22;_T24=*_T23;
+_fat_ptr_plus(_T1C,sizeof(char),_T1D);return _T1E;case 45: _T1F=fmt;_T20=_check_fat_subscript(_T1F,sizeof(char),0U);_T21=(const char*)_T20;_T22=*_T21;
 # 858 "scanf.cyc"
-n=(int)_T24;
+n=(int)_T22;
 if(n==93)goto _TLEC;else{goto _TLED;}_TLED: if(n < c)goto _TLEC;else{goto _TLEA;}
-_TLEC: c=45;goto _LL0;_TLEA: _T25=& fmt;
+_TLEC: c=45;goto _LL0;_TLEA: _T23=& fmt;
 # 863
-_fat_ptr_inplace_plus(_T25,sizeof(char),1);
+_fat_ptr_inplace_plus(_T23,sizeof(char),1);
 # 865
-_TLEE: _T26=tab;c=c + 1;_T27=c;_T28=_check_known_subscript_notnull(_T26,256U,sizeof(char),_T27);_T29=(char*)_T28;_T2A=v;*_T29=(char)_T2A;
+_TLEE: _T24=tab;c=c + 1;_T25=c;_T26=_check_known_subscript_notnull(_T24,256U,sizeof(char),_T25);_T27=(char*)_T26;_T28=v;*_T27=(char)_T28;
 # 864
-if(c < n)goto _TLEE;else{goto _TLEF;}_TLEF: goto doswitch;goto _LL0;case 93: _T2B=fmt;
+if(c < n)goto _TLEE;else{goto _TLEF;}_TLEF: goto doswitch;goto _LL0;case 93: _T29=fmt;
 # 884
-return _T2B;default:
+return _T29;default:
 # 887
  c=n;goto _LL0;}_LL0: goto _TLE8;_TLE7:;}
 # 896

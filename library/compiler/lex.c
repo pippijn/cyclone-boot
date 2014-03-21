@@ -379,10 +379,10 @@ Cyc_Lex_string_buffer=str;}}goto _TL77;_TL76: _TL77: _T12=Cyc_Lex_string_buffer;
 # 504
 Cyc_Lex_string_pos=Cyc_Lex_string_pos + 1;}}
 # 506
-void Cyc_Lex_store_string(struct _fat_ptr s){unsigned long _T0;struct _fat_ptr _T1;int _T2;unsigned char*_T3;const char*_T4;char _T5;_T0=
+void Cyc_Lex_store_string(struct _fat_ptr s){unsigned long _T0;struct _fat_ptr _T1;unsigned char*_T2;const char*_T3;const char*_T4;int _T5;char _T6;_T0=
 Cyc_strlen(s);{int sz=(int)_T0;
 int i=0;_TL86: if(i < sz)goto _TL84;else{goto _TL85;}
-_TL84: _T1=s;_T2=i;_T3=_check_fat_subscript(_T1,sizeof(char),_T2);_T4=(const char*)_T3;_T5=*_T4;Cyc_Lex_store_string_char(_T5);
+_TL84: _T1=s;_T2=_T1.curr;_T3=(const char*)_T2;_T4=_check_null(_T3);_T5=i;_T6=_T4[_T5];Cyc_Lex_store_string_char(_T6);
 # 508
 i=i + 1;goto _TL86;_TL85:;}}
 # 511

@@ -130,7 +130,7 @@ unsigned i=0U;
 _TL31: if(i < sz)goto _TL34;else{goto _TL33;}_TL34: _T1=s;_T2=_T1.curr;_T3=(const char*)_T2;_T4=_check_null(_T3);_T5=i;_T6=(int)_T5;_T7=_T4[_T6];_T8=(int)_T7;if(_T8!=0)goto _TL32;else{goto _TL33;}_TL32: i=i + 1;goto _TL31;_TL33: _T9=i;
 return _T9;}}
 # 278
-int Cyc__IO_vfprintf(int(*ioputc)(int,void*),void*ioputc_env,struct _fat_ptr fmt0,struct _fat_ptr ap){char*_T0;char*_T1;char*_T2;unsigned _T3;char*_T4;char*_T5;char*_T6;struct _fat_ptr _T7;int _T8;unsigned _T9;unsigned _TA;struct _fat_ptr _TB;int _TC;unsigned char*_TD;const char*_TE;char _TF;int _T10;struct _fat_ptr _T11;int _T12;struct _fat_ptr _T13;unsigned char*_T14;struct _fat_ptr _T15;unsigned char*_T16;int _T17;int _T18;int(*_T19)(int,void*);void*_T1A;struct _fat_ptr _T1B;struct _fat_ptr _T1C;int _T1D;int _T1E;int _T1F;int _T20;struct _fat_ptr*_T21;struct _fat_ptr*_T22;struct _fat_ptr _T23;unsigned char*_T24;const char*_T25;char _T26;int _T27;int _T28;char _T29;int _T2A;struct _fat_ptr*_T2B;int _T2C;struct _fat_ptr*_T2D;struct _fat_ptr _T2E;unsigned char*_T2F;const char*_T30;char _T31;int _T32;struct _fat_ptr*_T33;int _T34;int _T35;unsigned _T36;int _T37;int _T38;struct _fat_ptr*_T39;struct _fat_ptr _T3A;unsigned char*_T3B;const char*_T3C;char _T3D;int _T3E;int _T3F;int _T40;struct _fat_ptr*_T41;struct _fat_ptr _T42;unsigned char*_T43;const char*_T44;char _T45;int _T46;unsigned _T47;char*_T48;unsigned char*_T49;char*_T4A;int _T4B;unsigned _T4C;unsigned char*_T4D;char*_T4E;struct _fat_ptr*_T4F;long _T50;long _T51;int _T52;short _T53;struct _fat_ptr*_T54;unsigned long _T55;long _T56;struct _fat_ptr*_T57;int _T58;int _T59;char*_T5A;unsigned char*_T5B;char*_T5C;unsigned _T5D;unsigned char*_T5E;char*_T5F;double _T60;int _T61;int _T62;int*_T63;int _T64;struct _fat_ptr _T65;char*_T66;struct _fat_ptr _T67;unsigned _T68;unsigned _T69;int _T6A;struct _fat_ptr _T6B;int _T6C;struct _fat_ptr _T6D;unsigned char*_T6E;char*_T6F;char _T70;int _T71;struct _fat_ptr*_T72;unsigned long*_T73;int _T74;short*_T75;int _T76;unsigned long*_T77;int _T78;struct _fat_ptr*_T79;unsigned long _T7A;unsigned long _T7B;int _T7C;unsigned short _T7D;struct _fat_ptr*_T7E;long _T7F;struct _fat_ptr*_T80;struct _fat_ptr*_T81;struct _fat_ptr _T82;unsigned char*_T83;char*_T84;struct _fat_ptr _T85;unsigned char*_T86;struct _fat_ptr _T87;unsigned char*_T88;int _T89;unsigned long _T8A;unsigned long _T8B;unsigned long _T8C;int _T8D;unsigned short _T8E;struct _fat_ptr*_T8F;unsigned long _T90;unsigned long _T91;int _T92;unsigned short _T93;struct _fat_ptr*_T94;int _T95;int _T96;char*_T97;struct _fat_ptr _T98;int _T99;int _T9A;enum Cyc_BASE _T9B;int _T9C;struct _fat_ptr*_T9D;unsigned char*_T9E;char*_T9F;unsigned long _TA0;unsigned long _TA1;unsigned _TA2;unsigned char*_TA3;char*_TA4;unsigned long _TA5;int _TA6;struct _fat_ptr _TA7;unsigned char*_TA8;char*_TA9;char _TAA;int _TAB;struct _fat_ptr*_TAC;unsigned char*_TAD;char*_TAE;unsigned _TAF;unsigned char*_TB0;char*_TB1;struct _fat_ptr*_TB2;unsigned char*_TB3;char*_TB4;unsigned long _TB5;unsigned long _TB6;unsigned _TB7;unsigned char*_TB8;char*_TB9;struct _fat_ptr*_TBA;unsigned char*_TBB;char*_TBC;unsigned long _TBD;unsigned _TBE;unsigned char*_TBF;char*_TC0;struct _fat_ptr*_TC1;unsigned char*_TC2;char*_TC3;struct _fat_ptr _TC4;unsigned long _TC5;int _TC6;unsigned char*_TC7;const char*_TC8;unsigned _TC9;unsigned char*_TCA;char*_TCB;unsigned long _TCC;int _TCD;struct _fat_ptr _TCE;char*_TCF;struct _fat_ptr _TD0;int _TD1;int _TD2;struct _fat_ptr _TD3;unsigned char*_TD4;struct _fat_ptr _TD5;unsigned char*_TD6;int _TD7;char*_TD8;unsigned char*_TD9;char*_TDA;int _TDB;unsigned _TDC;unsigned char*_TDD;char*_TDE;char _TDF;int _TE0;int _TE1;int _TE2;int _TE3;int _TE4;int(*_TE5)(int,void*);void*_TE6;int _TE7;int _TE8;int _TE9;char _TEA;int _TEB;char*_TEC;struct _fat_ptr _TED;unsigned char*_TEE;char*_TEF;unsigned _TF0;unsigned char*_TF1;char*_TF2;int(*_TF3)(int,void*);void*_TF4;char*_TF5;struct _fat_ptr _TF6;struct _fat_ptr _TF7;int _TF8;char*_TF9;char*_TFA;int _TFB;int(*_TFC)(int,void*);void*_TFD;char*_TFE;struct _fat_ptr _TFF;int _T100;int _T101;int _T102;int _T103;int(*_T104)(int,void*);void*_T105;int _T106;int _T107;int _T108;int(*_T109)(int,void*);void*_T10A;int _T10B;int _T10C;int _T10D;int(*_T10E)(int,void*);void*_T10F;struct _fat_ptr _T110;struct _fat_ptr _T111;int _T112;int _T113;int _T114;int(*_T115)(int,void*);void*_T116;struct _fat_ptr _T117;struct _fat_ptr _T118;int _T119;int _T11A;int _T11B;int(*_T11C)(int,void*);void*_T11D;struct _fat_ptr _T11E;struct _fat_ptr _T11F;int _T120;int _T121;int _T122;int(*_T123)(int,void*);void*_T124;int _T125;int _T126;int _T127;int(*_T128)(int,void*);void*_T129;int _T12A;int _T12B;int _T12C;int _T12D;int _T12E;int _T12F;
+int Cyc__IO_vfprintf(int(*ioputc)(int,void*),void*ioputc_env,struct _fat_ptr fmt0,struct _fat_ptr ap){char*_T0;char*_T1;char*_T2;unsigned _T3;char*_T4;char*_T5;char*_T6;struct _fat_ptr _T7;int _T8;unsigned _T9;unsigned _TA;struct _fat_ptr _TB;unsigned char*_TC;const char*_TD;const char*_TE;int _TF;char _T10;int _T11;struct _fat_ptr _T12;int _T13;struct _fat_ptr _T14;unsigned char*_T15;struct _fat_ptr _T16;unsigned char*_T17;int _T18;int _T19;int(*_T1A)(int,void*);void*_T1B;struct _fat_ptr _T1C;struct _fat_ptr _T1D;int _T1E;int _T1F;int _T20;int _T21;struct _fat_ptr*_T22;struct _fat_ptr*_T23;struct _fat_ptr _T24;unsigned char*_T25;const char*_T26;char _T27;int _T28;int _T29;char _T2A;int _T2B;struct _fat_ptr*_T2C;int _T2D;struct _fat_ptr*_T2E;struct _fat_ptr _T2F;unsigned char*_T30;const char*_T31;char _T32;int _T33;struct _fat_ptr*_T34;int _T35;int _T36;unsigned _T37;int _T38;int _T39;struct _fat_ptr*_T3A;struct _fat_ptr _T3B;unsigned char*_T3C;const char*_T3D;char _T3E;int _T3F;int _T40;int _T41;struct _fat_ptr*_T42;struct _fat_ptr _T43;unsigned char*_T44;const char*_T45;char _T46;int _T47;unsigned _T48;char*_T49;unsigned char*_T4A;char*_T4B;int _T4C;unsigned _T4D;unsigned char*_T4E;char*_T4F;struct _fat_ptr*_T50;long _T51;long _T52;int _T53;short _T54;struct _fat_ptr*_T55;unsigned long _T56;long _T57;struct _fat_ptr*_T58;int _T59;int _T5A;char*_T5B;unsigned char*_T5C;char*_T5D;unsigned _T5E;unsigned char*_T5F;char*_T60;double _T61;int _T62;int _T63;int*_T64;int _T65;struct _fat_ptr _T66;char*_T67;struct _fat_ptr _T68;unsigned _T69;unsigned _T6A;int _T6B;struct _fat_ptr _T6C;int _T6D;struct _fat_ptr _T6E;unsigned char*_T6F;char*_T70;char _T71;int _T72;struct _fat_ptr*_T73;unsigned long*_T74;int _T75;short*_T76;int _T77;unsigned long*_T78;int _T79;struct _fat_ptr*_T7A;unsigned long _T7B;unsigned long _T7C;int _T7D;unsigned short _T7E;struct _fat_ptr*_T7F;long _T80;struct _fat_ptr*_T81;struct _fat_ptr*_T82;struct _fat_ptr _T83;unsigned char*_T84;char*_T85;struct _fat_ptr _T86;unsigned char*_T87;struct _fat_ptr _T88;unsigned char*_T89;int _T8A;unsigned long _T8B;unsigned long _T8C;unsigned long _T8D;int _T8E;unsigned short _T8F;struct _fat_ptr*_T90;unsigned long _T91;unsigned long _T92;int _T93;unsigned short _T94;struct _fat_ptr*_T95;int _T96;int _T97;char*_T98;struct _fat_ptr _T99;int _T9A;int _T9B;enum Cyc_BASE _T9C;int _T9D;struct _fat_ptr*_T9E;unsigned char*_T9F;char*_TA0;unsigned long _TA1;unsigned long _TA2;unsigned _TA3;unsigned char*_TA4;char*_TA5;unsigned long _TA6;int _TA7;struct _fat_ptr _TA8;unsigned char*_TA9;char*_TAA;char _TAB;int _TAC;struct _fat_ptr*_TAD;unsigned char*_TAE;char*_TAF;unsigned _TB0;unsigned char*_TB1;char*_TB2;struct _fat_ptr*_TB3;unsigned char*_TB4;char*_TB5;unsigned long _TB6;unsigned long _TB7;unsigned _TB8;unsigned char*_TB9;char*_TBA;struct _fat_ptr*_TBB;unsigned char*_TBC;char*_TBD;unsigned long _TBE;unsigned _TBF;unsigned char*_TC0;char*_TC1;struct _fat_ptr*_TC2;unsigned char*_TC3;char*_TC4;struct _fat_ptr _TC5;unsigned long _TC6;int _TC7;unsigned char*_TC8;const char*_TC9;unsigned _TCA;unsigned char*_TCB;char*_TCC;unsigned long _TCD;int _TCE;struct _fat_ptr _TCF;char*_TD0;struct _fat_ptr _TD1;int _TD2;int _TD3;struct _fat_ptr _TD4;unsigned char*_TD5;struct _fat_ptr _TD6;unsigned char*_TD7;int _TD8;char*_TD9;unsigned char*_TDA;char*_TDB;int _TDC;unsigned _TDD;unsigned char*_TDE;char*_TDF;char _TE0;int _TE1;int _TE2;int _TE3;int _TE4;int _TE5;int(*_TE6)(int,void*);void*_TE7;int _TE8;int _TE9;int _TEA;char _TEB;int _TEC;char*_TED;struct _fat_ptr _TEE;unsigned char*_TEF;char*_TF0;unsigned _TF1;unsigned char*_TF2;char*_TF3;int(*_TF4)(int,void*);void*_TF5;char*_TF6;struct _fat_ptr _TF7;struct _fat_ptr _TF8;int _TF9;char*_TFA;char*_TFB;int _TFC;int(*_TFD)(int,void*);void*_TFE;char*_TFF;struct _fat_ptr _T100;int _T101;int _T102;int _T103;int _T104;int(*_T105)(int,void*);void*_T106;int _T107;int _T108;int _T109;int(*_T10A)(int,void*);void*_T10B;int _T10C;int _T10D;int _T10E;int(*_T10F)(int,void*);void*_T110;struct _fat_ptr _T111;struct _fat_ptr _T112;int _T113;int _T114;int _T115;int(*_T116)(int,void*);void*_T117;struct _fat_ptr _T118;struct _fat_ptr _T119;int _T11A;int _T11B;int _T11C;int(*_T11D)(int,void*);void*_T11E;struct _fat_ptr _T11F;struct _fat_ptr _T120;int _T121;int _T122;int _T123;int(*_T124)(int,void*);void*_T125;int _T126;int _T127;int _T128;int(*_T129)(int,void*);void*_T12A;int _T12B;int _T12C;int _T12D;int _T12E;int _T12F;int _T130;
 # 280
 struct _fat_ptr fmt;
 register int ch;
@@ -161,7 +161,7 @@ int fieldsz;
 # 312
 int size=0;
 # 314
-char buf[349U];{unsigned _T130=348U;unsigned i;i=0;_TL38: if(i < _T130)goto _TL36;else{goto _TL37;}_TL36: _T2=buf;_T3=i;_T2[_T3]='\000';i=i + 1;goto _TL38;_TL37: _T4=buf;_T4[_T130]=0;}{
+char buf[349U];{unsigned _T131=348U;unsigned i;i=0;_TL38: if(i < _T131)goto _TL36;else{goto _TL37;}_TL36: _T2=buf;_T3=i;_T2[_T3]='\000';i=i + 1;goto _TL38;_TL37: _T4=buf;_T4[_T131]=0;}{
 char ox[2U];_T5=ox;_T5[0]='\000';_T6=ox;_T6[1]='\000';{
 enum Cyc_BASE base;
 # 340 "printf.cyc"
@@ -172,20 +172,20 @@ ret=0;_TL3C:
 # 349
 _TL3A: fmark=fmt;_T7=fmt;{
 unsigned fmt_sz=_get_fat_size(_T7,sizeof(char));
-n=0;_TL40: _T8=n;_T9=(unsigned)_T8;_TA=fmt_sz;if(_T9 < _TA)goto _TL42;else{goto _TL3F;}_TL42: _TB=fmt;_TC=n;_TD=_check_fat_subscript(_TB,sizeof(char),_TC);_TE=(const char*)_TD;_TF=*_TE;ch=(int)_TF;_T10=ch;if(_T10!=0)goto _TL41;else{goto _TL3F;}_TL41: if(ch!=37)goto _TL3E;else{goto _TL3F;}
+n=0;_TL40: _T8=n;_T9=(unsigned)_T8;_TA=fmt_sz;if(_T9 < _TA)goto _TL42;else{goto _TL3F;}_TL42: _TB=fmt;_TC=_TB.curr;_TD=(const char*)_TC;_TE=_check_null(_TD);_TF=n;_T10=_TE[_TF];ch=(int)_T10;_T11=ch;if(_T11!=0)goto _TL41;else{goto _TL3F;}_TL41: if(ch!=37)goto _TL3E;else{goto _TL3F;}
 _TL3E:
 # 351
- n=n + 1;goto _TL40;_TL3F: _T11=fmt;_T12=n;
+ n=n + 1;goto _TL40;_TL3F: _T12=fmt;_T13=n;
 # 353
-fmt=_fat_ptr_plus(_T11,sizeof(char),_T12);_T13=fmt;_T14=_T13.curr;_T15=fmark;_T16=_T15.curr;_T17=_T14 - _T16;
+fmt=_fat_ptr_plus(_T12,sizeof(char),_T13);_T14=fmt;_T15=_T14.curr;_T16=fmark;_T17=_T16.curr;_T18=_T15 - _T17;
 # 355
-n=_T17 / sizeof(char);_T18=n;if(_T18==0)goto _TL43;
-_TL45: _T19=ioputc;_T1A=ioputc_env;_T1B=fmark;_T1C=_T1B;_T1D=n;_T1E=Cyc__IO_sputn(_T19,_T1A,_T1C,_T1D);_T1F=n;if(_T1E==_T1F)goto _TL47;goto error;_TL47: if(0)goto _TL45;else{goto _TL46;}_TL46: _T20=n;
-ret=ret + _T20;goto _TL44;_TL43: _TL44:
+n=_T18 / sizeof(char);_T19=n;if(_T19==0)goto _TL43;
+_TL45: _T1A=ioputc;_T1B=ioputc_env;_T1C=fmark;_T1D=_T1C;_T1E=n;_T1F=Cyc__IO_sputn(_T1A,_T1B,_T1D,_T1E);_T20=n;if(_T1F==_T20)goto _TL47;goto error;_TL47: if(0)goto _TL45;else{goto _TL46;}_TL46: _T21=n;
+ret=ret + _T21;goto _TL44;_TL43: _TL44:
 # 359
- if(ch!=0)goto _TL49;goto done;_TL49: _T21=& fmt;
+ if(ch!=0)goto _TL49;goto done;_TL49: _T22=& fmt;
 # 361
-_fat_ptr_inplace_plus(_T21,sizeof(char),1);
+_fat_ptr_inplace_plus(_T22,sizeof(char),1);
 # 363
 flags=0;
 dprec=0;
@@ -194,44 +194,44 @@ width=0;
 prec=- 1;
 sign='\000';
 # 370
-rflag: _T22=& fmt;_T23=_fat_ptr_inplace_plus_post(_T22,sizeof(char),1);_T24=_check_fat_subscript(_T23,sizeof(char),0U);_T25=(const char*)_T24;_T26=*_T25;ch=(int)_T26;
-reswitch: which_cp=0;_T27=ch;_T28=(int)_T27;switch(_T28){case 32: _T29=sign;_T2A=(int)_T29;
+rflag: _T23=& fmt;_T24=_fat_ptr_inplace_plus_post(_T23,sizeof(char),1);_T25=_check_fat_subscript(_T24,sizeof(char),0U);_T26=(const char*)_T25;_T27=*_T26;ch=(int)_T27;
+reswitch: which_cp=0;_T28=ch;_T29=(int)_T28;switch(_T29){case 32: _T2A=sign;_T2B=(int)_T2A;
 # 379
-if(_T2A)goto _TL4C;else{goto _TL4E;}
+if(_T2B)goto _TL4C;else{goto _TL4E;}
 _TL4E: sign=' ';goto _TL4D;_TL4C: _TL4D: goto rflag;case 35:
 # 383
  flags=flags | 8;goto rflag;case 42:
 # 392
- width=Cyc_va_arg_int(ap);_T2B=& ap;_fat_ptr_inplace_plus(_T2B,sizeof(void*),1);
+ width=Cyc_va_arg_int(ap);_T2C=& ap;_fat_ptr_inplace_plus(_T2C,sizeof(void*),1);
 if(width < 0)goto _TL4F;goto rflag;_TL4F:
 # 395
  width=- width;goto _LL8;case 45: _LL8:
 # 398
- flags=flags | 16;_T2C=~ 32;
-flags=flags & _T2C;goto rflag;case 43:
+ flags=flags | 16;_T2D=~ 32;
+flags=flags & _T2D;goto rflag;case 43:
 # 402
- sign='+';goto rflag;case 46: _T2D=& fmt;_T2E=
+ sign='+';goto rflag;case 46: _T2E=& fmt;_T2F=
 # 405
-_fat_ptr_inplace_plus_post(_T2D,sizeof(char),1);_T2F=_check_fat_subscript(_T2E,sizeof(char),0U);_T30=(const char*)_T2F;_T31=*_T30;ch=(int)_T31;_T32=ch;if(_T32!=42)goto _TL51;
-n=Cyc_va_arg_int(ap);_T33=& ap;_fat_ptr_inplace_plus(_T33,sizeof(void*),1);
-if(n >= 0)goto _TL53;_T34=- 1;goto _TL54;_TL53: _T34=n;_TL54: prec=_T34;goto rflag;_TL51:
+_fat_ptr_inplace_plus_post(_T2E,sizeof(char),1);_T30=_check_fat_subscript(_T2F,sizeof(char),0U);_T31=(const char*)_T30;_T32=*_T31;ch=(int)_T32;_T33=ch;if(_T33!=42)goto _TL51;
+n=Cyc_va_arg_int(ap);_T34=& ap;_fat_ptr_inplace_plus(_T34,sizeof(void*),1);
+if(n >= 0)goto _TL53;_T35=- 1;goto _TL54;_TL53: _T35=n;_TL54: prec=_T35;goto rflag;_TL51:
 # 410
  n=0;
-_TL55: _T35=ch - 48;_T36=(unsigned)_T35;if(_T36 <= 9U)goto _TL56;else{goto _TL57;}
-_TL56: _T37=10 * n;_T38=ch - 48;n=_T37 + _T38;_T39=& fmt;_T3A=
-_fat_ptr_inplace_plus_post(_T39,sizeof(char),1);_T3B=_check_fat_subscript(_T3A,sizeof(char),0U);_T3C=(const char*)_T3B;_T3D=*_T3C;ch=(int)_T3D;goto _TL55;_TL57:
+_TL55: _T36=ch - 48;_T37=(unsigned)_T36;if(_T37 <= 9U)goto _TL56;else{goto _TL57;}
+_TL56: _T38=10 * n;_T39=ch - 48;n=_T38 + _T39;_T3A=& fmt;_T3B=
+_fat_ptr_inplace_plus_post(_T3A,sizeof(char),1);_T3C=_check_fat_subscript(_T3B,sizeof(char),0U);_T3D=(const char*)_T3C;_T3E=*_T3D;ch=(int)_T3E;goto _TL55;_TL57:
 # 415
- if(n >= 0)goto _TL58;_T3E=- 1;goto _TL59;_TL58: _T3E=n;_TL59: prec=_T3E;goto reswitch;case 48:
+ if(n >= 0)goto _TL58;_T3F=- 1;goto _TL59;_TL58: _T3F=n;_TL59: prec=_T3F;goto reswitch;case 48:
 # 423
  if(flags & 16)goto _TL5A;else{goto _TL5C;}
 _TL5C: flags=flags | 32;goto _TL5B;_TL5A: _TL5B: goto rflag;case 49: goto _LL12;case 50: _LL12: goto _LL14;case 51: _LL14: goto _LL16;case 52: _LL16: goto _LL18;case 53: _LL18: goto _LL1A;case 54: _LL1A: goto _LL1C;case 55: _LL1C: goto _LL1E;case 56: _LL1E: goto _LL20;case 57: _LL20:
 # 428
  n=0;
 # 430
-_TL5D: _T3F=10 * n;_T40=ch - 48;n=_T3F + _T40;_T41=& fmt;_T42=
-_fat_ptr_inplace_plus_post(_T41,sizeof(char),1);_T43=_check_fat_subscript(_T42,sizeof(char),0U);_T44=(const char*)_T43;_T45=*_T44;ch=(int)_T45;_T46=ch - 48;_T47=(unsigned)_T46;
+_TL5D: _T40=10 * n;_T41=ch - 48;n=_T40 + _T41;_T42=& fmt;_T43=
+_fat_ptr_inplace_plus_post(_T42,sizeof(char),1);_T44=_check_fat_subscript(_T43,sizeof(char),0U);_T45=(const char*)_T44;_T46=*_T45;ch=(int)_T46;_T47=ch - 48;_T48=(unsigned)_T47;
 # 429
-if(_T47 <= 9U)goto _TL5D;else{goto _TL5E;}_TL5E:
+if(_T48 <= 9U)goto _TL5D;else{goto _TL5E;}_TL5E:
 # 433
  width=n;goto reswitch;case 76:
 # 436
@@ -239,80 +239,80 @@ if(_T47 <= 9U)goto _TL5D;else{goto _TL5E;}_TL5E:
 # 439
  flags=flags | 4;goto rflag;case 108:
 # 442
- flags=flags | 1;goto rflag;case 99: _T48=buf;
+ flags=flags | 1;goto rflag;case 99: _T49=buf;
 # 445
-cp=_tag_fat(_T48,sizeof(char),349U);{struct _fat_ptr _T130=cp;_T49=_T130.curr;_T4A=(char*)_T49;{char _T131=*_T4A;_T4B=
-Cyc_va_arg_int(ap);{char _T132=(char)_T4B;_T4C=_get_fat_size(_T130,sizeof(char));if(_T4C!=1U)goto _TL5F;if(_T131!=0)goto _TL5F;if(_T132==0)goto _TL5F;_throw_arraybounds();goto _TL60;_TL5F: _TL60: _T4D=_T130.curr;_T4E=(char*)_T4D;*_T4E=_T132;}}}_T4F=& ap;_fat_ptr_inplace_plus(_T4F,sizeof(void*),1);
+cp=_tag_fat(_T49,sizeof(char),349U);{struct _fat_ptr _T131=cp;_T4A=_T131.curr;_T4B=(char*)_T4A;{char _T132=*_T4B;_T4C=
+Cyc_va_arg_int(ap);{char _T133=(char)_T4C;_T4D=_get_fat_size(_T131,sizeof(char));if(_T4D!=1U)goto _TL5F;if(_T132!=0)goto _TL5F;if(_T133==0)goto _TL5F;_throw_arraybounds();goto _TL60;_TL5F: _TL60: _T4E=_T131.curr;_T4F=(char*)_T4E;*_T4F=_T133;}}}_T50=& ap;_fat_ptr_inplace_plus(_T50,sizeof(void*),1);
 size=1;
 sign='\000';goto _LL0;case 68:
 # 451
  flags=flags | 1;goto _LL2C;case 100: _LL2C: goto _LL2E;case 105: _LL2E:
 # 454
- if(!(flags & 1))goto _TL61;_T50=Cyc_va_arg_long(ap);goto _TL62;_TL61: if(!(flags & 4))goto _TL63;_T52=Cyc_va_arg_int(ap);_T53=(short)_T52;_T51=(long)_T53;goto _TL64;_TL63: _T51=Cyc_va_arg_int(ap);_TL64: _T50=_T51;_TL62: _ulong=(unsigned long)_T50;_T54=& ap;_fat_ptr_inplace_plus(_T54,sizeof(void*),1);_T55=_ulong;_T56=(long)_T55;
-if(_T56 >= 0)goto _TL65;
+ if(!(flags & 1))goto _TL61;_T51=Cyc_va_arg_long(ap);goto _TL62;_TL61: if(!(flags & 4))goto _TL63;_T53=Cyc_va_arg_int(ap);_T54=(short)_T53;_T52=(long)_T54;goto _TL64;_TL63: _T52=Cyc_va_arg_int(ap);_TL64: _T51=_T52;_TL62: _ulong=(unsigned long)_T51;_T55=& ap;_fat_ptr_inplace_plus(_T55,sizeof(void*),1);_T56=_ulong;_T57=(long)_T56;
+if(_T57 >= 0)goto _TL65;
 _ulong=- _ulong;
 sign='-';goto _TL66;_TL65: _TL66:
 # 459
  base=1U;goto number;case 101: goto _LL32;case 69: _LL32: goto _LL34;case 102: _LL34: goto _LL36;case 70: _LL36: goto _LL38;case 103: _LL38: goto _LL3A;case 71: _LL3A:
 # 463
- _double=Cyc_va_arg_double(ap);_T57=& ap;_fat_ptr_inplace_plus(_T57,sizeof(void*),1);
+ _double=Cyc_va_arg_double(ap);_T58=& ap;_fat_ptr_inplace_plus(_T58,sizeof(void*),1);
 # 468
 if(prec <= 39)goto _TL67;
 if(ch!=103)goto _TL6D;else{goto _TL6C;}_TL6D: if(ch!=71)goto _TL6B;else{goto _TL6C;}_TL6C: if(flags & 8)goto _TL6B;else{goto _TL69;}
 _TL6B: fpprec=prec - 39;goto _TL6A;_TL69: _TL6A:
  prec=39;goto _TL68;
-_TL67: _T58=prec;_T59=- 1;if(_T58!=_T59)goto _TL6E;
-prec=6;goto _TL6F;_TL6E: _TL6F: _TL68: _T5A=buf;
+_TL67: _T59=prec;_T5A=- 1;if(_T59!=_T5A)goto _TL6E;
+prec=6;goto _TL6F;_TL6E: _TL6F: _TL68: _T5B=buf;
 # 480
-cp=_tag_fat(_T5A,sizeof(char),349U);{struct _fat_ptr _T130=cp;_T5B=_T130.curr;_T5C=(char*)_T5B;{char _T131=*_T5C;char _T132='\000';_T5D=_get_fat_size(_T130,sizeof(char));if(_T5D!=1U)goto _TL70;if(_T131!=0)goto _TL70;if(_T132==0)goto _TL70;_throw_arraybounds();goto _TL71;_TL70: _TL71: _T5E=_T130.curr;_T5F=(char*)_T5E;*_T5F=_T132;}}_T60=_double;_T61=prec;_T62=flags;_T63=& softsign;_T64=ch;_T65=cp;_T66=buf;_T67=
+cp=_tag_fat(_T5B,sizeof(char),349U);{struct _fat_ptr _T131=cp;_T5C=_T131.curr;_T5D=(char*)_T5C;{char _T132=*_T5D;char _T133='\000';_T5E=_get_fat_size(_T131,sizeof(char));if(_T5E!=1U)goto _TL70;if(_T132!=0)goto _TL70;if(_T133==0)goto _TL70;_throw_arraybounds();goto _TL71;_TL70: _TL71: _T5F=_T131.curr;_T60=(char*)_T5F;*_T60=_T133;}}_T61=_double;_T62=prec;_T63=flags;_T64=& softsign;_T65=ch;_T66=cp;_T67=buf;_T68=
 # 484
-_tag_fat(_T66,sizeof(char),349U);_T68=sizeof(buf);_T69=_T68 - 1U;_T6A=(int)_T69;_T6B=_fat_ptr_plus(_T67,sizeof(char),_T6A);
+_tag_fat(_T67,sizeof(char),349U);_T69=sizeof(buf);_T6A=_T69 - 1U;_T6B=(int)_T6A;_T6C=_fat_ptr_plus(_T68,sizeof(char),_T6B);
 # 482
-size=Cyc___cvt_double(_T60,_T61,_T62,_T63,_T64,_T65,_T6B);_T6C=softsign;
+size=Cyc___cvt_double(_T61,_T62,_T63,_T64,_T65,_T66,_T6C);_T6D=softsign;
 # 485
-if(!_T6C)goto _TL72;
-sign='-';goto _TL73;_TL72: _TL73: _T6D=cp;_T6E=_T6D.curr;_T6F=(char*)_T6E;_T70=*_T6F;_T71=(int)_T70;
-if(_T71!=0)goto _TL74;_T72=& cp;
-_fat_ptr_inplace_plus(_T72,sizeof(char),1);goto _TL75;_TL74: _TL75: goto _LL0;case 110:
+if(!_T6D)goto _TL72;
+sign='-';goto _TL73;_TL72: _TL73: _T6E=cp;_T6F=_T6E.curr;_T70=(char*)_T6F;_T71=*_T70;_T72=(int)_T71;
+if(_T72!=0)goto _TL74;_T73=& cp;
+_fat_ptr_inplace_plus(_T73,sizeof(char),1);goto _TL75;_TL74: _TL75: goto _LL0;case 110:
 # 491
- if(!(flags & 1))goto _TL76;_T73=
-Cyc_va_arg_int_ptr(ap);_T74=ret;*_T73=(unsigned long)_T74;goto _TL77;
-_TL76: if(!(flags & 4))goto _TL78;_T75=
-Cyc_va_arg_short_ptr(ap);_T76=ret;*_T75=(short)_T76;goto _TL79;
+ if(!(flags & 1))goto _TL76;_T74=
+Cyc_va_arg_int_ptr(ap);_T75=ret;*_T74=(unsigned long)_T75;goto _TL77;
+_TL76: if(!(flags & 4))goto _TL78;_T76=
+Cyc_va_arg_short_ptr(ap);_T77=ret;*_T76=(short)_T77;goto _TL79;
 # 496
-_TL78: _T77=Cyc_va_arg_int_ptr(ap);_T78=ret;*_T77=(unsigned long)_T78;_TL79: _TL77: _T79=& ap;
-_fat_ptr_inplace_plus(_T79,sizeof(void*),1);goto _TL39;case 79:
+_TL78: _T78=Cyc_va_arg_int_ptr(ap);_T79=ret;*_T78=(unsigned long)_T79;_TL79: _TL77: _T7A=& ap;
+_fat_ptr_inplace_plus(_T7A,sizeof(void*),1);goto _TL39;case 79:
 # 500
  flags=flags | 1;goto _LL40;case 111: _LL40:
 # 503
- if(!(flags & 1))goto _TL7A;_T7A=Cyc_va_arg_ulong(ap);goto _TL7B;_TL7A: if(!(flags & 4))goto _TL7C;_T7C=Cyc_va_arg_int(ap);_T7D=(unsigned short)_T7C;_T7B=(unsigned long)_T7D;goto _TL7D;_TL7C: _T7B=Cyc_va_arg_uint(ap);_TL7D: _T7A=_T7B;_TL7B: _ulong=_T7A;_T7E=& ap;_fat_ptr_inplace_plus(_T7E,sizeof(void*),1);
-base=0U;goto nosign;case 112: _T7F=
+ if(!(flags & 1))goto _TL7A;_T7B=Cyc_va_arg_ulong(ap);goto _TL7B;_TL7A: if(!(flags & 4))goto _TL7C;_T7D=Cyc_va_arg_int(ap);_T7E=(unsigned short)_T7D;_T7C=(unsigned long)_T7E;goto _TL7D;_TL7C: _T7C=Cyc_va_arg_uint(ap);_TL7D: _T7B=_T7C;_TL7B: _ulong=_T7B;_T7F=& ap;_fat_ptr_inplace_plus(_T7F,sizeof(void*),1);
+base=0U;goto nosign;case 112: _T80=
 # 515 "printf.cyc"
-Cyc_va_arg_long(ap);_ulong=(unsigned long)_T7F;_T80=& ap;_fat_ptr_inplace_plus(_T80,sizeof(void*),1);
+Cyc_va_arg_long(ap);_ulong=(unsigned long)_T80;_T81=& ap;_fat_ptr_inplace_plus(_T81,sizeof(void*),1);
 base=2U;
 flags=flags | 64;
 ch=120;goto nosign;case 115:  {
 # 521
-struct _fat_ptr b=Cyc_va_arg_string(ap);_T81=& ap;_fat_ptr_inplace_plus(_T81,sizeof(void*),1);
+struct _fat_ptr b=Cyc_va_arg_string(ap);_T82=& ap;_fat_ptr_inplace_plus(_T82,sizeof(void*),1);
 which_cp=3;cp3=b;
 if(prec < 0)goto _TL7E;{
-struct _fat_ptr p=Cyc_my_nzmemchr(cp3,'\000',prec);_T82=p;_T83=_T82.curr;_T84=(char*)_T83;
-if(_T84==0)goto _TL80;_T85=p;_T86=_T85.curr;_T87=cp3;_T88=_T87.curr;_T89=_T86 - _T88;
-size=_T89 / sizeof(char);
+struct _fat_ptr p=Cyc_my_nzmemchr(cp3,'\000',prec);_T83=p;_T84=_T83.curr;_T85=(char*)_T84;
+if(_T85==0)goto _TL80;_T86=p;_T87=_T86.curr;_T88=cp3;_T89=_T88.curr;_T8A=_T87 - _T89;
+size=_T8A / sizeof(char);
 if(size <= prec)goto _TL82;
 size=prec;goto _TL83;_TL82: _TL83: goto _TL81;
 # 530
 _TL80: size=prec;_TL81:;}goto _TL7F;
 # 532
-_TL7E: _T8A=Cyc_my_strlen(cp3);size=(int)_T8A;_TL7F:
+_TL7E: _T8B=Cyc_my_strlen(cp3);size=(int)_T8B;_TL7F:
  sign='\000';goto _LL0;}case 85:
 # 536
  flags=flags | 1;goto _LL48;case 117: _LL48:
 # 539
- if(!(flags & 1))goto _TL84;_T8B=Cyc_va_arg_ulong(ap);goto _TL85;_TL84: if(!(flags & 4))goto _TL86;_T8D=Cyc_va_arg_int(ap);_T8E=(unsigned short)_T8D;_T8C=(unsigned long)_T8E;goto _TL87;_TL86: _T8C=Cyc_va_arg_uint(ap);_TL87: _T8B=_T8C;_TL85: _ulong=_T8B;_T8F=& ap;_fat_ptr_inplace_plus(_T8F,sizeof(void*),1);
+ if(!(flags & 1))goto _TL84;_T8C=Cyc_va_arg_ulong(ap);goto _TL85;_TL84: if(!(flags & 4))goto _TL86;_T8E=Cyc_va_arg_int(ap);_T8F=(unsigned short)_T8E;_T8D=(unsigned long)_T8F;goto _TL87;_TL86: _T8D=Cyc_va_arg_uint(ap);_TL87: _T8C=_T8D;_TL85: _ulong=_T8C;_T90=& ap;_fat_ptr_inplace_plus(_T90,sizeof(void*),1);
 base=1U;goto nosign;case 88: goto _LL4C;case 120: _LL4C:
 # 543
- if(!(flags & 1))goto _TL88;_T90=Cyc_va_arg_ulong(ap);goto _TL89;_TL88: if(!(flags & 4))goto _TL8A;_T92=Cyc_va_arg_int(ap);_T93=(unsigned short)_T92;_T91=(unsigned long)_T93;goto _TL8B;_TL8A: _T91=Cyc_va_arg_uint(ap);_TL8B: _T90=_T91;_TL89: _ulong=_T90;_T94=& ap;_fat_ptr_inplace_plus(_T94,sizeof(void*),1);
+ if(!(flags & 1))goto _TL88;_T91=Cyc_va_arg_ulong(ap);goto _TL89;_TL88: if(!(flags & 4))goto _TL8A;_T93=Cyc_va_arg_int(ap);_T94=(unsigned short)_T93;_T92=(unsigned long)_T94;goto _TL8B;_TL8A: _T92=Cyc_va_arg_uint(ap);_TL8B: _T91=_T92;_TL89: _ulong=_T91;_T95=& ap;_fat_ptr_inplace_plus(_T95,sizeof(void*),1);
 base=2U;
 # 546
 if(!(flags & 8))goto _TL8C;if(_ulong==0U)goto _TL8C;
@@ -320,45 +320,45 @@ flags=flags | 64;goto _TL8D;_TL8C: _TL8D:
 # 550
  nosign: sign='\000';
 # 556
-number: dprec=prec;_T95=dprec;if(_T95 < 0)goto _TL8E;_T96=~ 32;
-flags=flags & _T96;goto _TL8F;_TL8E: _TL8F: _T97=buf;_T98=
+number: dprec=prec;_T96=dprec;if(_T96 < 0)goto _TL8E;_T97=~ 32;
+flags=flags & _T97;goto _TL8F;_TL8E: _TL8F: _T98=buf;_T99=
 # 564
-_tag_fat(_T97,sizeof(char),349U);_T99=308 + 39;_T9A=_T99 + 1;cp=_fat_ptr_plus(_T98,sizeof(char),_T9A);
+_tag_fat(_T98,sizeof(char),349U);_T9A=308 + 39;_T9B=_T9A + 1;cp=_fat_ptr_plus(_T99,sizeof(char),_T9B);
 if(_ulong!=0U)goto _TL92;else{goto _TL93;}_TL93: if(prec!=0)goto _TL92;else{goto _TL90;}
-_TL92:{struct _fat_ptr xdigs;_T9B=base;_T9C=(int)_T9B;switch(_T9C){case Cyc_OCT:
+_TL92:{struct _fat_ptr xdigs;_T9C=base;_T9D=(int)_T9C;switch(_T9D){case Cyc_OCT:
 # 575
- _TL95: _T9D=& cp;{struct _fat_ptr _T130=_fat_ptr_inplace_plus(_T9D,sizeof(char),-1);_T9E=_check_fat_subscript(_T130,sizeof(char),0U);_T9F=(char*)_T9E;{char _T131=*_T9F;_TA0=_ulong & 7U;_TA1=_TA0 + 48U;{char _T132=(char)_TA1;_TA2=_get_fat_size(_T130,sizeof(char));if(_TA2!=1U)goto _TL97;if(_T131!=0)goto _TL97;if(_T132==0)goto _TL97;_throw_arraybounds();goto _TL98;_TL97: _TL98: _TA3=_T130.curr;_TA4=(char*)_TA3;*_TA4=_T132;}}}
-_ulong=_ulong >> 3U;_TA5=_ulong;_TA6=(int)_TA5;
+ _TL95: _T9E=& cp;{struct _fat_ptr _T131=_fat_ptr_inplace_plus(_T9E,sizeof(char),-1);_T9F=_check_fat_subscript(_T131,sizeof(char),0U);_TA0=(char*)_T9F;{char _T132=*_TA0;_TA1=_ulong & 7U;_TA2=_TA1 + 48U;{char _T133=(char)_TA2;_TA3=_get_fat_size(_T131,sizeof(char));if(_TA3!=1U)goto _TL97;if(_T132!=0)goto _TL97;if(_T133==0)goto _TL97;_throw_arraybounds();goto _TL98;_TL97: _TL98: _TA4=_T131.curr;_TA5=(char*)_TA4;*_TA5=_T133;}}}
+_ulong=_ulong >> 3U;_TA6=_ulong;_TA7=(int)_TA6;
 # 574
-if(_TA6)goto _TL95;else{goto _TL96;}_TL96:
+if(_TA7)goto _TL95;else{goto _TL96;}_TL96:
 # 579
- if(!(flags & 8))goto _TL99;_TA7=cp;_TA8=_check_fat_subscript(_TA7,sizeof(char),0U);_TA9=(char*)_TA8;_TAA=*_TA9;_TAB=(int)_TAA;if(_TAB==48)goto _TL99;_TAC=& cp;{struct _fat_ptr _T130=
-_fat_ptr_inplace_plus(_TAC,sizeof(char),-1);_TAD=_check_fat_subscript(_T130,sizeof(char),0U);_TAE=(char*)_TAD;{char _T131=*_TAE;char _T132='0';_TAF=_get_fat_size(_T130,sizeof(char));if(_TAF!=1U)goto _TL9B;if(_T131!=0)goto _TL9B;if(_T132==0)goto _TL9B;_throw_arraybounds();goto _TL9C;_TL9B: _TL9C: _TB0=_T130.curr;_TB1=(char*)_TB0;*_TB1=_T132;}}goto _TL9A;_TL99: _TL9A: goto _LL4F;case Cyc_DEC:
+ if(!(flags & 8))goto _TL99;_TA8=cp;_TA9=_check_fat_subscript(_TA8,sizeof(char),0U);_TAA=(char*)_TA9;_TAB=*_TAA;_TAC=(int)_TAB;if(_TAC==48)goto _TL99;_TAD=& cp;{struct _fat_ptr _T131=
+_fat_ptr_inplace_plus(_TAD,sizeof(char),-1);_TAE=_check_fat_subscript(_T131,sizeof(char),0U);_TAF=(char*)_TAE;{char _T132=*_TAF;char _T133='0';_TB0=_get_fat_size(_T131,sizeof(char));if(_TB0!=1U)goto _TL9B;if(_T132!=0)goto _TL9B;if(_T133==0)goto _TL9B;_throw_arraybounds();goto _TL9C;_TL9B: _TL9C: _TB1=_T131.curr;_TB2=(char*)_TB1;*_TB2=_T133;}}goto _TL9A;_TL99: _TL9A: goto _LL4F;case Cyc_DEC:
 # 585
  _TL9D: if(_ulong >= 10U)goto _TL9E;else{goto _TL9F;}
-_TL9E: _TB2=& cp;{struct _fat_ptr _T130=_fat_ptr_inplace_plus(_TB2,sizeof(char),-1);_TB3=_check_fat_subscript(_T130,sizeof(char),0U);_TB4=(char*)_TB3;{char _T131=*_TB4;_TB5=_ulong % 10U;_TB6=_TB5 + 48U;{char _T132=(char)_TB6;_TB7=_get_fat_size(_T130,sizeof(char));if(_TB7!=1U)goto _TLA0;if(_T131!=0)goto _TLA0;if(_T132==0)goto _TLA0;_throw_arraybounds();goto _TLA1;_TLA0: _TLA1: _TB8=_T130.curr;_TB9=(char*)_TB8;*_TB9=_T132;}}}
-_ulong=_ulong / 10U;goto _TL9D;_TL9F: _TBA=& cp;{struct _fat_ptr _T130=
+_TL9E: _TB3=& cp;{struct _fat_ptr _T131=_fat_ptr_inplace_plus(_TB3,sizeof(char),-1);_TB4=_check_fat_subscript(_T131,sizeof(char),0U);_TB5=(char*)_TB4;{char _T132=*_TB5;_TB6=_ulong % 10U;_TB7=_TB6 + 48U;{char _T133=(char)_TB7;_TB8=_get_fat_size(_T131,sizeof(char));if(_TB8!=1U)goto _TLA0;if(_T132!=0)goto _TLA0;if(_T133==0)goto _TLA0;_throw_arraybounds();goto _TLA1;_TLA0: _TLA1: _TB9=_T131.curr;_TBA=(char*)_TB9;*_TBA=_T133;}}}
+_ulong=_ulong / 10U;goto _TL9D;_TL9F: _TBB=& cp;{struct _fat_ptr _T131=
 # 589
-_fat_ptr_inplace_plus(_TBA,sizeof(char),-1);_TBB=_check_fat_subscript(_T130,sizeof(char),0U);_TBC=(char*)_TBB;{char _T131=*_TBC;_TBD=_ulong + 48U;{char _T132=(char)_TBD;_TBE=_get_fat_size(_T130,sizeof(char));if(_TBE!=1U)goto _TLA2;if(_T131!=0)goto _TLA2;if(_T132==0)goto _TLA2;_throw_arraybounds();goto _TLA3;_TLA2: _TLA3: _TBF=_T130.curr;_TC0=(char*)_TBF;*_TC0=_T132;}}}goto _LL4F;case Cyc_HEX:
+_fat_ptr_inplace_plus(_TBB,sizeof(char),-1);_TBC=_check_fat_subscript(_T131,sizeof(char),0U);_TBD=(char*)_TBC;{char _T132=*_TBD;_TBE=_ulong + 48U;{char _T133=(char)_TBE;_TBF=_get_fat_size(_T131,sizeof(char));if(_TBF!=1U)goto _TLA2;if(_T132!=0)goto _TLA2;if(_T133==0)goto _TLA2;_throw_arraybounds();goto _TLA3;_TLA2: _TLA3: _TC0=_T131.curr;_TC1=(char*)_TC0;*_TC1=_T133;}}}goto _LL4F;case Cyc_HEX:
 # 593
  if(ch!=88)goto _TLA4;
 xdigs=_tag_fat("0123456789ABCDEF",sizeof(char),17U);goto _TLA5;
 # 596
 _TLA4: xdigs=_tag_fat("0123456789abcdef",sizeof(char),17U);_TLA5:
 # 598
- _TLA6: _TC1=& cp;{struct _fat_ptr _T130=_fat_ptr_inplace_plus(_TC1,sizeof(char),-1);_TC2=_check_fat_subscript(_T130,sizeof(char),0U);_TC3=(char*)_TC2;{char _T131=*_TC3;_TC4=xdigs;_TC5=_ulong & 15U;_TC6=(int)_TC5;_TC7=_check_fat_subscript(_TC4,sizeof(char),_TC6);_TC8=(const char*)_TC7;{char _T132=*_TC8;_TC9=_get_fat_size(_T130,sizeof(char));if(_TC9!=1U)goto _TLA8;if(_T131!=0)goto _TLA8;if(_T132==0)goto _TLA8;_throw_arraybounds();goto _TLA9;_TLA8: _TLA9: _TCA=_T130.curr;_TCB=(char*)_TCA;*_TCB=_T132;}}}
-_ulong=_ulong >> 4U;_TCC=_ulong;_TCD=(int)_TCC;
+ _TLA6: _TC2=& cp;{struct _fat_ptr _T131=_fat_ptr_inplace_plus(_TC2,sizeof(char),-1);_TC3=_check_fat_subscript(_T131,sizeof(char),0U);_TC4=(char*)_TC3;{char _T132=*_TC4;_TC5=xdigs;_TC6=_ulong & 15U;_TC7=(int)_TC6;_TC8=_check_fat_subscript(_TC5,sizeof(char),_TC7);_TC9=(const char*)_TC8;{char _T133=*_TC9;_TCA=_get_fat_size(_T131,sizeof(char));if(_TCA!=1U)goto _TLA8;if(_T132!=0)goto _TLA8;if(_T133==0)goto _TLA8;_throw_arraybounds();goto _TLA9;_TLA8: _TLA9: _TCB=_T131.curr;_TCC=(char*)_TCB;*_TCC=_T133;}}}
+_ulong=_ulong >> 4U;_TCD=_ulong;_TCE=(int)_TCD;
 # 597
-if(_TCD)goto _TLA6;else{goto _TLA7;}_TLA7: goto _LL4F;default: _TCE=
+if(_TCE)goto _TLA6;else{goto _TLA7;}_TLA7: goto _LL4F;default: _TCF=
 # 603
-_tag_fat("bug in vform: bad base",sizeof(char),23U);cp=Cyc_strdup(_TCE);goto skipsize;}_LL4F:;}goto _TL91;_TL90: _TL91: _TCF=buf;_TD0=
+_tag_fat("bug in vform: bad base",sizeof(char),23U);cp=Cyc_strdup(_TCF);goto skipsize;}_LL4F:;}goto _TL91;_TL90: _TL91: _TD0=buf;_TD1=
 # 607
-_tag_fat(_TCF,sizeof(char),349U);_TD1=308 + 39;_TD2=_TD1 + 1;_TD3=_fat_ptr_plus(_TD0,sizeof(char),_TD2);_TD4=_TD3.curr;_TD5=cp;_TD6=_TD5.curr;_TD7=_TD4 - _TD6;size=_TD7 / sizeof(char);
+_tag_fat(_TD0,sizeof(char),349U);_TD2=308 + 39;_TD3=_TD2 + 1;_TD4=_fat_ptr_plus(_TD1,sizeof(char),_TD3);_TD5=_TD4.curr;_TD6=cp;_TD7=_TD6.curr;_TD8=_TD5 - _TD7;size=_TD8 / sizeof(char);
 skipsize: goto _LL0;default:
 # 611
- if(ch!=0)goto _TLAA;goto done;_TLAA: _TD8=buf;
+ if(ch!=0)goto _TLAA;goto done;_TLAA: _TD9=buf;
 # 614
-cp=_tag_fat(_TD8,sizeof(char),349U);{struct _fat_ptr _T130=cp;_TD9=_T130.curr;_TDA=(char*)_TD9;{char _T131=*_TDA;_TDB=ch;{char _T132=(char)_TDB;_TDC=_get_fat_size(_T130,sizeof(char));if(_TDC!=1U)goto _TLAC;if(_T131!=0)goto _TLAC;if(_T132==0)goto _TLAC;_throw_arraybounds();goto _TLAD;_TLAC: _TLAD: _TDD=_T130.curr;_TDE=(char*)_TDD;*_TDE=_T132;}}}
+cp=_tag_fat(_TD9,sizeof(char),349U);{struct _fat_ptr _T131=cp;_TDA=_T131.curr;_TDB=(char*)_TDA;{char _T132=*_TDB;_TDC=ch;{char _T133=(char)_TDC;_TDD=_get_fat_size(_T131,sizeof(char));if(_TDD!=1U)goto _TLAC;if(_T132!=0)goto _TLAC;if(_T133==0)goto _TLAC;_throw_arraybounds();goto _TLAD;_TLAC: _TLAD: _TDE=_T131.curr;_TDF=(char*)_TDE;*_TDF=_T133;}}}
 # 616
 size=1;
 sign='\000';goto _LL0;}_LL0:
@@ -366,48 +366,48 @@ sign='\000';goto _LL0;}_LL0:
  fieldsz=size + fpprec;
 dpad=dprec - size;
 if(dpad >= 0)goto _TLAE;
-dpad=0;goto _TLAF;_TLAE: _TLAF: _TDF=sign;_TE0=(int)_TDF;
+dpad=0;goto _TLAF;_TLAE: _TLAF: _TE0=sign;_TE1=(int)_TE0;
 # 648
-if(!_TE0)goto _TLB0;
+if(!_TE1)goto _TLB0;
 fieldsz=fieldsz + 1;goto _TLB1;
 _TLB0: if(!(flags & 64))goto _TLB2;
-fieldsz=fieldsz + 2;goto _TLB3;_TLB2: _TLB3: _TLB1: _TE1=dpad;
-fieldsz=fieldsz + _TE1;_TE2=flags;_TE3=16 | 32;_TE4=_TE2 & _TE3;
+fieldsz=fieldsz + 2;goto _TLB3;_TLB2: _TLB3: _TLB1: _TE2=dpad;
+fieldsz=fieldsz + _TE2;_TE3=flags;_TE4=16 | 32;_TE5=_TE3 & _TE4;
 # 655
-if(_TE4!=0)goto _TLB4;_TE5=ioputc;_TE6=ioputc_env;_TE7=width - fieldsz;_TE8=
-Cyc__IO_padn(_TE5,_TE6,' ',_TE7);_TE9=width - fieldsz;if(_TE8 >= _TE9)goto _TLB6;goto error;_TLB6: goto _TLB5;_TLB4: _TLB5: _TEA=sign;_TEB=(int)_TEA;
+if(_TE5!=0)goto _TLB4;_TE6=ioputc;_TE7=ioputc_env;_TE8=width - fieldsz;_TE9=
+Cyc__IO_padn(_TE6,_TE7,' ',_TE8);_TEA=width - fieldsz;if(_TE9 >= _TEA)goto _TLB6;goto error;_TLB6: goto _TLB5;_TLB4: _TLB5: _TEB=sign;_TEC=(int)_TEB;
 # 659
-if(!_TEB)goto _TLB8;_TEC=sign_string;_TED=_tag_fat(_TEC,sizeof(char),2U);{struct _fat_ptr _T130=_fat_ptr_plus(_TED,sizeof(char),0);_TEE=_check_fat_subscript(_T130,sizeof(char),0U);_TEF=(char*)_TEE;{char _T131=*_TEF;char _T132=sign;_TF0=_get_fat_size(_T130,sizeof(char));if(_TF0!=1U)goto _TLBA;if(_T131!=0)goto _TLBA;if(_T132==0)goto _TLBA;_throw_arraybounds();goto _TLBB;_TLBA: _TLBB: _TF1=_T130.curr;_TF2=(char*)_TF1;*_TF2=_T132;}}
+if(!_TEC)goto _TLB8;_TED=sign_string;_TEE=_tag_fat(_TED,sizeof(char),2U);{struct _fat_ptr _T131=_fat_ptr_plus(_TEE,sizeof(char),0);_TEF=_check_fat_subscript(_T131,sizeof(char),0U);_TF0=(char*)_TEF;{char _T132=*_TF0;char _T133=sign;_TF1=_get_fat_size(_T131,sizeof(char));if(_TF1!=1U)goto _TLBA;if(_T132!=0)goto _TLBA;if(_T133==0)goto _TLBA;_throw_arraybounds();goto _TLBB;_TLBA: _TLBB: _TF2=_T131.curr;_TF3=(char*)_TF2;*_TF3=_T133;}}
 # 661
-_TLBC: _TF3=ioputc;_TF4=ioputc_env;_TF5=sign_string;_TF6=_tag_fat(_TF5,sizeof(char),2U);_TF7=_TF6;_TF8=Cyc__IO_sputn(_TF3,_TF4,_TF7,1);if(_TF8==1)goto _TLBE;goto error;_TLBE: if(0)goto _TLBC;else{goto _TLBD;}_TLBD: goto _TLB9;
-_TLB8: if(!(flags & 64))goto _TLC0;_TF9=ox;
-_TF9[0]='0';_TFA=ox;_TFB=ch;
-_TFA[1]=(char)_TFB;
-_TLC2: _TFC=ioputc;_TFD=ioputc_env;_TFE=ox;_TFF=_tag_fat(_TFE,sizeof(char),2U);_T100=Cyc__IO_nzsputn(_TFC,_TFD,_TFF,2);if(_T100==2)goto _TLC4;goto error;_TLC4: if(0)goto _TLC2;else{goto _TLC3;}_TLC3: goto _TLC1;_TLC0: _TLC1: _TLB9: _T101=flags;_T102=16 | 32;_T103=_T101 & _T102;
+_TLBC: _TF4=ioputc;_TF5=ioputc_env;_TF6=sign_string;_TF7=_tag_fat(_TF6,sizeof(char),2U);_TF8=_TF7;_TF9=Cyc__IO_sputn(_TF4,_TF5,_TF8,1);if(_TF9==1)goto _TLBE;goto error;_TLBE: if(0)goto _TLBC;else{goto _TLBD;}_TLBD: goto _TLB9;
+_TLB8: if(!(flags & 64))goto _TLC0;_TFA=ox;
+_TFA[0]='0';_TFB=ox;_TFC=ch;
+_TFB[1]=(char)_TFC;
+_TLC2: _TFD=ioputc;_TFE=ioputc_env;_TFF=ox;_T100=_tag_fat(_TFF,sizeof(char),2U);_T101=Cyc__IO_nzsputn(_TFD,_TFE,_T100,2);if(_T101==2)goto _TLC4;goto error;_TLC4: if(0)goto _TLC2;else{goto _TLC3;}_TLC3: goto _TLC1;_TLC0: _TLC1: _TLB9: _T102=flags;_T103=16 | 32;_T104=_T102 & _T103;
 # 669
-if(_T103!=32)goto _TLC6;_T104=ioputc;_T105=ioputc_env;_T106=width - fieldsz;_T107=
-Cyc__IO_padn(_T104,_T105,'0',_T106);_T108=width - fieldsz;if(_T107 >= _T108)goto _TLC8;goto error;_TLC8: goto _TLC7;_TLC6: _TLC7: _T109=ioputc;_T10A=ioputc_env;_T10B=dpad;_T10C=
+if(_T104!=32)goto _TLC6;_T105=ioputc;_T106=ioputc_env;_T107=width - fieldsz;_T108=
+Cyc__IO_padn(_T105,_T106,'0',_T107);_T109=width - fieldsz;if(_T108 >= _T109)goto _TLC8;goto error;_TLC8: goto _TLC7;_TLC6: _TLC7: _T10A=ioputc;_T10B=ioputc_env;_T10C=dpad;_T10D=
 # 673
-Cyc__IO_padn(_T109,_T10A,'0',_T10B);_T10D=dpad;if(_T10C >= _T10D)goto _TLCA;goto error;_TLCA:
+Cyc__IO_padn(_T10A,_T10B,'0',_T10C);_T10E=dpad;if(_T10D >= _T10E)goto _TLCA;goto error;_TLCA:
 # 676
  if(which_cp!=0)goto _TLCC;
-_TLCE: _T10E=ioputc;_T10F=ioputc_env;_T110=cp;_T111=_T110;_T112=size;_T113=Cyc__IO_sputn(_T10E,_T10F,_T111,_T112);_T114=size;if(_T113==_T114)goto _TLD0;goto error;_TLD0: if(0)goto _TLCE;else{goto _TLCF;}_TLCF: goto _TLCD;
+_TLCE: _T10F=ioputc;_T110=ioputc_env;_T111=cp;_T112=_T111;_T113=size;_T114=Cyc__IO_sputn(_T10F,_T110,_T112,_T113);_T115=size;if(_T114==_T115)goto _TLD0;goto error;_TLD0: if(0)goto _TLCE;else{goto _TLCF;}_TLCF: goto _TLCD;
 _TLCC: if(which_cp!=2)goto _TLD2;
-_TLD4: _T115=ioputc;_T116=ioputc_env;_T117=cp2;_T118=_T117;_T119=size;_T11A=Cyc__IO_sputn(_T115,_T116,_T118,_T119);_T11B=size;if(_T11A==_T11B)goto _TLD6;goto error;_TLD6: if(0)goto _TLD4;else{goto _TLD5;}_TLD5: goto _TLD3;
+_TLD4: _T116=ioputc;_T117=ioputc_env;_T118=cp2;_T119=_T118;_T11A=size;_T11B=Cyc__IO_sputn(_T116,_T117,_T119,_T11A);_T11C=size;if(_T11B==_T11C)goto _TLD6;goto error;_TLD6: if(0)goto _TLD4;else{goto _TLD5;}_TLD5: goto _TLD3;
 _TLD2: if(which_cp!=3)goto _TLD8;
-_TLDA: _T11C=ioputc;_T11D=ioputc_env;_T11E=cp3;_T11F=_T11E;_T120=size;_T121=Cyc__IO_nzsputn(_T11C,_T11D,_T11F,_T120);_T122=size;if(_T121==_T122)goto _TLDC;goto error;_TLDC: if(0)goto _TLDA;else{goto _TLDB;}_TLDB: goto _TLD9;_TLD8: _TLD9: _TLD3: _TLCD: _T123=ioputc;_T124=ioputc_env;_T125=fpprec;_T126=
+_TLDA: _T11D=ioputc;_T11E=ioputc_env;_T11F=cp3;_T120=_T11F;_T121=size;_T122=Cyc__IO_nzsputn(_T11D,_T11E,_T120,_T121);_T123=size;if(_T122==_T123)goto _TLDC;goto error;_TLDC: if(0)goto _TLDA;else{goto _TLDB;}_TLDB: goto _TLD9;_TLD8: _TLD9: _TLD3: _TLCD: _T124=ioputc;_T125=ioputc_env;_T126=fpprec;_T127=
 # 684
-Cyc__IO_padn(_T123,_T124,'0',_T125);_T127=fpprec;if(_T126 >= _T127)goto _TLDE;goto error;_TLDE:
+Cyc__IO_padn(_T124,_T125,'0',_T126);_T128=fpprec;if(_T127 >= _T128)goto _TLDE;goto error;_TLDE:
 # 687
- if(!(flags & 16))goto _TLE0;_T128=ioputc;_T129=ioputc_env;_T12A=width - fieldsz;_T12B=
-Cyc__IO_padn(_T128,_T129,' ',_T12A);_T12C=width - fieldsz;if(_T12B >= _T12C)goto _TLE2;goto error;_TLE2: goto _TLE1;_TLE0: _TLE1:
+ if(!(flags & 16))goto _TLE0;_T129=ioputc;_T12A=ioputc_env;_T12B=width - fieldsz;_T12C=
+Cyc__IO_padn(_T129,_T12A,' ',_T12B);_T12D=width - fieldsz;if(_T12C >= _T12D)goto _TLE2;goto error;_TLE2: goto _TLE1;_TLE0: _TLE1:
 # 691
- if(width <= fieldsz)goto _TLE4;_T12D=width;goto _TLE5;_TLE4: _T12D=fieldsz;_TLE5: ret=ret + _T12D;}_TL39: goto _TL3C;_TL3B:
+ if(width <= fieldsz)goto _TLE4;_T12E=width;goto _TLE5;_TLE4: _T12E=fieldsz;_TLE5: ret=ret + _T12E;}_TL39: goto _TL3C;_TL3B:
 # 694
- done: _T12E=ret;
-return _T12E;
-error: _T12F=- 1;
-return _T12F;}}}}
+ done: _T12F=ret;
+return _T12F;
+error: _T130=- 1;
+return _T130;}}}}
 # 701
 static struct _fat_ptr Cyc_exponent(struct _fat_ptr p,int exp,int fmtch){char*_T0;unsigned _T1;char*_T2;char*_T3;struct _fat_ptr*_T4;unsigned char*_T5;char*_T6;int _T7;unsigned _T8;unsigned char*_T9;char*_TA;struct _fat_ptr*_TB;unsigned char*_TC;char*_TD;unsigned _TE;unsigned char*_TF;char*_T10;struct _fat_ptr*_T11;unsigned char*_T12;char*_T13;unsigned _T14;unsigned char*_T15;char*_T16;struct _fat_ptr _T17;struct _fat_ptr*_T18;unsigned char*_T19;char*_T1A;int _T1B;int _T1C;unsigned _T1D;unsigned char*_T1E;char*_T1F;int _T20;struct _fat_ptr*_T21;unsigned char*_T22;char*_T23;int _T24;unsigned _T25;unsigned char*_T26;char*_T27;struct _fat_ptr _T28;unsigned char*_T29;char*_T2A;struct _fat_ptr _T2B;struct _fat_ptr _T2C;unsigned char*_T2D;char*_T2E;struct _fat_ptr*_T2F;unsigned char*_T30;char*_T31;struct _fat_ptr*_T32;struct _fat_ptr _T33;unsigned char*_T34;char*_T35;unsigned _T36;unsigned char*_T37;char*_T38;struct _fat_ptr*_T39;unsigned char*_T3A;char*_T3B;unsigned _T3C;unsigned char*_T3D;char*_T3E;struct _fat_ptr*_T3F;unsigned char*_T40;char*_T41;int _T42;unsigned _T43;unsigned char*_T44;char*_T45;struct _fat_ptr _T46;
 # 703

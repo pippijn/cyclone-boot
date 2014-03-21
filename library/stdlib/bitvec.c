@@ -118,17 +118,17 @@ _TL3C: _T4=bvec;_T5=_T4.curr;_T6=(int*)_T5;_T7=_check_null(_T6);_T8=i;_T7[_T8]=-
 # 143
 i=i + 1;goto _TL3E;_TL3D:;}}
 # 147
-int Cyc_Bitvec_all_set(struct _fat_ptr bvec,int sz){int _T0;unsigned _T1;struct _fat_ptr _T2;unsigned _T3;int(*_T4)(struct _fat_ptr,struct _fat_ptr,unsigned);void*(*_T5)(struct _fat_ptr,struct _fat_ptr,unsigned);struct _fat_ptr _T6;struct _fat_ptr _T7;struct _fat_ptr _T8;int _T9;unsigned char*_TA;int*_TB;int _TC;int _TD;
+int Cyc_Bitvec_all_set(struct _fat_ptr bvec,int sz){int _T0;unsigned _T1;struct _fat_ptr _T2;unsigned _T3;int(*_T4)(struct _fat_ptr,struct _fat_ptr,unsigned);void*(*_T5)(struct _fat_ptr,struct _fat_ptr,unsigned);struct _fat_ptr _T6;struct _fat_ptr _T7;struct _fat_ptr _T8;unsigned char*_T9;int*_TA;int*_TB;int _TC;int _TD;int _TE;
 int words=sz >> 5;_T0=words;_T1=(unsigned)_T0;_T2=bvec;_T3=
-_get_fat_size(_T2,sizeof(int));if(_T1 >= _T3)goto _TL3F;goto _TL40;_TL3F: _T5=Cyc___assert_fail;{int(*_TE)(struct _fat_ptr,struct _fat_ptr,unsigned)=(int(*)(struct _fat_ptr,struct _fat_ptr,unsigned))_T5;_T4=_TE;}_T6=_tag_fat("words < numelts(bvec)",sizeof(char),22U);_T7=_tag_fat("bitvec.cyc",sizeof(char),11U);_T4(_T6,_T7,149U);_TL40:{
+_get_fat_size(_T2,sizeof(int));if(_T1 >= _T3)goto _TL3F;goto _TL40;_TL3F: _T5=Cyc___assert_fail;{int(*_TF)(struct _fat_ptr,struct _fat_ptr,unsigned)=(int(*)(struct _fat_ptr,struct _fat_ptr,unsigned))_T5;_T4=_TF;}_T6=_tag_fat("words < numelts(bvec)",sizeof(char),22U);_T7=_tag_fat("bitvec.cyc",sizeof(char),11U);_T4(_T6,_T7,149U);_TL40:{
 int i=0;_TL44: if(i < words)goto _TL42;else{goto _TL43;}
-_TL42: _T8=bvec;_T9=i;_TA=_check_fat_subscript(_T8,sizeof(int),_T9);_TB=(int*)_TA;_TC=*_TB;if(_TC==-1)goto _TL45;
+_TL42: _T8=bvec;_T9=_T8.curr;_TA=(int*)_T9;_TB=_check_null(_TA);_TC=i;_TD=_TB[_TC];if(_TD==-1)goto _TL45;
 return 0;_TL45:
 # 150
  i=i + 1;goto _TL44;_TL43:;}{
 # 153
 int i=words * 32;_TL4A: if(i < sz)goto _TL48;else{goto _TL49;}
-_TL48: _TD=Cyc_Bitvec_get(bvec,i);if(_TD)goto _TL4B;else{goto _TL4D;}
+_TL48: _TE=Cyc_Bitvec_get(bvec,i);if(_TE)goto _TL4B;else{goto _TL4D;}
 _TL4D: return 0;_TL4B:
 # 153
  i=i + 1;goto _TL4A;_TL49:;}

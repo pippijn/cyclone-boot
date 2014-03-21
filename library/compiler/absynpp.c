@@ -281,11 +281,11 @@ struct _fat_ptr t=Cyc_Core_new_string(5U);_T18=t;{struct _fat_ptr _T40=_fat_ptr_
 # 314
 return _T3F;}};}
 # 318
-static int Cyc_Absynpp_special(struct _fat_ptr s){struct _fat_ptr _T0;unsigned _T1;unsigned _T2;struct _fat_ptr _T3;int _T4;unsigned char*_T5;const char*_T6;char _T7;int _T8;char _T9;int _TA;char _TB;int _TC;char _TD;int _TE;_T0=s;_T1=
+static int Cyc_Absynpp_special(struct _fat_ptr s){struct _fat_ptr _T0;unsigned _T1;unsigned _T2;struct _fat_ptr _T3;unsigned char*_T4;const char*_T5;const char*_T6;int _T7;char _T8;int _T9;char _TA;int _TB;char _TC;int _TD;char _TE;int _TF;_T0=s;_T1=
 _get_fat_size(_T0,sizeof(char));_T2=_T1 - 1U;{int sz=(int)_T2;{
 int i=0;_TL12: if(i < sz)goto _TL10;else{goto _TL11;}
-_TL10: _T3=s;_T4=i;_T5=_check_fat_subscript(_T3,sizeof(char),_T4);_T6=(const char*)_T5;{char c=*_T6;_T7=c;_T8=(int)_T7;
-if(_T8 <= 32)goto _TL15;else{goto _TL18;}_TL18: _T9=c;_TA=(int)_T9;if(_TA >= 126)goto _TL15;else{goto _TL17;}_TL17: _TB=c;_TC=(int)_TB;if(_TC==34)goto _TL15;else{goto _TL16;}_TL16: _TD=c;_TE=(int)_TD;if(_TE==92)goto _TL15;else{goto _TL13;}
+_TL10: _T3=s;_T4=_T3.curr;_T5=(const char*)_T4;_T6=_check_null(_T5);_T7=i;{char c=_T6[_T7];_T8=c;_T9=(int)_T8;
+if(_T9 <= 32)goto _TL15;else{goto _TL18;}_TL18: _TA=c;_TB=(int)_TA;if(_TB >= 126)goto _TL15;else{goto _TL17;}_TL17: _TC=c;_TD=(int)_TC;if(_TD==34)goto _TL15;else{goto _TL16;}_TL16: _TE=c;_TF=(int)_TE;if(_TF==92)goto _TL15;else{goto _TL13;}
 _TL15: return 1;_TL13:;}
 # 320
 i=i + 1;goto _TL12;_TL11:;}

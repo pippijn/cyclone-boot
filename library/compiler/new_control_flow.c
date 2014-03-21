@@ -166,7 +166,7 @@ struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);
 # 71
 struct _fat_ptr Cyc_Absynpp_qvar2string(struct _tuple2*);
 # 51 "new_control_flow.cyc"
-static int Cyc_NewControlFlow_strcmp(struct _fat_ptr s1,struct _fat_ptr s2){struct _fat_ptr _T0;unsigned char*_T1;char*_T2;struct _fat_ptr _T3;unsigned char*_T4;char*_T5;struct _fat_ptr _T6;struct _fat_ptr _T7;unsigned _T8;int _T9;unsigned _TA;unsigned _TB;struct _fat_ptr _TC;int _TD;unsigned char*_TE;const char*_TF;struct _fat_ptr _T10;int _T11;unsigned char*_T12;const char*_T13;char _T14;int _T15;char _T16;int _T17;int _T18;char _T19;int _T1A;char _T1B;int _T1C;char _T1D;int _T1E;int _T1F;struct _fat_ptr _T20;int _T21;unsigned char*_T22;const char*_T23;char _T24;int _T25;int _T26;struct _fat_ptr _T27;int _T28;unsigned char*_T29;const char*_T2A;char _T2B;int _T2C;_T0=s1;_T1=_T0.curr;_T2=(char*)_T1;_T3=s2;_T4=_T3.curr;_T5=(char*)_T4;
+static int Cyc_NewControlFlow_strcmp(struct _fat_ptr s1,struct _fat_ptr s2){struct _fat_ptr _T0;unsigned char*_T1;char*_T2;struct _fat_ptr _T3;unsigned char*_T4;char*_T5;struct _fat_ptr _T6;struct _fat_ptr _T7;unsigned _T8;int _T9;unsigned _TA;unsigned _TB;struct _fat_ptr _TC;unsigned char*_TD;const char*_TE;const char*_TF;int _T10;struct _fat_ptr _T11;int _T12;unsigned char*_T13;const char*_T14;char _T15;int _T16;char _T17;int _T18;int _T19;char _T1A;int _T1B;char _T1C;int _T1D;char _T1E;int _T1F;int _T20;struct _fat_ptr _T21;int _T22;unsigned char*_T23;const char*_T24;char _T25;int _T26;int _T27;struct _fat_ptr _T28;int _T29;unsigned char*_T2A;const char*_T2B;char _T2C;int _T2D;_T0=s1;_T1=_T0.curr;_T2=(char*)_T1;_T3=s2;_T4=_T3.curr;_T5=(char*)_T4;
 if(_T2!=_T5)goto _TL0;
 return 0;_TL0: {
 int i=0;_T6=s1;{
@@ -175,24 +175,24 @@ unsigned sz2=_get_fat_size(_T7,sizeof(char));
 if(sz1 >= sz2)goto _TL2;_T8=sz1;goto _TL3;_TL2: _T8=sz2;_TL3: {unsigned minsz=_T8;
 # 59
 _TL4: _T9=i;_TA=(unsigned)_T9;_TB=minsz;if(_TA < _TB)goto _TL5;else{goto _TL6;}
-_TL5: _TC=s1;_TD=i;_TE=_check_fat_subscript(_TC,sizeof(char),_TD);_TF=(const char*)_TE;{char c1=*_TF;_T10=s2;_T11=i;_T12=_check_fat_subscript(_T10,sizeof(char),_T11);_T13=(const char*)_T12;{
-char c2=*_T13;_T14=c1;_T15=(int)_T14;
-if(_T15!=0)goto _TL7;_T16=c2;_T17=(int)_T16;
-if(_T17!=0)goto _TL9;return 0;
-_TL9: _T18=- 1;return _T18;
-_TL7: _T19=c2;_T1A=(int)_T19;if(_T1A!=0)goto _TLB;return 1;
+_TL5: _TC=s1;_TD=_TC.curr;_TE=(const char*)_TD;_TF=_check_null(_TE);_T10=i;{char c1=_TF[_T10];_T11=s2;_T12=i;_T13=_check_fat_subscript(_T11,sizeof(char),_T12);_T14=(const char*)_T13;{
+char c2=*_T14;_T15=c1;_T16=(int)_T15;
+if(_T16!=0)goto _TL7;_T17=c2;_T18=(int)_T17;
+if(_T18!=0)goto _TL9;return 0;
+_TL9: _T19=- 1;return _T19;
+_TL7: _T1A=c2;_T1B=(int)_T1A;if(_T1B!=0)goto _TLB;return 1;
 # 67
-_TLB: _T1B=c1;_T1C=(int)_T1B;_T1D=c2;_T1E=(int)_T1D;{int diff=_T1C - _T1E;
-if(diff==0)goto _TLD;_T1F=diff;return _T1F;_TLD:;}
+_TLB: _T1C=c1;_T1D=(int)_T1C;_T1E=c2;_T1F=(int)_T1E;{int diff=_T1D - _T1F;
+if(diff==0)goto _TLD;_T20=diff;return _T20;_TLD:;}
 # 70
 i=i + 1;}}goto _TL4;_TL6:
 # 72
  if(sz1!=sz2)goto _TLF;return 0;_TLF:
- if(minsz >= sz2)goto _TL11;_T20=s2;_T21=i;_T22=_check_fat_subscript(_T20,sizeof(char),_T21);_T23=(const char*)_T22;_T24=*_T23;_T25=(int)_T24;
-if(_T25!=0)goto _TL13;return 0;
-_TL13: _T26=- 1;return _T26;
+ if(minsz >= sz2)goto _TL11;_T21=s2;_T22=i;_T23=_check_fat_subscript(_T21,sizeof(char),_T22);_T24=(const char*)_T23;_T25=*_T24;_T26=(int)_T25;
+if(_T26!=0)goto _TL13;return 0;
+_TL13: _T27=- 1;return _T27;
 # 77
-_TL11: _T27=s1;_T28=i;_T29=_check_fat_subscript(_T27,sizeof(char),_T28);_T2A=(const char*)_T29;_T2B=*_T2A;_T2C=(int)_T2B;if(_T2C!=0)goto _TL15;return 0;
+_TL11: _T28=s1;_T29=i;_T2A=_check_fat_subscript(_T28,sizeof(char),_T29);_T2B=(const char*)_T2A;_T2C=*_T2B;_T2D=(int)_T2C;if(_T2D!=0)goto _TL15;return 0;
 _TL15: return 1;}}}}}struct Cyc_NewControlFlow_CFStmtAnnot{int visited;};static char Cyc_NewControlFlow_CFAnnot[8U]="CFAnnot";struct Cyc_NewControlFlow_CFAnnot_Absyn_AbsynAnnot_struct{char*tag;struct Cyc_NewControlFlow_CFStmtAnnot f1;};struct Cyc_NewControlFlow_AnalEnv{struct Cyc_JumpAnalysis_Jump_Anal_Result*all_tables;struct Cyc_Hashtable_Table*succ_table;struct Cyc_Hashtable_Table*pat_pop_table;struct Cyc_CfFlowInfo_FlowEnv*fenv;int iterate_again;int iteration_num;int in_try;union Cyc_CfFlowInfo_FlowInfo tryflow;int noreturn;void*return_type;struct Cyc_List_List*unique_pat_vars;struct Cyc_List_List*param_roots;struct Cyc_List_List*noconsume_params;struct Cyc_Hashtable_Table*flow_table;struct Cyc_List_List*aquals_bounds;};struct _tuple15{void*f0;int f1;};
 # 123 "new_control_flow.cyc"
 static union Cyc_CfFlowInfo_FlowInfo Cyc_NewControlFlow_anal_stmt(struct Cyc_NewControlFlow_AnalEnv*,union Cyc_CfFlowInfo_FlowInfo,struct Cyc_Absyn_Stmt*,struct _tuple15*);

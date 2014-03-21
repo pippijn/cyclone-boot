@@ -342,7 +342,7 @@ void Cyc_Lex_leave_extern_c (void);
 extern struct _tuple0*Cyc_Lex_token_qvar;
 extern struct _fat_ptr Cyc_Lex_token_string;
 # 104 "parse.cyy"
-int Cyc_Parse_parsing_tempest=0;
+static int Cyc_Parse_parsing_tempest=0;
 # 110
 struct Cyc_Parse_FlatList*Cyc_Parse_flat_imp_rev(struct Cyc_Parse_FlatList*x){struct Cyc_Parse_FlatList*_T0;struct Cyc_Parse_FlatList*_T1;struct Cyc_Parse_FlatList*_T2;struct Cyc_Parse_FlatList*_T3;struct Cyc_Parse_FlatList*_T4;struct Cyc_Parse_FlatList*_T5;
 if(x!=0)goto _TL0;_T0=x;return _T0;_TL0: {

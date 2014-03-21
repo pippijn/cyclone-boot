@@ -35,16 +35,16 @@ most_freq=e;goto _TLC;_TLB: _TLC:;}}
 # 30
 i=i + 1;goto _TL3;_TL2:;}{int _T1E=most_freq;_npop_handler(0);return _T1E;}}_pop_region();}struct _tuple3{int f0;int f1;};
 # 53
-static struct Cyc_List_List*Cyc_Compact_non_default_elements(int def,struct _fat_ptr v){struct _fat_ptr _T0;unsigned _T1;unsigned _T2;struct _fat_ptr _T3;int _T4;unsigned char*_T5;int*_T6;struct Cyc_List_List*_T7;struct _tuple3*_T8;struct Cyc_List_List*_T9;
+static struct Cyc_List_List*Cyc_Compact_non_default_elements(int def,struct _fat_ptr v){struct _fat_ptr _T0;unsigned _T1;unsigned _T2;struct _fat_ptr _T3;unsigned char*_T4;int*_T5;int*_T6;int _T7;struct Cyc_List_List*_T8;struct _tuple3*_T9;struct Cyc_List_List*_TA;
 struct Cyc_List_List*ans=0;_T0=v;_T1=
 _get_fat_size(_T0,sizeof(int));_T2=_T1 - 1U;{int i=(int)_T2;_TL10: if(i >= 0)goto _TLE;else{goto _TLF;}
-_TLE: _T3=v;_T4=i;_T5=_check_fat_subscript(_T3,sizeof(int),_T4);_T6=(int*)_T5;{int e=*_T6;
-if(e==def)goto _TL11;{struct Cyc_List_List*_TA=_cycalloc(sizeof(struct Cyc_List_List));{struct _tuple3*_TB=_cycalloc(sizeof(struct _tuple3));
-_TB->f0=i;_TB->f1=e;_T8=(struct _tuple3*)_TB;}_TA->hd=_T8;_TA->tl=ans;_T7=(struct Cyc_List_List*)_TA;}ans=_T7;goto _TL12;_TL11: _TL12:;}
+_TLE: _T3=v;_T4=_T3.curr;_T5=(int*)_T4;_T6=_check_null(_T5);_T7=i;{int e=_T6[_T7];
+if(e==def)goto _TL11;{struct Cyc_List_List*_TB=_cycalloc(sizeof(struct Cyc_List_List));{struct _tuple3*_TC=_cycalloc(sizeof(struct _tuple3));
+_TC->f0=i;_TC->f1=e;_T9=(struct _tuple3*)_TC;}_TB->hd=_T9;_TB->tl=ans;_T8=(struct Cyc_List_List*)_TB;}ans=_T8;goto _TL12;_TL11: _TL12:;}
 # 55
-i=i + -1;goto _TL10;_TLF:;}_T9=ans;
+i=i + -1;goto _TL10;_TLF:;}_TA=ans;
 # 60
-return _T9;}
+return _TA;}
 # 64
 static struct _fat_ptr Cyc_Compact_trans={(void*)0,(void*)0,(void*)(0 + 0)};
 static struct _fat_ptr Cyc_Compact_check={(void*)0,(void*)0,(void*)(0 + 0)};
