@@ -52,15 +52,15 @@ extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int 
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};struct Cyc_Tcenv_Genv{struct Cyc_Dict_Dict aggrdecls;struct Cyc_Dict_Dict datatypedecls;struct Cyc_Dict_Dict enumdecls;struct Cyc_Dict_Dict typedefs;struct Cyc_Dict_Dict ordinaries;};struct Cyc_Tcenv_Fenv;struct Cyc_Tcenv_Tenv{struct Cyc_List_List*ns;struct Cyc_Tcenv_Genv*ae;struct Cyc_Tcenv_Fenv*le;int allow_valueof: 1;int in_extern_c_include: 1;int in_tempest: 1;int tempest_generalize: 1;int in_extern_c_inc_repeat: 1;};
-# 63 "absynpp.h"
+# 62 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_typ2string(void*);
-# 67
+# 66
 struct _fat_ptr Cyc_Absynpp_kindbound2string(void*);
-# 71
+# 70
 struct _fat_ptr Cyc_Absynpp_qvar2string(struct _tuple0*);
-# 73
+# 72
 struct _fat_ptr Cyc_Absynpp_decllist2string(struct Cyc_List_List*);
-# 77
+# 76
 struct _fat_ptr Cyc_Absynpp_tvar2string(struct Cyc_Absyn_Tvar*);
 # 29 "unify.h"
 int Cyc_Unify_unify(void*,void*);

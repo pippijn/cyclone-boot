@@ -89,7 +89,7 @@ extern void Cyc_Vcgen_vcgen_fundecl(unsigned,struct Cyc_JumpAnalysis_Jump_Anal_R
 struct Cyc_Vcgen_ExpChecks*Cyc_Vcgen_exp2ctxt_checks(struct Cyc_Hashtable_Table**,struct Cyc_Absyn_Exp*);
 # 8 "pratt_prover.h"
 int Cyc_PrattProver_constraint_prove(void*,void*);
-# 69 "absynpp.h"
+# 68 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);
 # 85 "../../library/stdlib/graph.h"
 extern struct Cyc_List_List*Cyc_Graph_tsort(struct Cyc_Dict_Dict);

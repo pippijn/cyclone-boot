@@ -97,7 +97,7 @@ int Cyc_Tcutil_typecmp(void*,void*);
 int Cyc_Tcutil_is_pure_exp(struct Cyc_Absyn_Exp*);
 # 48 "warn.h"
 void*Cyc_Warn_impos(struct _fat_ptr,struct _fat_ptr);
-# 74 "absynpp.h"
+# 73 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_prim2string(enum Cyc_Absyn_Primop);
 # 92 "flags.h"
 extern int Cyc_Flags_print_unprovable;

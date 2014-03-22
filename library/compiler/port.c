@@ -71,9 +71,9 @@ extern void*Cyc_Absyn_fat_bound_type;
 void*Cyc_Absyn_fatptr_type(void*,void*,void*,struct Cyc_Absyn_Tqual,void*,void*);
 # 1437
 struct _tuple0*Cyc_Absyn_binding2qvar(void*);
-# 69 "absynpp.h"
+# 68 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);
-# 71
+# 70
 struct _fat_ptr Cyc_Absynpp_qvar2string(struct _tuple0*);
 # 69 "tcutil.h"
 struct Cyc_Absyn_Exp*Cyc_Tcutil_get_bounds_exp(void*,void*);

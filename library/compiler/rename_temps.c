@@ -25,7 +25,7 @@ void Cyc_Absyn_visit_stmt(int(*)(void*,struct Cyc_Absyn_Exp*),int(*)(void*,struc
 void Cyc_Absyn_visit_exp(int(*)(void*,struct Cyc_Absyn_Exp*),int(*)(void*,struct Cyc_Absyn_Stmt*),void*,struct Cyc_Absyn_Exp*);struct Cyc_Warn_String_Warn_Warg_struct{int tag;struct _fat_ptr f1;};
 # 79 "warn.h"
 void*Cyc_Warn_impos2(struct _fat_ptr);
-# 69 "absynpp.h"
+# 68 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);struct Cyc_RenameTemps_Env{struct Cyc_Dict_Dict d;int next_num;};
 # 36 "rename_temps.cyc"
 static int Cyc_RenameTemps_is_temp_var(struct _tuple0*qv){struct _tuple0*_T0;struct _tuple0 _T1;struct _fat_ptr*_T2;int _T3;struct _fat_ptr _T4;unsigned _T5;struct _fat_ptr _T6;unsigned char*_T7;const char*_T8;const char*_T9;char _TA;int _TB;struct _fat_ptr _TC;unsigned char*_TD;const char*_TE;char _TF;int _T10;struct _fat_ptr _T11;unsigned char*_T12;const char*_T13;char _T14;int _T15;struct _fat_ptr _T16;unsigned char*_T17;const char*_T18;char _T19;int _T1A;_T0=qv;_T1=*_T0;_T2=_T1.f1;{

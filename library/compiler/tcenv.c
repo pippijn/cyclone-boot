@@ -79,9 +79,9 @@ extern void*Cyc_Tcenv_glob_curr_rgn;
 # 30 "currgn.h"
 struct Cyc_Absyn_Tvar*Cyc_CurRgn_curr_rgn_tvar (void);
 void*Cyc_CurRgn_curr_rgn_type (void);
-# 63 "absynpp.h"
+# 62 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_typ2string(void*);
-# 97 "absynpp.h"
+# 96 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_effconstr2string(struct Cyc_List_List*);char Cyc_Tcenv_Env_error[10U]="Env_error";
 # 53 "tcenv.cyc"
 struct Cyc_Tcenv_Env_error_exn_struct Cyc_Tcenv_Env_error_val={Cyc_Tcenv_Env_error};

@@ -162,9 +162,9 @@ void Cyc_Warn_warn(unsigned,struct _fat_ptr,struct _fat_ptr);
 void*Cyc_Warn_impos(struct _fat_ptr,struct _fat_ptr);
 # 66 "flags.h"
 extern int Cyc_Flags_warn_lose_unique;
-# 69 "absynpp.h"
+# 68 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);
-# 71
+# 70
 struct _fat_ptr Cyc_Absynpp_qvar2string(struct _tuple2*);
 # 51 "new_control_flow.cyc"
 static int Cyc_NewControlFlow_strcmp(struct _fat_ptr s1,struct _fat_ptr s2){struct _fat_ptr _T0;unsigned char*_T1;char*_T2;struct _fat_ptr _T3;unsigned char*_T4;char*_T5;struct _fat_ptr _T6;struct _fat_ptr _T7;unsigned _T8;int _T9;unsigned _TA;unsigned _TB;struct _fat_ptr _TC;unsigned char*_TD;const char*_TE;const char*_TF;int _T10;struct _fat_ptr _T11;int _T12;unsigned char*_T13;const char*_T14;char _T15;int _T16;char _T17;int _T18;int _T19;char _T1A;int _T1B;char _T1C;int _T1D;char _T1E;int _T1F;int _T20;struct _fat_ptr _T21;int _T22;unsigned char*_T23;const char*_T24;char _T25;int _T26;int _T27;struct _fat_ptr _T28;int _T29;unsigned char*_T2A;const char*_T2B;char _T2C;int _T2D;_T0=s1;_T1=_T0.curr;_T2=(char*)_T1;_T3=s2;_T4=_T3.curr;_T5=(char*)_T4;
