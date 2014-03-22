@@ -167,7 +167,7 @@ struct Cyc_List_List*Cyc_Interproc_resolve_all(struct _fat_ptr,struct Cyc_List_L
 struct Cyc_List_List*Cyc_Interproc_binding_cvar_resolution(struct Cyc_List_List*);
 void Cyc_Interproc_emit_decls(struct _fat_ptr,struct Cyc_List_List*);
 void Cyc_Interproc_inference_statistics (void);
-# 5 "../../library/compiler/lex.h"
+# 25 "../../library/compiler/lex.h"
 void Cyc_Lex_pos_init (void);
 void Cyc_Lex_lex_init(int);
 # 31 "../../library/compiler/lower.h"
