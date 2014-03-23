@@ -76,14 +76,14 @@ struct Cyc_Absyn_Exp*Cyc_Absyn_sizeoftype_exp(void*,unsigned);struct _tuple12{en
 struct _tuple12 Cyc_Absyn_aggr_kinded_name(union Cyc_Absyn_AggrInfo);
 # 1437
 struct _tuple1*Cyc_Absyn_binding2qvar(void*);struct Cyc_Absynpp_Params{int expand_typedefs;int qvar_to_Cids;int add_cyc_prefix;int decls_first;int rewrite_temp_tvars;int print_all_tvars;int print_all_kinds;int print_all_effects;int print_using_stmts;int print_externC_stmts;int print_full_evars;int print_zeroterm;int generate_line_directives;int use_curr_namespace;struct Cyc_List_List*curr_namespace;int gen_clean_cyclone;};
-# 53 "absynpp.h"
+# 55 "absynpp.h"
 void Cyc_Absynpp_set_params(struct Cyc_Absynpp_Params*);
-# 61
+# 67
 struct _fat_ptr Cyc_Absynpp_longlong2string(unsigned long long);
-# 64
+# 70
 struct _fat_ptr Cyc_Absynpp_kind2string(struct Cyc_Absyn_Kind*);
 struct _fat_ptr Cyc_Absynpp_attribute2string(void*);
-# 80
+# 87
 extern struct _fat_ptr*Cyc_Absynpp_cyc_stringptr;
 int Cyc_Absynpp_exp_prec(struct Cyc_Absyn_Exp*);
 struct _fat_ptr Cyc_Absynpp_char_escape(char);

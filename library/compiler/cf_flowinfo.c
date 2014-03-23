@@ -70,11 +70,11 @@ int Cyc_Tcutil_force_type2bool(int,void*);
 extern struct Cyc_Absyn_Kind Cyc_Kinds_bk;
 # 83 "kinds.h"
 struct Cyc_Absyn_Kind*Cyc_Kinds_tvar_kind(struct Cyc_Absyn_Tvar*,struct Cyc_Absyn_Kind*);
-# 62 "absynpp.h"
+# 68 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_typ2string(void*);
-# 68
+# 74
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);
-# 70
+# 76
 struct _fat_ptr Cyc_Absynpp_qvar2string(struct _tuple0*);
 # 41 "warn.h"
 void Cyc_Warn_verr(unsigned,struct _fat_ptr,struct _fat_ptr);

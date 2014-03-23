@@ -51,16 +51,16 @@ int Cyc_Tcutil_cmp_effect_constraints(struct Cyc_List_List*,struct Cyc_List_List
 struct Cyc_Absyn_Kind*Cyc_Kinds_force_kb(void*);
 # 54 "attributes.h"
 int Cyc_Atts_same_atts(struct Cyc_List_List*,struct Cyc_List_List*);
-# 62 "absynpp.h"
+# 68 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_typ2string(void*);
-# 64
+# 70
 struct _fat_ptr Cyc_Absynpp_kind2string(struct Cyc_Absyn_Kind*);
 struct _fat_ptr Cyc_Absynpp_attribute2string(void*);
-# 68
+# 74
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);
-# 70
+# 76
 struct _fat_ptr Cyc_Absynpp_qvar2string(struct _tuple0*);
-# 75
+# 81
 struct _fat_ptr Cyc_Absynpp_scope2string(enum Cyc_Absyn_Scope);extern char Cyc_Tcdecl_Incompatible[13U];struct Cyc_Tcdecl_Incompatible_exn_struct{char*tag;};struct Cyc_Tcdecl_Xdatatypefielddecl{struct Cyc_Absyn_Datatypedecl*base;struct Cyc_Absyn_Datatypefield*field;};
 # 41 "warn.h"
 void Cyc_Warn_verr(unsigned,struct _fat_ptr,struct _fat_ptr);char Cyc_Tcdecl_Incompatible[13U]="Incompatible";

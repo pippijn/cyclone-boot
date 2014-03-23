@@ -148,13 +148,13 @@ struct Cyc_Absyn_Decl*Cyc_Absyn_lookup_decl(struct Cyc_List_List*,struct _fat_pt
 struct _tuple12 Cyc_Absyn_aggr_kinded_name(union Cyc_Absyn_AggrInfo);
 # 1437
 struct _tuple1*Cyc_Absyn_binding2qvar(void*);struct Cyc_Absynpp_Params{int expand_typedefs;int qvar_to_Cids;int add_cyc_prefix;int decls_first;int rewrite_temp_tvars;int print_all_tvars;int print_all_kinds;int print_all_effects;int print_using_stmts;int print_externC_stmts;int print_full_evars;int print_zeroterm;int generate_line_directives;int use_curr_namespace;struct Cyc_List_List*curr_namespace;int gen_clean_cyclone;};
-# 53 "../../library/compiler/absynpp.h"
+# 55 "../../library/compiler/absynpp.h"
 void Cyc_Absynpp_set_params(struct Cyc_Absynpp_Params*);
-# 55
-extern struct Cyc_Absynpp_Params Cyc_Absynpp_cyc_params_r;
 # 57
+extern struct Cyc_Absynpp_Params Cyc_Absynpp_cyc_params_r;
+# 63
 void Cyc_Absynpp_decllist2file(struct Cyc_List_List*,struct Cyc___cycFILE*);
-# 62
+# 68
 struct _fat_ptr Cyc_Absynpp_typ2string(void*);
 # 27 "../../library/compiler/warn.h"
 extern void Cyc_Warn_reset(struct _fat_ptr);

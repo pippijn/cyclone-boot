@@ -115,11 +115,11 @@ struct Cyc_Absyn_Exp*Cyc_Absyn_aggrmember_exp(struct Cyc_Absyn_Exp*,struct _fat_
 struct Cyc_Absyn_Stmt*Cyc_Absyn_skip_stmt(unsigned);
 # 1431
 struct Cyc_Absyn_Aggrdecl*Cyc_Absyn_get_known_aggrdecl(union Cyc_Absyn_AggrInfo);
-# 68 "absynpp.h"
+# 74 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);
 struct _fat_ptr Cyc_Absynpp_stmt2string(struct Cyc_Absyn_Stmt*);
 struct _fat_ptr Cyc_Absynpp_qvar2string(struct _tuple2*);
-# 74
+# 80
 struct _fat_ptr Cyc_Absynpp_pat2string(struct Cyc_Absyn_Pat*);
 # 37 "warn.h"
 void Cyc_Warn_warn(unsigned,struct _fat_ptr,struct _fat_ptr);

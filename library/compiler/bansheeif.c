@@ -65,7 +65,7 @@ void Cyc_Warn_err2(unsigned,struct _fat_ptr);
 void*Cyc_Warn_impos2(struct _fat_ptr);
 # 59 "kinds.h"
 extern struct Cyc_Core_Opt Cyc_Kinds_ptrbko;
-# 62 "absynpp.h"
+# 68 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_typ2string(void*);
 # 33 "bansheeif.h"
 int Cyc_BansheeIf_resolve(void*);

@@ -83,9 +83,9 @@ extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
 void Cyc_Warn_warn(unsigned,struct _fat_ptr,struct _fat_ptr);
 # 48
 void*Cyc_Warn_impos(struct _fat_ptr,struct _fat_ptr);
-# 62 "absynpp.h"
+# 68 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_typ2string(void*);
-# 68
+# 74
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);
 struct _fat_ptr Cyc_Absynpp_stmt2string(struct Cyc_Absyn_Stmt*);
 # 41 "toc.h"

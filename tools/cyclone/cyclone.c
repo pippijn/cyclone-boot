@@ -50,13 +50,13 @@ extern struct Cyc_List_List*Cyc_List_append(struct Cyc_List_List*,struct Cyc_Lis
 extern struct Cyc_List_List*Cyc_List_filter(int(*)(void*),struct Cyc_List_List*);
 # 48 "../../library/stdlib/position.h"
 extern int Cyc_Position_use_gcc_style_location;struct Cyc_Absynpp_Params{int expand_typedefs;int qvar_to_Cids;int add_cyc_prefix;int decls_first;int rewrite_temp_tvars;int print_all_tvars;int print_all_kinds;int print_all_effects;int print_using_stmts;int print_externC_stmts;int print_full_evars;int print_zeroterm;int generate_line_directives;int use_curr_namespace;struct Cyc_List_List*curr_namespace;int gen_clean_cyclone;};
-# 53 "../../library/compiler/absynpp.h"
+# 55 "../../library/compiler/absynpp.h"
 void Cyc_Absynpp_set_params(struct Cyc_Absynpp_Params*);
-# 55
-extern struct Cyc_Absynpp_Params Cyc_Absynpp_cyc_params_r;extern struct Cyc_Absynpp_Params Cyc_Absynpp_cyci_params_r;extern struct Cyc_Absynpp_Params Cyc_Absynpp_c_params_r;extern struct Cyc_Absynpp_Params Cyc_Absynpp_tc_params_r;
 # 57
+extern struct Cyc_Absynpp_Params Cyc_Absynpp_cyc_params_r;extern struct Cyc_Absynpp_Params Cyc_Absynpp_cyci_params_r;extern struct Cyc_Absynpp_Params Cyc_Absynpp_c_params_r;extern struct Cyc_Absynpp_Params Cyc_Absynpp_tc_params_r;
+# 63
 void Cyc_Absynpp_decllist2file(struct Cyc_List_List*,struct Cyc___cycFILE*);
-# 26 "../../library/compiler/absyndump.h"
+# 27 "../../library/compiler/absyndump.h"
 void Cyc_Absyndump_set_params(struct Cyc_Absynpp_Params*);
 void Cyc_Absyndump_dumpdecllist2file(struct Cyc_List_List*,struct Cyc___cycFILE*);
 void Cyc_Absyndump_dump_interface(struct Cyc_List_List*,struct Cyc___cycFILE*);
