@@ -143,6 +143,8 @@ int Cyc_Tcutil_is_temp_tvar(struct Cyc_Absyn_Tvar*);
 void*Cyc_Warn_impos(struct _fat_ptr,struct _fat_ptr);struct Cyc_Warn_String_Warn_Warg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Warn_Typ_Warn_Warg_struct{int tag;void*f1;};
 # 79
 void*Cyc_Warn_impos2(struct _fat_ptr);
+# 29 "../../library/stdlib/assert.h"
+extern void*Cyc___assert_fail(struct _fat_ptr,struct _fat_ptr,unsigned);
 # 38 "../../library/stdlib/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
 # 50 "../../library/stdlib/string.h"
@@ -150,9 +152,7 @@ extern int Cyc_strptrcmp(struct _fat_ptr*,struct _fat_ptr*);
 # 62
 extern struct _fat_ptr Cyc_strconcat(struct _fat_ptr,struct _fat_ptr);
 # 66
-extern struct _fat_ptr Cyc_str_sepstr(struct Cyc_List_List*,struct _fat_ptr);
-# 29 "../../library/stdlib/assert.h"
-extern void*Cyc___assert_fail(struct _fat_ptr,struct _fat_ptr,unsigned);struct _tuple16{struct Cyc_List_List*f0;struct Cyc_Absyn_Pat*f1;};
+extern struct _fat_ptr Cyc_str_sepstr(struct Cyc_List_List*,struct _fat_ptr);struct _tuple16{struct Cyc_List_List*f0;struct Cyc_Absyn_Pat*f1;};
 # 43 "absynpp.cyc"
 struct Cyc_PP_Doc*Cyc_Absynpp_dp2doc(struct _tuple16*);
 struct Cyc_PP_Doc*Cyc_Absynpp_switchclauses2doc(struct Cyc_List_List*);
