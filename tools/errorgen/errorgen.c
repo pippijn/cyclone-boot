@@ -1,6 +1,6 @@
 #include <cyc_include.h>
 struct Cyc___cycFILE;
-# 100 "../../library/stdlib/libc/stdio.h"
+# 100 "../../library/std/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_stdout;
 extern struct Cyc___cycFILE*Cyc_stdin;
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
@@ -20,15 +20,15 @@ extern int Cyc_fputc(int,struct Cyc___cycFILE*);struct Cyc_IntPtr_sa_ScanfArg_st
 extern int Cyc_fscanf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
 # 245
 extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);
-# 314 "../../library/stdlib/libc/stdio.h"
+# 314 "../../library/std/libc/stdio.h"
 extern struct _fat_ptr Cyc_tmpnam(struct _fat_ptr);
 # 318
 extern int Cyc_vfprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);struct Cyc___cycFILE;
-# 51 "../../library/stdlib/cycboot.h"
+# 51 "../../library/std/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stdout;
 extern struct Cyc___cycFILE*Cyc_stdin;
 extern struct Cyc___cycFILE*Cyc_stderr;
-# 73 "../../library/stdlib/cycboot.h"
+# 73 "../../library/std/cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 79
 extern int Cyc_fclose(struct Cyc___cycFILE*);
@@ -40,20 +40,20 @@ extern struct Cyc___cycFILE*Cyc_fopen(const char*,const char*);
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
 # 104
 extern int Cyc_fputc(int,struct Cyc___cycFILE*);
-# 157 "../../library/stdlib/cycboot.h"
+# 157 "../../library/std/cycboot.h"
 extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);
-# 224 "../../library/stdlib/cycboot.h"
+# 224 "../../library/std/cycboot.h"
 extern int Cyc_vfprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 318 "../../library/stdlib/cycboot.h"
+# 318 "../../library/std/cycboot.h"
 extern int system(const char*);
 extern void exit(int);
-# 49 "../../library/stdlib/string.h"
+# 49 "../../library/std/string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);struct Cyc_Hashtable_Table;
-# 39 "../../library/stdlib/hashtable.h"
+# 42 "../../library/std/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));
-# 50
+# 53
 extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);
-# 56
+# 59
 extern void**Cyc_Hashtable_lookup_opt(struct Cyc_Hashtable_Table*,void*);
 # 25 "errorgen.cyc"
 static void Cyc_error(struct _fat_ptr fmt,struct _fat_ptr args){struct Cyc___cycFILE*_T0;struct _fat_ptr _T1;struct _fat_ptr _T2;

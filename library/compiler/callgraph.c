@@ -7,13 +7,13 @@ int Cyc_Absyn_qvar_cmp(struct _tuple0*,struct _tuple0*);
 int Cyc_Absyn_hash_qvar(struct _tuple0*);
 # 1443
 void Cyc_Absyn_visit_stmt(int(*)(void*,struct Cyc_Absyn_Exp*),int(*)(void*,struct Cyc_Absyn_Stmt*),void*,struct Cyc_Absyn_Stmt*);struct Cyc_Set_Set;
-# 51 "../../library/stdlib/set.h"
+# 51 "../../library/std/set.h"
 extern struct Cyc_Set_Set*Cyc_Set_empty(int(*)(void*,void*));
 # 65
 extern struct Cyc_Set_Set*Cyc_Set_insert(struct Cyc_Set_Set*,void*);struct Cyc___cycFILE;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};
-# 100 "../../library/stdlib/cycboot.h"
+# 100 "../../library/std/cycboot.h"
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};
-# 46 "../../library/stdlib/graph.h"
+# 46 "../../library/std/graph.h"
 void Cyc_Graph_print(struct Cyc___cycFILE*,struct Cyc_Dict_Dict,void(*)(struct Cyc___cycFILE*,void*));
 # 50
 extern struct Cyc_Dict_Dict Cyc_Graph_empty(int(*)(void*,void*));
@@ -23,11 +23,11 @@ extern struct Cyc_Dict_Dict Cyc_Graph_add_node(struct Cyc_Dict_Dict,void*);
 extern struct Cyc_Dict_Dict Cyc_Graph_add_edges(struct Cyc_Dict_Dict,void*,struct Cyc_Set_Set*);
 # 76 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_qvar2string(struct _tuple0*);struct Cyc_Hashtable_Table;
-# 39 "../../library/stdlib/hashtable.h"
+# 42 "../../library/std/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));
-# 50
+# 53
 extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);
-# 52
+# 55
 extern void*Cyc_Hashtable_lookup(struct Cyc_Hashtable_Table*,void*);struct _tuple11{struct Cyc_Hashtable_Table*f0;struct Cyc_Set_Set*f1;};
 # 49 "callgraph.cyc"
 static int Cyc_Callgraph_visit_cg_f1(struct _tuple11*env,struct Cyc_Absyn_Exp*e){struct Cyc_Absyn_Exp*_T0;int*_T1;int _T2;struct Cyc_Absyn_Var_e_Absyn_Raw_exp_struct*_T3;void*_T4;int*_T5;unsigned _T6;void*_T7;struct Cyc_Absyn_Fndecl*_T8;void*_T9;struct Cyc_Absyn_Vardecl*_TA;struct _tuple11*_TB;struct _handler_cons*_TC;int _TD;struct Cyc_Set_Set*(*_TE)(struct Cyc_Set_Set*,struct Cyc_Absyn_Fndecl*);struct Cyc_Set_Set*(*_TF)(struct Cyc_Set_Set*,void*);struct Cyc_Set_Set*_T10;struct Cyc_Absyn_Fndecl*(*_T11)(struct Cyc_Hashtable_Table*,struct _tuple0*);void*(*_T12)(struct Cyc_Hashtable_Table*,void*);struct Cyc_Absyn_Fndecl*_T13;struct _tuple11*_T14;struct _tuple11 _T15;void*_T16;struct Cyc_Core_Not_found_exn_struct*_T17;char*_T18;char*_T19;

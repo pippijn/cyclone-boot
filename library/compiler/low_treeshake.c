@@ -1,14 +1,14 @@
 #include <cyc_include.h>
 struct Cyc_Core_Opt{void*v;};struct Cyc_Hashtable_Table;
-# 39 "../../library/stdlib/hashtable.h"
+# 42 "../../library/std/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));
-# 50
+# 53
 extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);
-# 56
+# 59
 extern void**Cyc_Hashtable_lookup_opt(struct Cyc_Hashtable_Table*,void*);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 178 "../../library/stdlib/list.h"
+# 178 "../../library/std/list.h"
 extern struct Cyc_List_List*Cyc_List_imp_rev(struct Cyc_List_List*);struct Cyc_Set_Set;
-# 51 "../../library/stdlib/set.h"
+# 51 "../../library/std/set.h"
 extern struct Cyc_Set_Set*Cyc_Set_empty(int(*)(void*,void*));
 # 68
 extern void Cyc_Set_imp_insert(struct Cyc_Set_Set*,void*);
@@ -34,7 +34,7 @@ struct _tuple11 Cyc_Absyn_aggr_kinded_name(union Cyc_Absyn_AggrInfo);
 # 1443
 void Cyc_Absyn_visit_stmt(int(*)(void*,struct Cyc_Absyn_Exp*),int(*)(void*,struct Cyc_Absyn_Stmt*),void*,struct Cyc_Absyn_Stmt*);
 void Cyc_Absyn_visit_exp(int(*)(void*,struct Cyc_Absyn_Exp*),int(*)(void*,struct Cyc_Absyn_Stmt*),void*,struct Cyc_Absyn_Exp*);struct Cyc_Warn_String_Warn_Warg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Warn_Typ_Warn_Warg_struct{int tag;void*f1;};
-# 79 "warn.h"
+# 87 "warn.h"
 void*Cyc_Warn_impos2(struct _fat_ptr);struct Cyc_LowTreeShake_Env{struct Cyc_Hashtable_Table*aggrdecls;struct Cyc_Set_Set*aggr_worklist;struct Cyc_Set_Set*aggr_keepers;struct Cyc_Set_Set*enum_keepers;struct Cyc_Hashtable_Table*global_keepers;struct Cyc_Hashtable_Table*funs_defined;};
 # 47 "low_treeshake.cyc"
 static void Cyc_LowTreeShake_build_tables_exp(struct Cyc_LowTreeShake_Env*,struct Cyc_Absyn_Exp*);

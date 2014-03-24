@@ -1,6 +1,6 @@
 #include <cyc_include.h>
 struct Cyc___cycFILE;
-# 53 "../../library/stdlib/cycboot.h"
+# 53 "../../library/std/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 79
 extern int Cyc_fclose(struct Cyc___cycFILE*);
@@ -12,33 +12,33 @@ extern int Cyc_fgetc(struct Cyc___cycFILE*);
 extern struct Cyc___cycFILE*Cyc_fopen(const char*,const char*);
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 271 "../../library/stdlib/cycboot.h"
+# 271 "../../library/std/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_file_open(struct _fat_ptr,struct _fat_ptr);
 # 300
 extern int isspace(int);
 # 313
 extern char*getenv(const char*);extern char Cyc_Core_Not_found[10U];struct Cyc_Core_Not_found_exn_struct{char*tag;};struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 178 "../../library/stdlib/list.h"
+# 178 "../../library/std/list.h"
 extern struct Cyc_List_List*Cyc_List_imp_rev(struct Cyc_List_List*);
 # 336
 extern void*Cyc_List_assoc_cmp(int(*)(void*,void*),struct Cyc_List_List*,void*);
 # 364
 extern struct _fat_ptr Cyc_List_to_array(struct Cyc_List_List*);
-# 38 "../../library/stdlib/string.h"
+# 38 "../../library/std/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
-# 49 "../../library/stdlib/string.h"
+# 49 "../../library/std/string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_strptrcmp(struct _fat_ptr*,struct _fat_ptr*);
 extern int Cyc_strncmp(struct _fat_ptr,struct _fat_ptr,unsigned long);
 # 62
 extern struct _fat_ptr Cyc_strconcat(struct _fat_ptr,struct _fat_ptr);
-# 105 "../../library/stdlib/string.h"
+# 105 "../../library/std/string.h"
 extern struct _fat_ptr Cyc_strdup(struct _fat_ptr);
 # 110
 extern struct _fat_ptr Cyc_substring(struct _fat_ptr,int,unsigned long);
-# 30 "../../library/stdlib/filename.h"
+# 30 "../../library/std/filename.h"
 extern struct _fat_ptr Cyc_Filename_concat(struct _fat_ptr,struct _fat_ptr);
-# 69 "../../library/stdlib/arg.h"
+# 69 "../../library/std/arg.h"
 extern int Cyc_Arg_current;
 # 71
 extern void Cyc_Arg_parse(struct Cyc_List_List*,void(*)(struct _fat_ptr),int(*)(struct _fat_ptr),struct _fat_ptr,struct _fat_ptr);

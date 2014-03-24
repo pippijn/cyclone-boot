@@ -1,26 +1,26 @@
 #include <cyc_include.h>
 struct Cyc___cycFILE;
-# 222 "../../library/stdlib/libc/stdio.h"
+# 222 "../../library/std/libc/stdio.h"
 extern int Cyc_getc(struct Cyc___cycFILE*);
-# 316 "../../library/stdlib/libc/stdio.h"
+# 316 "../../library/std/libc/stdio.h"
 extern int Cyc_ungetc(int,struct Cyc___cycFILE*);
-# 5 "../../library/stdlib/libc/ctype.h"
+# 5 "../../library/std/libc/ctype.h"
 extern int isalnum(int);
 # 7
 extern int isalpha(int);
 # 13
 extern int isdigit(int);struct Cyc___cycFILE;
-# 142 "../../library/stdlib/cycboot.h"
+# 142 "../../library/std/cycboot.h"
 extern int Cyc_getc(struct Cyc___cycFILE*);
-# 222 "../../library/stdlib/cycboot.h"
+# 222 "../../library/std/cycboot.h"
 extern int Cyc_ungetc(int,struct Cyc___cycFILE*);
-# 282 "../../library/stdlib/cycboot.h"
+# 282 "../../library/std/cycboot.h"
 extern int isalnum(int);
 # 284
 extern int isalpha(int);
 # 290
 extern int isdigit(int);
-# 49 "../../library/stdlib/string.h"
+# 49 "../../library/std/string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 # 71
 extern struct _fat_ptr Cyc_strcpy(struct _fat_ptr,struct _fat_ptr);

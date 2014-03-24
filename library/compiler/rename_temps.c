@@ -1,12 +1,12 @@
 #include <cyc_include.h>
 struct Cyc___cycFILE;
-# 53 "../../library/stdlib/cycboot.h"
+# 53 "../../library/std/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 73
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);struct Cyc_Core_Opt{void*v;};struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};
-# 62 "../../library/stdlib/dict.h"
+# 62 "../../library/std/dict.h"
 extern struct Cyc_Dict_Dict Cyc_Dict_empty(int(*)(void*,void*));
 # 87
 extern struct Cyc_Dict_Dict Cyc_Dict_insert(struct Cyc_Dict_Dict,void*,void*);
@@ -22,8 +22,14 @@ union Cyc_Absyn_Nmspace Cyc_Absyn_Loc_n (void);
 struct _tuple0*Cyc_Absyn_binding2qvar(void*);
 # 1443
 void Cyc_Absyn_visit_stmt(int(*)(void*,struct Cyc_Absyn_Exp*),int(*)(void*,struct Cyc_Absyn_Stmt*),void*,struct Cyc_Absyn_Stmt*);
-void Cyc_Absyn_visit_exp(int(*)(void*,struct Cyc_Absyn_Exp*),int(*)(void*,struct Cyc_Absyn_Stmt*),void*,struct Cyc_Absyn_Exp*);struct Cyc_Warn_String_Warn_Warg_struct{int tag;struct _fat_ptr f1;};
-# 79 "warn.h"
+void Cyc_Absyn_visit_exp(int(*)(void*,struct Cyc_Absyn_Exp*),int(*)(void*,struct Cyc_Absyn_Stmt*),void*,struct Cyc_Absyn_Exp*);struct Cyc___cycFILE;
+# 102 "../../library/std/libc/stdio.h"
+extern struct Cyc___cycFILE*Cyc_stderr;
+# 129 "../../library/std/libc/stdio.h"
+extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
+# 163
+extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);struct Cyc_Warn_String_Warn_Warg_struct{int tag;struct _fat_ptr f1;};
+# 87 "warn.h"
 void*Cyc_Warn_impos2(struct _fat_ptr);
 # 74 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);struct Cyc_RenameTemps_Env{struct Cyc_Dict_Dict d;int next_num;};

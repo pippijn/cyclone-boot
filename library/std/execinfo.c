@@ -1,8 +1,8 @@
 #include <cyc_include.h>
 extern char Cyc_Core_Failure[8U];struct Cyc_Core_Failure_exn_struct{char*tag;struct _fat_ptr f1;};
-# 158 "../../library/stdlib/libc/stdlib.h"
+# 158 "../../library/std/libc/stdlib.h"
 extern void exit(int);struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
-# 129 "../../library/stdlib/libc/stdio.h"
+# 129 "../../library/std/libc/stdio.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 241
 extern void perror(const char*);
@@ -12,11 +12,11 @@ extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);
 extern int putchar(int);
 # 287
 extern int Cyc_sprintf(struct _fat_ptr,struct _fat_ptr,struct _fat_ptr);
-# 112 "../../library/stdlib/libc/sys/wait.h"
+# 112 "../../library/std/libc/sys/wait.h"
 extern int waitpid(int,int*,int);
-# 315 "../../library/stdlib/libc/signal.h"
+# 315 "../../library/std/libc/signal.h"
 extern int kill(int,int);
-# 651 "../../library/stdlib/libc/unistd.h"
+# 651 "../../library/std/libc/unistd.h"
 extern int close(int);
 # 658
 extern int dup2(int,int);
@@ -24,7 +24,7 @@ extern int dup2(int,int);
 extern int execvp(const char*,const char**);
 # 686
 extern int fork (void);
-# 725 "../../library/stdlib/libc/unistd.h"
+# 725 "../../library/std/libc/unistd.h"
 extern int getpid (void);
 # 754
 extern int pipe(int*);

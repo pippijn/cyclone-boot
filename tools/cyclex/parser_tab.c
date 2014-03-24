@@ -1,8 +1,8 @@
 #include <cyc_include.h>
 struct Cyc_Core_Opt{void*v;};extern char Cyc_Core_Failure[8U];struct Cyc_Core_Failure_exn_struct{char*tag;struct _fat_ptr f1;};extern char Cyc_Core_Not_found[10U];struct Cyc_Core_Not_found_exn_struct{char*tag;};struct Cyc___cycFILE;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};
-# 129 "../../library/stdlib/libc/stdio.h"
+# 129 "../../library/std/libc/stdio.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 172 "../../library/stdlib/list.h"
+# 172 "../../library/std/list.h"
 extern struct Cyc_List_List*Cyc_List_rev(struct Cyc_List_List*);
 # 178
 extern struct Cyc_List_List*Cyc_List_imp_rev(struct Cyc_List_List*);
@@ -10,21 +10,21 @@ extern struct Cyc_List_List*Cyc_List_imp_rev(struct Cyc_List_List*);
 extern struct Cyc_List_List*Cyc_List_append(struct Cyc_List_List*,struct Cyc_List_List*);
 # 319
 extern int Cyc_List_memq(struct Cyc_List_List*,void*);struct Cyc_Hashtable_Table;
-# 39 "../../library/stdlib/hashtable.h"
+# 42 "../../library/std/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));
-# 50
+# 53
 extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);
-# 52
+# 55
 extern void*Cyc_Hashtable_lookup(struct Cyc_Hashtable_Table*,void*);
-# 86
+# 89
 extern int Cyc_Hashtable_hash_stringptr(struct _fat_ptr*);struct Cyc___cycFILE;
-# 73 "../../library/stdlib/cycboot.h"
+# 73 "../../library/std/cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);struct Cyc_Lexing_lexbuf{void(*refill_buff)(struct Cyc_Lexing_lexbuf*);void*refill_state;struct _fat_ptr lex_buffer;int lex_buffer_len;int lex_abs_pos;int lex_start_pos;int lex_curr_pos;int lex_last_pos;int lex_last_action;int lex_eof_reached;};
-# 78 "../../library/stdlib/lexing.h"
+# 78 "../../library/std/lexing.h"
 extern struct Cyc_Lexing_lexbuf*Cyc_Lexing_from_file(struct Cyc___cycFILE*);
-# 38 "../../library/stdlib/string.h"
+# 38 "../../library/std/string.h"
 extern unsigned Cyc_strlen(struct _fat_ptr);
-# 50 "../../library/stdlib/string.h"
+# 50 "../../library/std/string.h"
 extern int Cyc_strptrcmp(struct _fat_ptr*,struct _fat_ptr*);struct Cyc_Syntax_Location{int start_pos;int end_pos;int start_line;int start_col;};struct Cyc_Syntax_Epsilon_Syntax_Regular_expression_struct{int tag;int f1;};struct Cyc_Syntax_Characters_Syntax_Regular_expression_struct{int tag;struct Cyc_List_List*f1;};struct Cyc_Syntax_Sequence_Syntax_Regular_expression_struct{int tag;void*f1;void*f2;};struct Cyc_Syntax_Alternative_Syntax_Regular_expression_struct{int tag;void*f1;void*f2;};struct Cyc_Syntax_Repetition_Syntax_Regular_expression_struct{int tag;void*f1;};
 # 31 "syntax.h"
 extern struct Cyc_Syntax_Epsilon_Syntax_Regular_expression_struct Cyc_Syntax_Epsilon_val;struct _tuple3{void*f0;struct Cyc_Syntax_Location*f1;};struct _tuple4{struct _fat_ptr f0;struct _fat_ptr f1;};struct _tuple5{struct _fat_ptr f0;struct _fat_ptr f1;struct _tuple4*f2;struct Cyc_List_List*f3;};struct Cyc_Syntax_Lexer_definition{struct Cyc_Syntax_Location*header;struct Cyc_List_List*entrypoints;struct Cyc_Syntax_Location*trailer;};

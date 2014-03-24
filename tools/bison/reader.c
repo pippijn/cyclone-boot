@@ -1,6 +1,6 @@
 #include <cyc_include.h>
 struct Cyc___cycFILE;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
-# 129 "../../library/stdlib/libc/stdio.h"
+# 129 "../../library/std/libc/stdio.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 163
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
@@ -12,37 +12,37 @@ extern int Cyc_putc(int,struct Cyc___cycFILE*);
 extern struct _fat_ptr Cyc_rprintf(struct _RegionHandle*,struct _fat_ptr,struct _fat_ptr);
 # 287
 extern int Cyc_sprintf(struct _fat_ptr,struct _fat_ptr,struct _fat_ptr);
-# 316 "../../library/stdlib/libc/stdio.h"
+# 316 "../../library/std/libc/stdio.h"
 extern int Cyc_ungetc(int,struct Cyc___cycFILE*);
-# 5 "../../library/stdlib/libc/ctype.h"
+# 5 "../../library/std/libc/ctype.h"
 extern int isalnum(int);
 # 13
 extern int isdigit(int);struct Cyc___cycFILE;
-# 73 "../../library/stdlib/cycboot.h"
+# 73 "../../library/std/cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 142 "../../library/stdlib/cycboot.h"
+# 142 "../../library/std/cycboot.h"
 extern int Cyc_getc(struct Cyc___cycFILE*);
-# 161 "../../library/stdlib/cycboot.h"
+# 161 "../../library/std/cycboot.h"
 extern int Cyc_putc(int,struct Cyc___cycFILE*);
 # 174
 extern struct _fat_ptr Cyc_rprintf(struct _RegionHandle*,struct _fat_ptr,struct _fat_ptr);
-# 222 "../../library/stdlib/cycboot.h"
+# 222 "../../library/std/cycboot.h"
 extern int Cyc_ungetc(int,struct Cyc___cycFILE*);
-# 282 "../../library/stdlib/cycboot.h"
+# 282 "../../library/std/cycboot.h"
 extern int isalnum(int);
 # 290
 extern int isdigit(int);
-# 38 "../../library/stdlib/string.h"
+# 38 "../../library/std/string.h"
 extern unsigned Cyc_strlen(struct _fat_ptr);
-# 49 "../../library/stdlib/string.h"
+# 49 "../../library/std/string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 # 71
 extern struct _fat_ptr Cyc_strcpy(struct _fat_ptr,struct _fat_ptr);
-# 105 "../../library/stdlib/string.h"
+# 105 "../../library/std/string.h"
 extern struct _fat_ptr Cyc_strdup(struct _fat_ptr);
-# 145 "../../library/stdlib/libc/stdlib.h"
+# 145 "../../library/std/libc/stdlib.h"
 extern int atoi(const char*);
 # 27 "files.h"
 extern struct Cyc___cycFILE*Cyc_finput;

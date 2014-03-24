@@ -4,7 +4,7 @@ struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_Int_pa_PrintAr
 extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};
 # 110 "./dict.h"
 extern void*Cyc_Dict_lookup(struct Cyc_Dict_Dict,void*);
-# 245 "../../library/stdlib/libc/stdio.h"
+# 245 "../../library/std/libc/stdio.h"
 extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);
 # 29 "./assert.h"
 extern void*Cyc___assert_fail(struct _fat_ptr,struct _fat_ptr,unsigned);

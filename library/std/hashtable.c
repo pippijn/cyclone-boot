@@ -4,7 +4,7 @@ struct Cyc_Core_Not_found_exn_struct{char*tag;};
 extern struct Cyc_Core_Not_found_exn_struct Cyc_Core_Not_found_val;
 # 176
 extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc_Hashtable_Table;
-# 72 "./hashtable.h"
+# 75 "./hashtable.h"
 void Cyc_Hashtable_resize(struct Cyc_Hashtable_Table*);struct Cyc___cycFILE;
 # 53 "./cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};struct Cyc_Double_pa_PrintArg_struct{int tag;double f1;};

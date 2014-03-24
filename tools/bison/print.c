@@ -1,6 +1,6 @@
 #include <cyc_include.h>
 struct Cyc___cycFILE;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
-# 129 "../../library/stdlib/libc/stdio.h"
+# 129 "../../library/std/libc/stdio.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 163
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
@@ -8,19 +8,19 @@ extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_fputs(const char*,struct Cyc___cycFILE*);
 # 249
 extern int Cyc_putc(int,struct Cyc___cycFILE*);struct Cyc___cycFILE;
-# 73 "../../library/stdlib/cycboot.h"
+# 73 "../../library/std/cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
 # 106
 extern int Cyc_fputs(const char*,struct Cyc___cycFILE*);
-# 161 "../../library/stdlib/cycboot.h"
+# 161 "../../library/std/cycboot.h"
 extern int Cyc_putc(int,struct Cyc___cycFILE*);
-# 38 "../../library/stdlib/string.h"
+# 38 "../../library/std/string.h"
 extern unsigned Cyc_strlen(struct _fat_ptr);
-# 62 "../../library/stdlib/string.h"
+# 62 "../../library/std/string.h"
 extern struct _fat_ptr Cyc_strconcat(struct _fat_ptr,struct _fat_ptr);
-# 105 "../../library/stdlib/string.h"
+# 105 "../../library/std/string.h"
 extern struct _fat_ptr Cyc_strdup(struct _fat_ptr);
 # 28 "files.h"
 extern struct Cyc___cycFILE*Cyc_foutput;

@@ -1,14 +1,14 @@
 #include <cyc_include.h>
 
-# 122 "../../library/stdlib/core.h"
+# 122 "../../library/std/core.h"
 void*Cyc_Core_identity(void*);
 # 124
 int Cyc_Core_intcmp(int,int);extern char Cyc_Core_Not_found[10U];struct Cyc_Core_Not_found_exn_struct{char*tag;};struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc_Hashtable_Table;
-# 39 "../../library/stdlib/hashtable.h"
+# 42 "../../library/std/hashtable.h"
 extern struct Cyc_Hashtable_Table*Cyc_Hashtable_create(int,int(*)(void*,void*),int(*)(void*));
-# 50
+# 53
 extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table*,void*,void*);
-# 52
+# 55
 extern void*Cyc_Hashtable_lookup(struct Cyc_Hashtable_Table*,void*);struct Cyc_Lexgen_Remember_Lexgen_Automata_trans_struct{int tag;int f1;};struct Cyc_Lexgen_Goto_Lexgen_Automata_move_struct{int tag;int f1;};struct Cyc_Lexgen_Perform_Lexgen_Automata_struct{int tag;int f1;};struct Cyc_Lexgen_Shift_Lexgen_Automata_struct{int tag;void*f1;struct _fat_ptr f2;};struct Cyc_Compact_Lex_tables{struct _fat_ptr base;struct _fat_ptr backtrk;struct _fat_ptr defaultX;struct _fat_ptr trans;struct _fat_ptr check;};
 # 24 "compact.cyc"
 static int Cyc_Compact_most_frequent_elt(struct _fat_ptr v){struct Cyc_Hashtable_Table*(*_T0)(int,int(*)(int,int),int(*)(int));struct Cyc_Hashtable_Table*(*_T1)(int,int(*)(void*,void*),int(*)(void*));int(*_T2)(int,int);int(*_T3)(int);void*(*_T4)(void*);int _T5;unsigned _T6;struct _fat_ptr _T7;unsigned _T8;struct _fat_ptr _T9;unsigned char*_TA;int*_TB;int*_TC;int _TD;struct _handler_cons*_TE;int _TF;int*(*_T10)(struct Cyc_Hashtable_Table*,int);void*(*_T11)(struct Cyc_Hashtable_Table*,void*);void*_T12;struct Cyc_Core_Not_found_exn_struct*_T13;char*_T14;char*_T15;int*_T16;struct _RegionHandle*_T17;void(*_T18)(struct Cyc_Hashtable_Table*,int,int*);void(*_T19)(struct Cyc_Hashtable_Table*,void*,void*);int*_T1A;int _T1B;int*_T1C;struct _RegionHandle _T1D=_new_region(0U,"rgn");struct _RegionHandle*rgn=& _T1D;_push_region(rgn);_T1=Cyc_Hashtable_create;{

@@ -1,10 +1,10 @@
 #include <cyc_include.h>
 struct Cyc___cycFILE;
-# 102 "../../library/stdlib/libc/stdio.h"
+# 102 "../../library/std/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 163
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 164 "../../library/stdlib/libc/stdlib.h"
+# 164 "../../library/std/libc/stdlib.h"
 extern char*getenv(const char*);
 # 31 "./getopt.h"
 extern struct _fat_ptr Cyc_optarg;

@@ -1,14 +1,14 @@
 #include <cyc_include.h>
 extern char Cyc_Core_Impossible[11U];struct Cyc_Core_Impossible_exn_struct{char*tag;struct _fat_ptr f1;};
-# 176 "../../library/stdlib/core.h"
+# 176 "../../library/std/core.h"
 extern struct _RegionHandle*Cyc_Core_heap_region;struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};
-# 54 "../../library/stdlib/list.h"
+# 54 "../../library/std/list.h"
 extern struct Cyc_List_List*Cyc_List_list(struct _fat_ptr);
 # 178
 extern struct Cyc_List_List*Cyc_List_imp_rev(struct Cyc_List_List*);
 # 184
 extern struct Cyc_List_List*Cyc_List_append(struct Cyc_List_List*,struct Cyc_List_List*);
-# 27 "../../library/stdlib/position.h"
+# 27 "../../library/std/position.h"
 extern void Cyc_Position_reset_position(struct _fat_ptr);
 # 37
 extern struct _fat_ptr Cyc_Position_string_of_segment(unsigned);
@@ -17,7 +17,7 @@ extern struct Cyc_List_List*Cyc_Position_strings_of_segments(struct Cyc_List_Lis
 extern struct Cyc_Position_Error*Cyc_Position_mk_err(unsigned,struct _fat_ptr);
 extern unsigned Cyc_Position_get_seg(struct Cyc_Position_Error*);
 extern struct _fat_ptr Cyc_Position_get_desc(struct Cyc_Position_Error*);struct Cyc___cycFILE;
-# 51 "../../library/stdlib/cycboot.h"
+# 51 "../../library/std/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stdout;
 # 53
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
@@ -27,13 +27,13 @@ extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_fflush(struct Cyc___cycFILE*);
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 224 "../../library/stdlib/cycboot.h"
+# 224 "../../library/std/cycboot.h"
 extern int Cyc_vfprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
 # 232
 extern struct _fat_ptr Cyc_vrprintf(struct _RegionHandle*,struct _fat_ptr,struct _fat_ptr);
-# 38 "../../library/stdlib/string.h"
+# 38 "../../library/std/string.h"
 extern unsigned long Cyc_strlen(struct _fat_ptr);
-# 62 "../../library/stdlib/string.h"
+# 62 "../../library/std/string.h"
 extern struct _fat_ptr Cyc_strconcat(struct _fat_ptr,struct _fat_ptr);
 # 64
 extern struct _fat_ptr Cyc_strconcat_l(struct Cyc_List_List*);struct _union_Nmspace_Abs_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_Rel_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_C_n{int tag;struct Cyc_List_List*val;};struct _union_Nmspace_Loc_n{int tag;int val;};union Cyc_Absyn_Nmspace{struct _union_Nmspace_Abs_n Abs_n;struct _union_Nmspace_Rel_n Rel_n;struct _union_Nmspace_C_n C_n;struct _union_Nmspace_Loc_n Loc_n;};struct _tuple0{union Cyc_Absyn_Nmspace f0;struct _fat_ptr*f1;};
@@ -54,10 +54,24 @@ struct _fat_ptr Cyc_Absynpp_kindbound2string(void*);
 # 74
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);
 struct _fat_ptr Cyc_Absynpp_stmt2string(struct Cyc_Absyn_Stmt*);
-struct _fat_ptr Cyc_Absynpp_qvar2string(struct _tuple0*);
-# 28 "warn.h"
+struct _fat_ptr Cyc_Absynpp_qvar2string(struct _tuple0*);struct Cyc___cycFILE;
+# 100 "../../library/std/libc/stdio.h"
+extern struct Cyc___cycFILE*Cyc_stdout;
+# 102
+extern struct Cyc___cycFILE*Cyc_stderr;
+# 129 "../../library/std/libc/stdio.h"
+extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
+# 147
+extern int Cyc_fflush(struct Cyc___cycFILE*);
+# 163
+extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
+# 318 "../../library/std/libc/stdio.h"
+extern int Cyc_vfprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
+# 330
+extern struct _fat_ptr Cyc_vrprintf(struct _RegionHandle*,struct _fat_ptr,struct _fat_ptr);
+# 31 "warn.h"
 extern int Cyc_Warn_print_warnings;
-# 30
+# 33
 extern int Cyc_Warn_num_errors;
 extern int Cyc_Warn_max_errors;struct Cyc_Warn_String_Warn_Warg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Warn_Qvar_Warn_Warg_struct{int tag;struct _tuple0*f1;};struct Cyc_Warn_Typ_Warn_Warg_struct{int tag;void*f1;};struct Cyc_Warn_TypOpt_Warn_Warg_struct{int tag;void*f1;};struct Cyc_Warn_Exp_Warn_Warg_struct{int tag;struct Cyc_Absyn_Exp*f1;};struct Cyc_Warn_Stmt_Warn_Warg_struct{int tag;struct Cyc_Absyn_Stmt*f1;};struct Cyc_Warn_Aggrdecl_Warn_Warg_struct{int tag;struct Cyc_Absyn_Aggrdecl*f1;};struct Cyc_Warn_Tvar_Warn_Warg_struct{int tag;struct Cyc_Absyn_Tvar*f1;};struct Cyc_Warn_KindBound_Warn_Warg_struct{int tag;void*f1;};struct Cyc_Warn_Kind_Warn_Warg_struct{int tag;struct Cyc_Absyn_Kind*f1;};struct Cyc_Warn_Attribute_Warn_Warg_struct{int tag;void*f1;};struct Cyc_Warn_Vardecl_Warn_Warg_struct{int tag;struct Cyc_Absyn_Vardecl*f1;};struct Cyc_Warn_Int_Warn_Warg_struct{int tag;int f1;};
 # 32 "warn.cyc"

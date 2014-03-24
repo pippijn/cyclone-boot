@@ -1,6 +1,6 @@
 #include <cyc_include.h>
 struct Cyc___cycFILE;
-# 102 "../../library/stdlib/libc/stdio.h"
+# 102 "../../library/std/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};
 # 129
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
@@ -20,13 +20,13 @@ extern void perror(const char*);
 extern int Cyc_putc(int,struct Cyc___cycFILE*);
 # 265
 extern void Cyc_rewind(struct Cyc___cycFILE*);
-# 158 "../../library/stdlib/libc/stdlib.h"
+# 158 "../../library/std/libc/stdlib.h"
 extern void exit(int);
-# 809 "../../library/stdlib/libc/unistd.h"
+# 809 "../../library/std/libc/unistd.h"
 extern int unlink(const char*);struct Cyc___cycFILE;
-# 53 "../../library/stdlib/cycboot.h"
+# 53 "../../library/std/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;
-# 73 "../../library/stdlib/cycboot.h"
+# 73 "../../library/std/cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 79
 extern int Cyc_fclose(struct Cyc___cycFILE*);
@@ -36,21 +36,21 @@ extern int Cyc_fflush(struct Cyc___cycFILE*);
 extern struct Cyc___cycFILE*Cyc_fopen(const char*,const char*);
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 142 "../../library/stdlib/cycboot.h"
+# 142 "../../library/std/cycboot.h"
 extern int Cyc_getc(struct Cyc___cycFILE*);
-# 161 "../../library/stdlib/cycboot.h"
+# 161 "../../library/std/cycboot.h"
 extern int Cyc_putc(int,struct Cyc___cycFILE*);
-# 319 "../../library/stdlib/cycboot.h"
+# 319 "../../library/std/cycboot.h"
 extern void exit(int);
-# 38 "../../library/stdlib/string.h"
+# 38 "../../library/std/string.h"
 extern unsigned Cyc_strlen(struct _fat_ptr);
-# 49 "../../library/stdlib/string.h"
+# 49 "../../library/std/string.h"
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 # 51
 extern int Cyc_strncmp(struct _fat_ptr,struct _fat_ptr,unsigned);
 # 62
 extern struct _fat_ptr Cyc_strconcat(struct _fat_ptr,struct _fat_ptr);
-# 105 "../../library/stdlib/string.h"
+# 105 "../../library/std/string.h"
 extern struct _fat_ptr Cyc_strdup(struct _fat_ptr);
 # 110
 extern struct _fat_ptr Cyc_substring(struct _fat_ptr,int,unsigned);

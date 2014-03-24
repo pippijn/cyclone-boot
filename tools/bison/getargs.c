@@ -1,6 +1,6 @@
 #include <cyc_include.h>
 struct Cyc___cycFILE;
-# 100 "../../library/stdlib/libc/stdio.h"
+# 100 "../../library/std/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_stdout;
 # 102
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};
@@ -8,23 +8,23 @@ extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int 
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
 # 245
 extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);
-# 31 "../../library/stdlib/getopt.h"
+# 31 "../../library/std/getopt.h"
 extern struct _fat_ptr Cyc_optarg;
-# 45 "../../library/stdlib/getopt.h"
+# 45 "../../library/std/getopt.h"
 extern int Cyc_optind;struct Cyc_option{struct _fat_ptr name;int has_arg;int*flag;int val;};
-# 117 "../../library/stdlib/getopt.h"
+# 117 "../../library/std/getopt.h"
 extern int Cyc_getopt_long(int,struct _fat_ptr,struct _fat_ptr,struct _fat_ptr,int*);
-# 158 "../../library/stdlib/libc/stdlib.h"
+# 158 "../../library/std/libc/stdlib.h"
 extern void exit(int);struct Cyc___cycFILE;
-# 51 "../../library/stdlib/cycboot.h"
+# 51 "../../library/std/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stdout;
 # 53
 extern struct Cyc___cycFILE*Cyc_stderr;
-# 100 "../../library/stdlib/cycboot.h"
+# 100 "../../library/std/cycboot.h"
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 157 "../../library/stdlib/cycboot.h"
+# 157 "../../library/std/cycboot.h"
 extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);
-# 319 "../../library/stdlib/cycboot.h"
+# 319 "../../library/std/cycboot.h"
 extern void exit(int);
 # 38 "files.h"
 extern struct _fat_ptr Cyc_spec_outfile;

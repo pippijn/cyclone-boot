@@ -1,26 +1,26 @@
 #include <cyc_include.h>
 struct Cyc___cycFILE;
-# 102 "../../library/stdlib/libc/stdio.h"
+# 102 "../../library/std/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 163
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
 # 261
 extern int remove(const char*);
-# 369 "../../library/stdlib/libc/stdio.h"
+# 369 "../../library/std/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_file_open(struct _fat_ptr,struct _fat_ptr);
-# 34 "../../library/stdlib/filename.h"
+# 34 "../../library/std/filename.h"
 extern struct _fat_ptr Cyc_Filename_chop_extension(struct _fat_ptr);
 # 46
 extern int Cyc_Filename_check_suffix(struct _fat_ptr,struct _fat_ptr);struct Cyc_List_List{void*hd;struct Cyc_List_List*tl;};struct Cyc___cycFILE;
-# 53 "../../library/stdlib/cycboot.h"
+# 53 "../../library/std/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;
-# 100 "../../library/stdlib/cycboot.h"
+# 100 "../../library/std/cycboot.h"
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 167 "../../library/stdlib/cycboot.h"
+# 167 "../../library/std/cycboot.h"
 extern int remove(const char*);
-# 271 "../../library/stdlib/cycboot.h"
+# 271 "../../library/std/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_file_open(struct _fat_ptr,struct _fat_ptr);
-# 62 "../../library/stdlib/string.h"
+# 62 "../../library/std/string.h"
 extern struct _fat_ptr Cyc_strconcat(struct _fat_ptr,struct _fat_ptr);struct Cyc_Syntax_Location{int start_pos;int end_pos;int start_line;int start_col;};struct Cyc_Syntax_Lexer_definition{struct Cyc_Syntax_Location*header;struct Cyc_List_List*entrypoints;struct Cyc_Syntax_Location*trailer;};
 # 15 "parser.h"
 extern struct Cyc_Syntax_Lexer_definition*Cyc_Parser_parse_file(struct Cyc___cycFILE*);extern char Cyc_Parser_Parser_error[13U];struct Cyc_Parser_Parser_error_exn_struct{char*tag;struct _fat_ptr f1;};extern char Cyc_Lexer_Lexical_error[14U];struct Cyc_Lexer_Lexical_error_exn_struct{char*tag;struct _fat_ptr f1;int f2;int f3;};

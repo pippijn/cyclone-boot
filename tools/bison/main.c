@@ -1,20 +1,20 @@
 #include <cyc_include.h>
 struct Cyc___cycFILE;
-# 102 "../../library/stdlib/libc/stdio.h"
+# 102 "../../library/std/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 129
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 163
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 132 "../../library/stdlib/libc/stdlib.h"
+# 132 "../../library/std/libc/stdlib.h"
 extern void*abort (void);struct Cyc___cycFILE;
-# 53 "../../library/stdlib/cycboot.h"
+# 53 "../../library/std/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;
-# 73 "../../library/stdlib/cycboot.h"
+# 73 "../../library/std/cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
-# 320 "../../library/stdlib/cycboot.h"
+# 320 "../../library/std/cycboot.h"
 extern void*abort (void);
 # 25 "main.cyc"
 extern int Cyc_lineno;

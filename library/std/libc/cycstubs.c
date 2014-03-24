@@ -101,7 +101,7 @@ int(*_T7)(unsigned long*,const union Cyc_pthread_attr_t*,int(*)(struct _tuple5*)
 _T7->f0=cycfun;_T7->f1=arg;_T5=(struct _tuple5*)_T7;}_T6=
 # 152
 _T0(_T2,_T3,_T4,_T5);return _T6;}struct _tuple6{unsigned long __val[1024U / (8U * sizeof(unsigned long))];};union Cyc_sigval{int sival_int;void*sival_ptr;};struct _tuple7{int si_pid;unsigned si_uid;};struct _tuple8{int si_tid;int si_overrun;union Cyc_sigval si_sigval;};struct _tuple9{int si_pid;unsigned si_uid;union Cyc_sigval si_sigval;};struct _tuple10{int si_pid;unsigned si_uid;int si_status;long si_utime;long si_stime;};struct _tuple11{void*si_addr;};struct _tuple12{long si_band;int si_fd;};struct _tuple13{void*_call_addr;int _syscall;unsigned _arch;};union _tuple14{int _pad[128U / sizeof(int)- 3U];struct _tuple7 _kill;struct _tuple8 _timer;struct _tuple9 _rt;struct _tuple10 _sigchld;struct _tuple11 _sigfault;struct _tuple12 _sigpoll;struct _tuple13 _sigsys;};struct _tuple15{int si_signo;int si_errno;int si_code;union _tuple14 _sifields;};union _tuple16{void(*sa_handler)(int);void(*sa_sigaction)(int,struct _tuple15*,void*);};struct Cyc_sigaction{union _tuple16 __sigaction_handler;struct _tuple6 sa_mask;int sa_flags;void(*sa_restorer)(void);};
-# 332 "../../../library/stdlib/libc/signal.h"
+# 332 "../../../library/std/libc/signal.h"
 extern void Cyc_SIG_DFL(int);
 extern void Cyc_SIG_ERR(int);
 extern void Cyc_SIG_IGN(int);
@@ -132,7 +132,7 @@ int ret=sigaction(sig,act,oact);
 if(act==0)goto _TL19;sigaction_wrap(act);goto _TL1A;_TL19: _TL1A:
  if(oact==0)goto _TL1B;sigaction_wrap(oact);goto _TL1C;_TL1B: _TL1C: _T0=ret;
 return _T0;}}union _tuple18{unsigned __wch;char __wchb[4U];};struct _tuple19{int __count;union _tuple18 __value;};struct _tuple20{long __pos;struct _tuple19 __state;};struct Cyc___cycFILE;struct __abstractFILE;
-# 330 "../../../library/stdlib/libc/stdio.h"
+# 330 "../../../library/std/libc/stdio.h"
 extern struct _fat_ptr Cyc_vrprintf(struct _RegionHandle*,struct _fat_ptr,struct _fat_ptr);extern char Cyc_FileCloseError[15U];struct Cyc_FileCloseError_exn_struct{char*tag;};extern char Cyc_FileOpenError[14U];struct Cyc_FileOpenError_exn_struct{char*tag;struct _fat_ptr f1;};struct __abstractFILE;struct Cyc___cycFILE{struct __abstractFILE*file;};
 # 208 "cycstubs.cyc"
 struct Cyc___cycFILE*Cyc_fromCfile(struct __abstractFILE*cf){struct Cyc___cycFILE*_T0;struct __abstractFILE*_T1;unsigned _T2;struct Cyc___cycFILE*_T3;_T1=cf;_T2=(unsigned)_T1;
@@ -427,7 +427,7 @@ int Cyc_munmap(struct _fat_ptr start,unsigned length){struct _fat_ptr _T0;unsign
 munmap(_T2,_T3);return _T4;}struct Cyc_timespec{long tv_sec;long tv_nsec;};struct Cyc_timeval{long tv_sec;long tv_usec;};struct _tuple23{long __fds_bits[(unsigned)(1024 / (8 * (int)sizeof(long)))];};
 # 652 "cycstubs.cyc"
 extern int pselect(int,struct _tuple23*,struct _tuple23*,struct _tuple23*,const struct Cyc_timespec*,const struct _tuple6*);
-# 236 "../../../library/stdlib/libc/errno.h"
+# 236 "../../../library/std/libc/errno.h"
 extern int*__CYCLONE_ERRNO (void);
 # 656 "cycstubs.cyc"
 extern int Cyc_pselect(int a,struct _tuple23*b,struct _tuple23*c,struct _tuple23*d,const struct Cyc_timespec*e,const struct _tuple6*f){int*_T0;int*_T1;int _T2;int _T3;
@@ -592,7 +592,7 @@ unsigned Cyc_strftime(struct _fat_ptr s,unsigned maxsize,struct _fat_ptr fmt,con
 # 893
 _get_fat_size(_T1,sizeof(char));if(_T0 <= _T2)goto _TLA5;_T3=& Cyc___strftime_failure;_T4=(struct Cyc_Core_Failure_exn_struct*)_T3;_throw(_T4);goto _TLA6;_TLA5: _TLA6: _T5=s;_T6=_untag_fat_ptr_check_bound(_T5,sizeof(char),1U);_T7=(char*)_T6;_T8=maxsize;_T9=fmt;_TA=_untag_fat_ptr_check_bound(_T9,sizeof(char),1U);_TB=(const char*)_TA;_TC=t;_TD=
 strftime(_T7,_T8,_TB,_TC);return _TD;}
-# 676 "../../../library/stdlib/libc/unistd.h"
+# 676 "../../../library/std/libc/unistd.h"
 extern int execvp(const char*,const char**);static char _TmpG10[36U]="execlp arg list not NULL-terminated";
 # 913 "cycstubs.cyc"
 static struct Cyc_Core_Failure_exn_struct Cyc___execlp_failure={Cyc_Core_Failure,{(unsigned char*)_TmpG10,(unsigned char*)_TmpG10,(unsigned char*)_TmpG10 + 36U}};

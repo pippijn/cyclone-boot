@@ -1,14 +1,14 @@
 #include <cyc_include.h>
 struct Cyc___cycFILE;
-# 102 "../../library/stdlib/libc/stdio.h"
+# 102 "../../library/std/libc/stdio.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Int_pa_PrintArg_struct{int tag;unsigned long f1;};
 # 147
 extern int Cyc_fflush(struct Cyc___cycFILE*);
 # 163
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);struct Cyc___cycFILE;
-# 53 "../../library/stdlib/cycboot.h"
+# 53 "../../library/std/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;
-# 88 "../../library/stdlib/cycboot.h"
+# 88 "../../library/std/cycboot.h"
 extern int Cyc_fflush(struct Cyc___cycFILE*);
 # 100
 extern int Cyc_fprintf(struct Cyc___cycFILE*,struct _fat_ptr,struct _fat_ptr);
