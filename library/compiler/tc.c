@@ -187,13 +187,13 @@ void Cyc_Cifc_user_overrides(unsigned,struct Cyc_Tcenv_Tenv*,struct Cyc_List_Lis
 # 47 "toc.h"
 void Cyc_Toc_init (void);
 void Cyc_Toc_finish (void);struct Cyc_AssnDef_False_AssnDef_Assn_struct{int tag;};
-# 232 "assndef.h"
+# 249 "assndef.h"
 extern struct _fat_ptr Cyc_AssnDef_assn2string(void*);
-# 234
+# 251
 extern struct Cyc_AssnDef_False_AssnDef_Assn_struct Cyc_AssnDef_false_assn;
-# 238
+# 255
 extern void*Cyc_AssnDef_not(void*);struct Cyc_AssnDef_AssnFn{struct Cyc_List_List*actuals;void*assn;};struct Cyc_AssnDef_ExistAssnFn{struct Cyc_AssnDef_AssnFn*af;struct Cyc_Set_Set*existvars;};struct Cyc_AssnDef_AssnMap{void*assn;struct Cyc_Dict_Dict map;};
-# 8 "pratt_prover.h"
+# 9 "pratt_prover.h"
 int Cyc_PrattProver_constraint_prove(void*,void*);
 # 45 "vcgen.h"
 extern struct Cyc_AssnDef_AssnMap Cyc_Vcgen_clause2assn(struct Cyc_Absyn_Exp*);static char _TmpG0[1U]="";
