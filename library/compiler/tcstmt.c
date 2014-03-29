@@ -138,13 +138,13 @@ extern struct Cyc_Absyn_Kind Cyc_Kinds_ek;
 extern struct Cyc_Absyn_Kind Cyc_Kinds_aqk;
 # 77 "kinds.h"
 void*Cyc_Kinds_kind_to_bound(struct Cyc_Absyn_Kind*);
-# 43 "attributes.h"
+# 46 "attributes.h"
 extern struct Cyc_Absyn_No_throw_att_Absyn_Attribute_struct Cyc_Atts_No_throw_att_val;
-# 62
+# 64
 struct Cyc_List_List*Cyc_Atts_transfer_fn_type_atts(void*,struct Cyc_List_List*);
-# 70
+# 72
 void Cyc_Atts_check_fndecl_atts(unsigned,struct Cyc_List_List*,int);
-# 79
+# 81
 int Cyc_Atts_attribute_cmp(void*,void*);
 # 73 "../../library/std/cycboot.h"
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};struct Cyc_Tcenv_Genv{struct Cyc_Dict_Dict aggrdecls;struct Cyc_Dict_Dict datatypedecls;struct Cyc_Dict_Dict enumdecls;struct Cyc_Dict_Dict typedefs;struct Cyc_Dict_Dict ordinaries;};struct Cyc_Tcenv_Fenv;struct Cyc_Tcenv_Tenv{struct Cyc_List_List*ns;struct Cyc_Tcenv_Genv*ae;struct Cyc_Tcenv_Fenv*le;int allow_valueof: 1;int in_extern_c_include: 1;int in_tempest: 1;int tempest_generalize: 1;int in_extern_c_inc_repeat: 1;};

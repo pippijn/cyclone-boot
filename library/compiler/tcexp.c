@@ -385,9 +385,9 @@ void Cyc_Tctyp_check_type(unsigned,struct Cyc_Tcenv_Tenv*,struct Cyc_List_List*,
 # 26 "tcexp.h"
 void*Cyc_Tcexp_tcExp(struct Cyc_Tcenv_Tenv*,void**,struct Cyc_Absyn_Exp*);
 void*Cyc_Tcexp_tcExpInitializer(struct Cyc_Tcenv_Tenv*,void**,struct Cyc_Absyn_Exp*);
-# 43 "attributes.h"
+# 46 "attributes.h"
 extern struct Cyc_Absyn_No_throw_att_Absyn_Attribute_struct Cyc_Atts_No_throw_att_val;
-# 79
+# 81
 int Cyc_Atts_attribute_cmp(void*,void*);
 # 20 "bansheeif.h"
 void*Cyc_BansheeIf_equality_constraint(void*,void*);

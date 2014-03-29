@@ -49,7 +49,7 @@ struct Cyc_List_List*Cyc_Tcutil_rsubst_effconstr(struct _RegionHandle*,struct Cy
 int Cyc_Tcutil_cmp_effect_constraints(struct Cyc_List_List*,struct Cyc_List_List*);
 # 90 "kinds.h"
 struct Cyc_Absyn_Kind*Cyc_Kinds_force_kb(void*);
-# 54 "attributes.h"
+# 56 "attributes.h"
 int Cyc_Atts_same_atts(struct Cyc_List_List*,struct Cyc_List_List*);
 # 68 "absynpp.h"
 struct _fat_ptr Cyc_Absynpp_typ2string(void*);

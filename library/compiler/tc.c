@@ -120,17 +120,17 @@ extern struct Cyc_Absyn_Kind Cyc_Kinds_ik;
 void*Cyc_Kinds_kind_to_bound(struct Cyc_Absyn_Kind*);
 # 89
 void*Cyc_Kinds_compress_kb(void*);
-# 43 "attributes.h"
+# 46 "attributes.h"
 extern struct Cyc_Absyn_No_throw_att_Absyn_Attribute_struct Cyc_Atts_No_throw_att_val;
-# 62
+# 64
 struct Cyc_List_List*Cyc_Atts_transfer_fn_type_atts(void*,struct Cyc_List_List*);
-# 70
+# 72
 void Cyc_Atts_check_fndecl_atts(unsigned,struct Cyc_List_List*,int);
 void Cyc_Atts_check_variable_atts(unsigned,struct Cyc_Absyn_Vardecl*,struct Cyc_List_List*);
 void Cyc_Atts_check_field_atts(unsigned,struct _fat_ptr*,struct Cyc_List_List*);
-# 74
+# 76
 void Cyc_Atts_fnTypeAttsOK(unsigned,void*);
-# 79
+# 81
 int Cyc_Atts_attribute_cmp(void*,void*);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};extern char Cyc_Dict_Absent[7U];struct Cyc_Dict_Absent_exn_struct{char*tag;};
 # 87 "../../library/std/dict.h"
 extern struct Cyc_Dict_Dict Cyc_Dict_insert(struct Cyc_Dict_Dict,void*,void*);

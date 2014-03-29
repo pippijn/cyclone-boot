@@ -85,7 +85,7 @@ void Cyc_Tctyp_check_valid_toplevel_type(unsigned,struct Cyc_Tcenv_Tenv*,void*);
 int Cyc_Tcutil_is_function_type(void*);
 # 92
 void*Cyc_Tcutil_copy_type(void*);
-# 82 "attributes.h"
+# 84 "attributes.h"
 struct Cyc_List_List*Cyc_Atts_merge_attributes(struct Cyc_List_List*,struct Cyc_List_List*);
 # 94 "kinds.h"
 int Cyc_Kinds_kind_eq(struct Cyc_Absyn_Kind*,struct Cyc_Absyn_Kind*);

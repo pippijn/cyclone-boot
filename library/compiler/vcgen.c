@@ -228,7 +228,7 @@ void*Cyc_Warn_impos(struct _fat_ptr,struct _fat_ptr);struct Cyc_Warn_String_Warn
 void Cyc_Warn_warn2(unsigned,struct _fat_ptr);
 # 160 "cf_flowinfo.h"
 extern int Cyc_CfFlowInfo_get_field_index(void*,struct _fat_ptr*);
-# 52 "attributes.h"
+# 54 "attributes.h"
 int Cyc_Atts_is_noreturn_fn_type(void*);
 # 29 "unify.h"
 int Cyc_Unify_unify(void*,void*);

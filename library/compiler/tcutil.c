@@ -289,11 +289,11 @@ void*Cyc_Tcutil_promote_array(void*,void*,void*,int);
 int Cyc_Tcutil_force_type2bool(int,void*);
 # 287
 void Cyc_Tcutil_substitute_vars(struct Cyc_List_List*,struct Cyc_Absyn_Exp*);
-# 54 "attributes.h"
+# 56 "attributes.h"
 int Cyc_Atts_same_atts(struct Cyc_List_List*,struct Cyc_List_List*);
-# 68
+# 70
 int Cyc_Atts_fntype_att(void*);
-# 79
+# 81
 int Cyc_Atts_attribute_cmp(void*,void*);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};struct Cyc_Set_Set;
 # 155 "assndef.h"
 extern struct Cyc_Absyn_Vardecl*Cyc_AssnDef_memory;

@@ -306,7 +306,7 @@ extern struct Cyc_Absyn_Kind Cyc_Kinds_bk;
 struct Cyc_Absyn_Kind*Cyc_Kinds_tvar_kind(struct Cyc_Absyn_Tvar*,struct Cyc_Absyn_Kind*);
 # 93
 int Cyc_Kinds_kind_leq(struct Cyc_Absyn_Kind*,struct Cyc_Absyn_Kind*);
-# 84 "attributes.h"
+# 86 "attributes.h"
 struct Cyc_List_List*Cyc_Atts_atts2c(struct Cyc_List_List*);struct _tuple16{unsigned f0;int f1;};
 # 28 "evexp.h"
 extern struct _tuple16 Cyc_Evexp_eval_const_uint_exp(struct Cyc_Absyn_Exp*);

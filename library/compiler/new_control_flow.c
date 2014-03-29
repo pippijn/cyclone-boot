@@ -84,7 +84,7 @@ int Cyc_Tcutil_is_noalias_pointer_or_aggr(struct Cyc_List_List*,void*);
 struct Cyc_List_List*Cyc_Tcutil_filter_nulls(struct Cyc_List_List*);
 # 268
 struct Cyc_List_List*Cyc_Tcutil_get_aquals_bounds(struct Cyc_Absyn_Fndecl*);
-# 52 "attributes.h"
+# 54 "attributes.h"
 int Cyc_Atts_is_noreturn_fn_type(void*);struct Cyc___cycFILE;
 # 53 "../../library/std/cycboot.h"
 extern struct Cyc___cycFILE*Cyc_stderr;struct Cyc_String_pa_PrintArg_struct{int tag;struct _fat_ptr f1;};

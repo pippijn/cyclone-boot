@@ -99,7 +99,7 @@ int Cyc_Kinds_kind_leq(struct Cyc_Absyn_Kind*,struct Cyc_Absyn_Kind*);
 # 41 "evexp.h"
 extern int Cyc_Evexp_same_uint_const_exp(struct Cyc_Absyn_Exp*,struct Cyc_Absyn_Exp*);
 extern int Cyc_Evexp_lte_const_exp(struct Cyc_Absyn_Exp*,struct Cyc_Absyn_Exp*);
-# 65 "attributes.h"
+# 67 "attributes.h"
 int Cyc_Atts_sub_attributes(struct Cyc_List_List*,struct Cyc_List_List*);struct Cyc_Set_Set;
 # 193 "assndef.h"
 extern void*Cyc_AssnDef_fresh_var(struct Cyc_Absyn_Vardecl*,void*);struct Cyc_AssnDef_True_AssnDef_Assn_struct{int tag;};

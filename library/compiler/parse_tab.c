@@ -305,13 +305,13 @@ void*Cyc_Tcutil_promote_array(void*,void*,void*,int);
 void*Cyc_Tcutil_any_bool(struct Cyc_List_List*);
 # 278
 void*Cyc_Tcutil_ptrbnd_cvar_equivalent(void*);
-# 29 "attributes.h"
+# 32 "attributes.h"
 extern struct Cyc_Absyn_Const_att_Absyn_Attribute_struct Cyc_Atts_Const_att_val;
-# 46
+# 49
 void*Cyc_Atts_parse_nullary_att(unsigned,struct _fat_ptr);
 void*Cyc_Atts_parse_unary_att(unsigned,struct _fat_ptr,unsigned,struct Cyc_Absyn_Exp*);
 void*Cyc_Atts_parse_format_att(unsigned,unsigned,struct _fat_ptr,struct _fat_ptr,unsigned,unsigned);
-# 68
+# 70
 int Cyc_Atts_fntype_att(void*);
 # 29 "currgn.h"
 extern struct _fat_ptr Cyc_CurRgn_curr_rgn_name;
