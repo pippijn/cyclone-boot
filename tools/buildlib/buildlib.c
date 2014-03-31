@@ -185,7 +185,7 @@ struct Cyc_List_List*Cyc_Parse_parse_file(struct Cyc___cycFILE*);struct Cyc_Dict
 struct Cyc_Tcenv_Tenv*Cyc_Tcenv_tc_init (void);
 # 29 "../../library/compiler/tc.h"
 void Cyc_Tc_tc(struct Cyc_Tcenv_Tenv*,int,struct Cyc_List_List*);
-# 29 "../../library/compiler/binding.h"
+# 32 "../../library/compiler/binding.h"
 void Cyc_Binding_resolve_all(struct Cyc_List_List*);
 # 31 "../../library/compiler/specsfile.h"
 extern void Cyc_Specsfile_set_target_arch(struct _fat_ptr);

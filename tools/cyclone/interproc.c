@@ -90,7 +90,7 @@ void*Cyc_Absyn_bounds_one (void);
 void*Cyc_Absyn_thinconst (void);
 # 1443
 void Cyc_Absyn_visit_stmt(int(*)(void*,struct Cyc_Absyn_Exp*),int(*)(void*,struct Cyc_Absyn_Stmt*),void*,struct Cyc_Absyn_Stmt*);
-# 29 "../../library/compiler/binding.h"
+# 32 "../../library/compiler/binding.h"
 void Cyc_Binding_resolve_all(struct Cyc_List_List*);
 struct Cyc_List_List*Cyc_Binding_resolve_all_interproc(struct Cyc_List_List*);struct Cyc_Absynpp_Params{int expand_typedefs;int qvar_to_Cids;int add_cyc_prefix;int decls_first;int rewrite_temp_tvars;int print_all_tvars;int print_all_kinds;int print_all_effects;int print_using_stmts;int print_externC_stmts;int print_full_evars;int print_zeroterm;int generate_line_directives;int use_curr_namespace;struct Cyc_List_List*curr_namespace;int gen_clean_cyclone;};
 # 55 "../../library/compiler/absynpp.h"

@@ -226,7 +226,7 @@ void Cyc_Warn_err(unsigned,struct _fat_ptr,struct _fat_ptr);
 void*Cyc_Warn_impos(struct _fat_ptr,struct _fat_ptr);struct Cyc_Warn_String_Warn_Warg_struct{int tag;struct _fat_ptr f1;};struct Cyc_Warn_Exp_Warn_Warg_struct{int tag;struct Cyc_Absyn_Exp*f1;};
 # 85
 void Cyc_Warn_warn2(unsigned,struct _fat_ptr);
-# 160 "cf_flowinfo.h"
+# 170 "cf_flowinfo.h"
 extern int Cyc_CfFlowInfo_get_field_index(void*,struct _fat_ptr*);
 # 54 "attributes.h"
 int Cyc_Atts_is_noreturn_fn_type(void*);

@@ -99,7 +99,7 @@ int Cyc_PrattProver_constraint_prove(void*,void*);
 struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp*);
 # 85 "../../library/std/graph.h"
 extern struct Cyc_List_List*Cyc_Graph_tsort(struct Cyc_Dict_Dict);
-# 30 "callgraph.h"
+# 33 "callgraph.h"
 struct Cyc_Dict_Dict Cyc_Callgraph_compute_callgraph(struct Cyc_List_List*);char Cyc_InsertChecks_FatBound[9U]="FatBound";char Cyc_InsertChecks_NoCheck[8U]="NoCheck";char Cyc_InsertChecks_NullAndFatBound[16U]="NullAndFatBound";char Cyc_InsertChecks_NullAndThinBound[17U]="NullAndThinBound";char Cyc_InsertChecks_NullOnly[9U]="NullOnly";char Cyc_InsertChecks_ThinBound[10U]="ThinBound";
 # 63 "insert_checks.cyc"
 struct Cyc_InsertChecks_NoCheck_Absyn_AbsynAnnot_struct Cyc_InsertChecks_NoCheck_val={Cyc_InsertChecks_NoCheck};

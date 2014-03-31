@@ -64,7 +64,7 @@ void Cyc_Absyndump_dump_interface(struct Cyc_List_List*,struct Cyc___cycFILE*);
 int Cyc_BansheeIf_banshee_init (void);
 # 32
 int Cyc_BansheeIf_discharge_implications (void);struct Cyc_Dict_T;struct Cyc_Dict_Dict{int(*rel)(void*,void*);struct _RegionHandle*r;const struct Cyc_Dict_T*t;};
-# 29 "../../library/compiler/binding.h"
+# 32 "../../library/compiler/binding.h"
 void Cyc_Binding_resolve_all(struct Cyc_List_List*);struct Cyc_Tcenv_Genv{struct Cyc_Dict_Dict aggrdecls;struct Cyc_Dict_Dict datatypedecls;struct Cyc_Dict_Dict enumdecls;struct Cyc_Dict_Dict typedefs;struct Cyc_Dict_Dict ordinaries;};struct Cyc_Tcenv_Fenv;struct Cyc_Tcenv_Tenv{struct Cyc_List_List*ns;struct Cyc_Tcenv_Genv*ae;struct Cyc_Tcenv_Fenv*le;int allow_valueof: 1;int in_extern_c_include: 1;int in_tempest: 1;int tempest_generalize: 1;int in_extern_c_inc_repeat: 1;};
 # 68 "../../library/compiler/tcenv.h"
 struct Cyc_Tcenv_Tenv*Cyc_Tcenv_tc_init (void);
