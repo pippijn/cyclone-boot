@@ -2,24 +2,11 @@
  struct Cyc_Core_Opt {
   void * v;
 };
-struct Cyc_Hashtable_Table;
-extern struct Cyc_Hashtable_Table * Cyc_Hashtable_create(int,int (*)(void *,
-								     void *),
-							 int (*)(void *));
-extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table *,void *,void *);
-extern void * * Cyc_Hashtable_lookup_opt(struct Cyc_Hashtable_Table *,void *);
  struct Cyc_List_List {
   void * hd;
   struct Cyc_List_List * tl;
 };
 extern struct Cyc_List_List * Cyc_List_imp_rev(struct Cyc_List_List *);
-struct Cyc_Set_Set;
-extern struct Cyc_Set_Set * Cyc_Set_empty(int (*)(void *,void *));
-extern void Cyc_Set_imp_insert(struct Cyc_Set_Set *,void *);
-extern void * Cyc_Set_imp_delete(struct Cyc_Set_Set *,void *);
-extern long Cyc_Set_is_empty(struct Cyc_Set_Set *);
-extern long Cyc_Set_member(struct Cyc_Set_Set *,void *);
-extern void * Cyc_Set_choose(struct Cyc_Set_Set *);
 struct Cyc_AssnDef_ExistAssnFn;
  struct _union_Nmspace_Abs_n {
   int tag;
@@ -360,6 +347,19 @@ void Cyc_Absyn_visit_exp(long (*)(void *,struct Cyc_Absyn_Exp *),long (*)(void *
   void * f1;
 };
 void * Cyc_Warn_impos2(struct _fat_ptr);
+struct Cyc_Hashtable_Table;
+extern struct Cyc_Hashtable_Table * Cyc_Hashtable_create(int,int (*)(void *,
+								     void *),
+							 int (*)(void *));
+extern void Cyc_Hashtable_insert(struct Cyc_Hashtable_Table *,void *,void *);
+extern void * * Cyc_Hashtable_lookup_opt(struct Cyc_Hashtable_Table *,void *);
+struct Cyc_Set_Set;
+extern struct Cyc_Set_Set * Cyc_Set_empty(int (*)(void *,void *));
+extern void Cyc_Set_imp_insert(struct Cyc_Set_Set *,void *);
+extern void * Cyc_Set_imp_delete(struct Cyc_Set_Set *,void *);
+extern long Cyc_Set_is_empty(struct Cyc_Set_Set *);
+extern long Cyc_Set_member(struct Cyc_Set_Set *,void *);
+extern void * Cyc_Set_choose(struct Cyc_Set_Set *);
  struct Cyc_LowTreeShake_Env {
   struct Cyc_Hashtable_Table * aggrdecls;
   struct Cyc_Set_Set * aggr_worklist;

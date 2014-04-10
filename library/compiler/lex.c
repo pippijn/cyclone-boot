@@ -755,15 +755,23 @@ enum Cyc_Parse_ConstraintOps {
   int tag;
   struct Cyc_List_List * val;
 };
+ struct _tuple29 {
+  void * f0;
+  struct Cyc_List_List * f1;
+};
  struct _union_YYSTYPE_YY72 {
   int tag;
-  struct Cyc_List_List * val;
+  struct _tuple29 * val;
 };
  struct _union_YYSTYPE_YY73 {
   int tag;
-  void * val;
+  struct Cyc_List_List * val;
 };
  struct _union_YYSTYPE_YY74 {
+  int tag;
+  void * val;
+};
+ struct _union_YYSTYPE_YY75 {
   int tag;
   int val;
 };
@@ -849,6 +857,7 @@ enum Cyc_Parse_ConstraintOps {
   struct _union_YYSTYPE_YY72 YY72;
   struct _union_YYSTYPE_YY73 YY73;
   struct _union_YYSTYPE_YY74 YY74;
+  struct _union_YYSTYPE_YY75 YY75;
 };
  struct Cyc_Yyltype {
   int timestamp;
@@ -911,13 +920,13 @@ struct Cyc_Lex_Trie;
   int tag;
   int val;
 };
- struct _tuple29 {
+ struct _tuple30 {
   int f0;
   struct Cyc_Lex_Trie * f1;
 };
  struct _union_TrieChildren_One {
   int tag;
-  struct _tuple29 val;
+  struct _tuple30 val;
 };
  struct _union_TrieChildren_Many {
   int tag;
@@ -1118,7 +1127,7 @@ static char Cyc_Lex_cnst2char(union Cyc_Absyn_Cnst cnst,struct Cyc_Lexing_lexbuf
   }
   ;
 }
- struct _tuple30 {
+ struct _tuple31 {
   struct _fat_ptr f0;
   short f1;
   long f2;
@@ -1222,7 +1231,7 @@ static char _TmpG61[5U] = "void";
 static char _TmpG62[9U] = "volatile";
 static char _TmpG63[13U] = "__volatile__";
 static char _TmpG64[6U] = "while";
-static struct _tuple30 Cyc_Lex_rw_array[99U] = {{.f0={(unsigned char *)_TmpG2,
+static struct _tuple31 Cyc_Lex_rw_array[99U] = {{.f0={(unsigned char *)_TmpG2,
 						      (unsigned char *)_TmpG2,
 						      (unsigned char *)_TmpG2 + 10U},
 						 .f1=333,.f2=0},
@@ -1620,10 +1629,10 @@ static struct _tuple30 Cyc_Lex_rw_array[99U] = {{.f0={(unsigned char *)_TmpG2,
 						 .f1=285,.f2=1}};
 static int Cyc_Lex_num_keywords(long include_cyclone_keywords) {
   long _T0;
-  struct _tuple30 * _T1;
+  struct _tuple31 * _T1;
   unsigned int _T2;
   int _T3;
-  struct _tuple30 _T4;
+  struct _tuple31 _T4;
   long _T5;
   int _T6;
   int sum = 0;
@@ -2015,9 +2024,9 @@ static struct Cyc_Lex_Trie * Cyc_Lex_trie_lookup(struct _RegionHandle * r,
   struct Cyc_Lex_Trie * * _T1D;
   int _T1E;
   struct _union_TrieChildren_One _T1F;
-  struct _tuple29 _T20;
+  struct _tuple30 _T20;
   struct _union_TrieChildren_One _T21;
-  struct _tuple29 _T22;
+  struct _tuple30 _T22;
   int _T23;
   struct _fat_ptr _T24;
   unsigned int _T25;
@@ -2237,15 +2246,15 @@ static struct Cyc_Lex_Trie * Cyc_Lex_trie_lookup(struct _RegionHandle * r,
   _TL3F: _T52 = t;
   return _T52;
 }
- struct _tuple31 {
+ struct _tuple32 {
   struct Cyc_Lex_Trie * f0;
   struct Cyc_Xarray_Xarray * f1;
   struct _fat_ptr f2;
   int f3;
   int f4;
 };
-static int Cyc_Lex_str_index_body(struct _RegionHandle * d,struct _tuple31 * env) {
-  struct _tuple31 * _T0;
+static int Cyc_Lex_str_index_body(struct _RegionHandle * d,struct _tuple32 * env) {
+  struct _tuple32 * _T0;
   struct _RegionHandle * _T1;
   struct Cyc_Lex_Trie * _T2;
   struct _fat_ptr _T3;
@@ -2272,7 +2281,7 @@ static int Cyc_Lex_str_index_body(struct _RegionHandle * d,struct _tuple31 * env
   struct Cyc_Lex_Trie * _T18;
   int _T19;
   _T0 = env;
-  { struct _tuple31 _T1A = *_T0;
+  { struct _tuple32 _T1A = *_T0;
     int _T1B;
     int _T1C;
     struct _fat_ptr _T1D;
@@ -2333,13 +2342,13 @@ static int Cyc_Lex_str_index_body(struct _RegionHandle * d,struct _tuple31 * env
 }
 static int Cyc_Lex_str_index(struct _fat_ptr buff,int offset,int len) {
   struct Cyc_Lex_DynTrieSymbols * _T0;
-  struct _tuple31 _T1;
-  int (* _T2)(struct Cyc_Core_DynamicRegion *,struct _tuple31 *,int (*)(struct _RegionHandle *,
-									struct _tuple31 *));
+  struct _tuple32 _T1;
+  int (* _T2)(struct Cyc_Core_DynamicRegion *,struct _tuple32 *,int (*)(struct _RegionHandle *,
+									struct _tuple32 *));
   void * (* _T3)(struct Cyc_Core_DynamicRegion *,void *,void * (*)(struct _RegionHandle *,
 								   void *));
   struct Cyc_Core_DynamicRegion * _T4;
-  struct _tuple31 * _T5;
+  struct _tuple32 * _T5;
   struct Cyc_Lex_DynTrieSymbols * _T6;
   struct Cyc_Lex_DynTrieSymbols _T7;
   int _T8;
@@ -2359,20 +2368,20 @@ static int Cyc_Lex_str_index(struct _fat_ptr buff,int offset,int len) {
     { struct Cyc_Core_DynamicRegion * dyn = _TC;
       struct Cyc_Lex_Trie * t = _TB;
       struct Cyc_Xarray_Xarray * symbols = _TA;
-      { struct _tuple31 _TD;
+      { struct _tuple32 _TD;
 	_TD.f0 = t;
 	_TD.f1 = symbols;
 	_TD.f2 = buff;
 	_TD.f3 = offset;
 	_TD.f4 = len;
 	_T1 = _TD;
-      }{ struct _tuple31 env = _T1;
+      }{ struct _tuple32 env = _T1;
 	_T3 = Cyc_Core_open_region;
-	{ int (* _TD)(struct Cyc_Core_DynamicRegion *,struct _tuple31 *,int (*)(struct _RegionHandle *,
-										struct _tuple31 *)) = (int (*)(struct Cyc_Core_DynamicRegion *,
-													       struct _tuple31 *,
+	{ int (* _TD)(struct Cyc_Core_DynamicRegion *,struct _tuple32 *,int (*)(struct _RegionHandle *,
+										struct _tuple32 *)) = (int (*)(struct Cyc_Core_DynamicRegion *,
+													       struct _tuple32 *,
 													       int (*)(struct _RegionHandle *,
-														       struct _tuple31 *)))_T3;
+														       struct _tuple32 *)))_T3;
 	  _T2 = _TD;
 	}_T4 = dyn;
 	_T5 = &env;
@@ -2418,12 +2427,12 @@ static int Cyc_Lex_str_index_lbuf(struct Cyc_Lexing_lexbuf * lbuf) {
   _T9 = Cyc_Lex_str_index(_T1,_T3,_T8);
   return _T9;
 }
- struct _tuple32 {
+ struct _tuple33 {
   struct Cyc_Lex_Trie * f0;
   struct _fat_ptr f1;
 };
-static int Cyc_Lex_insert_typedef_body(struct _RegionHandle * h,struct _tuple32 * arg) {
-  struct _tuple32 * _T0;
+static int Cyc_Lex_insert_typedef_body(struct _RegionHandle * h,struct _tuple33 * arg) {
+  struct _tuple33 * _T0;
   struct _RegionHandle * _T1;
   struct Cyc_Lex_Trie * _T2;
   struct _fat_ptr _T3;
@@ -2432,7 +2441,7 @@ static int Cyc_Lex_insert_typedef_body(struct _RegionHandle * h,struct _tuple32 
   unsigned int _T6;
   struct Cyc_Lex_Trie * _T7;
   _T0 = arg;
-  { struct _tuple32 _T8 = *_T0;
+  { struct _tuple33 _T8 = *_T0;
     struct _fat_ptr _T9;
     struct Cyc_Lex_Trie * _TA;
     _TA = _T8.f0;
@@ -2457,14 +2466,14 @@ static int Cyc_Lex_insert_typedef_body(struct _RegionHandle * h,struct _tuple32 
 static void Cyc_Lex_insert_typedef(struct _fat_ptr * sptr) {
   struct _fat_ptr * _T0;
   struct Cyc_Lex_DynTrie * _T1;
-  struct _tuple32 _T2;
-  int (* _T3)(struct Cyc_Core_DynamicRegion *,struct _tuple32 *,int (*)(struct _RegionHandle *,
-									struct _tuple32 *));
+  struct _tuple33 _T2;
+  int (* _T3)(struct Cyc_Core_DynamicRegion *,struct _tuple33 *,int (*)(struct _RegionHandle *,
+									struct _tuple33 *));
   void * (* _T4)(struct Cyc_Core_DynamicRegion *,void *,void * (*)(struct _RegionHandle *,
 								   void *));
   struct Cyc_Core_DynamicRegion * _T5;
-  struct _tuple32 * _T6;
-  struct _tuple32 * _T7;
+  struct _tuple33 * _T6;
+  struct _tuple33 * _T7;
   struct Cyc_Lex_DynTrie * _T8;
   struct Cyc_Lex_DynTrie _T9;
   _T0 = sptr;
@@ -2482,21 +2491,21 @@ static void Cyc_Lex_insert_typedef(struct _fat_ptr * sptr) {
       _TB = _TA.t;
       { struct Cyc_Core_DynamicRegion * dyn = _TC;
 	struct Cyc_Lex_Trie * t = _TB;
-	{ struct _tuple32 _TD;
+	{ struct _tuple33 _TD;
 	  _TD.f0 = t;
 	  _TD.f1 = s;
 	  _T2 = _TD;
-	}{ struct _tuple32 env = _T2;
+	}{ struct _tuple33 env = _T2;
 	  _T4 = Cyc_Core_open_region;
-	  { int (* _TD)(struct Cyc_Core_DynamicRegion *,struct _tuple32 *,
-			int (*)(struct _RegionHandle *,struct _tuple32 *)) = (int (*)(struct Cyc_Core_DynamicRegion *,
-										      struct _tuple32 *,
+	  { int (* _TD)(struct Cyc_Core_DynamicRegion *,struct _tuple33 *,
+			int (*)(struct _RegionHandle *,struct _tuple33 *)) = (int (*)(struct Cyc_Core_DynamicRegion *,
+										      struct _tuple33 *,
 										      int (*)(struct _RegionHandle *,
-											      struct _tuple32 *)))_T4;
+											      struct _tuple33 *)))_T4;
 	    _T3 = _TD;
 	  }_T5 = dyn;
 	  _T6 = &env;
-	  _T7 = (struct _tuple32 *)_T6;
+	  _T7 = (struct _tuple33 *)_T6;
 	  _T3(_T5,_T7,Cyc_Lex_insert_typedef_body);
 	  _T8 = tdefs;
 	  { struct Cyc_Lex_DynTrie _TD;
@@ -2514,19 +2523,19 @@ static void Cyc_Lex_insert_typedef(struct _fat_ptr * sptr) {
     }
   }
 }
- struct _tuple33 {
+ struct _tuple34 {
   struct Cyc_Lex_Trie * f0;
   struct Cyc_Xarray_Xarray * f1;
   int f2;
 };
 static struct _fat_ptr * Cyc_Lex_get_symbol_body(struct _RegionHandle * dyn,
-						 struct _tuple33 * env) {
-  struct _tuple33 * _T0;
+						 struct _tuple34 * env) {
+  struct _tuple34 * _T0;
   struct _fat_ptr * (* _T1)(struct Cyc_Xarray_Xarray *,int);
   void * (* _T2)(struct Cyc_Xarray_Xarray *,int);
   struct _fat_ptr * _T3;
   _T0 = env;
-  { struct _tuple33 _T4 = *_T0;
+  { struct _tuple34 _T4 = *_T0;
     int _T5;
     struct Cyc_Xarray_Xarray * _T6;
     struct Cyc_Lex_Trie * _T7;
@@ -2547,14 +2556,14 @@ static struct _fat_ptr * Cyc_Lex_get_symbol_body(struct _RegionHandle * dyn,
 }
 static struct _fat_ptr * Cyc_Lex_get_symbol(int symbol_num) {
   struct Cyc_Lex_DynTrieSymbols * _T0;
-  struct _tuple33 _T1;
-  struct _fat_ptr * (* _T2)(struct Cyc_Core_DynamicRegion *,struct _tuple33 *,
+  struct _tuple34 _T1;
+  struct _fat_ptr * (* _T2)(struct Cyc_Core_DynamicRegion *,struct _tuple34 *,
 			    struct _fat_ptr * (*)(struct _RegionHandle *,
-						  struct _tuple33 *));
+						  struct _tuple34 *));
   void * (* _T3)(struct Cyc_Core_DynamicRegion *,void *,void * (*)(struct _RegionHandle *,
 								   void *));
   struct Cyc_Core_DynamicRegion * _T4;
-  struct _tuple33 * _T5;
+  struct _tuple34 * _T5;
   struct Cyc_Lex_DynTrieSymbols * _T6;
   struct Cyc_Lex_DynTrieSymbols _T7;
   struct _fat_ptr * _T8;
@@ -2574,19 +2583,19 @@ static struct _fat_ptr * Cyc_Lex_get_symbol(int symbol_num) {
     { struct Cyc_Core_DynamicRegion * dyn = _TC;
       struct Cyc_Lex_Trie * t = _TB;
       struct Cyc_Xarray_Xarray * symbols = _TA;
-      { struct _tuple33 _TD;
+      { struct _tuple34 _TD;
 	_TD.f0 = t;
 	_TD.f1 = symbols;
 	_TD.f2 = symbol_num;
 	_T1 = _TD;
-      }{ struct _tuple33 env = _T1;
+      }{ struct _tuple34 env = _T1;
 	_T3 = Cyc_Core_open_region;
-	{ struct _fat_ptr * (* _TD)(struct Cyc_Core_DynamicRegion *,struct _tuple33 *,
+	{ struct _fat_ptr * (* _TD)(struct Cyc_Core_DynamicRegion *,struct _tuple34 *,
 				    struct _fat_ptr * (*)(struct _RegionHandle *,
-							  struct _tuple33 *)) = (struct _fat_ptr * (*)(struct Cyc_Core_DynamicRegion *,
-												       struct _tuple33 *,
+							  struct _tuple34 *)) = (struct _fat_ptr * (*)(struct Cyc_Core_DynamicRegion *,
+												       struct _tuple34 *,
 												       struct _fat_ptr * (*)(struct _RegionHandle *,
-															     struct _tuple33 *)))_T3;
+															     struct _tuple34 *)))_T3;
 	  _T2 = _TD;
 	}_T4 = dyn;
 	_T5 = &env;
@@ -3335,13 +3344,13 @@ static long Cyc_Lex_is_typedef_in_namespace(struct Cyc_List_List * ns,struct _fa
     }
   }
 }
- struct _tuple34 {
+ struct _tuple35 {
   struct Cyc_List_List * f0;
   struct Cyc_Lex_Trie * f1;
   struct _fat_ptr f2;
 };
-static long Cyc_Lex_is_typedef_body(struct _RegionHandle * d,struct _tuple34 * env) {
-  struct _tuple34 * _T0;
+static long Cyc_Lex_is_typedef_body(struct _RegionHandle * d,struct _tuple35 * env) {
+  struct _tuple35 * _T0;
   struct _fat_ptr _T1;
   unsigned int _T2;
   unsigned int _T3;
@@ -3349,9 +3358,9 @@ static long Cyc_Lex_is_typedef_body(struct _RegionHandle * d,struct _tuple34 * e
   struct _union_TrieChildren_One _T5;
   unsigned int _T6;
   struct _union_TrieChildren_One _T7;
-  struct _tuple29 _T8;
+  struct _tuple30 _T8;
   struct _union_TrieChildren_One _T9;
-  struct _tuple29 _TA;
+  struct _tuple30 _TA;
   int _TB;
   struct _fat_ptr _TC;
   unsigned char * _TD;
@@ -3360,7 +3369,7 @@ static long Cyc_Lex_is_typedef_body(struct _RegionHandle * d,struct _tuple34 * e
   char _T10;
   int _T11;
   struct _union_TrieChildren_One _T12;
-  struct _tuple29 _T13;
+  struct _tuple30 _T13;
   struct _union_TrieChildren_Many _T14;
   struct Cyc_Lex_Trie * * _T15;
   struct _fat_ptr _T16;
@@ -3375,7 +3384,7 @@ static long Cyc_Lex_is_typedef_body(struct _RegionHandle * d,struct _tuple34 * e
   struct Cyc_Lex_Trie * _T1F;
   int _T20;
   _T0 = env;
-  { struct _tuple34 _T21 = *_T0;
+  { struct _tuple35 _T21 = *_T0;
     struct _fat_ptr _T22;
     struct Cyc_Lex_Trie * _T23;
     struct Cyc_List_List * _T24;
@@ -3468,14 +3477,14 @@ static long Cyc_Lex_is_typedef(struct Cyc_List_List * ns,struct _fat_ptr * v) {
   long _T0;
   struct _fat_ptr * _T1;
   struct Cyc_Lex_DynTrie * _T2;
-  struct _tuple34 _T3;
-  long (* _T4)(struct Cyc_Core_DynamicRegion *,struct _tuple34 *,long (*)(struct _RegionHandle *,
-									  struct _tuple34 *));
+  struct _tuple35 _T3;
+  long (* _T4)(struct Cyc_Core_DynamicRegion *,struct _tuple35 *,long (*)(struct _RegionHandle *,
+									  struct _tuple35 *));
   void * (* _T5)(struct Cyc_Core_DynamicRegion *,void *,void * (*)(struct _RegionHandle *,
 								   void *));
   struct Cyc_Core_DynamicRegion * _T6;
-  struct _tuple34 * _T7;
-  struct _tuple34 * _T8;
+  struct _tuple35 * _T7;
+  struct _tuple35 * _T8;
   struct Cyc_Lex_DynTrie * _T9;
   struct Cyc_Lex_DynTrie _TA;
   long _TB;
@@ -3498,22 +3507,22 @@ static long Cyc_Lex_is_typedef(struct Cyc_List_List * ns,struct _fat_ptr * v) {
       _TD = _TC.t;
       { struct Cyc_Core_DynamicRegion * dyn = _TE;
 	struct Cyc_Lex_Trie * t = _TD;
-	{ struct _tuple34 _TF;
+	{ struct _tuple35 _TF;
 	  _TF.f0 = ns;
 	  _TF.f1 = t;
 	  _TF.f2 = s;
 	  _T3 = _TF;
-	}{ struct _tuple34 env = _T3;
+	}{ struct _tuple35 env = _T3;
 	  _T5 = Cyc_Core_open_region;
-	  { long (* _TF)(struct Cyc_Core_DynamicRegion *,struct _tuple34 *,
-			 long (*)(struct _RegionHandle *,struct _tuple34 *)) = (long (*)(struct Cyc_Core_DynamicRegion *,
-											 struct _tuple34 *,
+	  { long (* _TF)(struct Cyc_Core_DynamicRegion *,struct _tuple35 *,
+			 long (*)(struct _RegionHandle *,struct _tuple35 *)) = (long (*)(struct Cyc_Core_DynamicRegion *,
+											 struct _tuple35 *,
 											 long (*)(struct _RegionHandle *,
-												  struct _tuple34 *)))_T5;
+												  struct _tuple35 *)))_T5;
 	    _T4 = _TF;
 	  }_T6 = dyn;
 	  _T7 = &env;
-	  _T8 = (struct _tuple34 *)_T7;
+	  _T8 = (struct _tuple35 *)_T7;
 	  { long res = _T4(_T6,_T8,Cyc_Lex_is_typedef_body);
 	    _T9 = tdefs;
 	    { struct Cyc_Lex_DynTrie _TF;
@@ -4259,11 +4268,11 @@ static void Cyc_Lex_process_directive(struct _fat_ptr line) {
   _T2D = Cyc_Lex_pos_info;
   Cyc_Lex_pos_info = Cyc_Lex_rnew_filepos(_T29,_T2A,_T2C,_T2D);
 }
- struct _tuple35 {
+ struct _tuple36 {
   struct _fat_ptr f0;
   unsigned int f1;
 };
-struct _tuple35 Cyc_Lex_xlate_pos(unsigned int char_offset) {
+struct _tuple36 Cyc_Lex_xlate_pos(unsigned int char_offset) {
   struct Cyc_Lex_PosInfo * _T0;
   struct _fat_ptr _T1;
   unsigned char * _T2;
@@ -4290,13 +4299,13 @@ struct _tuple35 Cyc_Lex_xlate_pos(unsigned int char_offset) {
   int _T17;
   unsigned int _T18;
   int _T19;
-  struct _tuple35 _T1A;
+  struct _tuple36 _T1A;
   struct Cyc_Lex_PosInfo * _T1B;
   struct Cyc_Lex_PosInfo * _T1C;
   unsigned int _T1D;
   unsigned int _T1E;
   struct Cyc_Lex_PosInfo * _T1F;
-  struct _tuple35 _T20;
+  struct _tuple36 _T20;
   { struct Cyc_Lex_PosInfo * p = Cyc_Lex_pos_info;
     _TLD3: if (p != 0) { goto _TLD1;
     }else { goto _TLD2;
@@ -4349,7 +4358,7 @@ struct _tuple35 Cyc_Lex_xlate_pos(unsigned int char_offset) {
 	      _TLDA: ;
 	    }
 	  }goto _TLD6;
-	  _TLD8: { struct _tuple35 _T21;
+	  _TLD8: { struct _tuple36 _T21;
 	    _T1B = p;
 	    _T21.f0 = _T1B->filename;
 	    _T1C = p;
@@ -4364,7 +4373,7 @@ struct _tuple35 Cyc_Lex_xlate_pos(unsigned int char_offset) {
     p = _T1F->next;
     goto _TLD3;
     _TLD2: ;
-  }{ struct _tuple35 _T21;
+  }{ struct _tuple36 _T21;
     _T21.f0 = _tag_fat(0,0,0);
     _T21.f1 = 0U;
     _T20 = _T21;
@@ -11408,15 +11417,15 @@ void Cyc_Lex_lex_init(long include_cyclone_keywords) {
   unsigned int _T1A;
   unsigned int _T1B;
   long _T1C;
-  struct _tuple30 * _T1D;
+  struct _tuple31 * _T1D;
   unsigned int _T1E;
   int _T1F;
-  struct _tuple30 _T20;
+  struct _tuple31 _T20;
   long _T21;
-  struct _tuple30 * _T22;
+  struct _tuple31 * _T22;
   unsigned int _T23;
   int _T24;
-  struct _tuple30 _T25;
+  struct _tuple31 _T25;
   struct _fat_ptr _T26;
   unsigned long _T27;
   int _T28;
@@ -11426,15 +11435,15 @@ void Cyc_Lex_lex_init(long include_cyclone_keywords) {
   unsigned char * _T2C;
   struct Cyc_Lex_KeyWordInfo * _T2D;
   struct Cyc_Lex_KeyWordInfo _T2E;
-  struct _tuple30 * _T2F;
+  struct _tuple31 * _T2F;
   unsigned int _T30;
   int _T31;
-  struct _tuple30 _T32;
+  struct _tuple31 _T32;
   short _T33;
-  struct _tuple30 * _T34;
+  struct _tuple31 * _T34;
   unsigned int _T35;
   int _T36;
-  struct _tuple30 _T37;
+  struct _tuple31 _T37;
   Cyc_Lex_in_extern_c = 0;
   { struct Cyc_List_List * x = 0;
     { struct Cyc_List_List * _T38 = Cyc_Lex_prev_extern_c;

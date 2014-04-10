@@ -437,14 +437,6 @@ enum Cyc_Absyn_Coercion {
   int tag;
   struct Cyc_Absyn_Fndecl * f1;
 };
- struct Cyc_Absyn_Aggr_d_Absyn_Raw_decl_struct {
-  int tag;
-  struct Cyc_Absyn_Aggrdecl * f1;
-};
- struct Cyc_Absyn_Enum_d_Absyn_Raw_decl_struct {
-  int tag;
-  struct Cyc_Absyn_Enumdecl * f1;
-};
  struct Cyc_Absyn_Decl {
   void * r;
   unsigned int loc;
@@ -519,19 +511,19 @@ extern struct Cyc___cycFILE * Cyc_stderr;
 };
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_fprintf(struct Cyc___cycFILE *,struct _fat_ptr,struct _fat_ptr);
-void Cyc_Warn_warn(unsigned int,struct _fat_ptr,struct _fat_ptr);
-void * Cyc_Warn_impos(struct _fat_ptr,struct _fat_ptr);
+struct _fat_ptr Cyc_Absynpp_typ2string(void *);
+struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp *);
+struct _fat_ptr Cyc_Absynpp_stmt2string(struct Cyc_Absyn_Stmt *);
+struct Cyc_Absyn_Exp * Cyc_Tcutil_deep_copy_exp(long,struct Cyc_Absyn_Exp *);
+struct _tuple0 * Cyc_Toc_temp_var();
+extern struct _fat_ptr Cyc_Toc_globals;
+long Cyc_Unify_unify(void *,void *);
 struct Cyc___cycFILE;
 extern struct Cyc___cycFILE * Cyc_stderr;
 extern struct _fat_ptr Cyc_aprintf(struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_fprintf(struct Cyc___cycFILE *,struct _fat_ptr,struct _fat_ptr);
-struct _fat_ptr Cyc_Absynpp_typ2string(void *);
-struct _fat_ptr Cyc_Absynpp_exp2string(struct Cyc_Absyn_Exp *);
-struct _fat_ptr Cyc_Absynpp_stmt2string(struct Cyc_Absyn_Stmt *);
-struct _tuple0 * Cyc_Toc_temp_var();
-extern struct _fat_ptr Cyc_Toc_globals;
-long Cyc_Unify_unify(void *,void *);
-struct Cyc_Absyn_Exp * Cyc_Tcutil_deep_copy_exp(long,struct Cyc_Absyn_Exp *);
+void Cyc_Warn_warn(unsigned int,struct _fat_ptr,struct _fat_ptr);
+void * Cyc_Warn_impos(struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_strcmp(struct _fat_ptr,struct _fat_ptr);
 extern int Cyc_strptrcmp(struct _fat_ptr *,struct _fat_ptr *);
  struct Cyc_Lower_Env {
@@ -1712,17 +1704,15 @@ static long Cyc_Lower_lower_stmt(struct Cyc_Lower_Env * env,struct Cyc_Absyn_Stm
 	struct Cyc_Absyn_Stmt * s1 = _TEB;
 	_T6C = d;
 	{ void * _TED = _T6C->r;
-	  struct Cyc_Absyn_Enumdecl * _TEE;
-	  struct Cyc_Absyn_Aggrdecl * _TEF;
-	  struct Cyc_Absyn_Fndecl * _TF0;
-	  struct Cyc_Absyn_Vardecl * _TF1;
+	  struct Cyc_Absyn_Fndecl * _TEE;
+	  struct Cyc_Absyn_Vardecl * _TEF;
 	  _T6D = (int *)_TED;
 	  _T6E = *_T6D;
 	  switch (_T6E) {
 	  case 0: 
-	    { struct Cyc_Absyn_Var_d_Absyn_Raw_decl_struct * _TF2 = (struct Cyc_Absyn_Var_d_Absyn_Raw_decl_struct *)_TED;
-	      _TF1 = _TF2->f1;
-	    }{ struct Cyc_Absyn_Vardecl * vd = _TF1;
+	    { struct Cyc_Absyn_Var_d_Absyn_Raw_decl_struct * _TF0 = (struct Cyc_Absyn_Var_d_Absyn_Raw_decl_struct *)_TED;
+	      _TEF = _TF0->f1;
+	    }{ struct Cyc_Absyn_Vardecl * vd = _TEF;
 	      struct Cyc_Absyn_Vardecl * newvd;
 	      newvd = _cycalloc(sizeof(struct Cyc_Absyn_Vardecl));
 	      _T6F = newvd;
@@ -1750,15 +1740,15 @@ static long Cyc_Lower_lower_stmt(struct Cyc_Lower_Env * env,struct Cyc_Absyn_Stm
 		  { struct Cyc_Absyn_Stmt * body = Cyc_Lower_rev_seq_stmts(_T78);
 		    Cyc_Lower_set_prev_stmts(env,p);
 		    _T79 = env;
-		    { struct Cyc_Absyn_Decl * _TF2 = _cycalloc(sizeof(struct Cyc_Absyn_Decl));
-		      { struct Cyc_Absyn_Var_d_Absyn_Raw_decl_struct * _TF3 = _cycalloc(sizeof(struct Cyc_Absyn_Var_d_Absyn_Raw_decl_struct));
-			_TF3->tag = 0;
-			_TF3->f1 = newvd;
-			_T7B = (struct Cyc_Absyn_Var_d_Absyn_Raw_decl_struct *)_TF3;
-		      }_TF2->r = (void *)_T7B;
+		    { struct Cyc_Absyn_Decl * _TF0 = _cycalloc(sizeof(struct Cyc_Absyn_Decl));
+		      { struct Cyc_Absyn_Var_d_Absyn_Raw_decl_struct * _TF1 = _cycalloc(sizeof(struct Cyc_Absyn_Var_d_Absyn_Raw_decl_struct));
+			_TF1->tag = 0;
+			_TF1->f1 = newvd;
+			_T7B = (struct Cyc_Absyn_Var_d_Absyn_Raw_decl_struct *)_TF1;
+		      }_TF0->r = (void *)_T7B;
 		      _T7C = d;
-		      _TF2->loc = _T7C->loc;
-		      _T7A = (struct Cyc_Absyn_Decl *)_TF2;
+		      _TF0->loc = _T7C->loc;
+		      _T7A = (struct Cyc_Absyn_Decl *)_TF0;
 		    }_T7D = body;
 		    _T7E = Cyc_Absyn_decl_stmt(_T7A,_T7D,0U);
 		    Cyc_Lower_emit_stmt(_T79,_T7E);
@@ -1769,9 +1759,9 @@ static long Cyc_Lower_lower_stmt(struct Cyc_Lower_Env * env,struct Cyc_Absyn_Stm
 	      }
 	    }
 	  case 1: 
-	    { struct Cyc_Absyn_Fn_d_Absyn_Raw_decl_struct * _TF2 = (struct Cyc_Absyn_Fn_d_Absyn_Raw_decl_struct *)_TED;
-	      _TF0 = _TF2->f1;
-	    }{ struct Cyc_Absyn_Fndecl * fd = _TF0;
+	    { struct Cyc_Absyn_Fn_d_Absyn_Raw_decl_struct * _TF0 = (struct Cyc_Absyn_Fn_d_Absyn_Raw_decl_struct *)_TED;
+	      _TEE = _TF0->f1;
+	    }{ struct Cyc_Absyn_Fndecl * fd = _TEE;
 	      _T80 = d;
 	      { void * fn_r = _T80->r;
 		_T81 = fd;
@@ -1779,10 +1769,10 @@ static long Cyc_Lower_lower_stmt(struct Cyc_Lower_Env * env,struct Cyc_Absyn_Stm
 		_T83 = (int)_T82;
 		if (_T83 == 4) { goto _TL35;
 		}
-		{ struct Cyc_Absyn_Fn_d_Absyn_Raw_decl_struct * _TF2 = _cycalloc(sizeof(struct Cyc_Absyn_Fn_d_Absyn_Raw_decl_struct));
-		  _TF2->tag = 1;
-		  _TF2->f1 = Cyc_Lower_lower_fn(fd);
-		  _T84 = (struct Cyc_Absyn_Fn_d_Absyn_Raw_decl_struct *)_TF2;
+		{ struct Cyc_Absyn_Fn_d_Absyn_Raw_decl_struct * _TF0 = _cycalloc(sizeof(struct Cyc_Absyn_Fn_d_Absyn_Raw_decl_struct));
+		  _TF0->tag = 1;
+		  _TF0->f1 = Cyc_Lower_lower_fn(fd);
+		  _T84 = (struct Cyc_Absyn_Fn_d_Absyn_Raw_decl_struct *)_TF0;
 		}fn_r = (void *)_T84;
 		goto _TL36;
 		_TL35: _TL36: { struct Cyc_List_List * p = Cyc_Lower_prev_stmts(env);
@@ -1792,12 +1782,12 @@ static long Cyc_Lower_lower_stmt(struct Cyc_Lower_Env * env,struct Cyc_Absyn_Stm
 		    { struct Cyc_Absyn_Stmt * body = Cyc_Lower_rev_seq_stmts(_T85);
 		      Cyc_Lower_set_prev_stmts(env,p);
 		      _T86 = env;
-		      { struct Cyc_Absyn_Decl * _TF2 = _cycalloc(sizeof(struct Cyc_Absyn_Decl));
+		      { struct Cyc_Absyn_Decl * _TF0 = _cycalloc(sizeof(struct Cyc_Absyn_Decl));
 			_T88 = d;
-			_TF2->r = _T88->r;
+			_TF0->r = _T88->r;
 			_T89 = d;
-			_TF2->loc = _T89->loc;
-			_T87 = (struct Cyc_Absyn_Decl *)_TF2;
+			_TF0->loc = _T89->loc;
+			_T87 = (struct Cyc_Absyn_Decl *)_TF0;
 		      }_T8A = body;
 		      _T8B = Cyc_Absyn_decl_stmt(_T87,_T8A,0U);
 		      Cyc_Lower_emit_stmt(_T86,_T8B);
@@ -1809,131 +1799,123 @@ static long Cyc_Lower_lower_stmt(struct Cyc_Lower_Env * env,struct Cyc_Absyn_Stm
 	      }
 	    }
 	  case 5: 
-	    { struct Cyc_Absyn_Aggr_d_Absyn_Raw_decl_struct * _TF2 = (struct Cyc_Absyn_Aggr_d_Absyn_Raw_decl_struct *)_TED;
-	      _TEF = _TF2->f1;
-	    }{ struct Cyc_Absyn_Aggrdecl * ad = _TEF;
-	      _T8E = Cyc_Warn_impos;
-	      { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
-									 struct _fat_ptr))_T8E;
-		_T8D = _TF2;
-	      }_T8F = _tag_fat("Aggregate decl in lower_stmt",sizeof(char),
-			       29U);
-	      _T90 = _tag_fat(0U,sizeof(void *),0);
-	      _T8D(_T8F,_T90);
-	    }
+	    _T8E = Cyc_Warn_impos;
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+								       struct _fat_ptr))_T8E;
+	      _T8D = _TF0;
+	    }_T8F = _tag_fat("Aggregate decl in lower_stmt",sizeof(char),
+			     29U);
+	    _T90 = _tag_fat(0U,sizeof(void *),0);
+	    _T8D(_T8F,_T90);
 	  case 7: 
-	    { struct Cyc_Absyn_Enum_d_Absyn_Raw_decl_struct * _TF2 = (struct Cyc_Absyn_Enum_d_Absyn_Raw_decl_struct *)_TED;
-	      _TEE = _TF2->f1;
-	    }{ struct Cyc_Absyn_Enumdecl * ed = _TEE;
-	      _T92 = Cyc_Warn_impos;
-	      { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
-									 struct _fat_ptr))_T92;
-		_T91 = _TF2;
-	      }_T93 = _tag_fat("Enum decl in lower_stmt",sizeof(char),24U);
-	      _T94 = _tag_fat(0U,sizeof(void *),0);
-	      _T91(_T93,_T94);
-	    }
+	    _T92 = Cyc_Warn_impos;
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+								       struct _fat_ptr))_T92;
+	      _T91 = _TF0;
+	    }_T93 = _tag_fat("Enum decl in lower_stmt",sizeof(char),24U);
+	    _T94 = _tag_fat(0U,sizeof(void *),0);
+	    _T91(_T93,_T94);
 	  case 10: 
 	    _T96 = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_T96;
-	      _T95 = _TF2;
+	      _T95 = _TF0;
 	    }_T97 = _tag_fat("Using decl in lower",sizeof(char),20U);
 	    _T98 = _tag_fat(0U,sizeof(void *),0);
 	    _T95(_T97,_T98);
 	  case 11: 
 	    _T9A = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_T9A;
-	      _T99 = _TF2;
+	      _T99 = _TF0;
 	    }_T9B = _tag_fat("Extern-C decl in lower",sizeof(char),23U);
 	    _T9C = _tag_fat(0U,sizeof(void *),0);
 	    _T99(_T9B,_T9C);
 	  case 12: 
 	    _T9E = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_T9E;
-	      _T9D = _TF2;
+	      _T9D = _TF0;
 	    }_T9F = _tag_fat("Extern-C include in lower",sizeof(char),26U);
 	    _TA0 = _tag_fat(0U,sizeof(void *),0);
 	    _T9D(_T9F,_TA0);
 	  case 13: 
 	    _TA2 = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_TA2;
-	      _TA1 = _TF2;
+	      _TA1 = _TF0;
 	    }_TA3 = _tag_fat("Porton in lower",sizeof(char),16U);
 	    _TA4 = _tag_fat(0U,sizeof(void *),0);
 	    _TA1(_TA3,_TA4);
 	  case 14: 
 	    _TA6 = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_TA6;
-	      _TA5 = _TF2;
+	      _TA5 = _TF0;
 	    }_TA7 = _tag_fat("Portoff in lower",sizeof(char),17U);
 	    _TA8 = _tag_fat(0U,sizeof(void *),0);
 	    _TA5(_TA7,_TA8);
 	  case 15: 
 	    _TAA = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_TAA;
-	      _TA9 = _TF2;
+	      _TA9 = _TF0;
 	    }_TAB = _tag_fat("Tempeston in lower",sizeof(char),19U);
 	    _TAC = _tag_fat(0U,sizeof(void *),0);
 	    _TA9(_TAB,_TAC);
 	  case 16: 
 	    _TAE = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_TAE;
-	      _TAD = _TF2;
+	      _TAD = _TF0;
 	    }_TAF = _tag_fat("Tempestoff in lower",sizeof(char),20U);
 	    _TB0 = _tag_fat(0U,sizeof(void *),0);
 	    _TAD(_TAF,_TB0);
 	  case 6: 
 	    _TB2 = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_TB2;
-	      _TB1 = _TF2;
+	      _TB1 = _TF0;
 	    }_TB3 = _tag_fat("Datatype_d in lower",sizeof(char),20U);
 	    _TB4 = _tag_fat(0U,sizeof(void *),0);
 	    _TB1(_TB3,_TB4);
 	  case 2: 
 	    _TB6 = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_TB6;
-	      _TB5 = _TF2;
+	      _TB5 = _TF0;
 	    }_TB7 = _tag_fat("Let_d in lower",sizeof(char),15U);
 	    _TB8 = _tag_fat(0U,sizeof(void *),0);
 	    _TB5(_TB7,_TB8);
 	  case 3: 
 	    _TBA = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_TBA;
-	      _TB9 = _TF2;
+	      _TB9 = _TF0;
 	    }_TBB = _tag_fat("Letv_d in lower",sizeof(char),16U);
 	    _TBC = _tag_fat(0U,sizeof(void *),0);
 	    _TB9(_TBB,_TBC);
 	  case 4: 
 	    _TBE = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_TBE;
-	      _TBD = _TF2;
+	      _TBD = _TF0;
 	    }_TBF = _tag_fat("Region_d in lower",sizeof(char),18U);
 	    _TC0 = _tag_fat(0U,sizeof(void *),0);
 	    _TBD(_TBF,_TC0);
 	  case 8: 
 	    _TC2 = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_TC2;
-	      _TC1 = _TF2;
+	      _TC1 = _TF0;
 	    }_TC3 = _tag_fat("Typedef_d in lower",sizeof(char),19U);
 	    _TC4 = _tag_fat(0U,sizeof(void *),0);
 	    _TC1(_TC3,_TC4);
 	  default: 
 	    _TC6 = Cyc_Warn_impos;
-	    { int (* _TF2)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
+	    { int (* _TF0)(struct _fat_ptr,struct _fat_ptr) = (int (*)(struct _fat_ptr,
 								       struct _fat_ptr))_TC6;
-	      _TC5 = _TF2;
+	      _TC5 = _TF0;
 	    }_TC7 = _tag_fat("Namespace_d in lower",sizeof(char),21U);
 	    _TC8 = _tag_fat(0U,sizeof(void *),0);
 	    _TC5(_TC7,_TC8);
@@ -2174,11 +2156,11 @@ static long Cyc_Lower_might_have_effect(struct Cyc_Absyn_Exp * e) {
     _T2 = *_T1;
     switch (_T2) {
     case 4: 
-      return 1;
+      goto _LL4;
     case 10: 
-      return 1;
+      _LL4: goto _LL6;
     case 39: 
-      return 1;
+      _LL6: return 1;
     default: 
       return 0;
     }

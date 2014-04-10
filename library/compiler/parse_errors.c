@@ -1,4 +1,5 @@
 #include <cyc_include.h>
+extern long Cyc_Flags_print_parser_state_and_token;
  struct Cyc_String_pa_PrintArg_struct {
   int tag;
   struct _fat_ptr f1;
@@ -8,10 +9,6 @@
   unsigned long f1;
 };
 extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);
-extern void exit(int);
-extern int Cyc_printf(struct _fat_ptr,struct _fat_ptr);
-void Cyc_Warn_err(unsigned int,struct _fat_ptr,struct _fat_ptr);
-extern long Cyc_Flags_print_parser_state_and_token;
 struct _fat_ptr Cyc_token2string(int);
  struct Cyc_Yyltype {
   int timestamp;
@@ -21,6 +18,8 @@ struct _fat_ptr Cyc_token2string(int);
   unsigned int last_column;
 };
 extern struct Cyc_Yyltype Cyc_yylloc;
+void Cyc_Warn_err(unsigned int,struct _fat_ptr,struct _fat_ptr);
+extern void exit(int);
  struct Cyc_ParseErrors_ParseState {
   int state;
   int token;

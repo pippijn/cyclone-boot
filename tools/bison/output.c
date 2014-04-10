@@ -140,165 +140,141 @@ void Cyc_output_headers() {
   struct _fat_ptr _T3;
   struct _fat_ptr _T4;
   int _T5;
-  struct Cyc_String_pa_PrintArg_struct _T6;
-  struct Cyc___cycFILE * _T7;
-  struct _fat_ptr _T8;
-  int _T9;
-  struct _fat_ptr _TA;
+  struct _fat_ptr _T6;
+  unsigned char * _T7;
+  unsigned int _T8;
+  struct Cyc_String_pa_PrintArg_struct _T9;
+  struct Cyc___cycFILE * _TA;
   struct _fat_ptr _TB;
   struct _fat_ptr _TC;
-  unsigned char * _TD;
-  unsigned int _TE;
-  struct Cyc_String_pa_PrintArg_struct _TF;
-  struct Cyc___cycFILE * _T10;
-  struct _fat_ptr _T11;
-  struct _fat_ptr _T12;
-  struct Cyc_String_pa_PrintArg_struct _T13;
-  struct Cyc___cycFILE * _T14;
-  struct _fat_ptr _T15;
-  struct _fat_ptr _T16;
-  struct Cyc_String_pa_PrintArg_struct _T17;
-  struct Cyc___cycFILE * _T18;
-  struct _fat_ptr _T19;
-  struct _fat_ptr _T1A;
-  struct Cyc_String_pa_PrintArg_struct _T1B;
-  struct Cyc___cycFILE * _T1C;
-  struct _fat_ptr _T1D;
-  struct _fat_ptr _T1E;
-  struct Cyc_String_pa_PrintArg_struct _T1F;
-  struct Cyc___cycFILE * _T20;
-  struct _fat_ptr _T21;
-  struct _fat_ptr _T22;
-  struct Cyc_String_pa_PrintArg_struct _T23;
-  struct Cyc___cycFILE * _T24;
-  struct _fat_ptr _T25;
-  struct _fat_ptr _T26;
-  struct Cyc_String_pa_PrintArg_struct _T27;
-  struct Cyc___cycFILE * _T28;
-  struct _fat_ptr _T29;
-  struct _fat_ptr _T2A;
+  struct Cyc_String_pa_PrintArg_struct _TD;
+  struct Cyc___cycFILE * _TE;
+  struct _fat_ptr _TF;
+  struct _fat_ptr _T10;
+  struct Cyc_String_pa_PrintArg_struct _T11;
+  struct Cyc___cycFILE * _T12;
+  struct _fat_ptr _T13;
+  struct _fat_ptr _T14;
+  struct Cyc_String_pa_PrintArg_struct _T15;
+  struct Cyc___cycFILE * _T16;
+  struct _fat_ptr _T17;
+  struct _fat_ptr _T18;
+  struct Cyc_String_pa_PrintArg_struct _T19;
+  struct Cyc___cycFILE * _T1A;
+  struct _fat_ptr _T1B;
+  struct _fat_ptr _T1C;
+  struct Cyc_String_pa_PrintArg_struct _T1D;
+  struct Cyc___cycFILE * _T1E;
+  struct _fat_ptr _T1F;
+  struct _fat_ptr _T20;
+  struct Cyc_String_pa_PrintArg_struct _T21;
+  struct Cyc___cycFILE * _T22;
+  struct _fat_ptr _T23;
+  struct _fat_ptr _T24;
   _T0 = Cyc_semantic_parser;
   if (! _T0) { goto _TL0;
   }
-  { struct Cyc_String_pa_PrintArg_struct _T2B;
-    _T2B.tag = 0;
-    _T2B.f1 = Cyc_attrsfile;
-    _T1 = _T2B;
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B = _T1;
-    void * _T2C[1];
-    _T2C[0] = &_T2B;
+  { struct Cyc_String_pa_PrintArg_struct _T25;
+    _T25.tag = 0;
+    _T25.f1 = Cyc_attrsfile;
+    _T1 = _T25;
+  }{ struct Cyc_String_pa_PrintArg_struct _T25 = _T1;
+    void * _T26[1];
+    _T26[0] = &_T25;
     _T2 = _check_null(Cyc_fguard);
     _T3 = _tag_fat("\n#include \"%s\"\nextern int yyerror;\nextern int yycost;\nextern m_string_t yymsg;\nextern YYSTYPE yyval;\n\nyyguard(int n, YYSTYPE yyvsp, YYLTYPE yylsp)\n{\n  yyerror = 0;\nyycost = 0;\n  yymsg = 0;\nswitch (n)\n    {",
 		   sizeof(char),206U);
-    _T4 = _tag_fat(_T2C,sizeof(void *),1);
+    _T4 = _tag_fat(_T26,sizeof(void *),1);
     Cyc_fprintf(_T2,_T3,_T4);
   }goto _TL1;
   _TL0: _TL1: _T5 = Cyc_noparserflag;
   if (! _T5) { goto _TL2;
   }
   return;
-  _TL2: { struct Cyc_String_pa_PrintArg_struct _T2B;
-    _T2B.tag = 0;
-    _T2B.f1 = Cyc_attrsfile;
-    _T6 = _T2B;
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B = _T6;
-    void * _T2C[1];
-    _T2C[0] = &_T2B;
-    _T7 = _check_null(Cyc_faction);
-    _T9 = Cyc_semantic_parser;
-    if (! _T9) { goto _TL4;
-    }
-    _TA = _tag_fat("\n#include \"%s\"\nextern YYSTYPE yyval;\nextern int yychar;yyaction(n, yyvsp, yylsp)\nregister int n;\nregister YYSTYPE *yyvsp;\nregister YYLTYPE *yylsp;\n{\n  switch (n)\n{",
-		   sizeof(char),164U);
-    _T8 = _TA;
-    goto _TL5;
-    _TL4: _T8 = _tag_fat("\n  switch (yyn) {\n",sizeof(char),19U);
-    _TL5: _TB = _tag_fat(_T2C,sizeof(void *),1);
-    Cyc_fprintf(_T7,_T8,_TB);
-  }_TC = Cyc_spec_name_prefix;
-  _TD = _TC.curr;
-  _TE = (unsigned int)_TD;
-  if (! _TE) { goto _TL6;
+  _TL2: _T6 = Cyc_spec_name_prefix;
+  _T7 = _T6.curr;
+  _T8 = (unsigned int)_T7;
+  if (! _T8) { goto _TL4;
   }
-  { struct Cyc_String_pa_PrintArg_struct _T2B;
-    _T2B.tag = 0;
-    _T2B.f1 = Cyc_spec_name_prefix;
-    _TF = _T2B;
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B = _TF;
-    void * _T2C[1];
-    _T2C[0] = &_T2B;
-    _T10 = _check_null(Cyc_ftable);
-    _T11 = _tag_fat("#define yyparse %sparse\n",sizeof(char),25U);
-    _T12 = _tag_fat(_T2C,sizeof(void *),1);
-    Cyc_fprintf(_T10,_T11,_T12);
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B;
-    _T2B.tag = 0;
-    _T2B.f1 = Cyc_spec_name_prefix;
-    _T13 = _T2B;
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B = _T13;
-    void * _T2C[1];
-    _T2C[0] = &_T2B;
-    _T14 = _check_null(Cyc_ftable);
-    _T15 = _tag_fat("#define yylex %slex\n",sizeof(char),21U);
-    _T16 = _tag_fat(_T2C,sizeof(void *),1);
-    Cyc_fprintf(_T14,_T15,_T16);
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B;
-    _T2B.tag = 0;
-    _T2B.f1 = Cyc_spec_name_prefix;
-    _T17 = _T2B;
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B = _T17;
-    void * _T2C[1];
-    _T2C[0] = &_T2B;
-    _T18 = _check_null(Cyc_ftable);
-    _T19 = _tag_fat("#define yyerror %serror\n",sizeof(char),25U);
-    _T1A = _tag_fat(_T2C,sizeof(void *),1);
-    Cyc_fprintf(_T18,_T19,_T1A);
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B;
-    _T2B.tag = 0;
-    _T2B.f1 = Cyc_spec_name_prefix;
-    _T1B = _T2B;
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B = _T1B;
-    void * _T2C[1];
-    _T2C[0] = &_T2B;
-    _T1C = _check_null(Cyc_ftable);
-    _T1D = _tag_fat("#define yylval %slval\n",sizeof(char),23U);
-    _T1E = _tag_fat(_T2C,sizeof(void *),1);
-    Cyc_fprintf(_T1C,_T1D,_T1E);
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B;
-    _T2B.tag = 0;
-    _T2B.f1 = Cyc_spec_name_prefix;
-    _T1F = _T2B;
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B = _T1F;
-    void * _T2C[1];
-    _T2C[0] = &_T2B;
-    _T20 = _check_null(Cyc_ftable);
-    _T21 = _tag_fat("#define yychar %schar\n",sizeof(char),23U);
-    _T22 = _tag_fat(_T2C,sizeof(void *),1);
-    Cyc_fprintf(_T20,_T21,_T22);
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B;
-    _T2B.tag = 0;
-    _T2B.f1 = Cyc_spec_name_prefix;
-    _T23 = _T2B;
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B = _T23;
-    void * _T2C[1];
-    _T2C[0] = &_T2B;
-    _T24 = _check_null(Cyc_ftable);
-    _T25 = _tag_fat("#define yydebug %sdebug\n",sizeof(char),25U);
-    _T26 = _tag_fat(_T2C,sizeof(void *),1);
-    Cyc_fprintf(_T24,_T25,_T26);
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B;
-    _T2B.tag = 0;
-    _T2B.f1 = Cyc_spec_name_prefix;
-    _T27 = _T2B;
-  }{ struct Cyc_String_pa_PrintArg_struct _T2B = _T27;
-    void * _T2C[1];
-    _T2C[0] = &_T2B;
-    _T28 = _check_null(Cyc_ftable);
-    _T29 = _tag_fat("#define yynerrs %snerrs\n",sizeof(char),25U);
-    _T2A = _tag_fat(_T2C,sizeof(void *),1);
-    Cyc_fprintf(_T28,_T29,_T2A);
-  }goto _TL7;
-  _TL6: _TL7: ;
+  { struct Cyc_String_pa_PrintArg_struct _T25;
+    _T25.tag = 0;
+    _T25.f1 = Cyc_spec_name_prefix;
+    _T9 = _T25;
+  }{ struct Cyc_String_pa_PrintArg_struct _T25 = _T9;
+    void * _T26[1];
+    _T26[0] = &_T25;
+    _TA = _check_null(Cyc_ftable);
+    _TB = _tag_fat("#define yyparse %sparse\n",sizeof(char),25U);
+    _TC = _tag_fat(_T26,sizeof(void *),1);
+    Cyc_fprintf(_TA,_TB,_TC);
+  }{ struct Cyc_String_pa_PrintArg_struct _T25;
+    _T25.tag = 0;
+    _T25.f1 = Cyc_spec_name_prefix;
+    _TD = _T25;
+  }{ struct Cyc_String_pa_PrintArg_struct _T25 = _TD;
+    void * _T26[1];
+    _T26[0] = &_T25;
+    _TE = _check_null(Cyc_ftable);
+    _TF = _tag_fat("#define yylex %slex\n",sizeof(char),21U);
+    _T10 = _tag_fat(_T26,sizeof(void *),1);
+    Cyc_fprintf(_TE,_TF,_T10);
+  }{ struct Cyc_String_pa_PrintArg_struct _T25;
+    _T25.tag = 0;
+    _T25.f1 = Cyc_spec_name_prefix;
+    _T11 = _T25;
+  }{ struct Cyc_String_pa_PrintArg_struct _T25 = _T11;
+    void * _T26[1];
+    _T26[0] = &_T25;
+    _T12 = _check_null(Cyc_ftable);
+    _T13 = _tag_fat("#define yyerror %serror\n",sizeof(char),25U);
+    _T14 = _tag_fat(_T26,sizeof(void *),1);
+    Cyc_fprintf(_T12,_T13,_T14);
+  }{ struct Cyc_String_pa_PrintArg_struct _T25;
+    _T25.tag = 0;
+    _T25.f1 = Cyc_spec_name_prefix;
+    _T15 = _T25;
+  }{ struct Cyc_String_pa_PrintArg_struct _T25 = _T15;
+    void * _T26[1];
+    _T26[0] = &_T25;
+    _T16 = _check_null(Cyc_ftable);
+    _T17 = _tag_fat("#define yylval %slval\n",sizeof(char),23U);
+    _T18 = _tag_fat(_T26,sizeof(void *),1);
+    Cyc_fprintf(_T16,_T17,_T18);
+  }{ struct Cyc_String_pa_PrintArg_struct _T25;
+    _T25.tag = 0;
+    _T25.f1 = Cyc_spec_name_prefix;
+    _T19 = _T25;
+  }{ struct Cyc_String_pa_PrintArg_struct _T25 = _T19;
+    void * _T26[1];
+    _T26[0] = &_T25;
+    _T1A = _check_null(Cyc_ftable);
+    _T1B = _tag_fat("#define yychar %schar\n",sizeof(char),23U);
+    _T1C = _tag_fat(_T26,sizeof(void *),1);
+    Cyc_fprintf(_T1A,_T1B,_T1C);
+  }{ struct Cyc_String_pa_PrintArg_struct _T25;
+    _T25.tag = 0;
+    _T25.f1 = Cyc_spec_name_prefix;
+    _T1D = _T25;
+  }{ struct Cyc_String_pa_PrintArg_struct _T25 = _T1D;
+    void * _T26[1];
+    _T26[0] = &_T25;
+    _T1E = _check_null(Cyc_ftable);
+    _T1F = _tag_fat("#define yydebug %sdebug\n",sizeof(char),25U);
+    _T20 = _tag_fat(_T26,sizeof(void *),1);
+    Cyc_fprintf(_T1E,_T1F,_T20);
+  }{ struct Cyc_String_pa_PrintArg_struct _T25;
+    _T25.tag = 0;
+    _T25.f1 = Cyc_spec_name_prefix;
+    _T21 = _T25;
+  }{ struct Cyc_String_pa_PrintArg_struct _T25 = _T21;
+    void * _T26[1];
+    _T26[0] = &_T25;
+    _T22 = _check_null(Cyc_ftable);
+    _T23 = _tag_fat("#define yynerrs %snerrs\n",sizeof(char),25U);
+    _T24 = _tag_fat(_T26,sizeof(void *),1);
+    Cyc_fprintf(_T22,_T23,_T24);
+  }goto _TL5;
+  _TL4: _TL5: ;
 }
 void Cyc_output_trailers() {
   int _T0;
@@ -317,30 +293,30 @@ void Cyc_output_trailers() {
   struct _fat_ptr _TD;
   struct _fat_ptr _TE;
   _T0 = Cyc_semantic_parser;
-  if (! _T0) { goto _TL8;
+  if (! _T0) { goto _TL6;
   }
   _T1 = _check_null(Cyc_fguard);
   _T2 = _tag_fat("\n    }\n}\n",sizeof(char),10U);
   _T3 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T1,_T2,_T3);
-  goto _TL9;
-  _TL8: _TL9: _T4 = _check_null(Cyc_faction);
+  goto _TL7;
+  _TL6: _TL7: _T4 = _check_null(Cyc_faction);
   _T5 = _tag_fat("\n",sizeof(char),2U);
   _T6 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T4,_T5,_T6);
   _T7 = Cyc_noparserflag;
-  if (! _T7) { goto _TLA;
+  if (! _T7) { goto _TL8;
   }
   return;
-  _TLA: _T8 = Cyc_semantic_parser;
-  if (! _T8) { goto _TLC;
+  _TL8: _T8 = Cyc_semantic_parser;
+  if (! _T8) { goto _TLA;
   }
   _T9 = _check_null(Cyc_faction);
   _TA = _tag_fat("    }\n",sizeof(char),7U);
   _TB = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T9,_TA,_TB);
-  goto _TLD;
-  _TLC: _TLD: _TC = _check_null(Cyc_faction);
+  goto _TLB;
+  _TLA: _TLB: _TC = _check_null(Cyc_faction);
   _TD = _tag_fat("\n",sizeof(char),2U);
   _TE = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_TC,_TD,_TE);
@@ -375,39 +351,39 @@ void Cyc_output() {
   int _T1A;
   int c;
   _T0 = Cyc_semantic_parser;
-  if (_T0) { goto _TLE;
-  }else { goto _TL10;
+  if (_T0) { goto _TLC;
+  }else { goto _TLE;
   }
-  _TL10: _T1 = _check_null(Cyc_fattrs0);
+  _TLE: _T1 = _check_null(Cyc_fattrs0);
   Cyc_rewind(_T1);
-  _TL11: _T2 = _check_null(Cyc_fattrs0);
+  _TLF: _T2 = _check_null(Cyc_fattrs0);
   c = Cyc_getc(_T2);
   _T3 = c;
   _T4 = - 1;
-  if (_T3 != _T4) { goto _TL12;
-  }else { goto _TL13;
+  if (_T3 != _T4) { goto _TL10;
+  }else { goto _TL11;
   }
-  _TL12: _T5 = c;
+  _TL10: _T5 = c;
   _T6 = _check_null(Cyc_ftable);
   Cyc_putc(_T5,_T6);
-  goto _TL11;
-  _TL13: _T7 = _check_null(Cyc_fattrs);
+  goto _TLF;
+  _TL11: _T7 = _check_null(Cyc_fattrs);
   Cyc_rewind(_T7);
-  _TL14: _T8 = _check_null(Cyc_fattrs);
+  _TL12: _T8 = _check_null(Cyc_fattrs);
   c = Cyc_getc(_T8);
   _T9 = c;
   _TA = - 1;
-  if (_T9 != _TA) { goto _TL15;
-  }else { goto _TL16;
+  if (_T9 != _TA) { goto _TL13;
+  }else { goto _TL14;
   }
-  _TL15: _TB = c;
+  _TL13: _TB = c;
   _TC = _check_null(Cyc_ftable);
   Cyc_putc(_TB,_TC);
-  goto _TL14;
-  _TL16: goto _TLF;
-  _TLE: _TLF: Cyc_reader_output_yylsp(Cyc_ftable);
+  goto _TL12;
+  _TL14: goto _TLD;
+  _TLC: _TLD: Cyc_reader_output_yylsp(Cyc_ftable);
   _TD = Cyc_debugflag;
-  if (! _TD) { goto _TL17;
+  if (! _TD) { goto _TL15;
   }
   { struct Cyc_Int_pa_PrintArg_struct _T1B;
     _T1B.tag = 1;
@@ -423,9 +399,9 @@ void Cyc_output() {
 		    45U);
     _T13 = _tag_fat(_T1C,sizeof(void *),1);
     Cyc_fprintf(_T11,_T12,_T13);
-  }goto _TL18;
-  _TL17: _TL18: _T14 = Cyc_semantic_parser;
-  if (! _T14) { goto _TL19;
+  }goto _TL16;
+  _TL15: _TL16: _T14 = Cyc_semantic_parser;
+  if (! _T14) { goto _TL17;
   }
   { struct Cyc_String_pa_PrintArg_struct _T1B;
     _T1B.tag = 0;
@@ -438,26 +414,26 @@ void Cyc_output() {
     _T17 = _tag_fat("#include \"%s\"\n",sizeof(char),15U);
     _T18 = _tag_fat(_T1C,sizeof(void *),1);
     Cyc_fprintf(_T16,_T17,_T18);
-  }goto _TL1A;
-  _TL19: _TL1A: Cyc_free_itemsets();
+  }goto _TL18;
+  _TL17: _TL18: Cyc_free_itemsets();
   Cyc_output_defines();
   Cyc_output_token_translations();
   Cyc_output_gram();
   Cyc_ritem = _tag_fat(0,0,0);
   _T19 = Cyc_semantic_parser;
-  if (! _T19) { goto _TL1B;
+  if (! _T19) { goto _TL19;
   }
   Cyc_output_stos();
-  goto _TL1C;
-  _TL1B: _TL1C: Cyc_output_rule_data();
+  goto _TL1A;
+  _TL19: _TL1A: Cyc_output_rule_data();
   Cyc_output_actions();
   _T1A = Cyc_noparserflag;
-  if (_T1A) { goto _TL1D;
-  }else { goto _TL1F;
+  if (_T1A) { goto _TL1B;
+  }else { goto _TL1D;
   }
-  _TL1F: Cyc_output_parser();
-  goto _TL1E;
-  _TL1D: _TL1E: Cyc_output_program();
+  _TL1D: Cyc_output_parser();
+  goto _TL1C;
+  _TL1B: _TL1C: Cyc_output_program();
 }
 void Cyc_output_token_translations() {
   int _T0;
@@ -495,7 +471,7 @@ void Cyc_output_token_translations() {
   register int i;
   register int j;
   _T0 = Cyc_translations;
-  if (! _T0) { goto _TL20;
+  if (! _T0) { goto _TL1E;
   }
   { struct Cyc_Int_pa_PrintArg_struct _T20;
     _T20.tag = 1;
@@ -518,32 +494,32 @@ void Cyc_output_token_translations() {
       _T7 = _tag_fat(_T22,sizeof(void *),2);
       Cyc_fprintf(_T5,_T6,_T7);
     }
-  }if (Cyc_ntokens >= 127) { goto _TL22;
+  }if (Cyc_ntokens >= 127) { goto _TL20;
   }
   _T8 = _check_null(Cyc_ftable);
   _T9 = _tag_fat("\nstatic short yytranslate[] = {     0",sizeof(char),38U);
   _TA = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T8,_T9,_TA);
-  goto _TL23;
-  _TL22: _TB = _check_null(Cyc_ftable);
+  goto _TL21;
+  _TL20: _TB = _check_null(Cyc_ftable);
   _TC = _tag_fat("\nstatic short yytranslate[] = {     0",sizeof(char),38U);
   _TD = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_TB,_TC,_TD);
-  _TL23: j = 10;
+  _TL21: j = 10;
   i = 1;
-  _TL27: if (i <= Cyc_max_user_token_number) { goto _TL25;
-  }else { goto _TL26;
+  _TL25: if (i <= Cyc_max_user_token_number) { goto _TL23;
+  }else { goto _TL24;
   }
-  _TL25: _TE = _check_null(Cyc_ftable);
+  _TL23: _TE = _check_null(Cyc_ftable);
   Cyc_putc(44,_TE);
-  if (j < 10) { goto _TL28;
+  if (j < 10) { goto _TL26;
   }
   _TF = _check_null(Cyc_ftable);
   Cyc_putc(10,_TF);
   j = 1;
-  goto _TL29;
-  _TL28: j = j + 1;
-  _TL29: { struct Cyc_Int_pa_PrintArg_struct _T20;
+  goto _TL27;
+  _TL26: j = j + 1;
+  _TL27: { struct Cyc_Int_pa_PrintArg_struct _T20;
     _T20.tag = 1;
     _T11 = Cyc_token_translations;
     _T12 = i;
@@ -561,17 +537,17 @@ void Cyc_output_token_translations() {
     _T19 = _tag_fat(_T21,sizeof(void *),1);
     Cyc_fprintf(_T17,_T18,_T19);
   }i = i + 1;
-  goto _TL27;
-  _TL26: _T1A = _check_null(Cyc_ftable);
+  goto _TL25;
+  _TL24: _T1A = _check_null(Cyc_ftable);
   _T1B = _tag_fat("\n};\n",sizeof(char),5U);
   _T1C = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T1A,_T1B,_T1C);
-  goto _TL21;
-  _TL20: _T1D = _check_null(Cyc_ftable);
+  goto _TL1F;
+  _TL1E: _T1D = _check_null(Cyc_ftable);
   _T1E = _tag_fat("\n#define YYTRANSLATE(x) (x)\n",sizeof(char),29U);
   _T1F = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T1D,_T1E,_T1F);
-  _TL21: ;
+  _TL1F: ;
 }
 void Cyc_output_gram() {
   int _T0;
@@ -644,37 +620,37 @@ void Cyc_output_gram() {
   register int j;
   struct _fat_ptr sp;
   _T0 = Cyc_semantic_parser;
-  if (_T0) { goto _TL2A;
-  }else { goto _TL2C;
+  if (_T0) { goto _TL28;
+  }else { goto _TL2A;
   }
-  _TL2C: _T1 = Cyc_noparserflag;
-  if (_T1) { goto _TL2A;
-  }else { goto _TL2D;
+  _TL2A: _T1 = Cyc_noparserflag;
+  if (_T1) { goto _TL28;
+  }else { goto _TL2B;
   }
-  _TL2D: _T2 = _check_null(Cyc_ftable);
+  _TL2B: _T2 = _check_null(Cyc_ftable);
   _T3 = _tag_fat("\n#if YYDEBUG != 0",sizeof(char),18U);
   _T4 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T2,_T3,_T4);
-  goto _TL2B;
-  _TL2A: _TL2B: _T5 = _check_null(Cyc_ftable);
+  goto _TL29;
+  _TL28: _TL29: _T5 = _check_null(Cyc_ftable);
   _T6 = _tag_fat("\nstatic short yyprhs[] = {     0",sizeof(char),33U);
   _T7 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T5,_T6,_T7);
   j = 10;
   i = 1;
-  _TL31: if (i <= Cyc_nrules) { goto _TL2F;
-  }else { goto _TL30;
+  _TL2F: if (i <= Cyc_nrules) { goto _TL2D;
+  }else { goto _TL2E;
   }
-  _TL2F: _T8 = _check_null(Cyc_ftable);
+  _TL2D: _T8 = _check_null(Cyc_ftable);
   Cyc_putc(44,_T8);
-  if (j < 10) { goto _TL32;
+  if (j < 10) { goto _TL30;
   }
   _T9 = _check_null(Cyc_ftable);
   Cyc_putc(10,_T9);
   j = 1;
-  goto _TL33;
-  _TL32: j = j + 1;
-  _TL33: { struct Cyc_Int_pa_PrintArg_struct _T42;
+  goto _TL31;
+  _TL30: j = j + 1;
+  _TL31: { struct Cyc_Int_pa_PrintArg_struct _T42;
     _T42.tag = 1;
     _TB = Cyc_rrhs;
     _TC = i;
@@ -692,8 +668,8 @@ void Cyc_output_gram() {
     _T13 = _tag_fat(_T43,sizeof(void *),1);
     Cyc_fprintf(_T11,_T12,_T13);
   }i = i + 1;
-  goto _TL31;
-  _TL30: _T14 = _check_null(Cyc_ftable);
+  goto _TL2F;
+  _TL2E: _T14 = _check_null(Cyc_ftable);
   _T15 = _tag_fat("\n};\n",sizeof(char),5U);
   _T16 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T14,_T15,_T16);
@@ -716,29 +692,29 @@ void Cyc_output_gram() {
   }j = 10;
   _T20 = Cyc_ritem;
   sp = _fat_ptr_plus(_T20,sizeof(short),1);
-  _TL37: _T21 = sp;
+  _TL35: _T21 = sp;
   _T22 = _check_fat_subscript(_T21,sizeof(short),0U);
   _T23 = (short *)_T22;
   _T24 = *_T23;
   _T25 = (int)_T24;
-  if (_T25) { goto _TL35;
-  }else { goto _TL36;
+  if (_T25) { goto _TL33;
+  }else { goto _TL34;
   }
-  _TL35: _T26 = _check_null(Cyc_ftable);
+  _TL33: _T26 = _check_null(Cyc_ftable);
   Cyc_putc(44,_T26);
-  if (j < 10) { goto _TL38;
+  if (j < 10) { goto _TL36;
   }
   _T27 = _check_null(Cyc_ftable);
   Cyc_putc(10,_T27);
   j = 1;
-  goto _TL39;
-  _TL38: j = j + 1;
-  _TL39: _T28 = sp;
+  goto _TL37;
+  _TL36: j = j + 1;
+  _TL37: _T28 = sp;
   _T29 = _T28.curr;
   _T2A = (short *)_T29;
   _T2B = *_T2A;
   _T2C = (int)_T2B;
-  if (_T2C <= 0) { goto _TL3A;
+  if (_T2C <= 0) { goto _TL38;
   }
   { struct Cyc_Int_pa_PrintArg_struct _T42;
     _T42.tag = 1;
@@ -756,32 +732,32 @@ void Cyc_output_gram() {
     _T34 = _tag_fat("%6d",sizeof(char),4U);
     _T35 = _tag_fat(_T43,sizeof(void *),1);
     Cyc_fprintf(_T33,_T34,_T35);
-  }goto _TL3B;
-  _TL3A: _T36 = _check_null(Cyc_ftable);
+  }goto _TL39;
+  _TL38: _T36 = _check_null(Cyc_ftable);
   _T37 = _tag_fat("     0",sizeof(char),7U);
   _T38 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T36,_T37,_T38);
-  _TL3B: _T39 = &sp;
+  _TL39: _T39 = &sp;
   _fat_ptr_inplace_plus(_T39,sizeof(short),1);
-  goto _TL37;
-  _TL36: _T3A = _check_null(Cyc_ftable);
+  goto _TL35;
+  _TL34: _T3A = _check_null(Cyc_ftable);
   _T3B = _tag_fat("\n};\n",sizeof(char),5U);
   _T3C = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T3A,_T3B,_T3C);
   _T3D = Cyc_semantic_parser;
-  if (_T3D) { goto _TL3C;
-  }else { goto _TL3E;
+  if (_T3D) { goto _TL3A;
+  }else { goto _TL3C;
   }
-  _TL3E: _T3E = Cyc_noparserflag;
-  if (_T3E) { goto _TL3C;
-  }else { goto _TL3F;
+  _TL3C: _T3E = Cyc_noparserflag;
+  if (_T3E) { goto _TL3A;
+  }else { goto _TL3D;
   }
-  _TL3F: _T3F = _check_null(Cyc_ftable);
+  _TL3D: _T3F = _check_null(Cyc_ftable);
   _T40 = _tag_fat("\n#endif\n",sizeof(char),9U);
   _T41 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T3F,_T40,_T41);
-  goto _TL3D;
-  _TL3C: _TL3D: ;
+  goto _TL3B;
+  _TL3A: _TL3B: ;
 }
 void Cyc_output_stos() {
   struct Cyc___cycFILE * _T0;
@@ -810,19 +786,19 @@ void Cyc_output_stos() {
   Cyc_fprintf(_T0,_T1,_T2);
   j = 10;
   i = 1;
-  _TL43: if (i < Cyc_nstates) { goto _TL41;
-  }else { goto _TL42;
+  _TL41: if (i < Cyc_nstates) { goto _TL3F;
+  }else { goto _TL40;
   }
-  _TL41: _T3 = _check_null(Cyc_ftable);
+  _TL3F: _T3 = _check_null(Cyc_ftable);
   Cyc_putc(44,_T3);
-  if (j < 10) { goto _TL44;
+  if (j < 10) { goto _TL42;
   }
   _T4 = _check_null(Cyc_ftable);
   Cyc_putc(10,_T4);
   j = 1;
-  goto _TL45;
-  _TL44: j = j + 1;
-  _TL45: { struct Cyc_Int_pa_PrintArg_struct _T12;
+  goto _TL43;
+  _TL42: j = j + 1;
+  _TL43: { struct Cyc_Int_pa_PrintArg_struct _T12;
     _T12.tag = 1;
     _T6 = Cyc_accessing_symbol;
     _T7 = i;
@@ -840,8 +816,8 @@ void Cyc_output_stos() {
     _TE = _tag_fat(_T13,sizeof(void *),1);
     Cyc_fprintf(_TC,_TD,_TE);
   }i = i + 1;
-  goto _TL43;
-  _TL42: _TF = _check_null(Cyc_ftable);
+  goto _TL41;
+  _TL40: _TF = _check_null(Cyc_ftable);
   _T10 = _tag_fat("\n};\n",sizeof(char),5U);
   _T11 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_TF,_T10,_T11);
@@ -1092,19 +1068,19 @@ void Cyc_output_rule_data() {
   Cyc_fprintf(_T3,_T4,_T5);
   j = 10;
   i = 1;
-  _TL49: if (i <= Cyc_nrules) { goto _TL47;
-  }else { goto _TL48;
+  _TL47: if (i <= Cyc_nrules) { goto _TL45;
+  }else { goto _TL46;
   }
-  _TL47: _T6 = _check_null(Cyc_ftable);
+  _TL45: _T6 = _check_null(Cyc_ftable);
   Cyc_putc(44,_T6);
-  if (j < 10) { goto _TL4A;
+  if (j < 10) { goto _TL48;
   }
   _T7 = _check_null(Cyc_ftable);
   Cyc_putc(10,_T7);
   j = 1;
-  goto _TL4B;
-  _TL4A: j = j + 1;
-  _TL4B: { struct Cyc_Int_pa_PrintArg_struct _TE9;
+  goto _TL49;
+  _TL48: j = j + 1;
+  _TL49: { struct Cyc_Int_pa_PrintArg_struct _TE9;
     _TE9.tag = 1;
     _T9 = Cyc_rline;
     _TA = i;
@@ -1122,20 +1098,20 @@ void Cyc_output_rule_data() {
     _T11 = _tag_fat(_TEA,sizeof(void *),1);
     Cyc_fprintf(_TF,_T10,_T11);
   }i = i + 1;
-  goto _TL49;
-  _TL48: _T12 = _check_null(Cyc_ftable);
+  goto _TL47;
+  _TL46: _T12 = _check_null(Cyc_ftable);
   _T13 = _tag_fat("\n};\n#endif\n\n",sizeof(char),13U);
   _T14 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T12,_T13,_T14);
   _T15 = Cyc_toknumflag;
-  if (_T15) { goto _TL4E;
-  }else { goto _TL4F;
+  if (_T15) { goto _TL4C;
+  }else { goto _TL4D;
   }
-  _TL4F: _T16 = Cyc_noparserflag;
-  if (_T16) { goto _TL4E;
-  }else { goto _TL4C;
+  _TL4D: _T16 = Cyc_noparserflag;
+  if (_T16) { goto _TL4C;
+  }else { goto _TL4A;
   }
-  _TL4E: { struct Cyc_Int_pa_PrintArg_struct _TE9;
+  _TL4C: { struct Cyc_Int_pa_PrintArg_struct _TE9;
     _TE9.tag = 1;
     _T18 = Cyc_ntokens;
     _TE9.f1 = (unsigned long)_T18;
@@ -1195,22 +1171,22 @@ void Cyc_output_rule_data() {
     _T2E = _tag_fat("#define YYMAXUTOK %d\n\n",sizeof(char),23U);
     _T2F = _tag_fat(_TEA,sizeof(void *),1);
     Cyc_fprintf(_T2D,_T2E,_T2F);
-  }goto _TL4D;
-  _TL4C: _TL4D: _T30 = Cyc_toknumflag;
-  if (_T30) { goto _TL50;
-  }else { goto _TL52;
+  }goto _TL4B;
+  _TL4A: _TL4B: _T30 = Cyc_toknumflag;
+  if (_T30) { goto _TL4E;
+  }else { goto _TL50;
   }
-  _TL52: _T31 = Cyc_noparserflag;
-  if (_T31) { goto _TL50;
-  }else { goto _TL53;
+  _TL50: _T31 = Cyc_noparserflag;
+  if (_T31) { goto _TL4E;
+  }else { goto _TL51;
   }
-  _TL53: _T32 = _check_null(Cyc_ftable);
+  _TL51: _T32 = _check_null(Cyc_ftable);
   _T33 = _tag_fat("\n#if YYDEBUG != 0 || defined (YYERROR_VERBOSE)\n\n",sizeof(char),
 		  49U);
   _T34 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T32,_T33,_T34);
-  goto _TL51;
-  _TL50: _TL51: { struct Cyc_String_pa_PrintArg_struct _TE9;
+  goto _TL4F;
+  _TL4E: _TL4F: { struct Cyc_String_pa_PrintArg_struct _TE9;
     _TE9.tag = 0;
     _T36 = Cyc_tags;
     _T37 = _check_fat_subscript(_T36,sizeof(struct _fat_ptr),0);
@@ -1235,20 +1211,20 @@ void Cyc_output_rule_data() {
   _T43 = _T42 + 44U;
   j = (int)_T43;
   i = 1;
-  _TL57: if (i < Cyc_nsyms) { goto _TL55;
-  }else { goto _TL56;
+  _TL55: if (i < Cyc_nsyms) { goto _TL53;
+  }else { goto _TL54;
   }
-  _TL55: { struct _fat_ptr p;
+  _TL53: { struct _fat_ptr p;
     _T44 = _check_null(Cyc_ftable);
     Cyc_putc(44,_T44);
     j = j + 1;
-    if (j <= 75) { goto _TL58;
+    if (j <= 75) { goto _TL56;
     }
     _T45 = _check_null(Cyc_ftable);
     Cyc_putc(10,_T45);
     j = 0;
-    goto _TL59;
-    _TL58: _TL59: _T46 = _check_null(Cyc_ftable);
+    goto _TL57;
+    _TL56: _TL57: _T46 = _check_null(Cyc_ftable);
     Cyc_putc(34,_T46);
     j = j + 1;
     _T47 = Cyc_tags;
@@ -1256,37 +1232,37 @@ void Cyc_output_rule_data() {
     _T49 = _check_fat_subscript(_T47,sizeof(struct _fat_ptr),_T48);
     _T4A = (struct _fat_ptr *)_T49;
     p = *_T4A;
-    _TL5D: _T4B = p;
+    _TL5B: _T4B = p;
     _T4C = _T4B.curr;
     _T4D = (unsigned int)_T4C;
-    if (_T4D) { goto _TL5E;
-    }else { goto _TL5C;
+    if (_T4D) { goto _TL5C;
+    }else { goto _TL5A;
     }
-    _TL5E: _T4E = p;
+    _TL5C: _T4E = p;
     _T4F = _check_fat_subscript(_T4E,sizeof(char),0U);
     _T50 = (char *)_T4F;
     _T51 = *_T50;
     _T52 = (int)_T51;
-    if (_T52) { goto _TL5B;
-    }else { goto _TL5C;
+    if (_T52) { goto _TL59;
+    }else { goto _TL5A;
     }
-    _TL5B: _T53 = p;
+    _TL59: _T53 = p;
     _T54 = _T53.curr;
     _T55 = (char *)_T54;
     _T56 = *_T55;
     _T57 = (int)_T56;
-    if (_T57 == 34) { goto _TL61;
-    }else { goto _TL62;
+    if (_T57 == 34) { goto _TL5F;
+    }else { goto _TL60;
     }
-    _TL62: _T58 = p;
+    _TL60: _T58 = p;
     _T59 = _T58.curr;
     _T5A = (char *)_T59;
     _T5B = *_T5A;
     _T5C = (int)_T5B;
-    if (_T5C == 92) { goto _TL61;
-    }else { goto _TL5F;
+    if (_T5C == 92) { goto _TL5F;
+    }else { goto _TL5D;
     }
-    _TL61: { struct Cyc_Int_pa_PrintArg_struct _TE9;
+    _TL5F: { struct Cyc_Int_pa_PrintArg_struct _TE9;
       _TE9.tag = 1;
       _T5E = p;
       _T5F = _T5E.curr;
@@ -1303,63 +1279,63 @@ void Cyc_output_rule_data() {
       _T65 = _tag_fat(_TEA,sizeof(void *),1);
       Cyc_fprintf(_T63,_T64,_T65);
     }j = j + 2;
-    goto _TL60;
-    _TL5F: _T66 = p;
+    goto _TL5E;
+    _TL5D: _T66 = p;
     _T67 = _T66.curr;
     _T68 = (char *)_T67;
     _T69 = *_T68;
     _T6A = (int)_T69;
-    if (_T6A != 10) { goto _TL63;
+    if (_T6A != 10) { goto _TL61;
     }
     _T6B = _check_null(Cyc_ftable);
     _T6C = _tag_fat("\\n",sizeof(char),3U);
     _T6D = _tag_fat(0U,sizeof(void *),0);
     Cyc_fprintf(_T6B,_T6C,_T6D);
     j = j + 2;
-    goto _TL64;
-    _TL63: _T6E = p;
+    goto _TL62;
+    _TL61: _T6E = p;
     _T6F = _T6E.curr;
     _T70 = (char *)_T6F;
     _T71 = *_T70;
     _T72 = (int)_T71;
-    if (_T72 != 9) { goto _TL65;
+    if (_T72 != 9) { goto _TL63;
     }
     _T73 = _check_null(Cyc_ftable);
     _T74 = _tag_fat("\\t",sizeof(char),3U);
     _T75 = _tag_fat(0U,sizeof(void *),0);
     Cyc_fprintf(_T73,_T74,_T75);
     j = j + 2;
-    goto _TL66;
-    _TL65: _T76 = p;
+    goto _TL64;
+    _TL63: _T76 = p;
     _T77 = _T76.curr;
     _T78 = (char *)_T77;
     _T79 = *_T78;
     _T7A = (int)_T79;
-    if (_T7A != 8) { goto _TL67;
+    if (_T7A != 8) { goto _TL65;
     }
     _T7B = _check_null(Cyc_ftable);
     _T7C = _tag_fat("\\b",sizeof(char),3U);
     _T7D = _tag_fat(0U,sizeof(void *),0);
     Cyc_fprintf(_T7B,_T7C,_T7D);
     j = j + 2;
-    goto _TL68;
-    _TL67: _T7E = p;
+    goto _TL66;
+    _TL65: _T7E = p;
     _T7F = _T7E.curr;
     _T80 = (char *)_T7F;
     _T81 = *_T80;
     _T82 = (int)_T81;
-    if (_T82 < 32) { goto _TL6B;
-    }else { goto _TL6C;
+    if (_T82 < 32) { goto _TL69;
+    }else { goto _TL6A;
     }
-    _TL6C: _T83 = p;
+    _TL6A: _T83 = p;
     _T84 = _T83.curr;
     _T85 = (char *)_T84;
     _T86 = *_T85;
     _T87 = (int)_T86;
-    if (_T87 >= 127) { goto _TL6B;
-    }else { goto _TL69;
+    if (_T87 >= 127) { goto _TL69;
+    }else { goto _TL67;
     }
-    _TL6B: { struct Cyc_Int_pa_PrintArg_struct _TE9;
+    _TL69: { struct Cyc_Int_pa_PrintArg_struct _TE9;
       _TE9.tag = 1;
       _T89 = p;
       _T8A = _T89.curr;
@@ -1375,8 +1351,8 @@ void Cyc_output_rule_data() {
       _T8F = _tag_fat(_TEA,sizeof(void *),1);
       Cyc_fprintf(_T8D,_T8E,_T8F);
     }j = j + 4;
-    goto _TL6A;
-    _TL69: _T90 = p;
+    goto _TL68;
+    _TL67: _T90 = p;
     _T91 = _T90.curr;
     _T92 = (char *)_T91;
     _T93 = *_T92;
@@ -1384,33 +1360,33 @@ void Cyc_output_rule_data() {
     _T95 = _check_null(Cyc_ftable);
     Cyc_putc(_T94,_T95);
     j = j + 1;
-    _TL6A: _TL68: _TL66: _TL64: _TL60: _T96 = &p;
+    _TL68: _TL66: _TL64: _TL62: _TL5E: _T96 = &p;
     _fat_ptr_inplace_plus(_T96,sizeof(char),1);
-    goto _TL5D;
-    _TL5C: _T97 = _check_null(Cyc_ftable);
+    goto _TL5B;
+    _TL5A: _T97 = _check_null(Cyc_ftable);
     Cyc_putc(34,_T97);
     j = j + 1;
   }i = i + 1;
-  goto _TL57;
-  _TL56: _T98 = _check_null(Cyc_ftable);
+  goto _TL55;
+  _TL54: _T98 = _check_null(Cyc_ftable);
   _T99 = _tag_fat("\n};\n",sizeof(char),5U);
   _T9A = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T98,_T99,_T9A);
   _T9B = Cyc_toknumflag;
-  if (_T9B) { goto _TL6D;
-  }else { goto _TL6F;
+  if (_T9B) { goto _TL6B;
+  }else { goto _TL6D;
   }
-  _TL6F: _T9C = Cyc_noparserflag;
-  if (_T9C) { goto _TL6D;
-  }else { goto _TL70;
+  _TL6D: _T9C = Cyc_noparserflag;
+  if (_T9C) { goto _TL6B;
+  }else { goto _TL6E;
   }
-  _TL70: _T9D = _check_null(Cyc_ftable);
+  _TL6E: _T9D = _check_null(Cyc_ftable);
   _T9E = _tag_fat("#endif\n\n",sizeof(char),9U);
   _T9F = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T9D,_T9E,_T9F);
-  goto _TL6E;
-  _TL6D: _TL6E: _TA0 = Cyc_toknumflag;
-  if (! _TA0) { goto _TL71;
+  goto _TL6C;
+  _TL6B: _TL6C: _TA0 = Cyc_toknumflag;
+  if (! _TA0) { goto _TL6F;
   }
   _TA1 = _check_null(Cyc_ftable);
   _TA2 = _tag_fat("static const short yytoknum[] = { 0",sizeof(char),36U);
@@ -1418,19 +1394,19 @@ void Cyc_output_rule_data() {
   Cyc_fprintf(_TA1,_TA2,_TA3);
   j = 10;
   i = 1;
-  _TL76: if (i <= Cyc_ntokens) { goto _TL74;
-  }else { goto _TL75;
+  _TL74: if (i <= Cyc_ntokens) { goto _TL72;
+  }else { goto _TL73;
   }
-  _TL74: _TA4 = _check_null(Cyc_ftable);
+  _TL72: _TA4 = _check_null(Cyc_ftable);
   Cyc_putc(44,_TA4);
-  if (j < 10) { goto _TL77;
+  if (j < 10) { goto _TL75;
   }
   _TA5 = _check_null(Cyc_ftable);
   Cyc_putc(10,_TA5);
   j = 1;
-  goto _TL78;
-  _TL77: j = j + 1;
-  _TL78: { struct Cyc_Int_pa_PrintArg_struct _TE9;
+  goto _TL76;
+  _TL75: j = j + 1;
+  _TL76: { struct Cyc_Int_pa_PrintArg_struct _TE9;
     _TE9.tag = 1;
     _TA7 = Cyc_user_toknums;
     _TA8 = i;
@@ -1447,31 +1423,31 @@ void Cyc_output_rule_data() {
     _TAE = _tag_fat(_TEA,sizeof(void *),1);
     Cyc_fprintf(_TAC,_TAD,_TAE);
   }i = i + 1;
-  goto _TL76;
-  _TL75: _TAF = _check_null(Cyc_ftable);
+  goto _TL74;
+  _TL73: _TAF = _check_null(Cyc_ftable);
   _TB0 = _tag_fat("\n};\n\n",sizeof(char),6U);
   _TB1 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_TAF,_TB0,_TB1);
-  goto _TL72;
-  _TL71: _TL72: _TB2 = _check_null(Cyc_ftable);
+  goto _TL70;
+  _TL6F: _TL70: _TB2 = _check_null(Cyc_ftable);
   _TB3 = _tag_fat("static short yyr1[] = {     0",sizeof(char),30U);
   _TB4 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_TB2,_TB3,_TB4);
   j = 10;
   i = 1;
-  _TL7C: if (i <= Cyc_nrules) { goto _TL7A;
-  }else { goto _TL7B;
+  _TL7A: if (i <= Cyc_nrules) { goto _TL78;
+  }else { goto _TL79;
   }
-  _TL7A: _TB5 = _check_null(Cyc_ftable);
+  _TL78: _TB5 = _check_null(Cyc_ftable);
   Cyc_putc(44,_TB5);
-  if (j < 10) { goto _TL7D;
+  if (j < 10) { goto _TL7B;
   }
   _TB6 = _check_null(Cyc_ftable);
   Cyc_putc(10,_TB6);
   j = 1;
-  goto _TL7E;
-  _TL7D: j = j + 1;
-  _TL7E: { struct Cyc_Int_pa_PrintArg_struct _TE9;
+  goto _TL7C;
+  _TL7B: j = j + 1;
+  _TL7C: { struct Cyc_Int_pa_PrintArg_struct _TE9;
     _TE9.tag = 1;
     _TB8 = Cyc_rlhs;
     _TB9 = i;
@@ -1489,8 +1465,8 @@ void Cyc_output_rule_data() {
     _TC0 = _tag_fat(_TEA,sizeof(void *),1);
     Cyc_fprintf(_TBE,_TBF,_TC0);
   }i = i + 1;
-  goto _TL7C;
-  _TL7B: _TC1 = Cyc_rlhs;
+  goto _TL7A;
+  _TL79: _TC1 = Cyc_rlhs;
   Cyc_rlhs = _fat_ptr_plus(_TC1,sizeof(short),1);
   Cyc_rlhs = _tag_fat(0,0,0);
   _TC2 = _check_null(Cyc_ftable);
@@ -1499,19 +1475,19 @@ void Cyc_output_rule_data() {
   Cyc_fprintf(_TC2,_TC3,_TC4);
   j = 10;
   i = 1;
-  _TL82: if (i < Cyc_nrules) { goto _TL80;
-  }else { goto _TL81;
+  _TL80: if (i < Cyc_nrules) { goto _TL7E;
+  }else { goto _TL7F;
   }
-  _TL80: _TC5 = _check_null(Cyc_ftable);
+  _TL7E: _TC5 = _check_null(Cyc_ftable);
   Cyc_putc(44,_TC5);
-  if (j < 10) { goto _TL83;
+  if (j < 10) { goto _TL81;
   }
   _TC6 = _check_null(Cyc_ftable);
   Cyc_putc(10,_TC6);
   j = 1;
-  goto _TL84;
-  _TL83: j = j + 1;
-  _TL84: { struct Cyc_Int_pa_PrintArg_struct _TE9;
+  goto _TL82;
+  _TL81: j = j + 1;
+  _TL82: { struct Cyc_Int_pa_PrintArg_struct _TE9;
     _TE9.tag = 1;
     _TC8 = Cyc_rrhs;
     _TC9 = i + 1;
@@ -1537,15 +1513,15 @@ void Cyc_output_rule_data() {
     _TD8 = _tag_fat(_TEA,sizeof(void *),1);
     Cyc_fprintf(_TD6,_TD7,_TD8);
   }i = i + 1;
-  goto _TL82;
-  _TL81: _TD9 = _check_null(Cyc_ftable);
+  goto _TL80;
+  _TL7F: _TD9 = _check_null(Cyc_ftable);
   Cyc_putc(44,_TD9);
-  if (j < 10) { goto _TL85;
+  if (j < 10) { goto _TL83;
   }
   _TDA = _check_null(Cyc_ftable);
   Cyc_putc(10,_TDA);
-  goto _TL86;
-  _TL85: _TL86: { struct Cyc_Int_pa_PrintArg_struct _TE9;
+  goto _TL84;
+  _TL83: _TL84: { struct Cyc_Int_pa_PrintArg_struct _TE9;
     _TE9.tag = 1;
     _TDC = Cyc_nitems;
     _TDD = Cyc_rrhs;
@@ -1654,15 +1630,15 @@ void Cyc_output_actions() {
       { unsigned int _T1A = _T18;
 	unsigned int _new2p_cyclone;
 	_new2p_cyclone = 0;
-	_TL8A: if (_new2p_cyclone < _T1A) { goto _TL88;
-	}else { goto _TL89;
+	_TL88: if (_new2p_cyclone < _T1A) { goto _TL86;
+	}else { goto _TL87;
 	}
-	_TL88: _T4 = _new2p_cyclone;
+	_TL86: _T4 = _new2p_cyclone;
 	_T5 = _tag_fat(0,0,0);
 	_T19[_T4] = _T5;
 	_new2p_cyclone = _new2p_cyclone + 1;
-	goto _TL8A;
-	_TL89: ;
+	goto _TL88;
+	_TL87: ;
       }_T2 = (struct _fat_ptr *)_T19;
     }_T0 = _tag_fat(_T2,sizeof(struct _fat_ptr),_T18);
   }Cyc_froms = _T0;
@@ -1673,15 +1649,15 @@ void Cyc_output_actions() {
       { unsigned int _T1A = _T18;
 	unsigned int _new2p_cyclone;
 	_new2p_cyclone = 0;
-	_TL8E: if (_new2p_cyclone < _T1A) { goto _TL8C;
-	}else { goto _TL8D;
+	_TL8C: if (_new2p_cyclone < _T1A) { goto _TL8A;
+	}else { goto _TL8B;
 	}
-	_TL8C: _TA = _new2p_cyclone;
+	_TL8A: _TA = _new2p_cyclone;
 	_TB = _tag_fat(0,0,0);
 	_T19[_TA] = _TB;
 	_new2p_cyclone = _new2p_cyclone + 1;
-	goto _TL8E;
-	_TL8D: ;
+	goto _TL8C;
+	_TL8B: ;
       }_T8 = (struct _fat_ptr *)_T19;
     }_T6 = _tag_fat(_T8,sizeof(struct _fat_ptr),_T18);
   }Cyc_tos = _T6;
@@ -1692,14 +1668,14 @@ void Cyc_output_actions() {
       { unsigned int _T1A = _T18;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TL92: if (_new2_cyclone < _T1A) { goto _TL90;
-	}else { goto _TL91;
+	_TL90: if (_new2_cyclone < _T1A) { goto _TL8E;
+	}else { goto _TL8F;
 	}
-	_TL90: _T10 = _new2_cyclone;
+	_TL8E: _T10 = _new2_cyclone;
 	_T19[_T10] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TL92;
-	_TL91: ;
+	goto _TL90;
+	_TL8F: ;
       }_TE = (short *)_T19;
     }_TC = _tag_fat(_TE,sizeof(short),_T18);
   }Cyc_tally = _TC;
@@ -1710,14 +1686,14 @@ void Cyc_output_actions() {
       { unsigned int _T1A = _T18;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TL96: if (_new2_cyclone < _T1A) { goto _TL94;
-	}else { goto _TL95;
+	_TL94: if (_new2_cyclone < _T1A) { goto _TL92;
+	}else { goto _TL93;
 	}
-	_TL94: _T15 = _new2_cyclone;
+	_TL92: _T15 = _new2_cyclone;
 	_T19[_T15] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TL96;
-	_TL95: ;
+	goto _TL94;
+	_TL93: ;
       }_T13 = (short *)_T19;
     }_T11 = _tag_fat(_T13,sizeof(short),_T18);
   }Cyc_width = _T11;
@@ -1772,14 +1748,14 @@ void Cyc_token_actions() {
       { unsigned int _T16 = _T14;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TL9A: if (_new2_cyclone < _T16) { goto _TL98;
-	}else { goto _TL99;
+	_TL98: if (_new2_cyclone < _T16) { goto _TL96;
+	}else { goto _TL97;
 	}
-	_TL98: _T4 = _new2_cyclone;
+	_TL96: _T4 = _new2_cyclone;
 	_T15[_T4] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TL9A;
-	_TL99: ;
+	goto _TL98;
+	_TL97: ;
       }_T2 = (short *)_T15;
     }_T0 = _tag_fat(_T2,sizeof(short),_T14);
   }Cyc_actrow = _T0;
@@ -1799,19 +1775,19 @@ void Cyc_token_actions() {
   }Cyc_save_row(0);
   j = 10;
   i = 1;
-  _TL9E: if (i < Cyc_nstates) { goto _TL9C;
-  }else { goto _TL9D;
+  _TL9C: if (i < Cyc_nstates) { goto _TL9A;
+  }else { goto _TL9B;
   }
-  _TL9C: _TA = _check_null(Cyc_ftable);
+  _TL9A: _TA = _check_null(Cyc_ftable);
   Cyc_putc(44,_TA);
-  if (j < 10) { goto _TL9F;
+  if (j < 10) { goto _TL9D;
   }
   _TB = _check_null(Cyc_ftable);
   Cyc_putc(10,_TB);
   j = 1;
-  goto _TLA0;
-  _TL9F: j = j + 1;
-  _TLA0: k = Cyc_action_row(i);
+  goto _TL9E;
+  _TL9D: j = j + 1;
+  _TL9E: k = Cyc_action_row(i);
   { struct Cyc_Int_pa_PrintArg_struct _T14;
     _T14.tag = 1;
     _TD = k;
@@ -1826,8 +1802,8 @@ void Cyc_token_actions() {
     Cyc_fprintf(_TE,_TF,_T10);
   }Cyc_save_row(i);
   i = i + 1;
-  goto _TL9E;
-  _TL9D: _T11 = _check_null(Cyc_ftable);
+  goto _TL9C;
+  _TL9B: _T11 = _check_null(Cyc_ftable);
   _T12 = _tag_fat("\n};\n",sizeof(char),5U);
   _T13 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T11,_T12,_T13);
@@ -1987,17 +1963,17 @@ int Cyc_action_row(int state) {
   register struct Cyc_errs_tag * errp;
   int nodefault = 0;
   i = 0;
-  _TLA4: if (i < Cyc_ntokens) { goto _TLA2;
-  }else { goto _TLA3;
+  _TLA2: if (i < Cyc_ntokens) { goto _TLA0;
+  }else { goto _TLA1;
   }
-  _TLA2: _T0 = Cyc_actrow;
+  _TLA0: _T0 = Cyc_actrow;
   _T1 = i;
   _T2 = _check_fat_subscript(_T0,sizeof(short),_T1);
   _T3 = (short *)_T2;
   *_T3 = 0;
   i = i + 1;
-  goto _TLA4;
-  _TLA3: default_rule = 0;
+  goto _TLA2;
+  _TLA1: default_rule = 0;
   nreds = 0;
   _T4 = Cyc_reduction_table;
   _T5 = state;
@@ -2006,12 +1982,12 @@ int Cyc_action_row(int state) {
   redp = *_T7;
   _T8 = redp;
   _T9 = (unsigned int)_T8;
-  if (! _T9) { goto _TLA5;
+  if (! _T9) { goto _TLA3;
   }
   _TA = redp;
   _TB = _TA->nreds;
   nreds = (int)_TB;
-  if (nreds < 1) { goto _TLA7;
+  if (nreds < 1) { goto _TLA5;
   }
   _TC = Cyc_lookaheads;
   _TD = state;
@@ -2026,10 +2002,10 @@ int Cyc_action_row(int state) {
   _T15 = *_T14;
   n = (int)_T15;
   i = n - 1;
-  _TLAC: if (i >= m) { goto _TLAA;
-  }else { goto _TLAB;
+  _TLAA: if (i >= m) { goto _TLA8;
+  }else { goto _TLA9;
   }
-  _TLAA: _T16 = Cyc_LAruleno;
+  _TLA8: _T16 = Cyc_LAruleno;
   _T17 = i;
   _T18 = _check_fat_subscript(_T16,sizeof(short),_T17);
   _T19 = (short *)_T18;
@@ -2041,17 +2017,17 @@ int Cyc_action_row(int state) {
   wordp = _fat_ptr_plus(_T1C,sizeof(unsigned int),_T1D);
   mask = 1U;
   j = 0;
-  _TLB0: if (j < Cyc_ntokens) { goto _TLAE;
-  }else { goto _TLAF;
+  _TLAE: if (j < Cyc_ntokens) { goto _TLAC;
+  }else { goto _TLAD;
   }
-  _TLAE: _T1E = mask;
+  _TLAC: _T1E = mask;
   _T1F = wordp;
   _T20 = _check_fat_subscript(_T1F,sizeof(unsigned int),0U);
   _T21 = (unsigned int *)_T20;
   _T22 = *_T21;
   _T23 = _T1E & _T22;
   _T24 = (int)_T23;
-  if (! _T24) { goto _TLB1;
+  if (! _T24) { goto _TLAF;
   }
   _T25 = Cyc_actrow;
   _T26 = j;
@@ -2059,37 +2035,37 @@ int Cyc_action_row(int state) {
   _T28 = (short *)_T27;
   _T29 = rule;
   *_T28 = (short)_T29;
-  goto _TLB2;
-  _TLB1: _TLB2: mask = mask << 1U;
-  if (mask != 0U) { goto _TLB3;
+  goto _TLB0;
+  _TLAF: _TLB0: mask = mask << 1U;
+  if (mask != 0U) { goto _TLB1;
   }
   mask = 1U;
   _T2A = &wordp;
   _fat_ptr_inplace_plus(_T2A,sizeof(unsigned int),1);
-  goto _TLB4;
-  _TLB3: _TLB4: j = j + 1;
-  goto _TLB0;
-  _TLAF: i = i + -1;
-  goto _TLAC;
-  _TLAB: goto _TLA8;
-  _TLA7: _TLA8: goto _TLA6;
-  _TLA5: _TLA6: _T2B = Cyc_shift_table;
+  goto _TLB2;
+  _TLB1: _TLB2: j = j + 1;
+  goto _TLAE;
+  _TLAD: i = i + -1;
+  goto _TLAA;
+  _TLA9: goto _TLA6;
+  _TLA5: _TLA6: goto _TLA4;
+  _TLA3: _TLA4: _T2B = Cyc_shift_table;
   _T2C = state;
   _T2D = _check_fat_subscript(_T2B,sizeof(struct Cyc_shifts_tag *),_T2C);
   _T2E = (struct Cyc_shifts_tag * *)_T2D;
   shiftp = *_T2E;
   _T2F = shiftp;
   _T30 = (unsigned int)_T2F;
-  if (! _T30) { goto _TLB5;
+  if (! _T30) { goto _TLB3;
   }
   _T31 = shiftp;
   _T32 = _T31->nshifts;
   k = (int)_T32;
   i = 0;
-  _TLBA: if (i < k) { goto _TLB8;
-  }else { goto _TLB9;
+  _TLB8: if (i < k) { goto _TLB6;
+  }else { goto _TLB7;
   }
-  _TLB8: _T33 = shiftp;
+  _TLB6: _T33 = shiftp;
   _T34 = _T33->shifts;
   _T35 = i;
   _T36 = _check_fat_subscript(_T34,sizeof(short),_T35);
@@ -2097,49 +2073,49 @@ int Cyc_action_row(int state) {
   _T38 = *_T37;
   shift_state = (int)_T38;
   _T39 = shift_state;
-  if (_T39) { goto _TLBB;
-  }else { goto _TLBD;
+  if (_T39) { goto _TLB9;
+  }else { goto _TLBB;
   }
-  _TLBD: goto _TLB7;
-  _TLBB: _T3A = Cyc_accessing_symbol;
+  _TLBB: goto _TLB5;
+  _TLB9: _T3A = Cyc_accessing_symbol;
   _T3B = shift_state;
   _T3C = _check_fat_subscript(_T3A,sizeof(short),_T3B);
   _T3D = (short *)_T3C;
   _T3E = *_T3D;
   symbol = (int)_T3E;
-  if (symbol < Cyc_ntokens) { goto _TLBE;
+  if (symbol < Cyc_ntokens) { goto _TLBC;
   }
-  goto _TLB9;
-  _TLBE: _T3F = Cyc_actrow;
+  goto _TLB7;
+  _TLBC: _T3F = Cyc_actrow;
   _T40 = symbol;
   _T41 = _check_fat_subscript(_T3F,sizeof(short),_T40);
   _T42 = (short *)_T41;
   _T43 = shift_state;
   *_T42 = (short)_T43;
-  if (symbol != Cyc_error_token_number) { goto _TLC0;
+  if (symbol != Cyc_error_token_number) { goto _TLBE;
   }
   nodefault = 1;
-  goto _TLC1;
-  _TLC0: _TLC1: _TLB7: i = i + 1;
-  goto _TLBA;
-  _TLB9: goto _TLB6;
-  _TLB5: _TLB6: _T44 = Cyc_err_table;
+  goto _TLBF;
+  _TLBE: _TLBF: _TLB5: i = i + 1;
+  goto _TLB8;
+  _TLB7: goto _TLB4;
+  _TLB3: _TLB4: _T44 = Cyc_err_table;
   _T45 = state;
   _T46 = _check_fat_subscript(_T44,sizeof(struct Cyc_errs_tag *),_T45);
   _T47 = (struct Cyc_errs_tag * *)_T46;
   errp = *_T47;
   _T48 = errp;
   _T49 = (unsigned int)_T48;
-  if (! _T49) { goto _TLC2;
+  if (! _T49) { goto _TLC0;
   }
   _T4A = errp;
   _T4B = _T4A->nerrs;
   k = (int)_T4B;
   i = 0;
-  _TLC7: if (i < k) { goto _TLC5;
-  }else { goto _TLC6;
+  _TLC5: if (i < k) { goto _TLC3;
+  }else { goto _TLC4;
   }
-  _TLC5: _T4C = errp;
+  _TLC3: _T4C = errp;
   _T4D = _T4C->errs;
   _T4E = i;
   _T4F = _check_fat_subscript(_T4D,sizeof(short),_T4E);
@@ -2152,21 +2128,21 @@ int Cyc_action_row(int state) {
   _T55 = (short *)_T54;
   *_T55 = - -32768;
   i = i + 1;
-  goto _TLC7;
-  _TLC6: goto _TLC3;
-  _TLC2: _TLC3: if (nreds < 1) { goto _TLC8;
+  goto _TLC5;
+  _TLC4: goto _TLC1;
+  _TLC0: _TLC1: if (nreds < 1) { goto _TLC6;
   }
   _T56 = nodefault;
-  if (_T56) { goto _TLC8;
-  }else { goto _TLCA;
+  if (_T56) { goto _TLC6;
+  }else { goto _TLC8;
   }
-  _TLCA: _T57 = Cyc_consistent;
+  _TLC8: _T57 = Cyc_consistent;
   _T58 = state;
   _T59 = _check_fat_subscript(_T57,sizeof(char),_T58);
   _T5A = (char *)_T59;
   _T5B = *_T5A;
   _T5C = (int)_T5B;
-  if (! _T5C) { goto _TLCB;
+  if (! _T5C) { goto _TLC9;
   }
   _T5D = _check_null(redp);
   _T5E = _T5D->rules;
@@ -2174,13 +2150,13 @@ int Cyc_action_row(int state) {
   _T60 = (short *)_T5F;
   _T61 = *_T60;
   default_rule = (int)_T61;
-  goto _TLCC;
-  _TLCB: max = 0;
+  goto _TLCA;
+  _TLC9: max = 0;
   i = m;
-  _TLD0: if (i < n) { goto _TLCE;
-  }else { goto _TLCF;
+  _TLCE: if (i < n) { goto _TLCC;
+  }else { goto _TLCD;
   }
-  _TLCE: count = 0;
+  _TLCC: count = 0;
   _T62 = Cyc_LAruleno;
   _T63 = i;
   _T64 = _check_fat_subscript(_T62,sizeof(short),_T63);
@@ -2189,80 +2165,80 @@ int Cyc_action_row(int state) {
   _T67 = - _T66;
   rule = (int)_T67;
   j = 0;
-  _TLD4: if (j < Cyc_ntokens) { goto _TLD2;
-  }else { goto _TLD3;
+  _TLD2: if (j < Cyc_ntokens) { goto _TLD0;
+  }else { goto _TLD1;
   }
-  _TLD2: _T68 = Cyc_actrow;
+  _TLD0: _T68 = Cyc_actrow;
   _T69 = j;
   _T6A = _check_fat_subscript(_T68,sizeof(short),_T69);
   _T6B = (short *)_T6A;
   _T6C = *_T6B;
   _T6D = (int)_T6C;
   _T6E = rule;
-  if (_T6D != _T6E) { goto _TLD5;
+  if (_T6D != _T6E) { goto _TLD3;
   }
   count = count + 1;
-  goto _TLD6;
-  _TLD5: _TLD6: j = j + 1;
   goto _TLD4;
-  _TLD3: if (count <= max) { goto _TLD7;
+  _TLD3: _TLD4: j = j + 1;
+  goto _TLD2;
+  _TLD1: if (count <= max) { goto _TLD5;
   }
   max = count;
   default_rule = rule;
-  goto _TLD8;
-  _TLD7: _TLD8: i = i + 1;
-  goto _TLD0;
-  _TLCF: if (max <= 0) { goto _TLD9;
+  goto _TLD6;
+  _TLD5: _TLD6: i = i + 1;
+  goto _TLCE;
+  _TLCD: if (max <= 0) { goto _TLD7;
   }
   j = 0;
-  _TLDE: if (j < Cyc_ntokens) { goto _TLDC;
-  }else { goto _TLDD;
+  _TLDC: if (j < Cyc_ntokens) { goto _TLDA;
+  }else { goto _TLDB;
   }
-  _TLDC: _T6F = Cyc_actrow;
+  _TLDA: _T6F = Cyc_actrow;
   _T70 = j;
   _T71 = _check_fat_subscript(_T6F,sizeof(short),_T70);
   _T72 = (short *)_T71;
   _T73 = *_T72;
   _T74 = (int)_T73;
   _T75 = default_rule;
-  if (_T74 != _T75) { goto _TLDF;
+  if (_T74 != _T75) { goto _TLDD;
   }
   _T76 = Cyc_actrow;
   _T77 = _T76.curr;
   _T78 = (short *)_T77;
   _T79 = j;
   _T78[_T79] = 0;
-  goto _TLE0;
-  _TLDF: _TLE0: j = j + 1;
   goto _TLDE;
-  _TLDD: default_rule = - default_rule;
-  goto _TLDA;
-  _TLD9: _TLDA: _TLCC: goto _TLC9;
-  _TLC8: _TLC9: if (default_rule != 0) { goto _TLE1;
+  _TLDD: _TLDE: j = j + 1;
+  goto _TLDC;
+  _TLDB: default_rule = - default_rule;
+  goto _TLD8;
+  _TLD7: _TLD8: _TLCA: goto _TLC7;
+  _TLC6: _TLC7: if (default_rule != 0) { goto _TLDF;
   }
   j = 0;
-  _TLE6: if (j < Cyc_ntokens) { goto _TLE4;
-  }else { goto _TLE5;
+  _TLE4: if (j < Cyc_ntokens) { goto _TLE2;
+  }else { goto _TLE3;
   }
-  _TLE4: _T7A = Cyc_actrow;
+  _TLE2: _T7A = Cyc_actrow;
   _T7B = j;
   _T7C = _check_fat_subscript(_T7A,sizeof(short),_T7B);
   _T7D = (short *)_T7C;
   _T7E = *_T7D;
   _T7F = (int)_T7E;
   _T80 = - 32768;
-  if (_T7F != _T80) { goto _TLE7;
+  if (_T7F != _T80) { goto _TLE5;
   }
   _T81 = Cyc_actrow;
   _T82 = _T81.curr;
   _T83 = (short *)_T82;
   _T84 = j;
   _T83[_T84] = 0;
-  goto _TLE8;
-  _TLE7: _TLE8: j = j + 1;
   goto _TLE6;
-  _TLE5: goto _TLE2;
-  _TLE1: _TLE2: _T85 = default_rule;
+  _TLE5: _TLE6: j = j + 1;
+  goto _TLE4;
+  _TLE3: goto _TLE0;
+  _TLDF: _TLE0: _T85 = default_rule;
   return _T85;
 }
 void Cyc_save_row(int state) {
@@ -2337,39 +2313,39 @@ void Cyc_save_row(int state) {
   struct _fat_ptr sp2;
   count = 0;
   i = 0;
-  _TLEC: if (i < Cyc_ntokens) { goto _TLEA;
-  }else { goto _TLEB;
+  _TLEA: if (i < Cyc_ntokens) { goto _TLE8;
+  }else { goto _TLE9;
   }
-  _TLEA: _T0 = Cyc_actrow;
+  _TLE8: _T0 = Cyc_actrow;
   _T1 = i;
   _T2 = _check_fat_subscript(_T0,sizeof(short),_T1);
   _T3 = (short *)_T2;
   _T4 = *_T3;
   _T5 = (int)_T4;
-  if (_T5 == 0) { goto _TLED;
+  if (_T5 == 0) { goto _TLEB;
   }
   count = count + 1;
-  goto _TLEE;
-  _TLED: _TLEE: i = i + 1;
   goto _TLEC;
-  _TLEB: if (count != 0) { goto _TLEF;
+  _TLEB: _TLEC: i = i + 1;
+  goto _TLEA;
+  _TLE9: if (count != 0) { goto _TLED;
   }
   return;
-  _TLEF: _T7 = count;
+  _TLED: _T7 = count;
   { unsigned int _T40 = (unsigned int)_T7;
     _T9 = _check_times(_T40,sizeof(short));
     { short * _T41 = _cycalloc_atomic(_T9);
       { unsigned int _T42 = _T40;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TLF4: if (_new2_cyclone < _T42) { goto _TLF2;
-	}else { goto _TLF3;
+	_TLF2: if (_new2_cyclone < _T42) { goto _TLF0;
+	}else { goto _TLF1;
 	}
-	_TLF2: _TA = _new2_cyclone;
+	_TLF0: _TA = _new2_cyclone;
 	_T41[_TA] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TLF4;
-	_TLF3: ;
+	goto _TLF2;
+	_TLF1: ;
       }_T8 = (short *)_T41;
     }_T6 = _tag_fat(_T8,sizeof(short),_T40);
   }sp = _T6;
@@ -2386,14 +2362,14 @@ void Cyc_save_row(int state) {
       { unsigned int _T42 = _T40;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TLF8: if (_new2_cyclone < _T42) { goto _TLF6;
-	}else { goto _TLF7;
+	_TLF6: if (_new2_cyclone < _T42) { goto _TLF4;
+	}else { goto _TLF5;
 	}
-	_TLF6: _T13 = _new2_cyclone;
+	_TLF4: _T13 = _new2_cyclone;
 	_T41[_T13] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TLF8;
-	_TLF7: ;
+	goto _TLF6;
+	_TLF5: ;
       }_T11 = (short *)_T41;
     }_TF = _tag_fat(_T11,sizeof(short),_T40);
   }sp2 = _TF;
@@ -2403,16 +2379,16 @@ void Cyc_save_row(int state) {
   _T17 = (struct _fat_ptr *)_T16;
   *_T17 = sp2;
   i = 0;
-  _TLFC: if (i < Cyc_ntokens) { goto _TLFA;
-  }else { goto _TLFB;
+  _TLFA: if (i < Cyc_ntokens) { goto _TLF8;
+  }else { goto _TLF9;
   }
-  _TLFA: _T18 = Cyc_actrow;
+  _TLF8: _T18 = Cyc_actrow;
   _T19 = i;
   _T1A = _check_fat_subscript(_T18,sizeof(short),_T19);
   _T1B = (short *)_T1A;
   _T1C = *_T1B;
   _T1D = (int)_T1C;
-  if (_T1D == 0) { goto _TLFD;
+  if (_T1D == 0) { goto _TLFB;
   }
   _T1E = &sp1;
   _T1F = _fat_ptr_inplace_plus_post(_T1E,sizeof(short),1);
@@ -2429,10 +2405,10 @@ void Cyc_save_row(int state) {
   _T29 = (short *)_T28;
   _T2A = i;
   *_T26 = _T29[_T2A];
-  goto _TLFE;
-  _TLFD: _TLFE: i = i + 1;
   goto _TLFC;
-  _TLFB: _T2B = Cyc_tally;
+  _TLFB: _TLFC: i = i + 1;
+  goto _TLFA;
+  _TLF9: _T2B = Cyc_tally;
   _T2C = state;
   _T2D = _check_fat_subscript(_T2B,sizeof(short),_T2C);
   _T2E = (short *)_T2D;
@@ -2487,14 +2463,14 @@ void Cyc_goto_actions() {
       { unsigned int _T16 = _T14;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TL102: if (_new2_cyclone < _T16) { goto _TL100;
-	}else { goto _TL101;
+	_TL100: if (_new2_cyclone < _T16) { goto _TLFE;
+	}else { goto _TLFF;
 	}
-	_TL100: _T4 = _new2_cyclone;
+	_TLFE: _T4 = _new2_cyclone;
 	_T15[_T4] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TL102;
-	_TL101: ;
+	goto _TL100;
+	_TLFF: ;
       }_T2 = (short *)_T15;
     }_T0 = _tag_fat(_T2,sizeof(short),_T14);
   }Cyc_state_count = _T0;
@@ -2514,19 +2490,19 @@ void Cyc_goto_actions() {
   }Cyc_save_column(Cyc_ntokens,k);
   j = 10;
   i = Cyc_ntokens + 1;
-  _TL106: if (i < Cyc_nsyms) { goto _TL104;
-  }else { goto _TL105;
+  _TL104: if (i < Cyc_nsyms) { goto _TL102;
+  }else { goto _TL103;
   }
-  _TL104: _TA = _check_null(Cyc_ftable);
+  _TL102: _TA = _check_null(Cyc_ftable);
   Cyc_putc(44,_TA);
-  if (j < 10) { goto _TL107;
+  if (j < 10) { goto _TL105;
   }
   _TB = _check_null(Cyc_ftable);
   Cyc_putc(10,_TB);
   j = 1;
-  goto _TL108;
-  _TL107: j = j + 1;
-  _TL108: k = Cyc_default_goto(i);
+  goto _TL106;
+  _TL105: j = j + 1;
+  _TL106: k = Cyc_default_goto(i);
   { struct Cyc_Int_pa_PrintArg_struct _T14;
     _T14.tag = 1;
     _TD = k;
@@ -2541,8 +2517,8 @@ void Cyc_goto_actions() {
     Cyc_fprintf(_TE,_TF,_T10);
   }Cyc_save_column(i,k);
   i = i + 1;
-  goto _TL106;
-  _TL105: _T11 = _check_null(Cyc_ftable);
+  goto _TL104;
+  _TL103: _T11 = _check_null(Cyc_ftable);
   _T12 = _tag_fat("\n};\n",sizeof(char),5U);
   _T13 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T11,_T12,_T13);
@@ -2603,26 +2579,26 @@ int Cyc_default_goto(int symbol) {
   _T8 = (short *)_T7;
   _T9 = *_T8;
   n = (int)_T9;
-  if (m != n) { goto _TL109;
+  if (m != n) { goto _TL107;
   }
   _TA = - 1;
   return _TA;
-  _TL109: i = 0;
-  _TL10E: if (i < Cyc_nstates) { goto _TL10C;
-  }else { goto _TL10D;
+  _TL107: i = 0;
+  _TL10C: if (i < Cyc_nstates) { goto _TL10A;
+  }else { goto _TL10B;
   }
-  _TL10C: _TB = Cyc_state_count;
+  _TL10A: _TB = Cyc_state_count;
   _TC = i;
   _TD = _check_fat_subscript(_TB,sizeof(short),_TC);
   _TE = (short *)_TD;
   *_TE = 0;
   i = i + 1;
-  goto _TL10E;
-  _TL10D: i = m;
-  _TL112: if (i < n) { goto _TL110;
-  }else { goto _TL111;
+  goto _TL10C;
+  _TL10B: i = m;
+  _TL110: if (i < n) { goto _TL10E;
+  }else { goto _TL10F;
   }
-  _TL110: _TF = Cyc_state_count;
+  _TL10E: _TF = Cyc_state_count;
   _T10 = Cyc_to_state;
   _T11 = i;
   _T12 = _check_fat_subscript(_T10,sizeof(short),_T11);
@@ -2633,21 +2609,21 @@ int Cyc_default_goto(int symbol) {
   _T17 = (short *)_T16;
   *_T17 = *_T17 + 1;
   i = i + 1;
-  goto _TL112;
-  _TL111: max = 0;
+  goto _TL110;
+  _TL10F: max = 0;
   default_state = - 1;
   i = 0;
-  _TL116: if (i < Cyc_nstates) { goto _TL114;
-  }else { goto _TL115;
+  _TL114: if (i < Cyc_nstates) { goto _TL112;
+  }else { goto _TL113;
   }
-  _TL114: _T18 = Cyc_state_count;
+  _TL112: _T18 = Cyc_state_count;
   _T19 = i;
   _T1A = _check_fat_subscript(_T18,sizeof(short),_T19);
   _T1B = (short *)_T1A;
   _T1C = *_T1B;
   _T1D = (int)_T1C;
   _T1E = max;
-  if (_T1D <= _T1E) { goto _TL117;
+  if (_T1D <= _T1E) { goto _TL115;
   }
   _T1F = Cyc_state_count;
   _T20 = _T1F.curr;
@@ -2656,10 +2632,10 @@ int Cyc_default_goto(int symbol) {
   _T23 = _T21[_T22];
   max = (int)_T23;
   default_state = i;
-  goto _TL118;
-  _TL117: _TL118: i = i + 1;
   goto _TL116;
-  _TL115: _T24 = default_state;
+  _TL115: _TL116: i = i + 1;
+  goto _TL114;
+  _TL113: _T24 = default_state;
   return _T24;
 }
 void Cyc_save_column(int symbol,int default_state) {
@@ -2766,26 +2742,26 @@ void Cyc_save_column(int symbol,int default_state) {
   n = (int)_T9;
   count = 0;
   i = m;
-  _TL11C: if (i < n) { goto _TL11A;
-  }else { goto _TL11B;
+  _TL11A: if (i < n) { goto _TL118;
+  }else { goto _TL119;
   }
-  _TL11A: _TA = Cyc_to_state;
+  _TL118: _TA = Cyc_to_state;
   _TB = i;
   _TC = _check_fat_subscript(_TA,sizeof(short),_TB);
   _TD = (short *)_TC;
   _TE = *_TD;
   _TF = (int)_TE;
   _T10 = default_state;
-  if (_TF == _T10) { goto _TL11D;
+  if (_TF == _T10) { goto _TL11B;
   }
   count = count + 1;
-  goto _TL11E;
-  _TL11D: _TL11E: i = i + 1;
   goto _TL11C;
-  _TL11B: if (count != 0) { goto _TL11F;
+  _TL11B: _TL11C: i = i + 1;
+  goto _TL11A;
+  _TL119: if (count != 0) { goto _TL11D;
   }
   return;
-  _TL11F: _T11 = symbol - Cyc_ntokens;
+  _TL11D: _T11 = symbol - Cyc_ntokens;
   _T12 = Cyc_nstates;
   symno = _T11 + _T12;
   _T14 = count;
@@ -2795,14 +2771,14 @@ void Cyc_save_column(int symbol,int default_state) {
       { unsigned int _T53 = _T51;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TL124: if (_new2_cyclone < _T53) { goto _TL122;
-	}else { goto _TL123;
+	_TL122: if (_new2_cyclone < _T53) { goto _TL120;
+	}else { goto _TL121;
 	}
-	_TL122: _T17 = _new2_cyclone;
+	_TL120: _T17 = _new2_cyclone;
 	_T52[_T17] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TL124;
-	_TL123: ;
+	goto _TL122;
+	_TL121: ;
       }_T15 = (short *)_T52;
     }_T13 = _tag_fat(_T15,sizeof(short),_T51);
   }sp = _T13;
@@ -2819,14 +2795,14 @@ void Cyc_save_column(int symbol,int default_state) {
       { unsigned int _T53 = _T51;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TL128: if (_new2_cyclone < _T53) { goto _TL126;
-	}else { goto _TL127;
+	_TL126: if (_new2_cyclone < _T53) { goto _TL124;
+	}else { goto _TL125;
 	}
-	_TL126: _T20 = _new2_cyclone;
+	_TL124: _T20 = _new2_cyclone;
 	_T52[_T20] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TL128;
-	_TL127: ;
+	goto _TL126;
+	_TL125: ;
       }_T1E = (short *)_T52;
     }_T1C = _tag_fat(_T1E,sizeof(short),_T51);
   }sp2 = _T1C;
@@ -2836,17 +2812,17 @@ void Cyc_save_column(int symbol,int default_state) {
   _T24 = (struct _fat_ptr *)_T23;
   *_T24 = sp2;
   i = m;
-  _TL12C: if (i < n) { goto _TL12A;
-  }else { goto _TL12B;
+  _TL12A: if (i < n) { goto _TL128;
+  }else { goto _TL129;
   }
-  _TL12A: _T25 = Cyc_to_state;
+  _TL128: _T25 = Cyc_to_state;
   _T26 = i;
   _T27 = _check_fat_subscript(_T25,sizeof(short),_T26);
   _T28 = (short *)_T27;
   _T29 = *_T28;
   _T2A = (int)_T29;
   _T2B = default_state;
-  if (_T2A == _T2B) { goto _TL12D;
+  if (_T2A == _T2B) { goto _TL12B;
   }
   _T2C = &sp1;
   _T2D = _fat_ptr_inplace_plus_post(_T2C,sizeof(short),1);
@@ -2866,10 +2842,10 @@ void Cyc_save_column(int symbol,int default_state) {
   _T3A = (short *)_T39;
   _T3B = i;
   *_T37 = _T3A[_T3B];
-  goto _TL12E;
-  _TL12D: _TL12E: i = i + 1;
   goto _TL12C;
-  _TL12B: _T3C = Cyc_tally;
+  _TL12B: _TL12C: i = i + 1;
+  goto _TL12A;
+  _TL129: _T3C = Cyc_tally;
   _T3D = symno;
   _T3E = _check_fat_subscript(_T3C,sizeof(short),_T3D);
   _T3F = (short *)_T3E;
@@ -2976,29 +2952,29 @@ void Cyc_sort_actions() {
       { unsigned int _T48 = _T46;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TL132: if (_new2_cyclone < _T48) { goto _TL130;
-	}else { goto _TL131;
+	_TL130: if (_new2_cyclone < _T48) { goto _TL12E;
+	}else { goto _TL12F;
 	}
-	_TL130: _T4 = _new2_cyclone;
+	_TL12E: _T4 = _new2_cyclone;
 	_T47[_T4] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TL132;
-	_TL131: ;
+	goto _TL130;
+	_TL12F: ;
       }_T2 = (short *)_T47;
     }_T0 = _tag_fat(_T2,sizeof(short),_T46);
   }Cyc_order = _T0;
   Cyc_nentries = 0;
   i = 0;
-  _TL136: if (i < Cyc_nvectors) { goto _TL134;
-  }else { goto _TL135;
+  _TL134: if (i < Cyc_nvectors) { goto _TL132;
+  }else { goto _TL133;
   }
-  _TL134: _T5 = Cyc_tally;
+  _TL132: _T5 = Cyc_tally;
   _T6 = i;
   _T7 = _check_fat_subscript(_T5,sizeof(short),_T6);
   _T8 = (short *)_T7;
   _T9 = *_T8;
   _TA = (int)_T9;
-  if (_TA <= 0) { goto _TL137;
+  if (_TA <= 0) { goto _TL135;
   }
   _TB = Cyc_tally;
   _TC = _TB.curr;
@@ -3013,10 +2989,10 @@ void Cyc_sort_actions() {
   _T14 = *_T13;
   w = (int)_T14;
   j = Cyc_nentries - 1;
-  _TL139: if (j >= 0) { goto _TL13C;
-  }else { goto _TL13B;
+  _TL137: if (j >= 0) { goto _TL13A;
+  }else { goto _TL139;
   }
-  _TL13C: _T15 = Cyc_width;
+  _TL13A: _T15 = Cyc_width;
   _T16 = Cyc_order;
   _T17 = j;
   _T18 = _check_fat_subscript(_T16,sizeof(short),_T17);
@@ -3028,15 +3004,15 @@ void Cyc_sort_actions() {
   _T1E = *_T1D;
   _T1F = (int)_T1E;
   _T20 = w;
-  if (_T1F < _T20) { goto _TL13A;
-  }else { goto _TL13B;
+  if (_T1F < _T20) { goto _TL138;
+  }else { goto _TL139;
   }
-  _TL13A: j = j + -1;
-  goto _TL139;
-  _TL13B: _TL13D: if (j >= 0) { goto _TL141;
-  }else { goto _TL13F;
+  _TL138: j = j + -1;
+  goto _TL137;
+  _TL139: _TL13B: if (j >= 0) { goto _TL13F;
+  }else { goto _TL13D;
   }
-  _TL141: _T21 = Cyc_width;
+  _TL13F: _T21 = Cyc_width;
   _T22 = Cyc_order;
   _T23 = j;
   _T24 = _check_fat_subscript(_T22,sizeof(short),_T23);
@@ -3048,10 +3024,10 @@ void Cyc_sort_actions() {
   _T2A = *_T29;
   _T2B = (int)_T2A;
   _T2C = w;
-  if (_T2B == _T2C) { goto _TL140;
-  }else { goto _TL13F;
+  if (_T2B == _T2C) { goto _TL13E;
+  }else { goto _TL13D;
   }
-  _TL140: _T2D = Cyc_tally;
+  _TL13E: _T2D = Cyc_tally;
   _T2E = Cyc_order;
   _T2F = _T2E.curr;
   _T30 = (short *)_T2F;
@@ -3063,16 +3039,16 @@ void Cyc_sort_actions() {
   _T36 = *_T35;
   _T37 = (int)_T36;
   _T38 = t;
-  if (_T37 < _T38) { goto _TL13E;
-  }else { goto _TL13F;
+  if (_T37 < _T38) { goto _TL13C;
+  }else { goto _TL13D;
   }
-  _TL13E: j = j + -1;
-  goto _TL13D;
-  _TL13F: k = Cyc_nentries - 1;
-  _TL145: if (k > j) { goto _TL143;
-  }else { goto _TL144;
+  _TL13C: j = j + -1;
+  goto _TL13B;
+  _TL13D: k = Cyc_nentries - 1;
+  _TL143: if (k > j) { goto _TL141;
+  }else { goto _TL142;
   }
-  _TL143: _T39 = Cyc_order;
+  _TL141: _T39 = Cyc_order;
   _T3A = k + 1;
   _T3B = _check_fat_subscript(_T39,sizeof(short),_T3A);
   _T3C = (short *)_T3B;
@@ -3082,18 +3058,18 @@ void Cyc_sort_actions() {
   _T40 = (short *)_T3F;
   *_T3C = *_T40;
   k = k + -1;
-  goto _TL145;
-  _TL144: _T41 = Cyc_order;
+  goto _TL143;
+  _TL142: _T41 = Cyc_order;
   _T42 = j + 1;
   _T43 = _check_fat_subscript(_T41,sizeof(short),_T42);
   _T44 = (short *)_T43;
   _T45 = i;
   *_T44 = (short)_T45;
   Cyc_nentries = Cyc_nentries + 1;
-  goto _TL138;
-  _TL137: _TL138: i = i + 1;
   goto _TL136;
-  _TL135: ;
+  _TL135: _TL136: i = i + 1;
+  goto _TL134;
+  _TL133: ;
 }
 void Cyc_pack_table() {
   struct _fat_ptr _T0;
@@ -3174,14 +3150,14 @@ void Cyc_pack_table() {
       { unsigned int _T46 = _T44;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TL149: if (_new2_cyclone < _T46) { goto _TL147;
-	}else { goto _TL148;
+	_TL147: if (_new2_cyclone < _T46) { goto _TL145;
+	}else { goto _TL146;
 	}
-	_TL147: _T4 = _new2_cyclone;
+	_TL145: _T4 = _new2_cyclone;
 	_T45[_T4] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TL149;
-	_TL148: ;
+	goto _TL147;
+	_TL146: ;
       }_T2 = (short *)_T45;
     }_T0 = _tag_fat(_T2,sizeof(short),_T44);
   }Cyc_base = _T0;
@@ -3192,14 +3168,14 @@ void Cyc_pack_table() {
       { unsigned int _T46 = _T44;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TL14D: if (_new2_cyclone < _T46) { goto _TL14B;
-	}else { goto _TL14C;
+	_TL14B: if (_new2_cyclone < _T46) { goto _TL149;
+	}else { goto _TL14A;
 	}
-	_TL14B: _T9 = _new2_cyclone;
+	_TL149: _T9 = _new2_cyclone;
 	_T45[_T9] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TL14D;
-	_TL14C: ;
+	goto _TL14B;
+	_TL14A: ;
       }_T7 = (short *)_T45;
     }_T5 = _tag_fat(_T7,sizeof(short),_T44);
   }Cyc_pos = _T5;
@@ -3209,14 +3185,14 @@ void Cyc_pack_table() {
       { unsigned int _T46 = _T44;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TL151: if (_new2_cyclone < _T46) { goto _TL14F;
-	}else { goto _TL150;
+	_TL14F: if (_new2_cyclone < _T46) { goto _TL14D;
+	}else { goto _TL14E;
 	}
-	_TL14F: _TD = _new2_cyclone;
+	_TL14D: _TD = _new2_cyclone;
 	_T45[_TD] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TL151;
-	_TL150: ;
+	goto _TL14F;
+	_TL14E: ;
       }_TB = (short *)_T45;
     }_TA = _TB;
   }Cyc_table = _tag_fat(_TA,sizeof(short),32767U);
@@ -3226,57 +3202,57 @@ void Cyc_pack_table() {
       { unsigned int _T46 = _T44;
 	unsigned int _new2_cyclone;
 	_new2_cyclone = 0;
-	_TL155: if (_new2_cyclone < _T46) { goto _TL153;
-	}else { goto _TL154;
+	_TL153: if (_new2_cyclone < _T46) { goto _TL151;
+	}else { goto _TL152;
 	}
-	_TL153: _T11 = _new2_cyclone;
+	_TL151: _T11 = _new2_cyclone;
 	_T45[_T11] = 0;
 	_new2_cyclone = _new2_cyclone + 1;
-	goto _TL155;
-	_TL154: ;
+	goto _TL153;
+	_TL152: ;
       }_TF = (short *)_T45;
     }_TE = _TF;
   }Cyc_check = _tag_fat(_TE,sizeof(short),32767U);
   Cyc_lowzero = 0;
   Cyc_high = 0;
   i = 0;
-  _TL159: if (i < Cyc_nvectors) { goto _TL157;
-  }else { goto _TL158;
+  _TL157: if (i < Cyc_nvectors) { goto _TL155;
+  }else { goto _TL156;
   }
-  _TL157: _T12 = Cyc_base;
+  _TL155: _T12 = Cyc_base;
   _T13 = i;
   _T14 = _check_fat_subscript(_T12,sizeof(short),_T13);
   _T15 = (short *)_T14;
   *_T15 = - -32768;
   i = i + 1;
-  goto _TL159;
-  _TL158: i = 0;
-  _TL15D: if (i < 32767) { goto _TL15B;
-  }else { goto _TL15C;
+  goto _TL157;
+  _TL156: i = 0;
+  _TL15B: if (i < 32767) { goto _TL159;
+  }else { goto _TL15A;
   }
-  _TL15B: _T16 = Cyc_check;
+  _TL159: _T16 = Cyc_check;
   _T17 = i;
   _T18 = _check_fat_subscript(_T16,sizeof(short),_T17);
   _T19 = (short *)_T18;
   *_T19 = - 1;
   i = i + 1;
-  goto _TL15D;
-  _TL15C: i = 0;
-  _TL161: if (i < Cyc_nentries) { goto _TL15F;
-  }else { goto _TL160;
+  goto _TL15B;
+  _TL15A: i = 0;
+  _TL15F: if (i < Cyc_nentries) { goto _TL15D;
+  }else { goto _TL15E;
   }
-  _TL15F: state = Cyc_matching_state(i);
-  if (state >= 0) { goto _TL162;
+  _TL15D: state = Cyc_matching_state(i);
+  if (state >= 0) { goto _TL160;
   }
   place = Cyc_pack_vector(i);
-  goto _TL163;
-  _TL162: _T1A = Cyc_base;
+  goto _TL161;
+  _TL160: _T1A = Cyc_base;
   _T1B = state;
   _T1C = _check_fat_subscript(_T1A,sizeof(short),_T1B);
   _T1D = (short *)_T1C;
   _T1E = *_T1D;
   place = (int)_T1E;
-  _TL163: _T1F = Cyc_pos;
+  _TL161: _T1F = Cyc_pos;
   _T20 = i;
   _T21 = _check_fat_subscript(_T1F,sizeof(short),_T20);
   _T22 = (short *)_T21;
@@ -3294,44 +3270,44 @@ void Cyc_pack_table() {
   _T2D = place;
   *_T2C = (short)_T2D;
   i = i + 1;
-  goto _TL161;
-  _TL160: i = 0;
-  _TL167: if (i < Cyc_nvectors) { goto _TL165;
-  }else { goto _TL166;
+  goto _TL15F;
+  _TL15E: i = 0;
+  _TL165: if (i < Cyc_nvectors) { goto _TL163;
+  }else { goto _TL164;
   }
-  _TL165: _T2E = Cyc_froms;
+  _TL163: _T2E = Cyc_froms;
   _T2F = i;
   _T30 = _check_fat_subscript(_T2E,sizeof(struct _fat_ptr),_T2F);
   _T31 = (struct _fat_ptr *)_T30;
   _T32 = *_T31;
   _T33 = _T32.curr;
   _T34 = (unsigned int)_T33;
-  if (! _T34) { goto _TL168;
+  if (! _T34) { goto _TL166;
   }
   _T35 = Cyc_froms;
   _T36 = _T35.curr;
   _T37 = (struct _fat_ptr *)_T36;
   _T38 = i;
   _T37[_T38] = _tag_fat(0,0,0);
-  goto _TL169;
-  _TL168: _TL169: _T39 = Cyc_tos;
+  goto _TL167;
+  _TL166: _TL167: _T39 = Cyc_tos;
   _T3A = i;
   _T3B = _check_fat_subscript(_T39,sizeof(struct _fat_ptr),_T3A);
   _T3C = (struct _fat_ptr *)_T3B;
   _T3D = *_T3C;
   _T3E = _T3D.curr;
   _T3F = (unsigned int)_T3E;
-  if (! _T3F) { goto _TL16A;
+  if (! _T3F) { goto _TL168;
   }
   _T40 = Cyc_tos;
   _T41 = _T40.curr;
   _T42 = (struct _fat_ptr *)_T41;
   _T43 = i;
   _T42[_T43] = _tag_fat(0,0,0);
-  goto _TL16B;
-  _TL16A: _TL16B: i = i + 1;
-  goto _TL167;
-  _TL166: Cyc_froms = _tag_fat(0,0,0);
+  goto _TL169;
+  _TL168: _TL169: i = i + 1;
+  goto _TL165;
+  _TL164: Cyc_froms = _tag_fat(0,0,0);
   Cyc_tos = _tag_fat(0,0,0);
   Cyc_pos = _tag_fat(0,0,0);
 }
@@ -3429,11 +3405,11 @@ int Cyc_matching_state(int vector) {
   _T3 = (short *)_T2;
   _T4 = *_T3;
   i = (int)_T4;
-  if (i < Cyc_nstates) { goto _TL16C;
+  if (i < Cyc_nstates) { goto _TL16A;
   }
   _T5 = - 1;
   return _T5;
-  _TL16C: _T6 = Cyc_tally;
+  _TL16A: _T6 = Cyc_tally;
   _T7 = i;
   _T8 = _check_fat_subscript(_T6,sizeof(short),_T7);
   _T9 = (short *)_T8;
@@ -3446,10 +3422,10 @@ int Cyc_matching_state(int vector) {
   _TF = *_TE;
   w = (int)_TF;
   prev = vector - 1;
-  _TL171: if (prev >= 0) { goto _TL16F;
-  }else { goto _TL170;
+  _TL16F: if (prev >= 0) { goto _TL16D;
+  }else { goto _TL16E;
   }
-  _TL16F: _T10 = Cyc_order;
+  _TL16D: _T10 = Cyc_order;
   _T11 = prev;
   _T12 = _check_fat_subscript(_T10,sizeof(short),_T11);
   _T13 = (short *)_T12;
@@ -3462,31 +3438,31 @@ int Cyc_matching_state(int vector) {
   _T19 = *_T18;
   _T1A = (int)_T19;
   _T1B = w;
-  if (_T1A != _T1B) { goto _TL174;
-  }else { goto _TL175;
+  if (_T1A != _T1B) { goto _TL172;
+  }else { goto _TL173;
   }
-  _TL175: _T1C = Cyc_tally;
+  _TL173: _T1C = Cyc_tally;
   _T1D = j;
   _T1E = _check_fat_subscript(_T1C,sizeof(short),_T1D);
   _T1F = (short *)_T1E;
   _T20 = *_T1F;
   _T21 = (int)_T20;
   _T22 = t;
-  if (_T21 != _T22) { goto _TL174;
-  }else { goto _TL172;
+  if (_T21 != _T22) { goto _TL172;
+  }else { goto _TL170;
   }
-  _TL174: _T23 = - 1;
+  _TL172: _T23 = - 1;
   return _T23;
-  _TL172: match = 1;
+  _TL170: match = 1;
   k = 0;
-  _TL179: _T24 = match;
-  if (_T24) { goto _TL17A;
-  }else { goto _TL178;
+  _TL177: _T24 = match;
+  if (_T24) { goto _TL178;
+  }else { goto _TL176;
   }
-  _TL17A: if (k < t) { goto _TL177;
-  }else { goto _TL178;
+  _TL178: if (k < t) { goto _TL175;
+  }else { goto _TL176;
   }
-  _TL177: _T25 = Cyc_tos;
+  _TL175: _T25 = Cyc_tos;
   _T26 = j;
   _T27 = _check_fat_subscript(_T25,sizeof(struct _fat_ptr),_T26);
   _T28 = (struct _fat_ptr *)_T27;
@@ -3506,10 +3482,10 @@ int Cyc_matching_state(int vector) {
   _T36 = (short *)_T35;
   _T37 = *_T36;
   _T38 = (int)_T37;
-  if (_T2E != _T38) { goto _TL17D;
-  }else { goto _TL17E;
+  if (_T2E != _T38) { goto _TL17B;
+  }else { goto _TL17C;
   }
-  _TL17E: _T39 = Cyc_froms;
+  _TL17C: _T39 = Cyc_froms;
   _T3A = j;
   _T3B = _check_fat_subscript(_T39,sizeof(struct _fat_ptr),_T3A);
   _T3C = (struct _fat_ptr *)_T3B;
@@ -3529,21 +3505,21 @@ int Cyc_matching_state(int vector) {
   _T4A = (short *)_T49;
   _T4B = *_T4A;
   _T4C = (int)_T4B;
-  if (_T42 != _T4C) { goto _TL17D;
-  }else { goto _TL17B;
+  if (_T42 != _T4C) { goto _TL17B;
+  }else { goto _TL179;
   }
-  _TL17D: match = 0;
-  goto _TL17C;
-  _TL17B: _TL17C: k = k + 1;
-  goto _TL179;
-  _TL178: _T4D = match;
-  if (! _T4D) { goto _TL17F;
+  _TL17B: match = 0;
+  goto _TL17A;
+  _TL179: _TL17A: k = k + 1;
+  goto _TL177;
+  _TL176: _T4D = match;
+  if (! _T4D) { goto _TL17D;
   }
   _T4E = j;
   return _T4E;
-  _TL17F: prev = prev + -1;
-  goto _TL171;
-  _TL170: _T4F = - 1;
+  _TL17D: prev = prev + -1;
+  goto _TL16F;
+  _TL16E: _T4F = - 1;
   return _T4F;
 }
 int Cyc_pack_vector(int vector) {
@@ -3648,12 +3624,12 @@ int Cyc_pack_vector(int vector) {
   _T8 = (short *)_T7;
   _T9 = *_T8;
   t = (int)_T9;
-  if (t != 0) { goto _TL181;
+  if (t != 0) { goto _TL17F;
   }
   _TA = _tag_fat("pack_vector",sizeof(char),12U);
   Cyc_berror(_TA);
-  goto _TL182;
-  _TL181: _TL182: _TB = Cyc_froms;
+  goto _TL180;
+  _TL17F: _TL180: _TB = Cyc_froms;
   _TC = i;
   _TD = _check_fat_subscript(_TB,sizeof(struct _fat_ptr),_TC);
   _TE = (struct _fat_ptr *)_TD;
@@ -3670,19 +3646,19 @@ int Cyc_pack_vector(int vector) {
   _T17 = *_T16;
   _T18 = (int)_T17;
   j = _T13 - _T18;
-  _TL186: if (j < 32767) { goto _TL184;
-  }else { goto _TL185;
+  _TL184: if (j < 32767) { goto _TL182;
+  }else { goto _TL183;
   }
-  _TL184: ok = 1;
+  _TL182: ok = 1;
   k = 0;
-  _TL18A: _T19 = ok;
-  if (_T19) { goto _TL18B;
-  }else { goto _TL189;
+  _TL188: _T19 = ok;
+  if (_T19) { goto _TL189;
+  }else { goto _TL187;
   }
-  _TL18B: if (k < t) { goto _TL188;
-  }else { goto _TL189;
+  _TL189: if (k < t) { goto _TL186;
+  }else { goto _TL187;
   }
-  _TL188: _T1A = j;
+  _TL186: _T1A = j;
   _T1B = from;
   _T1C = k;
   _T1D = _check_fat_subscript(_T1B,sizeof(short),_T1C);
@@ -3690,53 +3666,53 @@ int Cyc_pack_vector(int vector) {
   _T1F = *_T1E;
   _T20 = (int)_T1F;
   loc = _T1A + _T20;
-  if (loc <= 32767) { goto _TL18C;
+  if (loc <= 32767) { goto _TL18A;
   }
   _T21 = _tag_fat("maximum table size (%s) exceeded",sizeof(char),33U);
   _T22 = Cyc_int_to_string(32767);
   Cyc_fatals(_T21,_T22);
-  goto _TL18D;
-  _TL18C: _TL18D: _T23 = Cyc_table;
+  goto _TL18B;
+  _TL18A: _TL18B: _T23 = Cyc_table;
   _T24 = loc;
   _T25 = _check_fat_subscript(_T23,sizeof(short),_T24);
   _T26 = (short *)_T25;
   _T27 = *_T26;
   _T28 = (int)_T27;
-  if (_T28 == 0) { goto _TL18E;
+  if (_T28 == 0) { goto _TL18C;
   }
   ok = 0;
-  goto _TL18F;
-  _TL18E: _TL18F: k = k + 1;
-  goto _TL18A;
-  _TL189: k = 0;
-  _TL193: _T29 = ok;
-  if (_T29) { goto _TL194;
-  }else { goto _TL192;
+  goto _TL18D;
+  _TL18C: _TL18D: k = k + 1;
+  goto _TL188;
+  _TL187: k = 0;
+  _TL191: _T29 = ok;
+  if (_T29) { goto _TL192;
+  }else { goto _TL190;
   }
-  _TL194: if (k < vector) { goto _TL191;
-  }else { goto _TL192;
+  _TL192: if (k < vector) { goto _TL18F;
+  }else { goto _TL190;
   }
-  _TL191: _T2A = Cyc_pos;
+  _TL18F: _T2A = Cyc_pos;
   _T2B = k;
   _T2C = _check_fat_subscript(_T2A,sizeof(short),_T2B);
   _T2D = (short *)_T2C;
   _T2E = *_T2D;
   _T2F = (int)_T2E;
   _T30 = j;
-  if (_T2F != _T30) { goto _TL195;
+  if (_T2F != _T30) { goto _TL193;
   }
   ok = 0;
-  goto _TL196;
-  _TL195: _TL196: k = k + 1;
-  goto _TL193;
-  _TL192: _T31 = ok;
-  if (! _T31) { goto _TL197;
+  goto _TL194;
+  _TL193: _TL194: k = k + 1;
+  goto _TL191;
+  _TL190: _T31 = ok;
+  if (! _T31) { goto _TL195;
   }
   k = 0;
-  _TL19C: if (k < t) { goto _TL19A;
-  }else { goto _TL19B;
+  _TL19A: if (k < t) { goto _TL198;
+  }else { goto _TL199;
   }
-  _TL19A: _T32 = j;
+  _TL198: _T32 = j;
   _T33 = from;
   _T34 = k;
   _T35 = _check_fat_subscript(_T33,sizeof(short),_T34);
@@ -3763,27 +3739,27 @@ int Cyc_pack_vector(int vector) {
   _T48 = k;
   *_T44 = _T47[_T48];
   k = k + 1;
-  goto _TL19C;
-  _TL19B: _TL19D: _T49 = Cyc_table;
+  goto _TL19A;
+  _TL199: _TL19B: _T49 = Cyc_table;
   _T4A = Cyc_lowzero;
   _T4B = _check_fat_subscript(_T49,sizeof(short),_T4A);
   _T4C = (short *)_T4B;
   _T4D = *_T4C;
   _T4E = (int)_T4D;
-  if (_T4E != 0) { goto _TL19E;
-  }else { goto _TL19F;
+  if (_T4E != 0) { goto _TL19C;
+  }else { goto _TL19D;
   }
-  _TL19E: Cyc_lowzero = Cyc_lowzero + 1;
-  goto _TL19D;
-  _TL19F: if (loc <= Cyc_high) { goto _TL1A0;
+  _TL19C: Cyc_lowzero = Cyc_lowzero + 1;
+  goto _TL19B;
+  _TL19D: if (loc <= Cyc_high) { goto _TL19E;
   }
   Cyc_high = loc;
-  goto _TL1A1;
-  _TL1A0: _TL1A1: _T4F = j;
+  goto _TL19F;
+  _TL19E: _TL19F: _T4F = j;
   return _T4F;
-  _TL197: j = j + 1;
-  goto _TL186;
-  _TL185: _T50 = _tag_fat("pack_vector",sizeof(char),12U);
+  _TL195: j = j + 1;
+  goto _TL184;
+  _TL183: _T50 = _tag_fat("pack_vector",sizeof(char),12U);
   Cyc_berror(_T50);
   return 0;
 }
@@ -3854,19 +3830,19 @@ void Cyc_output_base() {
     Cyc_fprintf(_T6,_T7,_T8);
   }j = 10;
   i = 1;
-  _TL1A5: if (i < Cyc_nstates) { goto _TL1A3;
-  }else { goto _TL1A4;
+  _TL1A3: if (i < Cyc_nstates) { goto _TL1A1;
+  }else { goto _TL1A2;
   }
-  _TL1A3: _T9 = _check_null(Cyc_ftable);
+  _TL1A1: _T9 = _check_null(Cyc_ftable);
   Cyc_putc(44,_T9);
-  if (j < 10) { goto _TL1A6;
+  if (j < 10) { goto _TL1A4;
   }
   _TA = _check_null(Cyc_ftable);
   Cyc_putc(10,_TA);
   j = 1;
-  goto _TL1A7;
-  _TL1A6: j = j + 1;
-  _TL1A7: { struct Cyc_Int_pa_PrintArg_struct _T2E;
+  goto _TL1A5;
+  _TL1A4: j = j + 1;
+  _TL1A5: { struct Cyc_Int_pa_PrintArg_struct _T2E;
     _T2E.tag = 1;
     _TC = Cyc_base;
     _TD = i;
@@ -3884,8 +3860,8 @@ void Cyc_output_base() {
     _T14 = _tag_fat(_T2F,sizeof(void *),1);
     Cyc_fprintf(_T12,_T13,_T14);
   }i = i + 1;
-  goto _TL1A5;
-  _TL1A4: { struct Cyc_Int_pa_PrintArg_struct _T2E;
+  goto _TL1A3;
+  _TL1A2: { struct Cyc_Int_pa_PrintArg_struct _T2E;
     _T2E.tag = 1;
     _T16 = Cyc_base;
     _T17 = Cyc_nstates;
@@ -3905,19 +3881,19 @@ void Cyc_output_base() {
     Cyc_fprintf(_T1C,_T1D,_T1E);
   }j = 10;
   i = Cyc_nstates + 1;
-  _TL1AB: if (i < Cyc_nvectors) { goto _TL1A9;
-  }else { goto _TL1AA;
+  _TL1A9: if (i < Cyc_nvectors) { goto _TL1A7;
+  }else { goto _TL1A8;
   }
-  _TL1A9: _T1F = _check_null(Cyc_ftable);
+  _TL1A7: _T1F = _check_null(Cyc_ftable);
   Cyc_putc(44,_T1F);
-  if (j < 10) { goto _TL1AC;
+  if (j < 10) { goto _TL1AA;
   }
   _T20 = _check_null(Cyc_ftable);
   Cyc_putc(10,_T20);
   j = 1;
-  goto _TL1AD;
-  _TL1AC: j = j + 1;
-  _TL1AD: { struct Cyc_Int_pa_PrintArg_struct _T2E;
+  goto _TL1AB;
+  _TL1AA: j = j + 1;
+  _TL1AB: { struct Cyc_Int_pa_PrintArg_struct _T2E;
     _T2E.tag = 1;
     _T22 = Cyc_base;
     _T23 = i;
@@ -3935,8 +3911,8 @@ void Cyc_output_base() {
     _T2A = _tag_fat(_T2F,sizeof(void *),1);
     Cyc_fprintf(_T28,_T29,_T2A);
   }i = i + 1;
-  goto _TL1AB;
-  _TL1AA: _T2B = _check_null(Cyc_ftable);
+  goto _TL1A9;
+  _TL1A8: _T2B = _check_null(Cyc_ftable);
   _T2C = _tag_fat("\n};\n",sizeof(char),5U);
   _T2D = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T2B,_T2C,_T2D);
@@ -4004,19 +3980,19 @@ void Cyc_output_table() {
     Cyc_fprintf(_TB,_TC,_TD);
   }j = 10;
   i = 1;
-  _TL1B1: if (i <= Cyc_high) { goto _TL1AF;
-  }else { goto _TL1B0;
+  _TL1AF: if (i <= Cyc_high) { goto _TL1AD;
+  }else { goto _TL1AE;
   }
-  _TL1AF: _TE = _check_null(Cyc_ftable);
+  _TL1AD: _TE = _check_null(Cyc_ftable);
   Cyc_putc(44,_TE);
-  if (j < 10) { goto _TL1B2;
+  if (j < 10) { goto _TL1B0;
   }
   _TF = _check_null(Cyc_ftable);
   Cyc_putc(10,_TF);
   j = 1;
-  goto _TL1B3;
-  _TL1B2: j = j + 1;
-  _TL1B3: { struct Cyc_Int_pa_PrintArg_struct _T1D;
+  goto _TL1B1;
+  _TL1B0: j = j + 1;
+  _TL1B1: { struct Cyc_Int_pa_PrintArg_struct _T1D;
     _T1D.tag = 1;
     _T11 = Cyc_table;
     _T12 = i;
@@ -4034,8 +4010,8 @@ void Cyc_output_table() {
     _T19 = _tag_fat(_T1E,sizeof(void *),1);
     Cyc_fprintf(_T17,_T18,_T19);
   }i = i + 1;
-  goto _TL1B1;
-  _TL1B0: _T1A = _check_null(Cyc_ftable);
+  goto _TL1AF;
+  _TL1AE: _T1A = _check_null(Cyc_ftable);
   _T1B = _tag_fat("\n};\n",sizeof(char),5U);
   _T1C = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T1A,_T1B,_T1C);
@@ -4086,19 +4062,19 @@ void Cyc_output_check() {
     Cyc_fprintf(_T6,_T7,_T8);
   }j = 10;
   i = 1;
-  _TL1B7: if (i <= Cyc_high) { goto _TL1B5;
-  }else { goto _TL1B6;
+  _TL1B5: if (i <= Cyc_high) { goto _TL1B3;
+  }else { goto _TL1B4;
   }
-  _TL1B5: _T9 = _check_null(Cyc_ftable);
+  _TL1B3: _T9 = _check_null(Cyc_ftable);
   Cyc_putc(44,_T9);
-  if (j < 10) { goto _TL1B8;
+  if (j < 10) { goto _TL1B6;
   }
   _TA = _check_null(Cyc_ftable);
   Cyc_putc(10,_TA);
   j = 1;
-  goto _TL1B9;
-  _TL1B8: j = j + 1;
-  _TL1B9: { struct Cyc_Int_pa_PrintArg_struct _T18;
+  goto _TL1B7;
+  _TL1B6: j = j + 1;
+  _TL1B7: { struct Cyc_Int_pa_PrintArg_struct _T18;
     _T18.tag = 1;
     _TC = Cyc_check;
     _TD = i;
@@ -4116,8 +4092,8 @@ void Cyc_output_check() {
     _T14 = _tag_fat(_T19,sizeof(void *),1);
     Cyc_fprintf(_T12,_T13,_T14);
   }i = i + 1;
-  goto _TL1B7;
-  _TL1B6: _T15 = _check_null(Cyc_ftable);
+  goto _TL1B5;
+  _TL1B4: _T15 = _check_null(Cyc_ftable);
   _T16 = _tag_fat("\n};\n",sizeof(char),5U);
   _T17 = _tag_fat(0U,sizeof(void *),0);
   Cyc_fprintf(_T15,_T16,_T17);
@@ -4190,22 +4166,22 @@ void Cyc_output_parser() {
   _T0 = Cyc_cycbison_simple;
   { unsigned int len = _get_fat_size(_T0,sizeof(char));
     _T1 = Cyc_pure_parser;
-    if (! _T1) { goto _TL1BA;
+    if (! _T1) { goto _TL1B8;
     }
     _T2 = _check_null(Cyc_ftable);
     _T3 = _tag_fat("#define YYPURE 1\n\n",sizeof(char),19U);
     _T4 = _tag_fat(0U,sizeof(void *),0);
     Cyc_fprintf(_T2,_T3,_T4);
-    goto _TL1BB;
-    _TL1BA: _TL1BB: _TL1BC: if (i < len) { goto _TL1BD;
-    }else { goto _TL1BE;
+    goto _TL1B9;
+    _TL1B8: _TL1B9: _TL1BA: if (i < len) { goto _TL1BB;
+    }else { goto _TL1BC;
     }
-    _TL1BD: { int write_line = 1;
+    _TL1BB: { int write_line = 1;
       _T5 = Cyc_nolinesflag;
-      if (! _T5) { goto _TL1BF;
+      if (! _T5) { goto _TL1BD;
       }
       _T6 = len - i;
-      if (_T6 < 5U) { goto _TL1BF;
+      if (_T6 < 5U) { goto _TL1BD;
       }
       _T7 = Cyc_cycbison_simple;
       _T8 = i + 0U;
@@ -4214,7 +4190,7 @@ void Cyc_output_parser() {
       _TB = (const char *)_TA;
       _TC = *_TB;
       _TD = (int)_TC;
-      if (_TD != 35) { goto _TL1C1;
+      if (_TD != 35) { goto _TL1BF;
       }
       _TE = Cyc_cycbison_simple;
       _TF = i + 1U;
@@ -4223,7 +4199,7 @@ void Cyc_output_parser() {
       _T12 = (const char *)_T11;
       _T13 = *_T12;
       _T14 = (int)_T13;
-      if (_T14 != 108) { goto _TL1C1;
+      if (_T14 != 108) { goto _TL1BF;
       }
       _T15 = Cyc_cycbison_simple;
       _T16 = i + 2U;
@@ -4232,7 +4208,7 @@ void Cyc_output_parser() {
       _T19 = (const char *)_T18;
       _T1A = *_T19;
       _T1B = (int)_T1A;
-      if (_T1B != 105) { goto _TL1C1;
+      if (_T1B != 105) { goto _TL1BF;
       }
       _T1C = Cyc_cycbison_simple;
       _T1D = i + 3U;
@@ -4241,7 +4217,7 @@ void Cyc_output_parser() {
       _T20 = (const char *)_T1F;
       _T21 = *_T20;
       _T22 = (int)_T21;
-      if (_T22 != 110) { goto _TL1C1;
+      if (_T22 != 110) { goto _TL1BF;
       }
       _T23 = Cyc_cycbison_simple;
       _T24 = i + 4U;
@@ -4250,64 +4226,64 @@ void Cyc_output_parser() {
       _T27 = (const char *)_T26;
       _T28 = *_T27;
       _T29 = (int)_T28;
-      if (_T29 != 101) { goto _TL1C1;
+      if (_T29 != 101) { goto _TL1BF;
       }
       write_line = 0;
-      goto _TL1C2;
-      _TL1C1: _TL1C2: goto _TL1C0;
-      _TL1BF: _TL1C0: _TL1C6: if (i < len) { goto _TL1C4;
-      }else { goto _TL1C5;
+      goto _TL1C0;
+      _TL1BF: _TL1C0: goto _TL1BE;
+      _TL1BD: _TL1BE: _TL1C4: if (i < len) { goto _TL1C2;
+      }else { goto _TL1C3;
       }
-      _TL1C4: _T2A = Cyc_cycbison_simple;
+      _TL1C2: _T2A = Cyc_cycbison_simple;
       _T2B = i;
       _T2C = (int)_T2B;
       _T2D = _check_fat_subscript(_T2A,sizeof(char),_T2C);
       _T2E = (const char *)_T2D;
       _T2F = *_T2E;
       c = (int)_T2F;
-      if (c != 0) { goto _TL1C7;
+      if (c != 0) { goto _TL1C5;
       }
-      goto _TL1C5;
-      _TL1C7: if (c != 10) { goto _TL1C9;
+      goto _TL1C3;
+      _TL1C5: if (c != 10) { goto _TL1C7;
       }
       _T30 = c;
       _T31 = _check_null(Cyc_ftable);
       Cyc_putc(_T30,_T31);
       i = i + 1;
-      goto _TL1C5;
-      _TL1C9: _T32 = write_line;
-      if (! _T32) { goto _TL1CB;
+      goto _TL1C3;
+      _TL1C7: _T32 = write_line;
+      if (! _T32) { goto _TL1C9;
       }
-      if (c != 36) { goto _TL1CD;
+      if (c != 36) { goto _TL1CB;
       }
       _T33 = _check_null(Cyc_faction);
       Cyc_rewind(_T33);
       _T34 = _check_null(Cyc_faction);
       c = Cyc_getc(_T34);
-      _TL1D2: _T35 = c;
+      _TL1D0: _T35 = c;
       _T36 = - 1;
-      if (_T35 != _T36) { goto _TL1D0;
-      }else { goto _TL1D1;
+      if (_T35 != _T36) { goto _TL1CE;
+      }else { goto _TL1CF;
       }
-      _TL1D0: _T37 = c;
+      _TL1CE: _T37 = c;
       _T38 = _check_null(Cyc_ftable);
       Cyc_putc(_T37,_T38);
       _T39 = _check_null(Cyc_faction);
       c = Cyc_getc(_T39);
-      goto _TL1D2;
-      _TL1D1: goto _TL1CE;
-      _TL1CD: _T3A = c;
+      goto _TL1D0;
+      _TL1CF: goto _TL1CC;
+      _TL1CB: _T3A = c;
       _T3B = _check_null(Cyc_ftable);
       Cyc_putc(_T3A,_T3B);
-      _TL1CE: goto _TL1CC;
-      _TL1CB: _TL1CC: i = i + 1;
-      goto _TL1C6;
-      _TL1C5: if (c != 0) { goto _TL1D3;
+      _TL1CC: goto _TL1CA;
+      _TL1C9: _TL1CA: i = i + 1;
+      goto _TL1C4;
+      _TL1C3: if (c != 0) { goto _TL1D1;
       }
-      goto _TL1BE;
-      _TL1D3: ;
-    }goto _TL1BC;
-    _TL1BE: ;
+      goto _TL1BC;
+      _TL1D1: ;
+    }goto _TL1BA;
+    _TL1BC: ;
   }
 }
 void Cyc_output_program() {
@@ -4326,10 +4302,10 @@ void Cyc_output_program() {
   struct Cyc___cycFILE * _TC;
   register int c;
   _T0 = Cyc_nolinesflag;
-  if (_T0) { goto _TL1D5;
-  }else { goto _TL1D7;
+  if (_T0) { goto _TL1D3;
+  }else { goto _TL1D5;
   }
-  _TL1D7: { struct Cyc_Int_pa_PrintArg_struct _TD;
+  _TL1D5: { struct Cyc_Int_pa_PrintArg_struct _TD;
     _TD.tag = 1;
     _T2 = Cyc_lineno;
     _TD.f1 = (unsigned long)_T2;
@@ -4348,21 +4324,21 @@ void Cyc_output_program() {
       _T6 = _tag_fat(_TF,sizeof(void *),2);
       Cyc_fprintf(_T4,_T5,_T6);
     }
-  }goto _TL1D6;
-  _TL1D5: _TL1D6: _T7 = _check_null(Cyc_finput);
+  }goto _TL1D4;
+  _TL1D3: _TL1D4: _T7 = _check_null(Cyc_finput);
   c = Cyc_getc(_T7);
-  _TL1D8: _T8 = c;
+  _TL1D6: _T8 = c;
   _T9 = - 1;
-  if (_T8 != _T9) { goto _TL1D9;
-  }else { goto _TL1DA;
+  if (_T8 != _T9) { goto _TL1D7;
+  }else { goto _TL1D8;
   }
-  _TL1D9: _TA = c;
+  _TL1D7: _TA = c;
   _TB = _check_null(Cyc_ftable);
   Cyc_putc(_TA,_TB);
   _TC = _check_null(Cyc_finput);
   c = Cyc_getc(_TC);
-  goto _TL1D8;
-  _TL1DA: ;
+  goto _TL1D6;
+  _TL1D8: ;
 }
 void Cyc_free_itemsets() {
   struct Cyc_core_tag * _T0;
@@ -4372,17 +4348,17 @@ void Cyc_free_itemsets() {
   register struct Cyc_core_tag * cptmp;
   Cyc_state_table = _tag_fat(0,0,0);
   cp = Cyc_first_state;
-  _TL1DE: _T0 = cp;
+  _TL1DC: _T0 = cp;
   _T1 = (unsigned int)_T0;
-  if (_T1) { goto _TL1DC;
-  }else { goto _TL1DD;
+  if (_T1) { goto _TL1DA;
+  }else { goto _TL1DB;
   }
-  _TL1DC: _T2 = cp;
+  _TL1DA: _T2 = cp;
   cptmp = _T2->next;
   cp = 0;
   cp = cptmp;
-  goto _TL1DE;
-  _TL1DD: ;
+  goto _TL1DC;
+  _TL1DB: ;
 }
 void Cyc_free_shifts() {
   struct Cyc_shifts_tag * _T0;
@@ -4392,17 +4368,17 @@ void Cyc_free_shifts() {
   register struct Cyc_shifts_tag * sptmp;
   Cyc_shift_table = _tag_fat(0,0,0);
   sp = Cyc_first_shift;
-  _TL1E2: _T0 = sp;
+  _TL1E0: _T0 = sp;
   _T1 = (unsigned int)_T0;
-  if (_T1) { goto _TL1E0;
-  }else { goto _TL1E1;
+  if (_T1) { goto _TL1DE;
+  }else { goto _TL1DF;
   }
-  _TL1E0: _T2 = sp;
+  _TL1DE: _T2 = sp;
   sptmp = _T2->next;
   sp = 0;
   sp = sptmp;
-  goto _TL1E2;
-  _TL1E1: ;
+  goto _TL1E0;
+  _TL1DF: ;
 }
 void Cyc_free_reductions() {
   struct Cyc_reductions_tag * _T0;
@@ -4412,15 +4388,15 @@ void Cyc_free_reductions() {
   register struct Cyc_reductions_tag * rptmp;
   Cyc_reduction_table = _tag_fat(0,0,0);
   rp = Cyc_first_reduction;
-  _TL1E6: _T0 = rp;
+  _TL1E4: _T0 = rp;
   _T1 = (unsigned int)_T0;
-  if (_T1) { goto _TL1E4;
-  }else { goto _TL1E5;
+  if (_T1) { goto _TL1E2;
+  }else { goto _TL1E3;
   }
-  _TL1E4: _T2 = rp;
+  _TL1E2: _T2 = rp;
   rptmp = _T2->next;
   rp = 0;
   rp = rptmp;
-  goto _TL1E6;
-  _TL1E5: ;
+  goto _TL1E4;
+  _TL1E3: ;
 }
